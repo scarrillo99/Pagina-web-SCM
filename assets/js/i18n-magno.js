@@ -1,139 +1,139 @@
-/* Diccionario de Magno Marbella. */
+/* Diccionario de Magno Marbella.
+   Los textos provienen de su guía de servicios, redactada originalmente en
+   inglés; el español es la adaptación. Las tarifas del dossier no se
+   publican: la web remite a presupuesto. */
 window.I18N_DICT = {
   es: {
     'nav.lang': 'Idioma',
     'nav.menu': 'Menú',
-    'nav.services': 'Servicios',
-    'nav.experiences': 'Experiencias',
-    'nav.how': 'Cómo funciona',
-    'nav.membership': 'Membresías',
+    'nav.training': 'Entrenamiento',
+    'nav.lifestyle': 'Lifestyle',
+    'nav.venues': 'Centros',
+    'nav.how': 'Cómo reservar',
     'nav.contact': 'Contacto',
 
-    'hero.eyebrow': 'Concierge privado · Marbella',
-    'hero.title': 'Marbella, <em>a tu manera</em>',
+    'hero.eyebrow': 'Concierge para futbolistas profesionales · Marbella',
+    'hero.title': 'Tú céntrate en el juego.<br><em>Del resto nos ocupamos nosotros</em>',
     'hero.lead':
-      'Villas, yates, aviación privada, mesas imposibles y la logística del día a día. Una sola llamada, un solo interlocutor y absoluta discreción.',
-    'hero.cta1': 'Solicitar acceso',
+      'En Magno Marbella trabajamos en exclusiva para futbolistas profesionales y atletas de alto rendimiento. Del entrenamiento al descanso, cuidamos cada detalle para que disfrutes de tus vacaciones sin salir de forma.',
+    'hero.cta1': 'Solicitar propuesta',
     'hero.cta2': 'Ver servicios',
-    'hero.t1': 'Villas',
-    'hero.t2': 'Náutica',
-    'hero.t3': 'Aviación',
-    'hero.t4': 'Gastronomía',
-    'hero.t5': 'Eventos',
-    'hero.t6': 'Bienestar',
+    'hero.t1': 'Campos de fútbol',
+    'hero.t2': 'Entrenamiento de élite',
+    'hero.t3': 'Gimnasio y recuperación',
+    'hero.t4': 'Villas',
+    'hero.t5': 'Vehículos',
+    'hero.t6': 'Náutica y jets',
 
     'manifesto.text':
-      'El lujo no es acumular servicios. Es <em>no tener que ocuparse de nada</em> y que todo salga exactamente como esperabas.',
+      'La pretemporada no empieza en julio. Empieza en <em>cómo pasas el verano</em>.',
 
-    'services.eyebrow': 'Servicios',
-    'services.title': 'Todo resuelto, sin excepciones',
-    'services.lead':
-      'Trabajamos con una red local construida durante años: propietarios, patrones, chefs, jefes de sala y operadores que cogen el teléfono a cualquier hora.',
+    'training.section': 'Entrenamiento y rendimiento',
+    'training.title': 'Seguir en forma, estés donde estés',
+    'training.lead':
+      'Cinco centros deportivos en la Costa del Sol a disposición del jugador, con campo, gimnasio, entrenador y fisioterapeuta coordinados desde un mismo punto.',
 
-    'services.1.title': 'Villas y residencias',
-    'services.1.text':
-      'Selección y reserva de propiedades en Marbella, La Zagaleta, Sotogrande y Costa del Sol. Con servicio doméstico, chef y seguridad si se necesita.',
-    'services.2.title': 'Náutica',
-    'services.2.text':
-      'Yates y embarcaciones con tripulación por día o por temporada. Amarres en Puerto Banús, Sotogrande y Gibraltar, y salidas a Ibiza o el norte de África.',
-    'services.3.title': 'Aviación privada',
-    'services.3.text':
-      'Vuelos privados y helicóptero desde Málaga, Gibraltar y Jerez. Gestionamos handling, tripulación y traslados en destino.',
-    'services.4.title': 'Traslados y chófer',
-    'services.4.text':
-      'Flota con conductor a disposición, escoltas y coches de alta gama. Recogidas en pista y desplazamientos a cualquier punto de Andalucía.',
-    'services.5.title': 'Gastronomía y ocio',
-    'services.5.text':
-      'Reservas en los restaurantes con lista de espera, mesas y reservados en los clubes, y chef privado en casa cuando prefieres no salir.',
-    'services.6.title': 'Eventos privados',
-    'services.6.text':
-      'Cumpleaños, celebraciones familiares y encuentros corporativos. Producción completa: espacio, catering, música, decoración y control de accesos.',
-    'services.7.title': 'Bienestar y salud',
-    'services.7.text':
-      'Entrenador personal, fisioterapia, nutrición, clínicas privadas y agenda médica sin esperas. También durante la pretemporada.',
-    'services.8.title': 'Vida diaria',
-    'services.8.text':
-      'Colegios internacionales, mudanzas, alta de suministros, gestoría, seguros y selección de personal doméstico. Lo aburrido también lo llevamos.',
+    'training.1.title': 'Alquiler de campos',
+    'training.1.text':
+      'Fútbol 11 y fútbol 7 por horas en cualquiera de nuestros cinco centros, con la coordinación y la gestión incluidas.',
+    'training.2.title': 'Sesiones de élite',
+    'training.2.text':
+      'Entrenamiento privado con técnico especializado, individual o en grupo reducido, adaptado a la posición y al momento de temporada.',
+    'training.3.title': 'Gimnasio y recuperación',
+    'training.3.text':
+      'Acceso a gimnasio y spa por días, y sesiones privadas de fisioterapia en clínica o a domicilio.',
+    'training.4.title': 'Fotógrafo y vídeo',
+    'training.4.text':
+      'Fotógrafo profesional en pista para sesiones de entrenamiento y contenido de marca personal.',
 
-    'showcase.eyebrow': 'Experiencias',
-    'showcase.title': 'Algunos encargos <em>recientes</em>',
-    'showcase.lead':
-      'No publicamos nombres. Sí el tipo de encargo que resolvemos cada semana.',
-    'showcase.1.label': 'Náutica',
-    'showcase.1.title': 'Ocho días entre Marbella e Ibiza, tripulación y chef a bordo',
-    'showcase.2.label': 'Residencial',
-    'showcase.2.title': 'Villa en La Zagaleta lista en 72 horas',
-    'showcase.3.label': 'Celebración',
-    'showcase.3.title': 'Cena privada para 40 en finca con acceso cerrado',
+    'lifestyle.section': 'Lifestyle',
+    'lifestyle.title': 'Y cuando acaba el entrenamiento',
+    'lifestyle.lead':
+      'Alojamiento, transporte y agenda resueltos con la misma discreción con la que se organiza una sesión a puerta cerrada.',
 
-    'how.eyebrow': 'Cómo funciona',
-    'how.title': 'Tres pasos y ya está',
+    'lifestyle.1.title': 'Villas y alojamiento',
+    'lifestyle.1.text':
+      'Selección de villas y residencias en Marbella y la Costa del Sol, con servicio doméstico y seguridad si se necesita.',
+    'lifestyle.2.title': 'Hoteles y concierge',
+    'lifestyle.2.text':
+      'Reservas de hotel y concierge personalizado durante toda la estancia, con un único interlocutor.',
+    'lifestyle.3.title': 'Vehículos de alta gama',
+    'lifestyle.3.text':
+      'Alquiler de coches de lujo con o sin conductor, y traslados desde aeropuerto o pista.',
+    'lifestyle.4.title': 'Náutica y aviación',
+    'lifestyle.4.text':
+      'Yates, jets privados y coordinación completa de desplazamientos dentro y fuera de España.',
+    'lifestyle.5.title': 'Experiencias VIP y eventos',
+    'lifestyle.5.text':
+      'Eventos privados, celebraciones y acceso a los espacios más exclusivos de la Costa del Sol.',
+    'lifestyle.6.title': 'Personal shopping',
+    'lifestyle.6.text':
+      'Personal shopping y gestión del día a día para que la estancia no genere una sola gestión.',
+
+    'venues.section': 'Nuestros centros',
+    'venues.title': 'Cinco centros en la Costa del Sol',
+    'venues.lead':
+      'Todos los centros incluyen fútbol 11 y fútbol 7, sesión privada con técnico, gimnasio y fisioterapia. La disponibilidad es muy limitada en temporada alta.',
+    'venues.hours': 'Horario',
+    'venues.1.name': 'Marbella Football Center',
+    'venues.2.name': 'La Quinta Football Center',
+    'venues.3.name': 'Banús Football Center',
+    'venues.4.name': 'Atalaya Football Center',
+    'venues.5.name': 'Estepona Football Center',
+    'venues.f1': 'Fútbol 11 y fútbol 7',
+    'venues.f2': 'Sesión privada con técnico',
+    'venues.f3': 'Gimnasio',
+    'venues.f4': 'Gimnasio y spa',
+    'venues.f5': 'Fisioterapia en clínica o a domicilio',
+    'venues.note':
+      'Disponibilidad muy limitada entre mayo y julio, sujeta a confirmación. Las tarifas se facilitan por escrito con cada propuesta.',
+
+    'showcase.section': 'En imágenes',
+    'showcase.title': 'Cómo es <em>por dentro</em>',
+    'showcase.1.label': 'Entrenamiento',
+    'showcase.1.title': 'Sesiones individuales 1 vs 1 con técnico',
+    'showcase.2.label': 'Instalaciones',
+    'showcase.2.title': 'Gimnasio y sala de recuperación',
+    'showcase.3.label': 'Alojamiento',
+    'showcase.3.title': 'Villas con piscina y servicio incluido',
+
+    'how.section': 'Cómo reservar',
+    'how.title': 'Tres pasos',
     'how.lead':
-      'Sin formularios interminables ni cadenas de correos. Nos cuentas qué necesitas y a partir de ahí es cosa nuestra.',
-    'how.1.title': 'Conversación inicial',
+      'Sin catálogos ni cadenas de correos. Nos dices qué necesitas y cuándo, y recibes una propuesta cerrada.',
+    'how.1.title': 'Cuéntanos las fechas',
     'how.1.text':
-      'Una llamada para entender cómo viajas, qué te gusta y qué no soportas. Ese perfil queda guardado y no hay que repetirlo nunca más.',
-    'how.2.title': 'Propuesta a medida',
+      'Fechas de la estancia, número de jugadores y qué hace falta: campo, gimnasio, alojamiento o todo junto.',
+    'how.2.title': 'Recibes la propuesta',
     'how.2.text':
-      'Recibes opciones concretas con precio cerrado, no un catálogo. Si algo no encaja, se ajusta el mismo día.',
-    'how.3.title': 'Ejecución y seguimiento',
+      'Te enviamos por escrito centros, horarios y tarifas cerradas. La gestión y la coordinación van siempre incluidas.',
+    'how.3.title': 'Confirmación',
     'how.3.text':
-      'Tienes un contacto directo disponible 24/7 durante toda tu estancia. Si algo se tuerce, lo resolvemos antes de que te enteres.',
+      'La reserva se confirma por transferencia 48 horas antes. A partir de ahí tienes un único contacto para todo.',
 
-    'tiers.eyebrow': 'Membresías',
-    'tiers.title': 'Tres formas de trabajar con nosotros',
-    'tiers.lead':
-      'Desde un encargo puntual hasta disponibilidad permanente. Las cuotas se acuerdan según el nivel de servicio.',
-
-    'tiers.1.name': 'Puntual',
-    'tiers.1.tagline': 'Por encargo',
-    'tiers.1.f1': 'Un encargo concreto, cerrado y facturado por proyecto',
-    'tiers.1.f2': 'Acceso a la red de proveedores de confianza',
-    'tiers.1.f3': 'Respuesta en menos de 24 horas',
-    'tiers.1.cta': 'Consultar',
-
-    'tiers.2.name': 'Temporada',
-    'tiers.2.tagline': 'El más solicitado',
-    'tiers.2.f1': 'Cobertura completa durante tu estancia en la Costa del Sol',
-    'tiers.2.f2': 'Contacto directo disponible 24/7',
-    'tiers.2.f3': 'Villa, traslados y agenda coordinados desde un mismo punto',
-    'tiers.2.f4': 'Prioridad en reservas de restaurantes y náutica',
-    'tiers.2.cta': 'Solicitar',
-
-    'tiers.3.name': 'Anual',
-    'tiers.3.tagline': 'Por invitación',
-    'tiers.3.f1': 'Disponibilidad permanente, estés o no en Marbella',
-    'tiers.3.f2': 'Gestión de residencia, personal y vida diaria',
-    'tiers.3.f3': 'Cobertura fuera de España a través de nuestra red',
-    'tiers.3.f4': 'Acuerdo de confidencialidad y protocolo de discreción',
-    'tiers.3.cta': 'Solicitar acceso',
-
-    'quote.text':
-      'Llamé un jueves por la noche pidiendo algo que no existía. El sábado existía.',
-    'quote.author': 'Cliente · Temporada 2025',
-
-    'contact.eyebrow': 'Contacto',
-    'contact.title': 'Empecemos por una conversación',
+    'contact.section': 'Contacto',
+    'contact.title': 'Cuéntanos qué necesitas',
     'contact.lead':
-      'Cuéntanos qué necesitas y cuándo. Respondemos en menos de 24 horas, siempre con una persona al otro lado.',
+      'Escríbenos con las fechas y el tipo de estancia. Preparamos una propuesta a medida, con total confidencialidad.',
     'contact.email': 'Email',
     'contact.phone': 'Teléfono',
-    'contact.office': 'Oficina',
-    'contact.officeValue': 'Marbella, Málaga · España',
+    'contact.instagram': 'Instagram',
+    'contact.address': 'Dirección',
 
     'form.name': 'Nombre',
     'form.email': 'Email',
     'form.phone': 'Teléfono',
     'form.service': 'Qué necesitas',
-    'form.service.villa': 'Villa o residencia',
-    'form.service.boat': 'Náutica',
-    'form.service.jet': 'Aviación privada',
-    'form.service.event': 'Evento privado',
-    'form.service.season': 'Temporada completa',
-    'form.service.other': 'Otro',
+    'form.service.pitch': 'Campo de fútbol',
+    'form.service.coach': 'Sesión con técnico',
+    'form.service.gym': 'Gimnasio y fisioterapia',
+    'form.service.stay': 'Villa u hotel',
+    'form.service.transport': 'Vehículos, náutica o jets',
+    'form.service.full': 'Estancia completa',
     'form.dates': 'Fechas aproximadas',
+    'form.players': 'Número de personas',
     'form.message': 'Detalles',
-    'form.messagePlaceholder': 'Número de personas, fechas y cualquier preferencia.',
+    'form.messagePlaceholder': 'Fechas, número de jugadores y cualquier preferencia.',
     'form.consent':
       'He leído y acepto la <a href="../privacidad.html">política de privacidad</a>.',
     'form.submit': 'Enviar solicitud',
@@ -141,10 +141,10 @@ window.I18N_DICT = {
 
     'cross.label': 'Marca hermana',
     'cross.title': 'SCM Sports Agency',
-    'cross.text': 'Representación de futbolistas profesionales',
+    'cross.text': 'Agencia 360º de futbolistas profesionales',
 
     'footer.tagline':
-      'Concierge privado en Marbella y Costa del Sol. Villas, náutica, aviación y vida diaria.',
+      'Concierge exclusivo para futbolistas profesionales y atletas de alto rendimiento. Marbella, Costa del Sol.',
     'footer.nav': 'Navegación',
     'footer.legalTitle': 'Legal',
     'footer.legal': 'Aviso legal',
@@ -157,146 +157,144 @@ window.I18N_DICT = {
   en: {
     'nav.lang': 'Language',
     'nav.menu': 'Menu',
-    'nav.services': 'Services',
-    'nav.experiences': 'Experiences',
-    'nav.how': 'How it works',
-    'nav.membership': 'Membership',
+    'nav.training': 'Training',
+    'nav.lifestyle': 'Lifestyle',
+    'nav.venues': 'Venues',
+    'nav.how': 'How to book',
     'nav.contact': 'Contact',
 
-    'hero.eyebrow': 'Private concierge · Marbella',
-    'hero.title': 'Marbella, <em>your way</em>',
+    'hero.eyebrow': 'Concierge for professional footballers · Marbella',
+    'hero.title': 'You focus on the game.<br><em>We take care of the rest</em>',
     'hero.lead':
-      'Villas, yachts, private aviation, impossible tables and the logistics of everyday life. One call, one point of contact, absolute discretion.',
-    'hero.cta1': 'Request access',
+      'At Magno Marbella we specialise in concierge services exclusively for professional football players. From training to lifestyle, we take care of every detail so you can enjoy your vacation while staying on top performance.',
+    'hero.cta1': 'Request a proposal',
     'hero.cta2': 'See services',
-    'hero.t1': 'Villas',
-    'hero.t2': 'Yachting',
-    'hero.t3': 'Aviation',
-    'hero.t4': 'Dining',
-    'hero.t5': 'Events',
-    'hero.t6': 'Wellness',
+    'hero.t1': 'Football pitches',
+    'hero.t2': 'Elite training',
+    'hero.t3': 'Gym & recovery',
+    'hero.t4': 'Villas',
+    'hero.t5': 'Cars',
+    'hero.t6': 'Yachts & jets',
 
     'manifesto.text':
-      'Luxury is not a longer list of services. It is <em>never having to deal with anything</em>, and everything turning out exactly as you expected.',
+      'Pre-season does not start in July. It starts with <em>how you spend the summer</em>.',
 
-    'services.eyebrow': 'Services',
-    'services.title': 'Everything handled, no exceptions',
-    'services.lead':
-      'We work through a local network built over years: owners, skippers, chefs, maître d’s and operators who pick up the phone at any hour.',
+    'training.section': 'Training and performance',
+    'training.title': 'Stay sharp, wherever you are',
+    'training.lead':
+      'Five sports centres across the Costa del Sol at the player’s disposal, with pitch, gym, coach and physiotherapist coordinated from a single point of contact.',
 
-    'services.1.title': 'Villas and residences',
-    'services.1.text':
-      'Sourcing and booking of properties in Marbella, La Zagaleta, Sotogrande and the Costa del Sol. With household staff, chef and security if required.',
-    'services.2.title': 'Yachting',
-    'services.2.text':
-      'Crewed yachts and boats by the day or by the season. Berths in Puerto Banús, Sotogrande and Gibraltar, plus crossings to Ibiza or North Africa.',
-    'services.3.title': 'Private aviation',
-    'services.3.text':
-      'Private jets and helicopters out of Málaga, Gibraltar and Jerez. We handle ground services, crew and transfers on arrival.',
-    'services.4.title': 'Transfers and chauffeur',
-    'services.4.text':
-      'A chauffeured fleet on standby, close protection and high-end cars. Runway pick-ups and travel anywhere in Andalusia.',
-    'services.5.title': 'Dining and nightlife',
-    'services.5.text':
-      'Tables at restaurants with a waiting list, reserved areas in the clubs, and a private chef at home when you would rather not go out.',
-    'services.6.title': 'Private events',
-    'services.6.text':
-      'Birthdays, family celebrations and corporate gatherings. Full production: venue, catering, music, styling and access control.',
-    'services.7.title': 'Wellness and health',
-    'services.7.text':
-      'Personal trainer, physiotherapy, nutrition, private clinics and medical appointments without the wait. Pre-season included.',
-    'services.8.title': 'Everyday life',
-    'services.8.text':
-      'International schools, relocation, utilities, admin, insurance and household staff recruitment. We handle the boring parts too.',
+    'training.1.title': 'Football field rentals',
+    'training.1.text':
+      'Football 11 and football 7 by the hour at any of our five centres, with management and coordination included.',
+    'training.2.title': 'Elite training sessions',
+    'training.2.text':
+      'Private coaching with a specialist, one to one or in a small group, tailored to position and point in the season.',
+    'training.3.title': 'Gym and recovery',
+    'training.3.text':
+      'Day access to gym and spa, plus private physiotherapy sessions at the clinic or at home.',
+    'training.4.title': 'Photographer and video',
+    'training.4.text':
+      'On-site professional photographer for training sessions and personal-brand content.',
 
-    'showcase.eyebrow': 'Experiences',
-    'showcase.title': 'A few <em>recent</em> requests',
-    'showcase.lead': 'We never publish names. We do share the kind of request we solve every week.',
-    'showcase.1.label': 'Yachting',
-    'showcase.1.title': 'Eight days between Marbella and Ibiza, crew and chef on board',
-    'showcase.2.label': 'Residential',
-    'showcase.2.title': 'A villa in La Zagaleta ready in 72 hours',
-    'showcase.3.label': 'Celebration',
-    'showcase.3.title': 'Private dinner for 40 at a gated country estate',
+    'lifestyle.section': 'Lifestyle',
+    'lifestyle.title': 'And once training is over',
+    'lifestyle.lead':
+      'Accommodation, transport and daily logistics handled with the same discretion as a closed-doors session.',
 
-    'how.eyebrow': 'How it works',
-    'how.title': 'Three steps, that is all',
+    'lifestyle.1.title': 'Villas and accommodation',
+    'lifestyle.1.text':
+      'A selection of villas and residences in Marbella and the Costa del Sol, with household staff and security where needed.',
+    'lifestyle.2.title': 'Hotels and concierge',
+    'lifestyle.2.text':
+      'Hotel reservations and personalised concierge throughout the stay, with one point of contact.',
+    'lifestyle.3.title': 'Luxury car rentals',
+    'lifestyle.3.text':
+      'High-end cars with or without a driver, plus airport and runway transfers.',
+    'lifestyle.4.title': 'Yachts and private travel',
+    'lifestyle.4.text':
+      'Yachts, private jets and full travel coordination inside and outside Spain.',
+    'lifestyle.5.title': 'VIP experiences and events',
+    'lifestyle.5.text':
+      'Private events, celebrations and access to the most exclusive venues on the Costa del Sol.',
+    'lifestyle.6.title': 'Personal shopping',
+    'lifestyle.6.text':
+      'Personal shopping and luxury lifestyle management, so the stay generates no admin at all.',
+
+    'venues.section': 'Our venues',
+    'venues.title': 'Five centres on the Costa del Sol',
+    'venues.lead':
+      'Every centre offers football 11 and football 7, private coaching, gym and physiotherapy. Availability is very limited in high season.',
+    'venues.hours': 'Hours',
+    'venues.1.name': 'Marbella Football Center',
+    'venues.2.name': 'La Quinta Football Center',
+    'venues.3.name': 'Banús Football Center',
+    'venues.4.name': 'Atalaya Football Center',
+    'venues.5.name': 'Estepona Football Center',
+    'venues.f1': 'Football 11 and football 7',
+    'venues.f2': 'Elite private coaching session',
+    'venues.f3': 'Gym',
+    'venues.f4': 'Gym and spa',
+    'venues.f5': 'Physiotherapy at the clinic or at home',
+    'venues.note':
+      'Very limited availability between May and July, subject to confirmation. Rates are provided in writing with each proposal.',
+
+    'showcase.section': 'In pictures',
+    'showcase.title': 'What it <em>looks like</em>',
+    'showcase.1.label': 'Training',
+    'showcase.1.title': 'Individual 1 vs 1 sessions with a coach',
+    'showcase.2.label': 'Facilities',
+    'showcase.2.title': 'Gym and recovery room',
+    'showcase.3.label': 'Accommodation',
+    'showcase.3.title': 'Villas with pool and full service',
+
+    'how.section': 'How to book',
+    'how.title': 'Three steps',
     'how.lead':
-      'No endless forms, no email chains. You tell us what you need and from there it is on us.',
-    'how.1.title': 'First conversation',
+      'No catalogues, no email chains. Tell us what you need and when, and you get a closed proposal.',
+    'how.1.title': 'Send us the dates',
     'how.1.text':
-      'One call to understand how you travel, what you like and what you cannot stand. That profile is saved and never has to be repeated.',
-    'how.2.title': 'Tailored proposal',
+      'Dates of the stay, number of players and what is needed: pitch, gym, accommodation or all of it.',
+    'how.2.title': 'You get the proposal',
     'how.2.text':
-      'You get specific options at a fixed price, not a catalogue. If something does not fit, we adjust it the same day.',
-    'how.3.title': 'Delivery and follow-up',
+      'We send venues, times and fixed rates in writing. Management and coordination are always included.',
+    'how.3.title': 'Confirmation',
     'how.3.text':
-      'You have a direct contact available 24/7 throughout your stay. If something goes wrong, we fix it before you notice.',
+      'Bookings are confirmed by bank transfer 48 hours in advance. From then on you have a single contact for everything.',
 
-    'tiers.eyebrow': 'Membership',
-    'tiers.title': 'Three ways to work with us',
-    'tiers.lead':
-      'From a one-off request to permanent availability. Fees are agreed according to the level of service.',
-
-    'tiers.1.name': 'One-off',
-    'tiers.1.tagline': 'By request',
-    'tiers.1.f1': 'A single defined request, quoted and billed per project',
-    'tiers.1.f2': 'Access to our trusted supplier network',
-    'tiers.1.f3': 'Response within 24 hours',
-    'tiers.1.cta': 'Enquire',
-
-    'tiers.2.name': 'Season',
-    'tiers.2.tagline': 'Most requested',
-    'tiers.2.f1': 'Full cover for the length of your stay on the Costa del Sol',
-    'tiers.2.f2': 'Direct contact available 24/7',
-    'tiers.2.f3': 'Villa, transfers and diary coordinated from one place',
-    'tiers.2.f4': 'Priority on restaurant and yacht bookings',
-    'tiers.2.cta': 'Request',
-
-    'tiers.3.name': 'Annual',
-    'tiers.3.tagline': 'By invitation',
-    'tiers.3.f1': 'Permanent availability, whether or not you are in Marbella',
-    'tiers.3.f2': 'Management of your residence, staff and daily life',
-    'tiers.3.f3': 'Cover outside Spain through our network',
-    'tiers.3.f4': 'Confidentiality agreement and discretion protocol',
-    'tiers.3.cta': 'Request access',
-
-    'quote.text':
-      'I called on a Thursday night asking for something that did not exist. By Saturday it existed.',
-    'quote.author': 'Client · 2025 season',
-
-    'contact.eyebrow': 'Contact',
-    'contact.title': 'Let us start with a conversation',
+    'contact.section': 'Contact',
+    'contact.title': 'Tell us what you need',
     'contact.lead':
-      'Tell us what you need and when. We reply within 24 hours, always with a person at the other end.',
-    'contact.email': 'Email',
-    'contact.phone': 'Phone',
-    'contact.office': 'Office',
-    'contact.officeValue': 'Marbella, Málaga · Spain',
+      'Write to us with your dates and the kind of stay you have in mind. We will put together a tailored proposal, in complete confidence.',
+    'contact.email': 'E-mail',
+    'contact.phone': 'Telephone',
+    'contact.instagram': 'Instagram',
+    'contact.address': 'Address',
 
     'form.name': 'Name',
     'form.email': 'Email',
     'form.phone': 'Phone',
     'form.service': 'What you need',
-    'form.service.villa': 'Villa or residence',
-    'form.service.boat': 'Yachting',
-    'form.service.jet': 'Private aviation',
-    'form.service.event': 'Private event',
-    'form.service.season': 'Full season',
-    'form.service.other': 'Other',
+    'form.service.pitch': 'Football pitch',
+    'form.service.coach': 'Coaching session',
+    'form.service.gym': 'Gym and physiotherapy',
+    'form.service.stay': 'Villa or hotel',
+    'form.service.transport': 'Cars, yachts or jets',
+    'form.service.full': 'Full stay',
     'form.dates': 'Approximate dates',
+    'form.players': 'Number of people',
     'form.message': 'Details',
-    'form.messagePlaceholder': 'Number of guests, dates and any preferences.',
+    'form.messagePlaceholder': 'Dates, number of players and any preferences.',
     'form.consent': 'I have read and accept the <a href="../privacidad.html">privacy policy</a>.',
     'form.submit': 'Send request',
     'form.note': 'Your mail client has opened with the message ready to send.',
 
     'cross.label': 'Sister brand',
     'cross.title': 'SCM Sports Agency',
-    'cross.text': 'Representation for professional footballers',
+    'cross.text': 'A 360º agency for professional footballers',
 
     'footer.tagline':
-      'Private concierge in Marbella and the Costa del Sol. Villas, yachting, aviation and everyday life.',
+      'Concierge services exclusively for professional footballers and high-performance athletes. Marbella, Costa del Sol.',
     'footer.nav': 'Navigation',
     'footer.legalTitle': 'Legal',
     'footer.legal': 'Legal notice',

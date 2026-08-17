@@ -3,34 +3,34 @@ window.I18N_DICT = {
   es: {
     'nav.lang': 'Idioma',
 
-    'scm.eyebrow': 'Fútbol profesional',
+    'scm.eyebrow': 'Agencia 360º · Fútbol profesional',
     'scm.title': 'SCM Sports Agency',
     'scm.desc':
-      'Representación y gestión de carrera para futbolistas profesionales. Scouting con datos propios, negociación y una estrategia por jugador.',
+      'Asesoramiento integral a futbolistas profesionales: rendimiento, salud, imagen, contratos y patrimonio. Dentro y fuera del campo.',
     'scm.cta': 'Entrar en SCM',
 
-    'magno.eyebrow': 'Lifestyle · Costa del Sol',
+    'magno.eyebrow': 'Concierge deportivo · Costa del Sol',
     'magno.title': 'Magno Marbella',
     'magno.desc':
-      'Concierge privado en Marbella. Villas, náutica, aviación, mesa y agenda resueltas con una sola llamada y absoluta discreción.',
+      'Concierge en exclusiva para futbolistas profesionales. Campos, entrenamiento de élite, recuperación, villas y desplazamientos.',
     'magno.cta': 'Entrar en Magno',
 
     'group.eyebrow': 'El grupo',
-    'group.lead': 'Dos casas, <em>un mismo estándar</em>.',
+    'group.lead': 'Un mismo jugador, <em>dos casas</em>',
     'group.text':
-      'SCM Sports Agency y Magno Marbella comparten equipo, red y forma de trabajar. Una lleva la carrera deportiva; la otra, todo lo que ocurre fuera del campo. Para el cliente, un único interlocutor de confianza.',
+      'SCM Sports Agency y Magno Marbella trabajan para el mismo cliente: el futbolista profesional. Una le lleva la carrera —contratos, rendimiento, salud, imagen y finanzas—. La otra se ocupa de todo lo que ocurre cuando aterriza en la Costa del Sol.',
     'group.text2':
-      'Un futbolista que ficha por un club de la Costa del Sol aterriza con casa, colegio, coche y agenda resueltos antes del primer entrenamiento. Ese es el punto donde las dos marcas se encuentran.',
+      'Pretemporada, vacaciones, recuperación de una lesión o un training camp: el jugador entrena en centros de alto rendimiento, se aloja donde le conviene y no gestiona nada. Ese es el punto donde las dos marcas se encuentran.',
 
     'group.p1.title': 'Un solo interlocutor',
     'group.p1.text':
-      'Nada de repetir tu situación a cinco proveedores. Una persona conoce el expediente completo y coordina al resto.',
+      'Una persona conoce el expediente completo del jugador y coordina al resto del equipo. Nada de repetir la misma situación a cinco proveedores.',
     'group.p2.title': 'Discreción por defecto',
     'group.p2.text':
       'Trabajamos con perfiles públicos. La confidencialidad no es un extra que se contrata: es la condición de partida.',
-    'group.p3.title': 'Presencia local, alcance internacional',
+    'group.p3.title': 'Marbella y el mundo',
     'group.p3.text':
-      'Base en Marbella y relación directa con clubes, propietarios y operadores dentro y fuera de España.',
+      'Base en La Quinta Golf, con agentes y scouts en Europa, Asia, Emiratos Árabes Unidos y Estados Unidos.',
 
     'footer.rights': 'Todos los derechos reservados.',
     'footer.legal': 'Aviso legal',
@@ -41,34 +41,34 @@ window.I18N_DICT = {
   en: {
     'nav.lang': 'Language',
 
-    'scm.eyebrow': 'Professional football',
+    'scm.eyebrow': '360º agency · Professional football',
     'scm.title': 'SCM Sports Agency',
     'scm.desc':
-      'Representation and career management for professional footballers. In-house data scouting, negotiation and a strategy built per player.',
+      'Complete advice for professional footballers: performance, health, image, contracts and wealth. On and off the pitch.',
     'scm.cta': 'Enter SCM',
 
-    'magno.eyebrow': 'Lifestyle · Costa del Sol',
+    'magno.eyebrow': 'Sports concierge · Costa del Sol',
     'magno.title': 'Magno Marbella',
     'magno.desc':
-      'Private concierge in Marbella. Villas, yachting, aviation, dining and daily logistics handled with one call and absolute discretion.',
+      'Concierge exclusively for professional footballers. Pitches, elite training, recovery, villas and travel.',
     'magno.cta': 'Enter Magno',
 
     'group.eyebrow': 'The group',
-    'group.lead': 'Two houses, <em>one standard</em>.',
+    'group.lead': 'One player, <em>two houses</em>',
     'group.text':
-      'SCM Sports Agency and Magno Marbella share a team, a network and a way of working. One runs the sporting career; the other runs everything off the pitch. For the client, a single point of contact.',
+      'SCM Sports Agency and Magno Marbella work for the same client: the professional footballer. One runs the career — contracts, performance, health, image and finances. The other handles everything that happens once they land on the Costa del Sol.',
     'group.text2':
-      'A player signing for a club on the Costa del Sol lands with home, school, car and diary already sorted before the first training session. That is where the two brands meet.',
+      'Pre-season, holidays, recovery from an injury or a training camp: the player trains at high-performance centres, stays where it suits them and organises nothing. That is where the two brands meet.',
 
     'group.p1.title': 'One point of contact',
     'group.p1.text':
-      'No repeating your situation to five different suppliers. One person knows the whole file and coordinates everyone else.',
+      'One person knows the player’s whole file and coordinates everyone else. No repeating the same situation to five different suppliers.',
     'group.p2.title': 'Discretion by default',
     'group.p2.text':
       'We work with public figures. Confidentiality is not an add-on you pay for: it is the starting condition.',
-    'group.p3.title': 'Local presence, international reach',
+    'group.p3.title': 'Marbella and the world',
     'group.p3.text':
-      'Based in Marbella, with direct relationships with clubs, owners and operators in Spain and abroad.',
+      'Based at La Quinta Golf, with agents and scouts across Europe, Asia, the United Arab Emirates and the United States.',
 
     'footer.rights': 'All rights reserved.',
     'footer.legal': 'Legal notice',

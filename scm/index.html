@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SCM Sports Agency — Representación y gestión de carrera de futbolistas</title>
+    <title>SCM Sports Agency — Agencia 360º de futbolistas profesionales</title>
     <meta
       name="description"
-      content="Agencia de representación de futbolistas profesionales en Marbella. Negociación de contratos, gestión de carrera, scouting con datos propios, imagen y asesoría legal."
+      content="Agencia 360º de representación y gestión integral de futbolistas profesionales en Marbella. Rendimiento, apoyo psicológico, nutrición, marca personal, inversiones y proyección internacional."
     />
-    <meta name="theme-color" content="#07090a" />
+    <meta name="theme-color" content="#f0180c" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="SCM Sports Agency" />
     <meta
       property="og:description"
-      content="Representación y gestión de carrera para futbolistas profesionales. Scouting con datos propios."
+      content="Tú pones el talento. Nosotros, todo lo demás. Agencia 360º de futbolistas profesionales."
     />
     <meta property="og:image" content="../assets/img/og-scm.jpg" />
 
@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=Cormorant+Garamond:wght@300&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800&family=Cormorant+Garamond:wght@300&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/base.css" />
@@ -36,21 +36,16 @@
     <!-- ==================================================== cabecera ==== -->
     <header class="header" data-header>
       <a class="brand" href="../">
-        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.4" />
-          <path d="M16 1v30M1 16h30" stroke="currentColor" stroke-width="1.4" opacity=".3" />
-        </svg>
-        <span>
-          SCM
-          <small>Sports Agency</small>
-        </span>
+        <img src="../assets/img/logo-scm.png" alt="SCM Sports Agency" />
       </a>
 
       <nav class="nav" data-nav aria-label="Principal">
+        <a class="nav__link" href="#agencia" data-i18n="nav.about">Agencia</a>
         <a class="nav__link" href="#servicios" data-i18n="nav.services">Servicios</a>
-        <a class="nav__link" href="#metodo" data-i18n="nav.method">Método</a>
-        <a class="nav__link" href="#scouting" data-i18n="nav.scouting">Scouting</a>
-        <a class="nav__link" href="#jugadores" data-i18n="nav.players">Jugadores</a>
+        <a class="nav__link" href="#enfoque" data-i18n="nav.focus">Enfoque</a>
+        <a class="nav__link" href="#equipo" data-i18n="nav.team">Equipo</a>
+        <a class="nav__link" href="#proceso" data-i18n="nav.process">Proceso</a>
+        <a class="nav__link" href="#magno" data-i18n="nav.magno">Magno</a>
         <a class="nav__link" href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
 
@@ -81,397 +76,696 @@
       <!-- ==================================================== hero ==== -->
       <section class="hero">
         <div class="hero__bg" aria-hidden="true"></div>
-        <div class="hero__veil" aria-hidden="true"></div>
-        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__shards" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
 
-        <div class="container">
+        <div class="container hero__inner">
           <h1 class="hero__title display" data-i18n-html="hero.title">
-            Tu carrera <em>no se improvisa</em>
+            Tú pones el talento.<br />Nosotros, <em>todo lo demás</em>
           </h1>
           <p class="hero__lead" data-i18n="hero.lead">
-            Somos la agencia que gestiona la carrera de futbolistas profesionales de principio a
-            fin.
+            Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera
+            del campo.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contacto">
-              <span data-i18n="hero.cta1">Trabaja con nosotros</span>
+            <a class="btn btn--primary" href="#contacto" style="background: #0d0d0d">
+              <span data-i18n="hero.cta1">Hablemos</span>
               <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
-                <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.6" />
+                <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" />
               </svg>
             </a>
-            <a class="btn btn--ghost" href="#metodo" data-i18n="hero.cta2">Cómo trabajamos</a>
+            <a class="btn btn--ghost" href="#servicios" data-i18n="hero.cta2">Ver servicios</a>
           </div>
         </div>
 
-        <p class="hero__scroll" data-i18n="hero.scroll">Baja</p>
+        <p class="hero__claim" data-i18n="hero.claim">Inimitable</p>
       </section>
 
-      <!-- =================================================== cifras ====
-           Los cuatro valores de data-count son PROVISIONALES. Sustituir por
-           las cifras reales antes de publicar (ver README).               -->
-      <section class="stats">
+      <!-- ============================================== quiénes somos ==== -->
+      <section class="section" id="agencia">
         <div class="container">
-          <div class="stats__grid">
-            <div class="stat" data-reveal>
-              <p class="stat__value"><span data-count="24">24</span></p>
-              <p class="stat__label" data-i18n="stats.1">Jugadores representados</p>
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="about.section">Quiénes somos</p>
+          </div>
+
+          <div class="about__layout">
+            <div class="about__text">
+              <h2 class="section__title" data-i18n-html="about.title" data-reveal>
+                Cada jugador es <em>único</em>
+              </h2>
+              <p data-i18n-html="about.p1" data-reveal>
+                En SCM Sports asesoramos íntegramente a futbolistas profesionales.
+              </p>
+              <p data-i18n-html="about.p2" data-reveal>Creamos planes personalizados.</p>
+              <p data-i18n-html="about.p3" data-reveal>Invertimos desde el inicio.</p>
             </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.08s">
-              <p class="stat__value"><span data-count="60">60</span><span>+</span></p>
-              <p class="stat__label" data-i18n="stats.2">Operaciones cerradas</p>
+
+            <div class="values">
+              <div class="value" data-reveal style="--bar-delay: 0.1s">
+                <div class="value__head">
+                  <p class="value__name" data-i18n="about.v1">Soporte individual</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><div class="value__fill"></div></div>
+              </div>
+              <div class="value" data-reveal style="--bar-delay: 0.18s">
+                <div class="value__head">
+                  <p class="value__name" data-i18n="about.v2">Transparencia</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><div class="value__fill"></div></div>
+              </div>
+              <div class="value" data-reveal style="--bar-delay: 0.26s">
+                <div class="value__head">
+                  <p class="value__name" data-i18n="about.v3">Lealtad</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><div class="value__fill"></div></div>
+              </div>
+              <div class="value" data-reveal style="--bar-delay: 0.34s">
+                <div class="value__head">
+                  <p class="value__name" data-i18n="about.v4">Visión</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><div class="value__fill"></div></div>
+              </div>
+              <div class="value" data-reveal style="--bar-delay: 0.42s">
+                <div class="value__head">
+                  <p class="value__name" data-i18n="about.v5">Innovación</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><div class="value__fill"></div></div>
+              </div>
+              <div class="value" data-reveal style="--bar-delay: 0.5s">
+                <div class="value__head">
+                  <p class="value__name" data-i18n="about.v6">Sostenibilidad</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><div class="value__fill"></div></div>
+              </div>
             </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.16s">
-              <p class="stat__value"><span data-count="9">9</span></p>
-              <p class="stat__label" data-i18n="stats.3">Ligas donde operamos</p>
-            </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.24s">
-              <p class="stat__value"><span data-count="12">12</span></p>
-              <p class="stat__label" data-i18n="stats.4">Años de trayectoria</p>
-            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ manifiesto ==== -->
+      <section class="section section--tight statement">
+        <span class="statement__shard" aria-hidden="true"></span>
+        <div class="container">
+          <p data-i18n-html="statement.1" data-reveal>
+            Nuestra competencia <em>completa</em> tu talento
+          </p>
+        </div>
+      </section>
+
+      <!-- =================================================== visión ==== -->
+      <section class="section">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="vision.section">Visión y propósito</p>
+          </div>
+
+          <h2 class="section__title" data-i18n="vision.title" data-reveal>
+            El talento es solo el punto de partida
+          </h2>
+
+          <div class="about__layout" style="margin-top: 2rem">
+            <p class="section__lead" data-i18n="vision.p1" data-reveal>
+              Un jugador no se construye solo en el terreno de juego.
+            </p>
+            <p class="section__lead" data-i18n="vision.p2" data-reveal>
+              Nuestra misión es acompañar al jugador y a su entorno.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- ================================================ servicios ==== -->
-      <section class="section" id="servicios">
+      <section class="section" id="servicios" style="padding-top: 0">
         <div class="container">
-          <p class="eyebrow" data-i18n="services.eyebrow" data-reveal>Qué hacemos</p>
-          <h2 class="section__title" data-i18n="services.title" data-reveal>
-            Todo lo que rodea a un futbolista
-          </h2>
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="services.section">Nuestros servicios</p>
+          </div>
+
+          <h2 class="section__title" data-i18n="services.title" data-reveal>Una agencia 360º</h2>
           <p class="section__lead" data-i18n="services.lead" data-reveal>
-            Un jugador no solo necesita a alguien que negocie su contrato.
+            No nos limitamos a negociar contratos.
           </p>
 
           <div class="services__grid">
+            <!-- 01 asesoramiento integral -->
             <article class="service" data-reveal>
-              <span class="service__num">01</span>
-              <h3 class="service__title" data-i18n="services.1.title">Representación</h3>
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2" />
+                <path d="M16 3v26M3 16h26" stroke="currentColor" stroke-width="2" />
+              </svg>
+              <h3 class="service__title" data-i18n="services.1.title">Asesoramiento integral</h3>
               <p class="service__text" data-i18n="services.1.text">
-                Negociación de contratos, cesiones y traspasos.
+                Cada decisión fuera del campo impacta en la carrera del jugador.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.1.a">Rendimiento y estabilidad</li>
+                <li data-i18n="services.1.b">Pensamiento a largo plazo</li>
+                <li data-i18n="services.1.c">Un equipo de confianza</li>
+              </ul>
+            </article>
+
+            <!-- 02 análisis de rendimiento -->
+            <article class="service" data-reveal style="--reveal-delay: 0.06s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path
+                  d="M3 27h26M8 22V13M15 22V6M22 22v-6M29 22V9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+              <h3 class="service__title" data-i18n="services.2.title">Análisis de rendimiento</h3>
+              <p class="service__text" data-i18n="services.2.text">
+                La imagen que proyecta en competición es determinante.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.2.a">Estudio técnico y táctico</li>
+                <li data-i18n="services.2.b">Vídeo de partidos y entrenamientos</li>
+                <li data-i18n="services.2.c">Sesiones de vídeo presenciales</li>
+                <li data-i18n="services.2.d">Práctica presencial</li>
+              </ul>
+            </article>
+
+            <!-- 03 apoyo psicológico -->
+            <article class="service" data-reveal style="--reveal-delay: 0.12s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path
+                  d="M11 28V22C7 20 5 16.5 5 13a8 8 0 0116 0c0 2 3 3.5 3 5.5 0 1-1 1.5-2 1.5h-2v3a3 3 0 01-3 3h-3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3 class="service__title" data-i18n="services.3.title">Apoyo psicológico</h3>
+              <p class="service__text" data-i18n="services.3.text">
+                El estado mental es tan decisivo como la preparación física.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.3.a">Confianza y concentración</li>
+                <li data-i18n="services.3.b">Acompañamiento en competición</li>
+                <li data-i18n="services.3.c">Apoyo en lesiones</li>
+                <li data-i18n="services.3.d">Adaptación al equipo</li>
+              </ul>
+            </article>
+
+            <!-- 04 nutrición -->
+            <article class="service" data-reveal>
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M8 3v11a3 3 0 006 0V3M11 14v15" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M8 3v8M14 3v8M24 3c-2 3-3 6-3 9h6c0-3-1-6-3-9zM24 12v17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              <h3 class="service__title" data-i18n="services.4.title">Plan de nutrición</h3>
+              <p class="service__text" data-i18n="services.4.text">
+                La alimentación influye en el rendimiento y la recuperación.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.4.a">Adaptado a su posición</li>
+                <li data-i18n="services.4.b">Recuperación optimizada</li>
+                <li data-i18n="services.4.c">Control de cargas</li>
+                <li data-i18n="services.4.d">Hábitos prácticos</li>
+              </ul>
+            </article>
+
+            <!-- 05 desarrollo deportivo -->
+            <article class="service" data-reveal style="--reveal-delay: 0.06s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path
+                  d="M4 20l7-7 5 5 12-12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+                <path d="M28 6h-7m7 0v7" stroke="currentColor" stroke-width="2" />
+                <path d="M4 27h24" stroke="currentColor" stroke-width="2" />
+              </svg>
+              <h3 class="service__title" data-i18n="services.5.title">Desarrollo deportivo</h3>
+              <p class="service__text" data-i18n="services.5.text">
+                Un proyecto individualizado que evoluciona con el jugador.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.5.a">Ajustado al calendario</li>
+                <li data-i18n="services.5.b">Atento al historial de lesiones</li>
+                <li data-i18n="services.5.c">Prevención de lesiones</li>
+                <li data-i18n="services.5.d">Rendimiento en momentos clave</li>
+              </ul>
+            </article>
+
+            <!-- 06 marketing -->
+            <article class="service" data-reveal style="--reveal-delay: 0.12s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12v8h5l9 6V6l-9 6H4z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path d="M23 11a7 7 0 010 10" stroke="currentColor" stroke-width="2" />
+              </svg>
+              <h3 class="service__title" data-i18n="services.6.title">
+                Marketing y marca personal
+              </h3>
+              <p class="service__text" data-i18n="services.6.text">
+                Transformamos su imagen en una marca sólida.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.6.a">Estrategia a medida</li>
+                <li data-i18n="services.6.b">Marca auténtica y sostenible</li>
+                <li data-i18n="services.6.c">Redes sociales y contenido</li>
+                <li data-i18n="services.6.d">Patrocinios y avales</li>
+              </ul>
+            </article>
+
+            <!-- 07 inversiones -->
+            <article class="service" data-reveal>
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="3" y="8" width="26" height="18" stroke="currentColor" stroke-width="2" />
+                <path d="M3 14h26" stroke="currentColor" stroke-width="2" />
+                <path d="M10 6h12" stroke="currentColor" stroke-width="2" />
+                <circle cx="16" cy="20" r="3" stroke="currentColor" stroke-width="2" />
+              </svg>
+              <h3 class="service__title" data-i18n="services.7.title">Inversiones y patrimonio</h3>
+              <p class="service__text" data-i18n="services.7.text">
+                El éxito de hoy se traduce en seguridad mañana.
+              </p>
+              <ul class="service__list">
+                <li data-i18n="services.7.a">Educación financiera</li>
+                <li data-i18n="services.7.b">Compra de propiedades</li>
+                <li data-i18n="services.7.c">Inversiones inteligentes</li>
+                <li data-i18n="services.7.d">Acompañamiento económico</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ manifiesto ==== -->
+      <section class="section section--tight statement">
+        <span class="statement__shard" aria-hidden="true"></span>
+        <div class="container">
+          <p data-i18n-html="statement.2" data-reveal>
+            Muchos jugadores con talento ven frenado su crecimiento cuando aparecen
+            <em>retos que no saben cómo afrontar</em>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================== enfoque ==== -->
+      <section class="section focus" id="enfoque">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="focus.section">Así potenciamos el talento</p>
+          </div>
+
+          <h2 class="section__title" data-i18n="focus.title" data-reveal>Nuestro enfoque</h2>
+
+          <div class="focus__grid">
+            <article class="focus__item" data-reveal>
+              <h3 data-i18n="focus.1.title">Ser uno más en la agencia</h3>
+              <p data-i18n="focus.1.text">Cada jugador recibe la misma dedicación.</p>
+            </article>
+            <article class="focus__item" data-reveal style="--reveal-delay: 0.06s">
+              <h3 data-i18n="focus.2.title">Plan de desarrollo integral</h3>
+              <p data-i18n="focus.2.text">Una agencia 360º.</p>
+            </article>
+            <article class="focus__item" data-reveal style="--reveal-delay: 0.12s">
+              <h3 data-i18n="focus.3.title">Centrado en el fútbol</h3>
+              <p data-i18n="focus.3.text">Que el jugador se concentre en su juego.</p>
+            </article>
+            <article class="focus__item" data-reveal style="--reveal-delay: 0.18s">
+              <h3 data-i18n="focus.4.title">La importancia de los hábitos</h3>
+              <p data-i18n="focus.4.text">Rutinas clave desde el inicio.</p>
+            </article>
+            <article class="focus__item" data-reveal style="--reveal-delay: 0.24s">
+              <h3 data-i18n="focus.5.title">Estabilidad económica</h3>
+              <p data-i18n="focus.5.text">Un futuro más allá del fútbol.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================== equipo ==== -->
+      <section class="section team" id="equipo">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark" style="color: #fff">Inimitable</p>
+            <p class="tag__section" data-i18n="team.section">Player management</p>
+          </div>
+
+          <h2 class="section__title" data-i18n="team.title" data-reveal>
+            El equipo detrás del jugador
+          </h2>
+          <p class="section__lead" data-i18n="team.lead" data-reveal>
+            Agentes internos, scouts por todo el mundo y ex-futbolistas profesionales.
+          </p>
+
+          <div class="team__grid">
+            <article class="team__item" data-reveal>
+              <p class="team__value"><span data-count="10">10</span></p>
+              <p class="team__label" data-i18n="team.1.label">Agentes a tiempo completo</p>
+              <p class="team__text" data-i18n="team.1.text">Conectados por toda Europa y Asia.</p>
+            </article>
+
+            <article class="team__item" data-reveal style="--reveal-delay: 0.08s">
+              <p class="team__value"><span>+</span><span data-count="15">15</span></p>
+              <p class="team__label" data-i18n="team.2.label">Scouts en todo el mundo</p>
+              <p class="team__text" data-i18n="team.2.text">
+                Con experiencia en grandes clubes europeos.
               </p>
             </article>
 
-            <article class="service" data-reveal style="--reveal-delay: 0.06s">
-              <span class="service__num">02</span>
-              <h3 class="service__title" data-i18n="services.2.title">Gestión de carrera</h3>
-              <p class="service__text" data-i18n="services.2.text">Plan a tres y cinco años.</p>
+            <article class="team__item" data-reveal style="--reveal-delay: 0.16s">
+              <p class="team__value"><span>+</span><span data-count="15">15</span></p>
+              <p class="team__label" data-i18n="team.3.label">Años de experiencia</p>
+              <p class="team__text" data-i18n="team.3.text">
+                En la gestión integral de jugadores profesionales.
+              </p>
             </article>
 
-            <article class="service" data-reveal style="--reveal-delay: 0.12s">
-              <span class="service__num">03</span>
-              <h3 class="service__title" data-i18n="services.3.title">Scouting y datos</h3>
-              <p class="service__text" data-i18n="services.3.text">Motor propio de análisis.</p>
-            </article>
-
-            <article class="service" data-reveal>
-              <span class="service__num">04</span>
-              <h3 class="service__title" data-i18n="services.4.title">Marca e imagen</h3>
-              <p class="service__text" data-i18n="services.4.text">Acuerdos de patrocinio.</p>
-            </article>
-
-            <article class="service" data-reveal style="--reveal-delay: 0.06s">
-              <span class="service__num">05</span>
-              <h3 class="service__title" data-i18n="services.5.title">Legal y fiscal</h3>
-              <p class="service__text" data-i18n="services.5.text">Revisión de contratos.</p>
-            </article>
-
-            <article class="service" data-reveal style="--reveal-delay: 0.12s">
-              <span class="service__num">06</span>
-              <h3 class="service__title" data-i18n="services.6.title">Transición post-carrera</h3>
-              <p class="service__text" data-i18n="services.6.text">Formación e inversión.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- =================================================== método ==== -->
-      <section class="section method" id="metodo">
-        <div class="container">
-          <p class="eyebrow" data-i18n="method.eyebrow" data-reveal>El método</p>
-          <h2 class="section__title" data-i18n="method.title" data-reveal>
-            Cuatro pasos, ninguna sorpresa
-          </h2>
-          <p class="section__lead" data-i18n="method.lead" data-reveal>
-            Trabajamos igual con un juvenil que con un internacional.
-          </p>
-
-          <div class="method__steps">
-            <article class="step" data-reveal>
-              <h3 data-i18n="method.1.title">Diagnóstico</h3>
-              <p data-i18n="method.1.text">Analizamos rendimiento, contrato y mercado.</p>
-            </article>
-            <article class="step" data-reveal style="--reveal-delay: 0.08s">
-              <h3 data-i18n="method.2.title">Estrategia</h3>
-              <p data-i18n="method.2.text">Definimos destino, ventana y condiciones.</p>
-            </article>
-            <article class="step" data-reveal style="--reveal-delay: 0.16s">
-              <h3 data-i18n="method.3.title">Ejecución</h3>
-              <p data-i18n="method.3.text">Abrimos mercado y negociamos.</p>
-            </article>
-            <article class="step" data-reveal style="--reveal-delay: 0.24s">
-              <h3 data-i18n="method.4.title">Seguimiento</h3>
-              <p data-i18n="method.4.text">La relación no acaba en la firma.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================================================= scouting ==== -->
-      <section class="section data" id="scouting">
-        <div class="container data__layout">
-          <div>
-            <p class="eyebrow" data-i18n="data.eyebrow" data-reveal>Scouting con datos</p>
-            <h2 class="section__title" data-i18n="data.title" data-reveal>
-              Nosotros vemos el techo antes
-            </h2>
-            <p class="section__lead" data-i18n="data.lead" data-reveal>
-              Hemos construido nuestro propio motor de análisis.
-            </p>
-
-            <ul class="data__list">
-              <li data-reveal>
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <article class="team__item" data-reveal style="--reveal-delay: 0.24s">
+              <p class="team__value">
+                <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" style="width: 42px; height: 42px">
+                  <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2.4" />
                   <path
-                    d="M3 20h18M6 16V9M11 16V5M16 16v-4M21 16V8"
+                    d="M16 3l4.5 5.5L16 13l-4.5-4.5L16 3zM5 14l6 2 1 6-5 3-2-11zM27 14l-6 2-1 6 5 3 2-11z"
                     stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <span data-i18n-html="data.1">Comparabilidad entre ligas.</span>
-              </li>
-              <li data-reveal style="--reveal-delay: 0.06s">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path
-                    d="M3 17l6-6 4 4 8-8M21 7h-5m5 0v5"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
+                    stroke-width="2.4"
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span data-i18n-html="data.2">Detección de techo.</span>
-              </li>
-              <li data-reveal style="--reveal-delay: 0.12s">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <rect
-                    x="3"
-                    y="5"
-                    width="18"
-                    height="16"
-                    rx="2"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  />
-                  <path
-                    d="M3 10h18M8 3v4M16 3v4"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <span data-i18n-html="data.3">Ventanas de contrato.</span>
-              </li>
-              <li data-reveal style="--reveal-delay: 0.18s">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
-                </svg>
-                <span data-i18n-html="data.4">Proyección por categoría.</span>
-              </li>
-            </ul>
+              </p>
+              <p class="team__label" data-i18n="team.4.label">Ex-jugadores profesionales</p>
+              <p class="team__text" data-i18n="team.4.text">
+                Con experiencia en las principales ligas europeas.
+              </p>
+            </article>
+          </div>
 
-            <p style="margin-top: 2rem" data-reveal>
-              <a class="btn btn--ghost" href="#contacto" data-i18n="data.cta">
-                Hablar con el área de scouting
-              </a>
+          <div class="clubs" data-reveal>
+            <h3 data-i18n="clubs.title">Red de clubes</h3>
+            <ul class="clubs__list">
+              <li>Real Madrid</li>
+              <li>FC Barcelona</li>
+              <li>Atlético de Madrid</li>
+              <li>Real Sociedad</li>
+              <li>Real Betis</li>
+              <li>Sevilla FC</li>
+              <li>FC Bayern München</li>
+              <li>Borussia Dortmund</li>
+              <li>Liverpool</li>
+              <li>Arsenal</li>
+              <li>Manchester City</li>
+              <li>Manchester United</li>
+              <li>Napoli</li>
+              <li>Milan</li>
+              <li>Juventus</li>
+              <li>Sporting CP</li>
+              <li>Benfica</li>
+              <li>FC Porto</li>
+              <li>Ajax</li>
+              <li>PSV</li>
+            </ul>
+            <p class="clubs__note" data-i18n="clubs.note">
+              Mantenemos además relaciones sólidas con clubes de menor perfil.
             </p>
           </div>
-
-          <div class="terminal" data-reveal style="--reveal-delay: 0.1s">
-            <div class="terminal__bar" aria-hidden="true">
-              <span class="terminal__dot"></span>
-              <span class="terminal__dot"></span>
-              <span class="terminal__dot"></span>
-              <span class="terminal__title" data-i18n="terminal.title">motor de scouting</span>
-            </div>
-            <div class="terminal__body">
-              <pre><code><span class="t-prompt">$</span> scm scout --demarcacion MC --edad -23
-
-<span class="t-dim"># normalizando 6 ligas · 4.812 jugadores</span>
-
-<span class="t-hl">RANKING · MEDIOCENTRO SUB-23</span>
-  1  <span class="t-hl">████████████████</span>  94  <span class="t-dim">1a RFEF</span>
-  2  <span class="t-hl">██████████████</span>    88  <span class="t-dim">Liga PT</span>
-  3  <span class="t-hl">█████████████</span>     85  <span class="t-dim">2a RFEF</span>
-
-<span class="t-prompt">$</span> scm techo --umbral alto
-
-<span class="t-hl">INFRAVALORADOS</span>
-  ↑ 3 perfiles · <span class="t-dim">contrato &lt; 18 meses</span></code></pre>
-            </div>
-          </div>
         </div>
       </section>
 
-      <!-- ================================================ jugadores ====
-           Sustituir nombres, posiciones y fotos por la cartera real.     -->
-      <section class="section" id="jugadores">
+      <!-- ============================================ internacional ==== -->
+      <section class="section">
         <div class="container">
-          <p class="eyebrow" data-i18n="roster.eyebrow" data-reveal>Jugadores</p>
-          <h2 class="section__title" data-i18n="roster.title" data-reveal>A quién representamos</h2>
-          <p class="section__lead" data-i18n="roster.lead" data-reveal>
-            Una cartera corta y trabajada.
-          </p>
-
-          <div class="roster__grid">
-            <article class="player" data-reveal>
-              <div class="photo" style="--photo: var(--photo-p1)"></div>
-              <div class="player__body">
-                <h3 class="player__name">Nombre Apellido</h3>
-                <p class="player__meta" data-i18n="roster.p1.pos">Centrocampista</p>
-              </div>
-            </article>
-
-            <article class="player" data-reveal style="--reveal-delay: 0.08s">
-              <div class="photo" style="--photo: var(--photo-p2)"></div>
-              <div class="player__body">
-                <h3 class="player__name">Nombre Apellido</h3>
-                <p class="player__meta" data-i18n="roster.p2.pos">Extremo</p>
-              </div>
-            </article>
-
-            <article class="player" data-reveal style="--reveal-delay: 0.16s">
-              <div class="photo" style="--photo: var(--photo-p3)"></div>
-              <div class="player__body">
-                <h3 class="player__name">Nombre Apellido</h3>
-                <p class="player__meta" data-i18n="roster.p3.pos">Central</p>
-              </div>
-            </article>
-
-            <article class="player" data-reveal style="--reveal-delay: 0.24s">
-              <div class="photo" style="--photo: var(--photo-p4)"></div>
-              <div class="player__body">
-                <h3 class="player__name">Nombre Apellido</h3>
-                <p class="player__meta" data-i18n="roster.p4.pos">Portero</p>
-              </div>
-            </article>
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="intl.section">Enfoque internacional</p>
           </div>
 
-          <p class="roster__note" data-i18n="roster.note" data-reveal>
-            Cartera completa disponible bajo petición.
+          <div class="intl__layout">
+            <div>
+              <h2 class="section__title" data-i18n-html="intl.title" data-reveal>
+                Donde su talento tenga <em>más oportunidades</em>
+              </h2>
+              <p class="section__lead" data-i18n="intl.lead" data-reveal>
+                Trabajamos con una visión global.
+              </p>
+            </div>
+
+            <div class="markets">
+              <div data-reveal>
+                <h3 data-i18n="intl.consolidated">Ligas consolidadas</h3>
+                <ul>
+                  <li>España</li>
+                  <li>Italia</li>
+                  <li>Francia</li>
+                  <li>Bélgica</li>
+                  <li>Inglaterra</li>
+                  <li>Alemania</li>
+                </ul>
+              </div>
+              <div class="markets--emerging" data-reveal style="--reveal-delay: 0.1s">
+                <h3 data-i18n="intl.emerging">Nuevos mercados</h3>
+                <ul>
+                  <li>Portugal</li>
+                  <li>Polonia</li>
+                  <li>Países Bajos</li>
+                  <li>Emiratos Árabes Unidos</li>
+                  <li>Estados Unidos</li>
+                  <li>Asia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== proceso ==== -->
+      <section class="section focus" id="proceso">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="process.section">Cómo trabajamos</p>
+          </div>
+
+          <h2 class="section__title" data-i18n="process.title" data-reveal>Nuestro proceso</h2>
+          <p class="section__lead" data-i18n="process.lead" data-reveal>
+            El mismo camino para un juvenil que para un internacional.
+          </p>
+
+          <div class="process__steps">
+            <article class="process__step" data-reveal>
+              <h3 data-i18n="process.1.title">Primer contacto</h3>
+              <p data-i18n="process.1.text">Escuchamos su situación y sus objetivos.</p>
+            </article>
+            <article class="process__step" data-reveal style="--reveal-delay: 0.05s">
+              <h3 data-i18n="process.2.title">Diagnóstico 360º</h3>
+              <p data-i18n="process.2.text">Rendimiento, salud, contrato, imagen y finanzas.</p>
+            </article>
+            <article class="process__step" data-reveal style="--reveal-delay: 0.1s">
+              <h3 data-i18n="process.3.title">Plan personalizado</h3>
+              <p data-i18n="process.3.text">Objetivos y responsables por área.</p>
+            </article>
+            <article class="process__step" data-reveal style="--reveal-delay: 0.15s">
+              <h3 data-i18n="process.4.title">Implementación</h3>
+              <p data-i18n="process.4.text">El plan en marcha con el equipo especialista.</p>
+            </article>
+            <article class="process__step" data-reveal style="--reveal-delay: 0.2s">
+              <h3 data-i18n="process.5.title">Acompañamiento continuo</h3>
+              <p data-i18n="process.5.text">Revisión durante toda la temporada.</p>
+            </article>
+            <article class="process__step" data-reveal style="--reveal-delay: 0.25s">
+              <h3 data-i18n="process.6.title">Proyección internacional</h3>
+              <p data-i18n="process.6.text">Mercado dentro y fuera de España.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ manifiesto ==== -->
+      <section class="section section--tight statement">
+        <span class="statement__shard" aria-hidden="true"></span>
+        <div class="container">
+          <p data-i18n-html="statement.4" data-reveal>
+            El rendimiento del jugador da fuerza al agente, y el trabajo del agente convierte esa
+            fuerza en <em>oportunidades reales</em>
           </p>
         </div>
       </section>
 
-      <!-- ===================================================== cita ==== -->
-      <section class="section section--tight quote">
-        <div class="container container--narrow">
-          <figure data-reveal>
-            <blockquote data-i18n="quote.text">
-              Un buen agente no es el que te promete el club más grande.
-            </blockquote>
-            <figcaption data-i18n="quote.author">SCM Sports Agency</figcaption>
-          </figure>
+      <!-- =============================================== SCM x MAGNO ==== -->
+      <section class="section partner" id="magno">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="partner.section">SCM Sports × Magno</p>
+          </div>
+
+          <div class="partner__head" data-reveal>
+            <img class="partner__logo" src="../assets/img/logo-scm.png" alt="SCM Sports Agency" />
+            <span class="partner__x" aria-hidden="true">×</span>
+            <img
+              class="partner__logo"
+              src="../assets/img/logo-magno.png"
+              alt="Magno Marbella"
+              style="filter: invert(1)"
+            />
+          </div>
+
+          <h2 class="section__title" data-i18n="partner.title" data-reveal>
+            Nuestro socio estratégico
+          </h2>
+          <p class="section__lead" data-i18n="partner.lead" data-reveal>
+            El rendimiento también depende de lo que ocurre fuera del campo.
+          </p>
+
+          <div class="partner__grid">
+            <article class="partner__item" data-reveal>
+              <h3 data-i18n="partner.1.title">Estancias y desplazamientos</h3>
+              <p data-i18n="partner.1.text">Adaptados a la agenda deportiva.</p>
+            </article>
+            <article class="partner__item" data-reveal style="--reveal-delay: 0.06s">
+              <h3 data-i18n="partner.2.title">Villas, hoteles y vehículos</h3>
+              <p data-i18n="partner.2.text">Ajustados a cada necesidad.</p>
+            </article>
+            <article class="partner__item" data-reveal style="--reveal-delay: 0.12s">
+              <h3 data-i18n="partner.3.title">Experiencias VIP</h3>
+              <p data-i18n="partner.3.text">Centros de alto rendimiento y eventos exclusivos.</p>
+            </article>
+            <article class="partner__item" data-reveal style="--reveal-delay: 0.18s">
+              <h3 data-i18n="partner.4.title">Training camps</h3>
+              <p data-i18n="partner.4.text">Convivencia y preparación de primer nivel.</p>
+            </article>
+            <article class="partner__item" data-reveal style="--reveal-delay: 0.24s">
+              <h3 data-i18n="partner.5.title">Inversión inmobiliaria</h3>
+              <p data-i18n="partner.5.text">Oportunidades en el mercado de lujo.</p>
+            </article>
+          </div>
+
+          <p style="margin-top: 2.5rem" data-reveal>
+            <a class="btn btn--ghost" href="../magno/" data-i18n="partner.cta">
+              Conocer Magno Marbella
+            </a>
+          </p>
         </div>
       </section>
 
       <!-- ================================================= contacto ==== -->
       <section class="section" id="contacto">
-        <div class="container contact__layout">
-          <div>
-            <p class="eyebrow" data-i18n="contact.eyebrow" data-reveal>Contacto</p>
-            <h2 class="section__title" data-i18n="contact.title" data-reveal>
-              Cuéntanos tu situación
-            </h2>
-            <p class="section__lead" data-i18n="contact.lead" data-reveal>
-              Tanto si eres jugador, familia o club, escríbenos.
-            </p>
-
-            <div class="contact__channels">
-              <div class="contact__channel" data-reveal>
-                <span data-i18n="contact.email">Email</span>
-                <a href="mailto:s.carrillo@scmsportsagency.com">s.carrillo@scmsportsagency.com</a>
-              </div>
-              <div class="contact__channel" data-reveal>
-                <span data-i18n="contact.phone">Teléfono</span>
-                <!-- Sustituir por el teléfono real de la agencia. -->
-                <a href="tel:+34000000000">+34 000 000 000</a>
-              </div>
-              <div class="contact__channel" data-reveal>
-                <span data-i18n="contact.office">Oficina</span>
-                <p data-i18n="contact.officeValue">Marbella, Málaga · España</p>
-              </div>
-            </div>
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="contact.section">Contacto</p>
           </div>
 
-          <form
-            class="form"
-            data-reveal
-            data-mailto-form="s.carrillo@scmsportsagency.com"
-            data-mailto-subject="SCM Sports Agency — contacto web"
-          >
-            <div class="form__row">
-              <div class="field">
-                <label for="scm-name" data-i18n="form.name">Nombre y apellidos</label>
-                <input id="scm-name" name="nombre" type="text" required autocomplete="name" />
-              </div>
-              <div class="field">
-                <label for="scm-email" data-i18n="form.email">Email</label>
-                <input id="scm-email" name="email" type="email" required autocomplete="email" />
-              </div>
-            </div>
-
-            <div class="form__row">
-              <div class="field">
-                <label for="scm-phone" data-i18n="form.phone">Teléfono</label>
-                <input id="scm-phone" name="telefono" type="tel" autocomplete="tel" />
-              </div>
-              <div class="field">
-                <label for="scm-profile" data-i18n="form.profile">Quién eres</label>
-                <select id="scm-profile" name="perfil" required>
-                  <option value="jugador" data-i18n="form.profile.player">Jugador</option>
-                  <option value="familia" data-i18n="form.profile.family">Familia / tutor</option>
-                  <option value="club" data-i18n="form.profile.club">
-                    Club o director deportivo
-                  </option>
-                  <option value="otro" data-i18n="form.profile.other">Otro</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="scm-message" data-i18n="form.message">Cuéntanos</label>
-              <textarea
-                id="scm-message"
-                name="mensaje"
-                required
-                data-i18n-attr="placeholder:form.messagePlaceholder"
-                placeholder="Situación actual, club, categoría y qué necesitas."
-              ></textarea>
-            </div>
-
-            <label class="form__consent">
-              <input type="checkbox" name="consentimiento" required />
-              <span data-i18n-html="form.consent">
-                He leído y acepto la <a href="../privacidad.html">política de privacidad</a>.
-              </span>
-            </label>
-
+          <div class="contact__layout">
             <div>
-              <button class="btn btn--primary" type="submit">
-                <span data-i18n="form.submit">Enviar mensaje</span>
-                <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
-                  <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.6" />
-                </svg>
-              </button>
+              <h2 class="section__title" data-i18n="contact.title" data-reveal>Kick off</h2>
+              <p class="section__lead" data-i18n="contact.lead" data-reveal>
+                Tanto si eres jugador, familia o club, escríbenos.
+              </p>
+
+              <div class="contact__channels">
+                <div class="contact__channel" data-reveal>
+                  <span data-i18n="contact.phone">Teléfono</span>
+                  <a href="tel:+34654746172">+34 654 746 172</a>
+                </div>
+                <div class="contact__channel" data-reveal>
+                  <span data-i18n="contact.email">Email</span>
+                  <a href="mailto:info@scmsportsagency.com">info@scmsportsagency.com</a>
+                </div>
+                <div class="contact__channel" data-reveal>
+                  <span data-i18n="contact.instagram">Instagram</span>
+                  <a href="https://www.instagram.com/scmsportsagency/" rel="noopener">
+                    @scmsportsagency
+                  </a>
+                </div>
+                <div class="contact__channel" data-reveal>
+                  <span data-i18n="contact.address">Dirección</span>
+                  <p>La Quinta Golf, Av. Tomás Pascual 6<br />Marbella, Málaga</p>
+                </div>
+              </div>
             </div>
 
-            <p class="form__note" data-form-note hidden data-i18n="form.note">
-              Se ha abierto tu gestor de correo con el mensaje listo para enviar.
-            </p>
-          </form>
+            <form
+              class="form"
+              data-reveal
+              data-mailto-form="info@scmsportsagency.com"
+              data-mailto-subject="SCM Sports Agency — contacto web"
+            >
+              <div class="form__row">
+                <div class="field">
+                  <label for="scm-name" data-i18n="form.name">Nombre y apellidos</label>
+                  <input id="scm-name" name="nombre" type="text" required autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="scm-email" data-i18n="form.email">Email</label>
+                  <input id="scm-email" name="email" type="email" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="scm-phone" data-i18n="form.phone">Teléfono</label>
+                  <input id="scm-phone" name="telefono" type="tel" autocomplete="tel" />
+                </div>
+                <div class="field">
+                  <label for="scm-profile" data-i18n="form.profile">Quién eres</label>
+                  <select id="scm-profile" name="perfil" required>
+                    <option value="jugador" data-i18n="form.profile.player">Jugador</option>
+                    <option value="familia" data-i18n="form.profile.family">Familia o tutor</option>
+                    <option value="club" data-i18n="form.profile.club">
+                      Club o director deportivo
+                    </option>
+                    <option value="otro" data-i18n="form.profile.other">Otro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="scm-message" data-i18n="form.message">Cuéntanos</label>
+                <textarea
+                  id="scm-message"
+                  name="mensaje"
+                  required
+                  data-i18n-attr="placeholder:form.messagePlaceholder"
+                  placeholder="Situación actual, club, categoría y qué necesitas."
+                ></textarea>
+              </div>
+
+              <label class="form__consent">
+                <input type="checkbox" name="consentimiento" required />
+                <span data-i18n-html="form.consent">
+                  He leído y acepto la <a href="../privacidad.html">política de privacidad</a>.
+                </span>
+              </label>
+
+              <div>
+                <button class="btn btn--primary" type="submit">
+                  <span data-i18n="form.submit">Enviar mensaje</span>
+                  <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
+                    <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" />
+                  </svg>
+                </button>
+              </div>
+
+              <p class="form__note" data-form-note hidden data-i18n="form.note">
+                Se ha abierto tu gestor de correo con el mensaje listo para enviar.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -484,7 +778,7 @@
           <span class="crosslink__title" data-i18n="cross.title">Magno Marbella</span>
         </span>
         <span class="crosslink__arrow">
-          <span data-i18n="cross.text">Concierge privado en la Costa del Sol</span>
+          <span data-i18n="cross.text">Concierge para futbolistas profesionales</span>
           <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
             <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
           </svg>
@@ -497,24 +791,18 @@
       <div class="container">
         <div class="footer__top">
           <div>
-            <a class="brand" href="../" style="margin-bottom: 1rem">
-              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.4" />
-                <path d="M16 1v30M1 16h30" stroke="currentColor" stroke-width="1.4" opacity=".3" />
-              </svg>
-              <span>SCM <small>Sports Agency</small></span>
-            </a>
-            <p data-i18n="footer.tagline" style="max-width: 40ch">
-              Agencia de representación y gestión de carrera para futbolistas profesionales.
+            <img class="footer__logo" src="../assets/img/logo-scm.png" alt="SCM Sports Agency" />
+            <p data-i18n="footer.tagline" style="max-width: 42ch">
+              Agencia 360º de representación y gestión integral de futbolistas profesionales.
             </p>
           </div>
 
           <div>
             <h4 data-i18n="footer.nav">Navegación</h4>
             <ul>
+              <li><a href="#agencia" data-i18n="nav.about">Agencia</a></li>
               <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-              <li><a href="#metodo" data-i18n="nav.method">Método</a></li>
-              <li><a href="#scouting" data-i18n="nav.scouting">Scouting</a></li>
+              <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
               <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
               <li><a href="../" data-i18n="footer.group">Volver al grupo</a></li>
             </ul>
@@ -535,7 +823,7 @@
             &copy; <span data-year>2026</span> SCM Sports Agency.
             <span data-i18n="footer.rights">Todos los derechos reservados.</span>
           </p>
-          <p>Marbella · España</p>
+          <p>La Quinta Golf, Marbella · España</p>
         </div>
       </div>
     </footer>

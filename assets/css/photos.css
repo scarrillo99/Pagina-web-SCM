@@ -1,19 +1,18 @@
 /* ==========================================================================
    FOTOGRAFÍA — punto único donde se enchufan las imágenes reales.
 
-   Todo el sitio funciona sin una sola foto: donde debería ir una imagen se
-   pinta un bloque de color de la paleta. Para poner las fotos definitivas
-   basta con descomentar la línea que toque y apuntar al fichero. No hay que
-   tocar el HTML.
+   Toda la web funciona sin una sola foto: donde debería ir una imagen se
+   pinta un bloque de color de la paleta de la marca. Para poner las fotos
+   definitivas basta con descomentar la línea que toque y apuntar al fichero.
+   No hay que tocar el HTML.
 
    Las rutas son relativas a ESTE archivo (assets/css/), por eso empiezan
    por ../img/.
 
-   Tamaños recomendados (JPG o WebP, calidad 80):
-     hero            1920 × 1080   horizontal, con espacio libre para el texto
-     paneles portada 1400 × 1800   verticales, funcionan mejor a pantalla partida
-     jugadores        800 × 1067   vertical 3:4, jugador recortado a media figura
-     experiencias    1200 ×  900   horizontales
+   Tamaños recomendados (WebP o JPG al 80 %):
+     heroes           1920 × 1080   horizontal, con zona tranquila para el texto
+     paneles portada  1400 × 1800   verticales, van a pantalla partida
+     en imágenes      1200 ×  900   horizontales
    ========================================================================== */
 
 :root {
@@ -21,20 +20,18 @@
   /* --photo-scm: url('../img/hub-scm.jpg'); */
   /* --photo-magno: url('../img/hub-magno.jpg'); */
 
-  /* --- Jugadores de SCM ------------------------------------------------- */
-  /* --photo-p1: url('../img/jugador-1.jpg'); */
-  /* --photo-p2: url('../img/jugador-2.jpg'); */
-  /* --photo-p3: url('../img/jugador-3.jpg'); */
-  /* --photo-p4: url('../img/jugador-4.jpg'); */
-
-  /* --- Experiencias de Magno -------------------------------------------- */
-  /* --photo-exp1: url('../img/experiencia-nautica.jpg'); */
-  /* --photo-exp2: url('../img/experiencia-villa.jpg'); */
-  /* --photo-exp3: url('../img/experiencia-evento.jpg'); */
+  /* --- Sección "En imágenes" de Magno ----------------------------------- */
+  /* --photo-exp1: url('../img/magno-entrenamiento.jpg'); */
+  /* --photo-exp2: url('../img/magno-gimnasio.jpg'); */
+  /* --photo-exp3: url('../img/magno-villa.jpg'); */
 }
 
-/* El hero de cada marca se declara por página porque la imagen es distinta:
-   descomenta el bloque de la página que estés vistiendo. */
+/* El hero de cada marca lleva su propia imagen: descomenta la línea de la
+   página que estés vistiendo.
+
+   SCM funciona sin foto —el hero es rojo con las cuñas naranjas, tal cual el
+   dossier— así que la imagen ahí es opcional. Magno sí la necesita: su hero
+   es fotografía a pantalla completa con un velo oscuro encima. */
 
 /* body.page-scm { --photo-hero: url('../img/hero-scm.jpg'); } */
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

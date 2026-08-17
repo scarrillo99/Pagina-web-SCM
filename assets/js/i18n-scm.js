@@ -1,113 +1,209 @@
-/* Diccionario de SCM Sports Agency. */
+/* Diccionario de SCM Sports Agency.
+   Los textos provienen del dossier de la agencia; la traducción al inglés es
+   una adaptación, no una traducción literal. */
 window.I18N_DICT = {
   es: {
     'nav.lang': 'Idioma',
     'nav.menu': 'Menú',
+    'nav.about': 'Agencia',
     'nav.services': 'Servicios',
-    'nav.method': 'Método',
-    'nav.scouting': 'Scouting',
-    'nav.players': 'Jugadores',
+    'nav.focus': 'Enfoque',
+    'nav.team': 'Equipo',
+    'nav.process': 'Proceso',
+    'nav.magno': 'Magno',
     'nav.contact': 'Contacto',
 
-    'hero.title': 'Tu carrera <em>no se improvisa</em>',
+    'hero.title': 'Tú pones el talento.<br>Nosotros, <em>todo lo demás</em>',
     'hero.lead':
-      'Somos la agencia que gestiona la carrera de futbolistas profesionales de principio a fin: fichajes, contratos, imagen y el día después. Con datos delante, no con corazonadas.',
-    'hero.cta1': 'Trabaja con nosotros',
-    'hero.cta2': 'Cómo trabajamos',
-    'hero.scroll': 'Baja',
+      'Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera del campo. Rendimiento, salud, imagen y patrimonio, en un solo equipo.',
+    'hero.cta1': 'Hablemos',
+    'hero.cta2': 'Ver servicios',
+    'hero.claim': 'Inimitable',
 
-    'stats.1': 'Jugadores representados',
-    'stats.2': 'Operaciones cerradas',
-    'stats.3': 'Ligas donde operamos',
-    'stats.4': 'Años de trayectoria',
+    'about.section': 'Quiénes somos',
+    'about.title': 'Cada jugador es <em>único</em>',
+    'about.p1':
+      'En SCM Sports asesoramos íntegramente a <strong>futbolistas profesionales</strong>, acompañándolos dentro y fuera del campo.',
+    'about.p2':
+      'Creamos <strong>planes personalizados</strong> porque cada jugador es único y merece la misma dedicación, esté en la cima o camino a ella.',
+    'about.p3':
+      '<strong>Invertimos desde el inicio</strong> para construir carreras sólidas, con un equipo experto en potenciar cada área de su éxito.',
+    'about.v1': 'Soporte individual',
+    'about.v2': 'Transparencia',
+    'about.v3': 'Lealtad',
+    'about.v4': 'Visión',
+    'about.v5': 'Innovación',
+    'about.v6': 'Sostenibilidad',
 
-    'services.eyebrow': 'Qué hacemos',
-    'services.title': 'Todo lo que rodea a un futbolista',
+    'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
+
+    'vision.section': 'Visión y propósito',
+    'vision.title': 'El talento es solo el punto de partida',
+    'vision.p1':
+      'En SCM Sports Agency creemos que un jugador no se construye solo en el terreno de juego. El talento es el punto de partida, pero hay un espacio importante que cubrir, y que tiene en el entorno a su principal protagonista: el que lo impulsa, lo protege y lo ayuda a crecer como profesional y como persona.',
+    'vision.p2':
+      'Nuestra misión es acompañar al jugador y a su entorno en todas las decisiones clave de su carrera, desde el entrenamiento y el rendimiento deportivo hasta la gestión de su imagen, sus finanzas y su vida personal. No esperamos a que el éxito llegue solo: lo construimos juntos, día a día.',
+
+    'services.section': 'Nuestros servicios',
+    'services.title': 'Una agencia 360º',
     'services.lead':
-      'Un jugador no solo necesita a alguien que negocie su contrato. Necesita a alguien que entienda el proyecto deportivo, el mercado y lo que viene después. Eso es lo que cubrimos.',
+      'No nos limitamos a negociar contratos. Cubrimos todas las áreas que un futbolista necesita para alcanzar su máximo potencial.',
 
-    'services.1.title': 'Representación',
+    'services.1.title': 'Asesoramiento integral',
     'services.1.text':
-      'Negociación de contratos, cesiones y traspasos. Defendemos condiciones económicas y deportivas: minutos, rol en la plantilla, cláusulas y salidas.',
-    'services.2.title': 'Gestión de carrera',
+      'Cada decisión fuera del campo impacta en la carrera del jugador. Trabajamos con una visión general y acompañamos en las áreas clave de su vida para que cada paso empuje en la dirección correcta.',
+    'services.1.a': 'Conectamos el rendimiento en el campo con la estabilidad fuera de él',
+    'services.1.b': 'Pensamos a largo plazo, para construir una carrera y un futuro sólidos',
+    'services.1.c': 'Un equipo de confianza que lo engloba todo, sin buscar soluciones por separado',
+
+    'services.2.title': 'Análisis de rendimiento',
     'services.2.text':
-      'Plan a tres y cinco años. Qué club toca en cada etapa, cuándo conviene salir cedido y cuándo aguantar. La decisión correcta rara vez es la más ruidosa.',
-    'services.3.title': 'Scouting y datos',
+      'La imagen que el jugador proyecta durante la competición es determinante para su presente y su futuro deportivo. La abordamos con método.',
+    'services.2.a': 'Estudio técnico y táctico adaptado a su posición y cualidades',
+    'services.2.b': 'Imágenes de partidos y entrenamientos para identificar patrones',
+    'services.2.c': 'Sesiones de vídeo presenciales para reforzar lo trabajado',
+    'services.2.d': 'Espacios de práctica presencial',
+
+    'services.3.title': 'Apoyo psicológico',
     'services.3.text':
-      'Motor propio de análisis sobre exports de BeSoccer Pro. Comparamos rendimiento entre ligas distintas y detectamos techo antes de que el mercado lo ponga en precio.',
-    'services.4.title': 'Marca e imagen',
+      'El estado mental del jugador es tan decisivo como su preparación física. Lo trabajamos como un pilar más de su desarrollo.',
+    'services.3.a': 'Confianza, motivación, concentración y atención',
+    'services.3.b': 'Acompañamiento en competición para rendir en los momentos clave',
+    'services.3.c': 'Prevención y recuperación de lesiones con apoyo emocional',
+    'services.3.d': 'Habilidades sociales y adaptación al equipo y al cuerpo técnico',
+
+    'services.4.title': 'Plan de nutrición',
     'services.4.text':
-      'Acuerdos de patrocinio, presencia digital y relación con medios. Construir una marca que siga valiendo cuando el jugador deje de jugar.',
-    'services.5.title': 'Legal y fiscal',
+      'La alimentación influye directamente en el rendimiento y la recuperación. Diseñamos un plan detallado y adaptado a su realidad.',
+    'services.4.a': 'Adaptado a su posición, esfuerzo e intensidad de juego',
+    'services.4.b': 'Optimización de la recuperación tras entrenamientos y partidos',
+    'services.4.c': 'Prevención de lesiones controlando cargas y necesidades energéticas',
+    'services.4.d': 'Hábitos prácticos para que forme parte de su estilo de vida',
+
+    'services.5.title': 'Desarrollo deportivo',
     'services.5.text':
-      'Revisión de contratos, régimen fiscal de deportistas, movilidad internacional y permisos de trabajo. Coordinado con despachos especializados.',
-    'services.6.title': 'Transición post-carrera',
+      'Un proyecto individualizado que evoluciona con el jugador y se ajusta continuamente en función de lo que ocurre en la temporada.',
+    'services.5.a': 'Ajustado al calendario de partidos y a las cargas de entrenamiento',
+    'services.5.b': 'Atento a su historial de lesiones y molestias inesperadas',
+    'services.5.c': 'Orientado a proteger su salud y prevenir lesiones',
+    'services.5.d': 'Enfocado a maximizar el rendimiento en los momentos clave',
+
+    'services.6.title': 'Marketing y marca personal',
     'services.6.text':
-      'Formación, inversión y segunda etapa profesional. La carrera dura quince años; la vida, bastante más.',
+      'Transformamos su imagen en una marca sólida y con proyección, con equipo interno de marketing y creación de contenido propia.',
+    'services.6.a': 'Estrategias de marketing a medida con capacidades internas',
+    'services.6.b': 'Construcción de una marca auténtica y sostenible',
+    'services.6.c': 'Gestión profesional de redes sociales y creación de contenido',
+    'services.6.d': 'Patrocinios y avales en las mejores condiciones posibles',
 
-    'method.eyebrow': 'El método',
-    'method.title': 'Cuatro pasos, ninguna sorpresa',
-    'method.lead':
-      'Trabajamos igual con un juvenil que con un internacional. Cambia la escala, no el proceso.',
-    'method.1.title': 'Diagnóstico',
-    'method.1.text':
-      'Analizamos rendimiento, contrato, situación en el club y mercado potencial. Sin filtros: si el momento es malo para salir, lo decimos.',
-    'method.2.title': 'Estrategia',
-    'method.2.text':
-      'Definimos objetivo de destino, ventana y condiciones mínimas. Todo por escrito y revisado contigo antes de mover una llamada.',
-    'method.3.title': 'Ejecución',
-    'method.3.text':
-      'Abrimos mercado, gestionamos ofertas y negociamos. Tú entrenas; del ruido nos ocupamos nosotros.',
-    'method.4.title': 'Seguimiento',
-    'method.4.text':
-      'Una vez firmado, el trabajo sigue: adaptación, minutos, renovación y siguiente paso. La relación no acaba en la firma.',
+    'services.7.title': 'Inversiones y patrimonio',
+    'services.7.text':
+      'Lo que un jugador logra en el campo merece reflejarse fuera de él. Nos aseguramos de que el éxito de hoy se traduzca en seguridad mañana.',
+    'services.7.a': 'Educación financiera',
+    'services.7.b': 'Asesoramiento en la compra de propiedades',
+    'services.7.c': 'Planificación de inversiones inteligentes',
+    'services.7.d': 'Acompañamiento en cada decisión económica clave',
 
-    'data.eyebrow': 'Scouting con datos',
-    'data.title': 'Nosotros vemos el techo antes',
-    'data.lead':
-      'Hemos construido nuestro propio motor de análisis sobre los exports de BeSoccer Pro. No es un dashboard de adorno: es la herramienta con la que decidimos a quién representamos y a qué club encaja cada jugador.',
-    'data.1':
-      '<strong>Comparabilidad entre ligas.</strong> Normalizamos rendimiento por 90 minutos y por nivel de competición para poder comparar una Segunda RFEF con una liga extranjera.',
-    'data.2':
-      '<strong>Detección de techo.</strong> Identificamos jugadores con rendimiento bajo hoy y proyección alta: el perfil que interesa mover antes de que suba de precio.',
-    'data.3':
-      '<strong>Ventanas de contrato.</strong> Cruzamos vencimientos y valor de mercado para saber dónde está el margen real de negociación.',
-    'data.4':
-      '<strong>Proyección por categoría.</strong> Estimamos qué jugadores rendirían al nivel de una categoría objetivo antes de dar el salto.',
-    'data.cta': 'Hablar con el área de scouting',
+    'statement.2':
+      'Muchos jugadores con talento ven frenado su crecimiento cuando aparecen <em>retos que no saben cómo afrontar</em>',
 
-    'terminal.title': 'motor de scouting',
+    'focus.section': 'Así potenciamos el talento',
+    'focus.title': 'Nuestro enfoque',
+    'focus.1.title': 'Ser uno más en la agencia',
+    'focus.1.text':
+      'Cada jugador recibe un plan personalizado y la misma dedicación, esté empezando o jugando en la élite.',
+    'focus.2.title': 'Plan de desarrollo integral',
+    'focus.2.text':
+      'No nos limitamos a negociar contratos. Somos una agencia 360º que cubre rendimiento deportivo, salud, desarrollo personal, imagen y finanzas.',
+    'focus.3.title': 'Centrado en el fútbol',
+    'focus.3.text':
+      'El rendimiento en el campo puede verse afectado por problemas fuera de él. Damos apoyo constante para que el jugador se concentre en su juego mientras nosotros cuidamos del resto.',
+    'focus.4.title': 'La importancia de los hábitos',
+    'focus.4.text':
+      'Muchos deportistas no aprenden a cuidar su cuerpo ni a prevenir lesiones. Les damos acceso a entrenadores, psicólogos y nutricionistas desde el inicio para integrar rutinas clave en su día a día.',
+    'focus.5.title': 'Estabilidad económica',
+    'focus.5.text':
+      'Les guiamos para invertir con inteligencia y asegurar su futuro más allá del fútbol.',
 
-    'roster.eyebrow': 'Jugadores',
-    'roster.title': 'A quién representamos',
-    'roster.lead':
-      'Una cartera corta y trabajada. Preferimos pocos jugadores bien atendidos a una lista larga que nadie llama.',
-    'roster.note':
-      'Cartera completa disponible bajo petición para clubes y directores deportivos.',
-    'roster.p1.pos': 'Centrocampista',
-    'roster.p2.pos': 'Extremo',
-    'roster.p3.pos': 'Central',
-    'roster.p4.pos': 'Portero',
+    'team.section': 'Player management',
+    'team.title': 'El equipo detrás del jugador',
+    'team.lead':
+      'Agentes internos, scouts repartidos por el mundo y ex-futbolistas profesionales que conocen el vestuario desde dentro.',
+    'team.1.label': 'Agentes a tiempo completo',
+    'team.1.text':
+      'Estratégicamente conectados en toda Europa —España, Italia, Portugal, Inglaterra y Bélgica— y en Asia, Emiratos Árabes Unidos, Estados Unidos y otros mercados clave.',
+    'team.2.label': 'Scouts en todo el mundo',
+    'team.2.text': 'Scouts internos con amplia experiencia en grandes clubes europeos.',
+    'team.3.label': 'Años de experiencia',
+    'team.3.text': 'Trayectoria en la gestión integral de jugadores profesionales.',
+    'team.4.label': 'Ex-jugadores profesionales',
+    'team.4.text':
+      'Profesionales con experiencia en La Liga, Bundesliga, Belgian Pro League, Serie A, Premier League y Primeira Liga.',
 
-    'quote.text':
-      'Un buen agente no es el que te promete el club más grande. Es el que te dice la verdad cuando no te interesa oírla.',
-    'quote.author': 'SCM Sports Agency',
+    'clubs.title': 'Red de clubes',
+    'clubs.note':
+      'Mantenemos además relaciones sólidas con numerosos clubes de menor perfil, donde muchas veces está la oportunidad correcta.',
 
-    'contact.eyebrow': 'Contacto',
-    'contact.title': 'Cuéntanos tu situación',
+    'intl.section': 'Enfoque internacional',
+    'intl.title': 'Donde su talento tenga <em>más oportunidades</em>',
+    'intl.lead':
+      'Trabajamos con una visión global. Nuestra red de contactos crece cada año y nos permite impulsar la carrera de nuestros jugadores más allá de España, guiándolos en cada etapa de su proyección internacional.',
+    'intl.consolidated': 'Ligas consolidadas',
+    'intl.emerging': 'Nuevos mercados',
+
+    'process.section': 'Cómo trabajamos',
+    'process.title': 'Nuestro proceso',
+    'process.lead':
+      'El mismo camino para un juvenil que para un internacional. Cambia la escala, no el método.',
+    'process.1.title': 'Primer contacto',
+    'process.1.text': 'Escuchamos su situación, sus objetivos y los de su entorno.',
+    'process.2.title': 'Diagnóstico 360º',
+    'process.2.text': 'Analizamos rendimiento, salud, contrato, imagen y finanzas.',
+    'process.3.title': 'Plan personalizado',
+    'process.3.text': 'Definimos objetivos y responsables por cada área.',
+    'process.4.title': 'Implementación',
+    'process.4.text': 'Ponemos el plan en marcha con el equipo especialista.',
+    'process.5.title': 'Acompañamiento continuo',
+    'process.5.text': 'Revisamos y ajustamos a lo largo de toda la temporada.',
+    'process.6.title': 'Proyección internacional',
+    'process.6.text': 'Abrimos mercado dentro y fuera de España.',
+
+    'statement.4':
+      'El rendimiento del jugador da fuerza al agente, y el trabajo del agente convierte esa fuerza en <em>oportunidades reales</em>',
+
+    'partner.section': 'SCM Sports × Magno',
+    'partner.title': 'Nuestro socio estratégico',
+    'partner.lead':
+      'El rendimiento de un jugador también depende de lo que vive fuera del campo. En esa área contamos con Magno Marbella, expertos en experiencias y servicios del más alto nivel para futbolistas profesionales.',
+    'partner.1.title': 'Estancias y desplazamientos',
+    'partner.1.text': 'Organización adaptada a la agenda deportiva del jugador.',
+    'partner.2.title': 'Villas, hoteles y vehículos',
+    'partner.2.text': 'Alojamiento y transporte ajustados a cada necesidad.',
+    'partner.3.title': 'Experiencias VIP',
+    'partner.3.text': 'Entrenamientos en centros de alto rendimiento y eventos exclusivos.',
+    'partner.4.title': 'Training camps',
+    'partner.4.text':
+      'Convivencia, entrenamiento y preparación en entornos de primer nivel.',
+    'partner.5.title': 'Inversión inmobiliaria',
+    'partner.5.text':
+      'Oportunidades en real estate gracias a la red de Magno en el mercado de lujo.',
+    'partner.cta': 'Conocer Magno Marbella',
+
+    'contact.section': 'Contacto',
+    'contact.title': 'Kick off',
     'contact.lead':
-      'Tanto si eres jugador, familia o club, escríbenos. Respondemos a todo, y lo que nos cuentes se queda entre nosotros.',
-    'contact.email': 'Email',
+      'Tanto si eres jugador, familia o club, escríbenos. Respondemos a todo y lo que nos cuentes se queda entre nosotros.',
     'contact.phone': 'Teléfono',
-    'contact.office': 'Oficina',
-    'contact.officeValue': 'Marbella, Málaga · España',
+    'contact.email': 'Email',
+    'contact.instagram': 'Instagram',
+    'contact.address': 'Dirección',
 
     'form.name': 'Nombre y apellidos',
     'form.email': 'Email',
     'form.phone': 'Teléfono',
     'form.profile': 'Quién eres',
     'form.profile.player': 'Jugador',
-    'form.profile.family': 'Familia / tutor',
+    'form.profile.family': 'Familia o tutor',
     'form.profile.club': 'Club o director deportivo',
     'form.profile.other': 'Otro',
     'form.message': 'Cuéntanos',
@@ -119,10 +215,10 @@ window.I18N_DICT = {
 
     'cross.label': 'Marca hermana',
     'cross.title': 'Magno Marbella',
-    'cross.text': 'Concierge privado en la Costa del Sol',
+    'cross.text': 'Concierge para futbolistas profesionales',
 
     'footer.tagline':
-      'Agencia de representación y gestión de carrera para futbolistas profesionales. Marbella, España.',
+      'Agencia 360º de representación y gestión integral de futbolistas profesionales. Marbella, España.',
     'footer.nav': 'Navegación',
     'footer.legalTitle': 'Legal',
     'footer.legal': 'Aviso legal',
@@ -135,110 +231,204 @@ window.I18N_DICT = {
   en: {
     'nav.lang': 'Language',
     'nav.menu': 'Menu',
+    'nav.about': 'Agency',
     'nav.services': 'Services',
-    'nav.method': 'Method',
-    'nav.scouting': 'Scouting',
-    'nav.players': 'Players',
+    'nav.focus': 'Approach',
+    'nav.team': 'Team',
+    'nav.process': 'Process',
+    'nav.magno': 'Magno',
     'nav.contact': 'Contact',
 
-    'hero.title': 'A career <em>is not improvised</em>',
+    'hero.title': 'You got the talent.<br>We got <em>your back</em>',
     'hero.lead':
-      'We manage the careers of professional footballers end to end: transfers, contracts, image rights and the day after. Built on data, not on hunches.',
-    'hero.cta1': 'Work with us',
-    'hero.cta2': 'How we work',
-    'hero.scroll': 'Scroll',
+      'We advise professional footballers across the board and stand beside them on and off the pitch. Performance, health, image and wealth, handled by one team.',
+    'hero.cta1': "Let's talk",
+    'hero.cta2': 'See services',
+    'hero.claim': 'Inimitable',
 
-    'stats.1': 'Players represented',
-    'stats.2': 'Deals closed',
-    'stats.3': 'Leagues we operate in',
-    'stats.4': 'Years in the game',
+    'about.section': 'Who we are',
+    'about.title': 'Every player is <em>unique</em>',
+    'about.p1':
+      'At SCM Sports we advise <strong>professional footballers</strong> across every area of their lives, on and off the pitch.',
+    'about.p2':
+      'We build <strong>tailored plans</strong>, because every player is different and deserves the same dedication, whether they are at the top or on their way there.',
+    'about.p3':
+      'We <strong>invest from day one</strong> to build solid careers, with a team that knows how to strengthen every area of a player’s success.',
+    'about.v1': 'Individual support',
+    'about.v2': 'Transparency',
+    'about.v3': 'Loyalty',
+    'about.v4': 'Vision',
+    'about.v5': 'Innovation',
+    'about.v6': 'Sustainability',
 
-    'services.eyebrow': 'What we do',
-    'services.title': 'Everything around a footballer',
+    'statement.1': 'Our competence <em>completes</em> your talent',
+
+    'vision.section': 'Vision and purpose',
+    'vision.title': 'Talent is only the starting point',
+    'vision.p1':
+      'At SCM Sports Agency we believe a player is not built on the pitch alone. Talent is the starting point, but there is important ground to cover, and the player’s environment is the lead character in it: the one that drives them, protects them and helps them grow as a professional and as a person.',
+    'vision.p2':
+      'Our mission is to stand beside the player and their family through every key decision of their career, from training and on-pitch performance to their image, their finances and their personal life. We do not wait for success to arrive on its own: we build it together, day by day.',
+
+    'services.section': 'Our services',
+    'services.title': 'A 360º agency',
     'services.lead':
-      'A player needs more than someone to negotiate a contract. They need someone who understands the sporting project, the market and what comes next. That is what we cover.',
+      'We do more than negotiate contracts. We cover every area a footballer needs in order to reach their full potential.',
 
-    'services.1.title': 'Representation',
+    'services.1.title': 'End-to-end advice',
     'services.1.text':
-      'Contract, loan and transfer negotiation. We defend both the financial and the sporting terms: minutes, role in the squad, clauses and exit routes.',
-    'services.2.title': 'Career management',
+      'Every decision off the pitch shapes a career. We take the wide view and support the key areas of a player’s life so that each step pushes in the right direction.',
+    'services.1.a': 'We connect on-pitch performance with stability off it',
+    'services.1.b': 'We think long term, to build a solid career and a solid future',
+    'services.1.c': 'One trusted team covering everything, with no need to shop around',
+
+    'services.2.title': 'Performance analysis',
     'services.2.text':
-      'Three and five-year plans. Which club fits each stage, when a loan makes sense and when to stay put. The right call is rarely the loudest one.',
-    'services.3.title': 'Scouting and data',
+      'How a player performs in competition shapes both their present and their future. We approach it methodically.',
+    'services.2.a': 'Technical and tactical study tailored to their position and qualities',
+    'services.2.b': 'Match and training footage used to identify patterns',
+    'services.2.c': 'In-person video sessions to reinforce the work',
+    'services.2.d': 'Access to on-pitch practice sessions',
+
+    'services.3.title': 'Psychological support',
     'services.3.text':
-      'Our own analysis engine built on BeSoccer Pro exports. We compare performance across different leagues and spot ceiling before the market prices it in.',
-    'services.4.title': 'Brand and image',
+      'A player’s mental state matters as much as their physical preparation. We treat it as another pillar of their development.',
+    'services.3.a': 'Confidence, motivation, concentration and focus',
+    'services.3.b': 'Support during competition to perform in the decisive moments',
+    'services.3.c': 'Injury prevention and recovery with emotional support',
+    'services.3.d': 'Social skills and adapting to the squad and coaching staff',
+
+    'services.4.title': 'Nutrition plan',
     'services.4.text':
-      'Sponsorship deals, digital presence and media relations. Building a brand that still holds value once the player stops playing.',
-    'services.5.title': 'Legal and tax',
+      'Diet has a direct effect on performance and recovery. We design a detailed plan built around the player’s real life.',
+    'services.4.a': 'Tailored to their position, workload and intensity of play',
+    'services.4.b': 'Optimised recovery after training and matches',
+    'services.4.c': 'Injury prevention by managing loads and energy needs',
+    'services.4.d': 'Practical habits so good nutrition becomes part of their lifestyle',
+
+    'services.5.title': 'Athletic development',
     'services.5.text':
-      'Contract review, athlete tax regimes, international mobility and work permits. Coordinated with specialist firms.',
-    'services.6.title': 'Life after football',
+      'An individual programme that evolves with the player and is adjusted continuously according to how the season unfolds.',
+    'services.5.a': 'Aligned with the fixture calendar and training loads',
+    'services.5.b': 'Mindful of injury history and unexpected niggles',
+    'services.5.c': 'Built to protect their health and prevent injury',
+    'services.5.d': 'Focused on peak performance in the decisive moments',
+
+    'services.6.title': 'Marketing and personal brand',
     'services.6.text':
-      'Education, investment and a second professional chapter. A career lasts fifteen years; a life lasts considerably longer.',
+      'We turn a player’s image into a solid brand with reach, backed by an in-house marketing team and our own content production.',
+    'services.6.a': 'Bespoke marketing strategies built with in-house capability',
+    'services.6.b': 'Building an authentic, sustainable brand',
+    'services.6.c': 'Professional social media management and content creation',
+    'services.6.d': 'Sponsorship and endorsement deals on the best possible terms',
 
-    'method.eyebrow': 'The method',
-    'method.title': 'Four steps, no surprises',
-    'method.lead':
-      'We work the same way with an academy player as with a full international. The scale changes, the process does not.',
-    'method.1.title': 'Diagnosis',
-    'method.1.text':
-      'We analyse performance, contract, standing at the club and potential market. No sugar-coating: if it is a bad moment to move, we say so.',
-    'method.2.title': 'Strategy',
-    'method.2.text':
-      'We set the target destination, the window and the minimum terms. All in writing and agreed with you before a single call is made.',
-    'method.3.title': 'Execution',
-    'method.3.text':
-      'We open the market, handle offers and negotiate. You train; we deal with the noise.',
-    'method.4.title': 'Follow-up',
-    'method.4.text':
-      'Once signed, the work continues: settling in, minutes, renewal and the next step. The relationship does not end at the signature.',
+    'services.7.title': 'Investment and wealth',
+    'services.7.text':
+      'What a player achieves on the pitch deserves to show off it too. We make sure today’s success turns into tomorrow’s security.',
+    'services.7.a': 'Financial education',
+    'services.7.b': 'Advice on property purchases',
+    'services.7.c': 'Planning intelligent investments',
+    'services.7.d': 'Support through every major financial decision',
 
-    'data.eyebrow': 'Data-led scouting',
-    'data.title': 'We see the ceiling first',
-    'data.lead':
-      'We built our own analysis engine on top of BeSoccer Pro exports. It is not a dashboard for show: it is the tool we use to decide who we represent and which club fits each player.',
-    'data.1':
-      '<strong>Cross-league comparability.</strong> We normalise performance per 90 minutes and by level of competition, so a Spanish fourth tier can be compared with a foreign league.',
-    'data.2':
-      '<strong>Ceiling detection.</strong> We identify players with modest output today and a high projection: exactly the profile worth moving before the price rises.',
-    'data.3':
-      '<strong>Contract windows.</strong> We cross expiry dates with market value to find where the real negotiating margin sits.',
-    'data.4':
-      '<strong>Projection by tier.</strong> We estimate which players would perform at the level of a target division before they make the jump.',
-    'data.cta': 'Talk to the scouting desk',
+    'statement.2':
+      'Many talented players stall the moment they face <em>challenges nobody taught them to handle</em>',
 
-    'terminal.title': 'scouting engine',
+    'focus.section': 'How we grow talent',
+    'focus.title': 'Our approach',
+    'focus.1.title': 'Never just a number',
+    'focus.1.text':
+      'Every player gets a tailored plan and the same dedication, whether they are starting out or playing at the top.',
+    'focus.2.title': 'Complete development plan',
+    'focus.2.text':
+      'We do more than negotiate contracts. We are a 360º agency covering performance, health, personal development, image and finances.',
+    'focus.3.title': 'Football first',
+    'focus.3.text':
+      'Performance on the pitch suffers when things go wrong off it. We provide constant support so the player can focus on the game while we look after the rest.',
+    'focus.4.title': 'Habits matter',
+    'focus.4.text':
+      'Many athletes are never taught to look after their bodies or prevent injury. We give them access to coaches, psychologists and nutritionists from day one so those routines become second nature.',
+    'focus.5.title': 'Financial stability',
+    'focus.5.text':
+      'We guide them to invest intelligently and secure a future beyond football.',
 
-    'roster.eyebrow': 'Players',
-    'roster.title': 'Who we represent',
-    'roster.lead':
-      'A short, carefully worked portfolio. We would rather have few players properly looked after than a long list nobody calls.',
-    'roster.note': 'Full portfolio available on request for clubs and sporting directors.',
-    'roster.p1.pos': 'Midfielder',
-    'roster.p2.pos': 'Winger',
-    'roster.p3.pos': 'Centre-back',
-    'roster.p4.pos': 'Goalkeeper',
+    'team.section': 'Player management',
+    'team.title': 'The team behind the player',
+    'team.lead':
+      'In-house agents, scouts spread across the world and former professional footballers who know the dressing room from the inside.',
+    'team.1.label': 'Full-time agents',
+    'team.1.text':
+      'Strategically connected across Europe — Spain, Italy, Portugal, England and Belgium — as well as Asia, the United Arab Emirates, the United States and other key markets.',
+    'team.2.label': 'Scouts worldwide',
+    'team.2.text': 'In-house scouts with extensive experience at major European clubs.',
+    'team.3.label': 'Years of experience',
+    'team.3.text': 'A track record in the complete management of professional players.',
+    'team.4.label': 'Former professionals',
+    'team.4.text':
+      'Professionals with experience in La Liga, the Bundesliga, the Belgian Pro League, Serie A, the Premier League and the Primeira Liga.',
 
-    'quote.text':
-      'A good agent is not the one who promises you the biggest club. It is the one who tells you the truth when you do not want to hear it.',
-    'quote.author': 'SCM Sports Agency',
+    'clubs.title': 'Club network',
+    'clubs.note':
+      'We also maintain strong relationships with many lower-profile clubs, which is often exactly where the right opportunity sits.',
 
-    'contact.eyebrow': 'Contact',
-    'contact.title': 'Tell us where you stand',
+    'intl.section': 'International reach',
+    'intl.title': 'Wherever talent finds <em>more opportunity</em>',
+    'intl.lead':
+      'We work with a global outlook. Our network grows every year and lets us push our players’ careers beyond Spain, guiding them through every stage of their international development.',
+    'intl.consolidated': 'Established leagues',
+    'intl.emerging': 'Emerging markets',
+
+    'process.section': 'How we work',
+    'process.title': 'Our process',
+    'process.lead':
+      'The same path for an academy player as for a full international. The scale changes, the method does not.',
+    'process.1.title': 'First contact',
+    'process.1.text': 'We listen to the situation and the goals of the player and their family.',
+    'process.2.title': '360º diagnosis',
+    'process.2.text': 'We assess performance, health, contract, image and finances.',
+    'process.3.title': 'Tailored plan',
+    'process.3.text': 'We set objectives and name who owns each area.',
+    'process.4.title': 'Implementation',
+    'process.4.text': 'We put the plan to work with the specialist team.',
+    'process.5.title': 'Ongoing support',
+    'process.5.text': 'We review and adjust throughout the season.',
+    'process.6.title': 'International reach',
+    'process.6.text': 'We open the market inside and outside Spain.',
+
+    'statement.4':
+      'A player’s performance gives the agent strength, and the agent’s work turns that strength into <em>real opportunities</em>',
+
+    'partner.section': 'SCM Sports × Magno',
+    'partner.title': 'Our strategic partner',
+    'partner.lead':
+      'A player’s performance also depends on life away from the pitch. That is where Magno Marbella comes in: specialists in high-end experiences and services for professional footballers.',
+    'partner.1.title': 'Stays and travel',
+    'partner.1.text': 'Organised around the player’s sporting calendar.',
+    'partner.2.title': 'Villas, hotels and cars',
+    'partner.2.text': 'Accommodation and transport matched to each requirement.',
+    'partner.3.title': 'VIP experiences',
+    'partner.3.text': 'Training at high-performance centres and exclusive events.',
+    'partner.4.title': 'Training camps',
+    'partner.4.text': 'Living, training and preparation in first-class surroundings.',
+    'partner.5.title': 'Real estate investment',
+    'partner.5.text':
+      'Opportunities through Magno’s network in the luxury property market.',
+    'partner.cta': 'Discover Magno Marbella',
+
+    'contact.section': 'Contact',
+    'contact.title': 'Kick off',
     'contact.lead':
       'Whether you are a player, a family or a club, write to us. We answer everything, and what you tell us stays between us.',
-    'contact.email': 'Email',
     'contact.phone': 'Phone',
-    'contact.office': 'Office',
-    'contact.officeValue': 'Marbella, Málaga · Spain',
+    'contact.email': 'Email',
+    'contact.instagram': 'Instagram',
+    'contact.address': 'Address',
 
     'form.name': 'Full name',
     'form.email': 'Email',
     'form.phone': 'Phone',
     'form.profile': 'Who you are',
     'form.profile.player': 'Player',
-    'form.profile.family': 'Family / guardian',
+    'form.profile.family': 'Family or guardian',
     'form.profile.club': 'Club or sporting director',
     'form.profile.other': 'Other',
     'form.message': 'Tell us more',
@@ -249,10 +439,10 @@ window.I18N_DICT = {
 
     'cross.label': 'Sister brand',
     'cross.title': 'Magno Marbella',
-    'cross.text': 'Private concierge on the Costa del Sol',
+    'cross.text': 'Concierge for professional footballers',
 
     'footer.tagline':
-      'Representation and career management agency for professional footballers. Marbella, Spain.',
+      'A 360º agency for the representation and complete management of professional footballers. Marbella, Spain.',
     'footer.nav': 'Navigation',
     'footer.legalTitle': 'Legal',
     'footer.legal': 'Legal notice',

@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Magno Marbella — Concierge privado en Marbella y Costa del Sol</title>
+    <title>Magno Marbella — Concierge para futbolistas profesionales</title>
     <meta
       name="description"
-      content="Concierge privado en Marbella. Villas de lujo, yates, aviación privada, chófer, reservas, eventos y gestión de la vida diaria en la Costa del Sol."
+      content="Concierge exclusivo para futbolistas profesionales en Marbella y la Costa del Sol. Alquiler de campos, entrenamiento de élite, gimnasio y recuperación, villas, vehículos, náutica y aviación privada."
     />
-    <meta name="theme-color" content="#fbf8f3" />
+    <meta name="theme-color" content="#edeee6" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Magno Marbella" />
     <meta
       property="og:description"
-      content="Concierge privado en Marbella. Villas, náutica, aviación y agenda, con absoluta discreción."
+      content="You focus on the game. We take care of the rest. Concierge para futbolistas profesionales."
     />
     <meta property="og:image" content="../assets/img/og-magno.jpg" />
 
@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/base.css" />
@@ -36,20 +36,14 @@
     <!-- ==================================================== cabecera ==== -->
     <header class="header" data-header>
       <a class="brand" href="../">
-        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <path d="M4 26V6l12 13L28 6v20" stroke="currentColor" stroke-width="1.3" />
-        </svg>
-        <span class="brand__name">
-          Magno
-          <small>Marbella</small>
-        </span>
+        <img src="../assets/img/logo-magno.png" alt="Magno Marbella" />
       </a>
 
       <nav class="nav" data-nav aria-label="Principal">
-        <a class="nav__link" href="#servicios" data-i18n="nav.services">Servicios</a>
-        <a class="nav__link" href="#experiencias" data-i18n="nav.experiences">Experiencias</a>
-        <a class="nav__link" href="#como" data-i18n="nav.how">Cómo funciona</a>
-        <a class="nav__link" href="#membresias" data-i18n="nav.membership">Membresías</a>
+        <a class="nav__link" href="#entrenamiento" data-i18n="nav.training">Entrenamiento</a>
+        <a class="nav__link" href="#lifestyle" data-i18n="nav.lifestyle">Lifestyle</a>
+        <a class="nav__link" href="#centros" data-i18n="nav.venues">Centros</a>
+        <a class="nav__link" href="#reservar" data-i18n="nav.how">Cómo reservar</a>
         <a class="nav__link" href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
 
@@ -83,48 +77,129 @@
         <div class="hero__veil" aria-hidden="true"></div>
 
         <div class="container container--narrow">
-          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Concierge privado · Marbella</p>
-          <h1 class="hero__title" data-i18n-html="hero.title">Marbella, <em>a tu manera</em></h1>
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">
+            Concierge para futbolistas profesionales · Marbella
+          </p>
+          <h1 class="hero__title" data-i18n-html="hero.title">
+            Tú céntrate en el juego.<br /><em>Del resto nos ocupamos nosotros</em>
+          </h1>
           <p class="hero__lead" data-i18n="hero.lead">
-            Villas, yates, aviación privada, mesas imposibles y la logística del día a día.
+            Trabajamos en exclusiva para futbolistas profesionales y atletas de alto rendimiento.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contacto" data-i18n="hero.cta1">Solicitar acceso</a>
-            <a class="btn btn--ghost" href="#servicios" data-i18n="hero.cta2">Ver servicios</a>
+            <a class="btn btn--primary" href="#contacto" data-i18n="hero.cta1">
+              Solicitar propuesta
+            </a>
+            <a class="btn btn--ghost" href="#entrenamiento" data-i18n="hero.cta2">Ver servicios</a>
           </div>
         </div>
 
         <div class="hero__ticker" aria-hidden="true">
           <ul>
-            <li data-i18n="hero.t1">Villas</li>
-            <li data-i18n="hero.t2">Náutica</li>
-            <li data-i18n="hero.t3">Aviación</li>
-            <li data-i18n="hero.t4">Gastronomía</li>
-            <li data-i18n="hero.t5">Eventos</li>
-            <li data-i18n="hero.t6">Bienestar</li>
+            <li data-i18n="hero.t1">Campos de fútbol</li>
+            <li data-i18n="hero.t2">Entrenamiento de élite</li>
+            <li data-i18n="hero.t3">Gimnasio y recuperación</li>
+            <li data-i18n="hero.t4">Villas</li>
+            <li data-i18n="hero.t5">Vehículos</li>
+            <li data-i18n="hero.t6">Náutica y jets</li>
           </ul>
         </div>
       </section>
+
+      <p class="band">Magno Marbella</p>
 
       <!-- =============================================== manifiesto ==== -->
       <section class="section manifesto">
         <div class="container container--narrow">
           <p data-i18n-html="manifesto.text" data-reveal>
-            El lujo no es acumular servicios. Es <em>no tener que ocuparse de nada</em>.
+            La pretemporada no empieza en julio. Empieza en <em>cómo pasas el verano</em>.
           </p>
           <div class="rule" data-reveal></div>
         </div>
       </section>
 
-      <!-- ================================================ servicios ==== -->
-      <section class="section services" id="servicios">
+      <!-- ============================================ entrenamiento ==== -->
+      <section class="section services" id="entrenamiento">
         <div class="container">
-          <p class="eyebrow" data-i18n="services.eyebrow" data-reveal>Servicios</p>
-          <h2 class="section__title" data-i18n="services.title" data-reveal>
-            Todo resuelto, sin excepciones
+          <p class="eyebrow" data-i18n="training.section" data-reveal>
+            Entrenamiento y rendimiento
+          </p>
+          <h2 class="section__title" data-i18n="training.title" data-reveal>
+            Seguir en forma, estés donde estés
           </h2>
-          <p class="section__lead" data-i18n="services.lead" data-reveal>
-            Trabajamos con una red local construida durante años.
+          <p class="section__lead" data-i18n="training.lead" data-reveal>
+            Cinco centros deportivos en la Costa del Sol a disposición del jugador.
+          </p>
+
+          <div class="services__grid">
+            <article class="service" data-reveal>
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="3" y="7" width="26" height="18" stroke="currentColor" stroke-width="1.3" />
+                <path d="M16 7v18" stroke="currentColor" stroke-width="1.3" />
+                <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.3" />
+                <path d="M3 12h4v8H3M29 12h-4v8h4" stroke="currentColor" stroke-width="1.3" />
+              </svg>
+              <h3 class="service__title" data-i18n="training.1.title">Alquiler de campos</h3>
+              <p class="service__text" data-i18n="training.1.text">
+                Fútbol 11 y fútbol 7 por horas en cualquiera de nuestros centros.
+              </p>
+            </article>
+
+            <article class="service" data-reveal style="--reveal-delay: 0.06s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="6" r="3.2" stroke="currentColor" stroke-width="1.3" />
+                <path
+                  d="M16 10v9M16 19l-5 10M16 19l5 10M9 13l7-2 7 2"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h3 class="service__title" data-i18n="training.2.title">Sesiones de élite</h3>
+              <p class="service__text" data-i18n="training.2.text">
+                Entrenamiento privado con técnico especializado.
+              </p>
+            </article>
+
+            <article class="service" data-reveal style="--reveal-delay: 0.12s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12v8M8 9v14M24 9v14M28 12v8M8 16h16"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h3 class="service__title" data-i18n="training.3.title">Gimnasio y recuperación</h3>
+              <p class="service__text" data-i18n="training.3.text">
+                Gimnasio, spa y fisioterapia en clínica o a domicilio.
+              </p>
+            </article>
+
+            <article class="service" data-reveal style="--reveal-delay: 0.18s">
+              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="3" y="9" width="26" height="17" stroke="currentColor" stroke-width="1.3" />
+                <path d="M11 9l2-3h6l2 3" stroke="currentColor" stroke-width="1.3" />
+                <circle cx="16" cy="17" r="5" stroke="currentColor" stroke-width="1.3" />
+              </svg>
+              <h3 class="service__title" data-i18n="training.4.title">Fotógrafo y vídeo</h3>
+              <p class="service__text" data-i18n="training.4.text">
+                Fotógrafo profesional en pista, bajo petición.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------- lifestyle -->
+      <section class="section services" id="lifestyle">
+        <div class="container">
+          <p class="eyebrow" data-i18n="lifestyle.section" data-reveal>Lifestyle</p>
+          <h2 class="section__title" data-i18n="lifestyle.title" data-reveal>
+            Y cuando acaba el entrenamiento
+          </h2>
+          <p class="section__lead" data-i18n="lifestyle.lead" data-reveal>
+            Alojamiento, transporte y agenda resueltos con la misma discreción.
           </p>
 
           <div class="services__grid">
@@ -134,39 +209,24 @@
                 <path d="M6 14v13h20V14" stroke="currentColor" stroke-width="1.3" />
                 <path d="M13 27v-8h6v8" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="services.1.title">Villas y residencias</h3>
-              <p class="service__text" data-i18n="services.1.text">
-                Selección y reserva de propiedades en la Costa del Sol.
+              <h3 class="service__title" data-i18n="lifestyle.1.title">Villas y alojamiento</h3>
+              <p class="service__text" data-i18n="lifestyle.1.text">
+                Villas y residencias en Marbella y la Costa del Sol.
               </p>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.06s">
               <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path d="M4 23h24l-3 5H7l-3-5z" stroke="currentColor" stroke-width="1.3" />
-                <path d="M8 23V12l14 11M16 12V4" stroke="currentColor" stroke-width="1.3" />
+                <path d="M4 28V7h13v21M17 28V13h11v15M2 28h28" stroke="currentColor" stroke-width="1.3" />
+                <path d="M8 12h4M8 17h4M8 22h4M21 18h3M21 23h3" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="services.2.title">Náutica</h3>
-              <p class="service__text" data-i18n="services.2.text">
-                Yates y embarcaciones con tripulación.
+              <h3 class="service__title" data-i18n="lifestyle.2.title">Hoteles y concierge</h3>
+              <p class="service__text" data-i18n="lifestyle.2.text">
+                Reservas y concierge personalizado durante toda la estancia.
               </p>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.12s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path
-                  d="M16 3c1.4 0 2.2 1.6 2.2 4v6.5L29 20v2.6l-10.8-3.3V25l3.5 2.4V29L16 27.3 10.3 29v-1.6l3.5-2.4v-5.7L3 22.6V20l10.8-6.5V7c0-2.4.8-4 2.2-4z"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <h3 class="service__title" data-i18n="services.3.title">Aviación privada</h3>
-              <p class="service__text" data-i18n="services.3.text">
-                Vuelos privados y helicóptero.
-              </p>
-            </article>
-
-            <article class="service" data-reveal>
               <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path
                   d="M3 20v-4l3-6h20l3 6v4M3 20h26v4h-4v-4M7 24v-4H3v4"
@@ -177,24 +237,24 @@
                 <circle cx="9" cy="20" r="2" stroke="currentColor" stroke-width="1.3" />
                 <circle cx="23" cy="20" r="2" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="services.4.title">Traslados y chófer</h3>
-              <p class="service__text" data-i18n="services.4.text">
-                Flota con conductor a disposición.
+              <h3 class="service__title" data-i18n="lifestyle.3.title">Vehículos de alta gama</h3>
+              <p class="service__text" data-i18n="lifestyle.3.text">
+                Coches de lujo con o sin conductor y traslados.
               </p>
             </article>
 
-            <article class="service" data-reveal style="--reveal-delay: 0.06s">
+            <article class="service" data-reveal style="--reveal-delay: 0.18s">
               <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path d="M8 3v11a3 3 0 006 0V3M11 14v15" stroke="currentColor" stroke-width="1.3" />
-                <path d="M8 3v8M14 3v8M24 3c-2 3-3 6-3 9h6c0-3-1-6-3-9zM24 12v17" stroke="currentColor" stroke-width="1.3" />
+                <path d="M4 23h24l-3 5H7l-3-5z" stroke="currentColor" stroke-width="1.3" />
+                <path d="M8 23V12l14 11M16 12V4" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="services.5.title">Gastronomía y ocio</h3>
-              <p class="service__text" data-i18n="services.5.text">
-                Reservas en restaurantes con lista de espera.
+              <h3 class="service__title" data-i18n="lifestyle.4.title">Náutica y aviación</h3>
+              <p class="service__text" data-i18n="lifestyle.4.text">
+                Yates, jets privados y coordinación de desplazamientos.
               </p>
             </article>
 
-            <article class="service" data-reveal style="--reveal-delay: 0.12s">
+            <article class="service" data-reveal style="--reveal-delay: 0.24s">
               <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path
                   d="M16 4l3.4 7.4 8 1-6 5.6 1.6 8L16 22.2 8.9 26l1.6-8-6-5.6 8-1L16 4z"
@@ -203,59 +263,117 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <h3 class="service__title" data-i18n="services.6.title">Eventos privados</h3>
-              <p class="service__text" data-i18n="services.6.text">
-                Producción completa de celebraciones.
+              <h3 class="service__title" data-i18n="lifestyle.5.title">
+                Experiencias VIP y eventos
+              </h3>
+              <p class="service__text" data-i18n="lifestyle.5.text">
+                Eventos privados y acceso a espacios exclusivos.
               </p>
             </article>
 
-            <article class="service" data-reveal>
+            <article class="service" data-reveal style="--reveal-delay: 0.3s">
               <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path
-                  d="M16 27S5 20.5 5 13a6 6 0 0111-3.3A6 6 0 0127 13c0 7.5-11 14-11 14z"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                  stroke-linejoin="round"
-                />
+                <path d="M6 10h20l-2 18H8L6 10z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
+                <path d="M11 13V8a5 5 0 0110 0v5" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="services.7.title">Bienestar y salud</h3>
-              <p class="service__text" data-i18n="services.7.text">
-                Entrenador, fisioterapia y agenda médica.
-              </p>
-            </article>
-
-            <article class="service" data-reveal style="--reveal-delay: 0.06s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.3" />
-                <path d="M16 8v8l5 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
-              </svg>
-              <h3 class="service__title" data-i18n="services.8.title">Vida diaria</h3>
-              <p class="service__text" data-i18n="services.8.text">
-                Colegios, mudanzas, gestoría y personal.
+              <h3 class="service__title" data-i18n="lifestyle.6.title">Personal shopping</h3>
+              <p class="service__text" data-i18n="lifestyle.6.text">
+                Personal shopping y gestión del día a día.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- ============================================= experiencias ==== -->
-      <section class="section" id="experiencias">
+      <!-- ================================================== centros ==== -->
+      <section class="section venues" id="centros">
         <div class="container">
-          <p class="eyebrow" data-i18n="showcase.eyebrow" data-reveal>Experiencias</p>
-          <h2 class="section__title" data-i18n-html="showcase.title" data-reveal>
-            Algunos encargos <em>recientes</em>
+          <p class="eyebrow" data-i18n="venues.section" data-reveal>Nuestros centros</p>
+          <h2 class="section__title" data-i18n="venues.title" data-reveal>
+            Cinco centros en la Costa del Sol
           </h2>
-          <p class="section__lead" data-i18n="showcase.lead" data-reveal>
-            No publicamos nombres. Sí el tipo de encargo que resolvemos.
+          <p class="section__lead" data-i18n="venues.lead" data-reveal>
+            Todos incluyen fútbol 11 y fútbol 7, técnico, gimnasio y fisioterapia.
           </p>
+
+          <div class="venues__grid">
+            <article class="venue" data-reveal>
+              <h3 class="venue__name" data-i18n="venues.1.name">Marbella Football Center</h3>
+              <p class="venue__hours"><span data-i18n="venues.hours">Horario</span> · 9:00–19:00</p>
+              <ul class="venue__list">
+                <li data-i18n="venues.f1">Fútbol 11 y fútbol 7</li>
+                <li data-i18n="venues.f2">Sesión privada con técnico</li>
+                <li data-i18n="venues.f4">Gimnasio y spa</li>
+                <li data-i18n="venues.f5">Fisioterapia</li>
+              </ul>
+            </article>
+
+            <article class="venue" data-reveal style="--reveal-delay: 0.06s">
+              <h3 class="venue__name" data-i18n="venues.2.name">La Quinta Football Center</h3>
+              <p class="venue__hours"><span data-i18n="venues.hours">Horario</span> · 9:00–16:00</p>
+              <ul class="venue__list">
+                <li data-i18n="venues.f1">Fútbol 11 y fútbol 7</li>
+                <li data-i18n="venues.f2">Sesión privada con técnico</li>
+                <li data-i18n="venues.f3">Gimnasio</li>
+                <li data-i18n="venues.f5">Fisioterapia</li>
+              </ul>
+            </article>
+
+            <article class="venue" data-reveal style="--reveal-delay: 0.12s">
+              <h3 class="venue__name" data-i18n="venues.3.name">Banús Football Center</h3>
+              <p class="venue__hours"><span data-i18n="venues.hours">Horario</span> · 9:00–16:00</p>
+              <ul class="venue__list">
+                <li data-i18n="venues.f1">Fútbol 11 y fútbol 7</li>
+                <li data-i18n="venues.f2">Sesión privada con técnico</li>
+                <li data-i18n="venues.f3">Gimnasio</li>
+                <li data-i18n="venues.f5">Fisioterapia</li>
+              </ul>
+            </article>
+
+            <article class="venue" data-reveal style="--reveal-delay: 0.18s">
+              <h3 class="venue__name" data-i18n="venues.4.name">Atalaya Football Center</h3>
+              <p class="venue__hours"><span data-i18n="venues.hours">Horario</span> · 9:00–16:00</p>
+              <ul class="venue__list">
+                <li data-i18n="venues.f1">Fútbol 11 y fútbol 7</li>
+                <li data-i18n="venues.f2">Sesión privada con técnico</li>
+                <li data-i18n="venues.f3">Gimnasio</li>
+                <li data-i18n="venues.f5">Fisioterapia</li>
+              </ul>
+            </article>
+
+            <article class="venue" data-reveal style="--reveal-delay: 0.24s">
+              <h3 class="venue__name" data-i18n="venues.5.name">Estepona Football Center</h3>
+              <p class="venue__hours"><span data-i18n="venues.hours">Horario</span> · 9:00–16:00</p>
+              <ul class="venue__list">
+                <li data-i18n="venues.f1">Fútbol 11 y fútbol 7</li>
+                <li data-i18n="venues.f2">Sesión privada con técnico</li>
+                <li data-i18n="venues.f3">Gimnasio</li>
+                <li data-i18n="venues.f5">Fisioterapia</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="venues__note" data-i18n="venues.note" data-reveal>
+            Disponibilidad muy limitada entre mayo y julio, sujeta a confirmación.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================== en imágenes ==== -->
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow" data-i18n="showcase.section" data-reveal>En imágenes</p>
+          <h2 class="section__title" data-i18n-html="showcase.title" data-reveal>
+            Cómo es <em>por dentro</em>
+          </h2>
 
           <div class="showcase__grid">
             <article class="showcase__item" data-reveal>
               <div class="photo" style="--photo: var(--photo-exp1)"></div>
               <div class="showcase__body">
-                <p class="showcase__label" data-i18n="showcase.1.label">Náutica</p>
+                <p class="showcase__label" data-i18n="showcase.1.label">Entrenamiento</p>
                 <h3 class="showcase__title" data-i18n="showcase.1.title">
-                  Ocho días entre Marbella e Ibiza, tripulación y chef a bordo
+                  Sesiones individuales 1 vs 1 con técnico
                 </h3>
               </div>
             </article>
@@ -263,9 +381,9 @@
             <article class="showcase__item" data-reveal style="--reveal-delay: 0.08s">
               <div class="photo" style="--photo: var(--photo-exp2)"></div>
               <div class="showcase__body">
-                <p class="showcase__label" data-i18n="showcase.2.label">Residencial</p>
+                <p class="showcase__label" data-i18n="showcase.2.label">Instalaciones</p>
                 <h3 class="showcase__title" data-i18n="showcase.2.title">
-                  Villa en La Zagaleta lista en 72 horas
+                  Gimnasio y sala de recuperación
                 </h3>
               </div>
             </article>
@@ -273,9 +391,9 @@
             <article class="showcase__item" data-reveal style="--reveal-delay: 0.16s">
               <div class="photo" style="--photo: var(--photo-exp3)"></div>
               <div class="showcase__body">
-                <p class="showcase__label" data-i18n="showcase.3.label">Celebración</p>
+                <p class="showcase__label" data-i18n="showcase.3.label">Alojamiento</p>
                 <h3 class="showcase__title" data-i18n="showcase.3.title">
-                  Cena privada para 40 en finca con acceso cerrado
+                  Villas con piscina y servicio incluido
                 </h3>
               </div>
             </article>
@@ -283,176 +401,60 @@
         </div>
       </section>
 
-      <!-- ================================================== cómo ==== -->
-      <section class="section how" id="como">
+      <!-- ================================================= reservar ==== -->
+      <section class="section services" id="reservar">
         <div class="container">
-          <p class="eyebrow" data-i18n="how.eyebrow" data-reveal>Cómo funciona</p>
-          <h2 class="section__title" data-i18n="how.title" data-reveal>Tres pasos y ya está</h2>
+          <p class="eyebrow" data-i18n="how.section" data-reveal>Cómo reservar</p>
+          <h2 class="section__title" data-i18n="how.title" data-reveal>Tres pasos</h2>
           <p class="section__lead" data-i18n="how.lead" data-reveal>
-            Sin formularios interminables ni cadenas de correos.
+            Nos dices qué necesitas y cuándo, y recibes una propuesta cerrada.
           </p>
 
           <div class="how__steps">
             <article class="how__step" data-reveal>
-              <h3 data-i18n="how.1.title">Conversación inicial</h3>
-              <p data-i18n="how.1.text">Una llamada para entender cómo viajas.</p>
+              <h3 data-i18n="how.1.title">Cuéntanos las fechas</h3>
+              <p data-i18n="how.1.text">Fechas, número de jugadores y qué hace falta.</p>
             </article>
             <article class="how__step" data-reveal style="--reveal-delay: 0.1s">
-              <h3 data-i18n="how.2.title">Propuesta a medida</h3>
-              <p data-i18n="how.2.text">Opciones concretas con precio cerrado.</p>
+              <h3 data-i18n="how.2.title">Recibes la propuesta</h3>
+              <p data-i18n="how.2.text">Centros, horarios y tarifas cerradas por escrito.</p>
             </article>
             <article class="how__step" data-reveal style="--reveal-delay: 0.2s">
-              <h3 data-i18n="how.3.title">Ejecución y seguimiento</h3>
-              <p data-i18n="how.3.text">Contacto directo disponible 24/7.</p>
+              <h3 data-i18n="how.3.title">Confirmación</h3>
+              <p data-i18n="how.3.text">Transferencia 48 horas antes y un único contacto.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- ============================================== membresías ==== -->
-      <section class="section" id="membresias">
-        <div class="container">
-          <p class="eyebrow" data-i18n="tiers.eyebrow" data-reveal>Membresías</p>
-          <h2 class="section__title" data-i18n="tiers.title" data-reveal>
-            Tres formas de trabajar con nosotros
-          </h2>
-          <p class="section__lead" data-i18n="tiers.lead" data-reveal>
-            Desde un encargo puntual hasta disponibilidad permanente.
-          </p>
-
-          <div class="tiers__grid">
-            <article class="tier" data-reveal>
-              <h3 class="tier__name" data-i18n="tiers.1.name">Puntual</h3>
-              <p class="tier__tagline" data-i18n="tiers.1.tagline">Por encargo</p>
-              <ul class="tier__list">
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.1.f1">Un encargo concreto, facturado por proyecto</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.1.f2">Acceso a la red de proveedores</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.1.f3">Respuesta en menos de 24 horas</span>
-                </li>
-              </ul>
-              <a class="btn btn--ghost" href="#contacto" data-i18n="tiers.1.cta">Consultar</a>
-            </article>
-
-            <article class="tier tier--featured" data-reveal style="--reveal-delay: 0.08s">
-              <h3 class="tier__name" data-i18n="tiers.2.name">Temporada</h3>
-              <p class="tier__tagline" data-i18n="tiers.2.tagline">El más solicitado</p>
-              <ul class="tier__list">
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.2.f1">Cobertura completa durante tu estancia</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.2.f2">Contacto directo disponible 24/7</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.2.f3">Villa, traslados y agenda coordinados</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.2.f4">Prioridad en reservas</span>
-                </li>
-              </ul>
-              <a class="btn btn--primary" href="#contacto" data-i18n="tiers.2.cta">Solicitar</a>
-            </article>
-
-            <article class="tier" data-reveal style="--reveal-delay: 0.16s">
-              <h3 class="tier__name" data-i18n="tiers.3.name">Anual</h3>
-              <p class="tier__tagline" data-i18n="tiers.3.tagline">Por invitación</p>
-              <ul class="tier__list">
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.3.f1">Disponibilidad permanente</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.3.f2">Gestión de residencia y personal</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.3.f3">Cobertura fuera de España</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M2 8.5l4 4 8-9" stroke="currentColor" stroke-width="1.6" />
-                  </svg>
-                  <span data-i18n="tiers.3.f4">Acuerdo de confidencialidad</span>
-                </li>
-              </ul>
-              <a class="btn btn--ghost" href="#contacto" data-i18n="tiers.3.cta">Solicitar acceso</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================================================== cita ====
-           Testimonio de ejemplo. Sustituir por uno real y autorizado.   -->
-      <section class="section section--tight quote">
-        <div class="container container--narrow">
-          <figure data-reveal>
-            <blockquote data-i18n="quote.text">
-              Llamé un jueves por la noche pidiendo algo que no existía. El sábado existía.
-            </blockquote>
-            <figcaption data-i18n="quote.author">Cliente · Temporada 2025</figcaption>
-          </figure>
         </div>
       </section>
 
       <!-- ================================================= contacto ==== -->
-      <section class="section contact" id="contacto">
+      <section class="section" id="contacto">
         <div class="container contact__layout">
           <div>
-            <p class="eyebrow" data-i18n="contact.eyebrow" data-reveal>Contacto</p>
+            <p class="eyebrow" data-i18n="contact.section" data-reveal>Contacto</p>
             <h2 class="section__title" data-i18n="contact.title" data-reveal>
-              Empecemos por una conversación
+              Cuéntanos qué necesitas
             </h2>
             <p class="section__lead" data-i18n="contact.lead" data-reveal>
-              Cuéntanos qué necesitas y cuándo.
+              Escríbenos con las fechas y el tipo de estancia.
             </p>
 
             <div class="contact__channels">
               <div class="contact__channel" data-reveal>
                 <span data-i18n="contact.email">Email</span>
-                <!-- Sustituir por la dirección definitiva de Magno. -->
-                <a href="mailto:s.carrillo@scmsportsagency.com">s.carrillo@scmsportsagency.com</a>
+                <a href="mailto:magnomarbellaservices@gmail.com">magnomarbellaservices@gmail.com</a>
               </div>
               <div class="contact__channel" data-reveal>
                 <span data-i18n="contact.phone">Teléfono</span>
-                <!-- Sustituir por el teléfono real. -->
-                <a href="tel:+34000000000">+34 000 000 000</a>
+                <a href="tel:+34654746172">+34 654 746 172</a>
               </div>
               <div class="contact__channel" data-reveal>
-                <span data-i18n="contact.office">Oficina</span>
-                <p data-i18n="contact.officeValue">Marbella, Málaga · España</p>
+                <span data-i18n="contact.instagram">Instagram</span>
+                <a href="https://www.instagram.com/magnomarbella/" rel="noopener">@magnomarbella</a>
+              </div>
+              <div class="contact__channel" data-reveal>
+                <span data-i18n="contact.address">Dirección</span>
+                <p>La Quinta Golf, Av. Tomás Pascual 6<br />Marbella, Málaga</p>
               </div>
             </div>
           </div>
@@ -460,7 +462,7 @@
           <form
             class="form"
             data-reveal
-            data-mailto-form="s.carrillo@scmsportsagency.com"
+            data-mailto-form="magnomarbellaservices@gmail.com"
             data-mailto-subject="Magno Marbella — solicitud web"
           >
             <div class="form__row">
@@ -482,21 +484,29 @@
               <div class="field">
                 <label for="mg-service" data-i18n="form.service">Qué necesitas</label>
                 <select id="mg-service" name="servicio" required>
-                  <option value="villa" data-i18n="form.service.villa">Villa o residencia</option>
-                  <option value="nautica" data-i18n="form.service.boat">Náutica</option>
-                  <option value="aviacion" data-i18n="form.service.jet">Aviación privada</option>
-                  <option value="evento" data-i18n="form.service.event">Evento privado</option>
-                  <option value="temporada" data-i18n="form.service.season">
-                    Temporada completa
+                  <option value="campo" data-i18n="form.service.pitch">Campo de fútbol</option>
+                  <option value="tecnico" data-i18n="form.service.coach">Sesión con técnico</option>
+                  <option value="gimnasio" data-i18n="form.service.gym">
+                    Gimnasio y fisioterapia
                   </option>
-                  <option value="otro" data-i18n="form.service.other">Otro</option>
+                  <option value="alojamiento" data-i18n="form.service.stay">Villa u hotel</option>
+                  <option value="transporte" data-i18n="form.service.transport">
+                    Vehículos, náutica o jets
+                  </option>
+                  <option value="completa" data-i18n="form.service.full">Estancia completa</option>
                 </select>
               </div>
             </div>
 
-            <div class="field">
-              <label for="mg-dates" data-i18n="form.dates">Fechas aproximadas</label>
-              <input id="mg-dates" name="fechas" type="text" />
+            <div class="form__row">
+              <div class="field">
+                <label for="mg-dates" data-i18n="form.dates">Fechas aproximadas</label>
+                <input id="mg-dates" name="fechas" type="text" />
+              </div>
+              <div class="field">
+                <label for="mg-players" data-i18n="form.players">Número de personas</label>
+                <input id="mg-players" name="personas" type="number" min="1" />
+              </div>
             </div>
 
             <div class="field">
@@ -506,7 +516,7 @@
                 name="mensaje"
                 required
                 data-i18n-attr="placeholder:form.messagePlaceholder"
-                placeholder="Número de personas, fechas y cualquier preferencia."
+                placeholder="Fechas, número de jugadores y cualquier preferencia."
               ></textarea>
             </div>
 
@@ -539,7 +549,7 @@
           <span class="crosslink__title" data-i18n="cross.title">SCM Sports Agency</span>
         </span>
         <span class="crosslink__arrow">
-          <span data-i18n="cross.text">Representación de futbolistas profesionales</span>
+          <span data-i18n="cross.text">Agencia 360º de futbolistas profesionales</span>
           <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
             <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
           </svg>
@@ -552,23 +562,18 @@
       <div class="container">
         <div class="footer__top">
           <div>
-            <a class="brand" href="../" style="margin-bottom: 1rem; color: #f6f1e8">
-              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path d="M4 26V6l12 13L28 6v20" stroke="currentColor" stroke-width="1.3" />
-              </svg>
-              <span class="brand__name">Magno <small>Marbella</small></span>
-            </a>
-            <p data-i18n="footer.tagline" style="max-width: 40ch">
-              Concierge privado en Marbella y Costa del Sol.
+            <img class="footer__logo" src="../assets/img/logo-magno.png" alt="Magno Marbella" />
+            <p data-i18n="footer.tagline" style="max-width: 42ch">
+              Concierge exclusivo para futbolistas profesionales y atletas de alto rendimiento.
             </p>
           </div>
 
           <div>
             <h4 data-i18n="footer.nav">Navegación</h4>
             <ul>
-              <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-              <li><a href="#experiencias" data-i18n="nav.experiences">Experiencias</a></li>
-              <li><a href="#membresias" data-i18n="nav.membership">Membresías</a></li>
+              <li><a href="#entrenamiento" data-i18n="nav.training">Entrenamiento</a></li>
+              <li><a href="#lifestyle" data-i18n="nav.lifestyle">Lifestyle</a></li>
+              <li><a href="#centros" data-i18n="nav.venues">Centros</a></li>
               <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
               <li><a href="../" data-i18n="footer.group">Volver al grupo</a></li>
             </ul>
@@ -589,7 +594,7 @@
             &copy; <span data-year>2026</span> Magno Marbella.
             <span data-i18n="footer.rights">Todos los derechos reservados.</span>
           </p>
-          <p>Marbella · España</p>
+          <p>La Quinta Golf, Marbella · España</p>
         </div>
       </div>
     </footer>
