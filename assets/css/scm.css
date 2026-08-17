@@ -1,0 +1,972 @@
+/* ==========================================================================
+   SCM SPORTS AGENCY — mundo deportivo. Fondo casi negro, tipografía
+   condensada y un verde eléctrico como único color de acento.
+   ========================================================================== */
+
+:root {
+  --surface: #07090a;
+  --surface-2: #0f1417;
+  --surface-3: #161d21;
+  --text: #f2f5f4;
+  --muted: #93a0a4;
+  --accent: #c6f24e;
+  --accent-dim: #8fb832;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.22);
+
+  --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+/* -------------------------------------------------------------- tipografía */
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.94;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-lg);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
+  margin-bottom: var(--space-md);
+}
+
+.section__lead {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.3vw, 1.13rem);
+  max-width: 62ch;
+}
+
+/* ---------------------------------------------------------------- botones */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.95rem 1.7rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease),
+    border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+.btn--primary:hover {
+  background: #d8ff6b;
+}
+
+.btn--ghost {
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+}
+
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn svg {
+  width: 16px;
+  height: 10px;
+}
+
+/* --------------------------------------------------------------- cabecera */
+
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding: var(--space-md) var(--gutter);
+  transition: background-color 0.4s var(--ease), border-color 0.4s var(--ease),
+    padding 0.4s var(--ease);
+  border-bottom: 1px solid transparent;
+  /* El fondo detrás de la cabecera es siempre el negro de la marca. */
+  --lang-active-fg: var(--surface);
+}
+
+.header.is-scrolled {
+  background: rgba(7, 9, 10, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom-color: var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand svg {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.brand small {
+  display: block;
+  font-size: 0.56rem;
+  letter-spacing: 0.28em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.2vw, 2.2rem);
+}
+
+.nav__link {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.3s var(--ease);
+}
+
+.nav__link:hover {
+  color: var(--text);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+}
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: currentColor;
+  transition: background-color 0.2s var(--ease);
+}
+
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 1.5px;
+  background: currentColor;
+  transition: transform 0.3s var(--ease);
+}
+
+.nav-toggle span::before {
+  top: -6px;
+}
+
+.nav-toggle span::after {
+  top: 6px;
+}
+
+.nav-toggle[aria-expanded='true'] span {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded='true'] span::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded='true'] span::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 940px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav {
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-lg);
+    background: var(--surface);
+    transform: translateX(100%);
+    transition: transform 0.45s var(--ease);
+    z-index: 55;
+  }
+
+  .nav.is-open {
+    transform: none;
+  }
+
+  .nav__link {
+    font-size: 1.15rem;
+    color: var(--text);
+  }
+
+  body.nav-open {
+    overflow: hidden;
+  }
+}
+
+/* ------------------------------------------------------------------- hero */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  padding-block: clamp(7rem, 14vh, 10rem) clamp(3rem, 8vh, 5.5rem);
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-color: var(--surface);
+  background-image: var(--photo-hero, none);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(90% 60% at 15% 20%, rgba(198, 242, 78, 0.09) 0%, transparent 62%),
+    linear-gradient(180deg, rgba(7, 9, 10, 0.55) 0%, rgba(7, 9, 10, 0.72) 40%, var(--surface) 96%);
+}
+
+/* Líneas verticales tenues: dan sensación de campo marcado sin ruido. */
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.045) 0px,
+    rgba(255, 255, 255, 0.045) 1px,
+    transparent 1px,
+    transparent 12.5%
+  );
+  mask-image: linear-gradient(180deg, transparent, #000 35%, #000 70%, transparent);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 35%, #000 70%, transparent);
+}
+
+.hero__title {
+  font-size: clamp(2.9rem, 8.4vw, 7.4rem);
+  max-width: 15ch;
+  margin-bottom: var(--space-lg);
+}
+
+.hero__title em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.hero__lead {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  max-width: 52ch;
+  margin-bottom: var(--space-xl);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.hero__scroll {
+  position: absolute;
+  right: var(--gutter);
+  bottom: clamp(3rem, 8vh, 5.5rem);
+  writing-mode: vertical-rl;
+  font-size: 0.64rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.hero__scroll::after {
+  content: '';
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+
+@media (max-width: 720px) {
+  .hero__scroll {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ cifras */
+
+.stats {
+  border-block: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.stat {
+  padding: var(--space-xl) var(--space-lg);
+  border-right: 1px solid var(--line);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat__value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
+}
+
+.stat__label {
+  margin-top: var(--space-sm);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 620px) {
+  .stat {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stat:last-child {
+    border-bottom: none;
+  }
+}
+
+/* --------------------------------------------------------------- servicios */
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: var(--space-2xl);
+}
+
+.service {
+  background: var(--surface);
+  padding: var(--space-xl);
+  transition: background-color 0.4s var(--ease);
+  position: relative;
+}
+
+.service:hover {
+  background: var(--surface-2);
+}
+
+.service__num {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: var(--space-lg);
+  display: block;
+}
+
+.service__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  font-size: 1.35rem;
+  margin-bottom: var(--space-sm);
+}
+
+.service__text {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+/* ------------------------------------------------------------------ método */
+
+.method {
+  background: var(--surface-2);
+  border-block: 1px solid var(--line);
+}
+
+.method__steps {
+  display: grid;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+  counter-reset: step;
+}
+
+@media (min-width: 860px) {
+  .method__steps {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+.step {
+  position: relative;
+  padding-top: var(--space-lg);
+  border-top: 2px solid var(--line-strong);
+  counter-increment: step;
+  transition: border-color 0.4s var(--ease);
+}
+
+.step:hover {
+  border-top-color: var(--accent);
+}
+
+.step::before {
+  content: '0' counter(step);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.step h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.step p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* -------------------------------------------------------------- datos/scout */
+
+.data {
+  overflow: hidden;
+}
+
+.data__layout {
+  display: grid;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+@media (min-width: 940px) {
+  .data__layout {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
+.data__list {
+  margin-top: var(--space-xl);
+  display: grid;
+  gap: var(--space-md);
+}
+
+.data__list li {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  color: var(--muted);
+  font-size: 0.96rem;
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--line);
+}
+
+.data__list svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--accent);
+}
+
+.data__list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Panel tipo terminal: enseña que el scouting es real, no un eslogan. */
+.terminal {
+  background: #05070800;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  background: linear-gradient(160deg, var(--surface-2), var(--surface));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.terminal__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem var(--space-md);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.terminal__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+.terminal__title {
+  margin-left: auto;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.terminal__body {
+  padding: var(--space-lg) var(--space-md);
+  overflow-x: auto;
+}
+
+.terminal__body pre {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.terminal__body .t-prompt {
+  color: var(--accent);
+}
+
+.terminal__body .t-hl {
+  color: var(--text);
+}
+
+.terminal__body .t-dim {
+  color: #5d686b;
+}
+
+/* --------------------------------------------------------------- jugadores */
+
+.roster__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.player {
+  position: relative;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.player .photo {
+  --photo-ratio: 3 / 4;
+  --photo-fallback: var(--surface-3);
+  --photo-overlay: linear-gradient(180deg, transparent 40%, rgba(7, 9, 10, 0.95) 100%);
+  transition: transform 0.7s var(--ease);
+}
+
+.player:hover .photo {
+  transform: scale(1.04);
+}
+
+.player__body {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: var(--space-lg) var(--space-md);
+  z-index: 1;
+}
+
+.player__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
+.player__meta {
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 0.3rem;
+}
+
+.roster__note {
+  margin-top: var(--space-xl);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ------------------------------------------------------------------- cita */
+
+.quote {
+  background: var(--surface-2);
+  border-block: 1px solid var(--line);
+  text-align: center;
+}
+
+.quote blockquote {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.4rem, 3.2vw, 2.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.22;
+  margin-bottom: var(--space-lg);
+}
+
+.quote blockquote::before {
+  content: '“';
+  color: var(--accent);
+}
+
+.quote blockquote::after {
+  content: '”';
+  color: var(--accent);
+}
+
+.quote figcaption {
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* -------------------------------------------------------------- contacto */
+
+.contact__layout {
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 940px) {
+  .contact__layout {
+    grid-template-columns: 0.85fr 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
+.contact__channels {
+  margin-top: var(--space-xl);
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.contact__channel span {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.contact__channel a,
+.contact__channel p {
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+.contact__channel a:hover {
+  color: var(--accent);
+}
+
+.form {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.form__row {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 620px) {
+  .form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.55rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line-strong);
+  padding: 0.7rem 0;
+  color: var(--text);
+  font-size: 1rem;
+  border-radius: 0;
+  transition: border-color 0.3s var(--ease);
+}
+
+.field select {
+  /* El desplegable nativo hereda el fondo del sistema: forzamos el nuestro
+     para que las opciones no salgan en blanco sobre blanco. */
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 14px) 55%, calc(100% - 8px) 55%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 2rem;
+}
+
+.field select option {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
+.form__consent {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.form__consent input {
+  width: auto;
+  margin-top: 4px;
+  accent-color: var(--accent);
+}
+
+.form__consent a {
+  color: var(--text);
+}
+
+.form__note {
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+/* ----------------------------------------------------------------- footer */
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--space-2xl) var(--space-xl);
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.footer__top {
+  display: grid;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 780px) {
+  .footer__top {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
+
+.footer h4 {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: var(--space-md);
+  font-weight: 700;
+}
+
+.footer ul {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-xl);
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+}
+
+/* Puente a la marca hermana: mismo componente en las dos webs. */
+.crosslink {
+  display: block;
+  padding: var(--space-xl) 0;
+  text-decoration: none;
+  border-top: 1px solid var(--line);
+  background: var(--surface-2);
+  transition: background-color 0.4s var(--ease);
+}
+
+.crosslink:hover {
+  background: var(--surface-3);
+}
+
+.crosslink__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.crosslink__label {
+  font-size: 0.68rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.crosslink__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+  letter-spacing: 0.01em;
+}
+
+.crosslink__arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  transition: gap 0.35s var(--ease);
+}
+
+.crosslink:hover .crosslink__arrow {
+  gap: 1.4rem;
+}
+
+.crosslink__arrow svg {
+  width: 18px;
+  height: 10px;
+}

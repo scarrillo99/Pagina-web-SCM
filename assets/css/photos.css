@@ -1,0 +1,40 @@
+/* ==========================================================================
+   FOTOGRAFÍA — punto único donde se enchufan las imágenes reales.
+
+   Todo el sitio funciona sin una sola foto: donde debería ir una imagen se
+   pinta un bloque de color de la paleta. Para poner las fotos definitivas
+   basta con descomentar la línea que toque y apuntar al fichero. No hay que
+   tocar el HTML.
+
+   Las rutas son relativas a ESTE archivo (assets/css/), por eso empiezan
+   por ../img/.
+
+   Tamaños recomendados (JPG o WebP, calidad 80):
+     hero            1920 × 1080   horizontal, con espacio libre para el texto
+     paneles portada 1400 × 1800   verticales, funcionan mejor a pantalla partida
+     jugadores        800 × 1067   vertical 3:4, jugador recortado a media figura
+     experiencias    1200 ×  900   horizontales
+   ========================================================================== */
+
+:root {
+  /* --- Portada del grupo ------------------------------------------------ */
+  /* --photo-scm: url('../img/hub-scm.jpg'); */
+  /* --photo-magno: url('../img/hub-magno.jpg'); */
+
+  /* --- Jugadores de SCM ------------------------------------------------- */
+  /* --photo-p1: url('../img/jugador-1.jpg'); */
+  /* --photo-p2: url('../img/jugador-2.jpg'); */
+  /* --photo-p3: url('../img/jugador-3.jpg'); */
+  /* --photo-p4: url('../img/jugador-4.jpg'); */
+
+  /* --- Experiencias de Magno -------------------------------------------- */
+  /* --photo-exp1: url('../img/experiencia-nautica.jpg'); */
+  /* --photo-exp2: url('../img/experiencia-villa.jpg'); */
+  /* --photo-exp3: url('../img/experiencia-evento.jpg'); */
+}
+
+/* El hero de cada marca se declara por página porque la imagen es distinta:
+   descomenta el bloque de la página que estés vistiendo. */
+
+/* body.page-scm { --photo-hero: url('../img/hero-scm.jpg'); } */
+/* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

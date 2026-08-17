@@ -1,0 +1,154 @@
+/* ==========================================================================
+   DOC — hoja mínima para las páginas legales. Sobrio y legible, sin la
+   personalidad de ninguna de las dos marcas: son documentos, no escaparate.
+   ========================================================================== */
+
+:root {
+  --surface: #0f1214;
+  --text: #e7ebea;
+  --muted: #97a2a5;
+  --accent: #c6f24e;
+  --line: rgba(255, 255, 255, 0.12);
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+}
+
+.doc-header {
+  border-bottom: 1px solid var(--line);
+  padding-block: var(--space-lg);
+}
+
+.doc-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.doc-header a {
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.3s var(--ease);
+}
+
+.doc-header a:hover {
+  color: var(--accent);
+}
+
+.doc {
+  padding-block: var(--space-3xl) var(--space-4xl);
+}
+
+.doc h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.doc__updated {
+  color: var(--muted);
+  font-size: 0.84rem;
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--space-2xl);
+}
+
+.doc h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--line);
+}
+
+.doc h2:first-of-type {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+}
+
+.doc p,
+.doc li {
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+  max-width: 74ch;
+}
+
+.doc ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+  margin-bottom: var(--space-md);
+}
+
+.doc li {
+  margin-bottom: var(--space-xs);
+}
+
+.doc strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.doc a {
+  color: var(--accent);
+}
+
+.doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-lg);
+  font-size: 0.9rem;
+}
+
+.doc th,
+.doc td {
+  text-align: left;
+  padding: var(--space-sm) var(--space-md) var(--space-sm) 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  color: var(--muted);
+}
+
+.doc th {
+  color: var(--text);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Aviso de plantilla: se borra cuando el documento esté revisado. */
+.doc__warning {
+  border: 1px solid var(--accent);
+  border-left-width: 3px;
+  padding: var(--space-lg);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-2xl);
+  background: rgba(198, 242, 78, 0.06);
+}
+
+.doc__warning p {
+  color: var(--text);
+  margin-bottom: 0;
+}
+
+.doc__warning strong {
+  color: var(--accent);
+}
+
+.doc-footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--space-xl);
+  font-size: 0.8rem;
+  color: var(--muted);
+}

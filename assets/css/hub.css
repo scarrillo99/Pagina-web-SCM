@@ -1,0 +1,340 @@
+/* ==========================================================================
+   HUB — portada del grupo. Pantalla partida: a la izquierda el mundo
+   deportivo (oscuro), a la derecha el mundo lifestyle (marfil). La portada
+   no tiene identidad propia: enseña las dos y deja elegir.
+   ========================================================================== */
+
+:root {
+  --scm-surface: #07090a;
+  --scm-surface-2: #10161a;
+  --scm-text: #f2f5f4;
+  --scm-muted: #93a0a4;
+  --scm-accent: #c6f24e;
+
+  --magno-surface: #fbf8f3;
+  --magno-surface-2: #f1ebe1;
+  --magno-ink: #1a1613;
+  --magno-text: #2b2420;
+  --magno-muted: #7a6e62;
+  --magno-accent: #a8863f;
+
+  --font-sport: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-lux: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --surface: var(--scm-surface);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--scm-surface);
+  color: var(--scm-text);
+}
+
+/* --------------------------------------------------------------- cabecera */
+
+.hub-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--gutter);
+  /* Sobre la pantalla partida el texto cae en ambos fondos, así que la
+     cabecera lleva su propio velo oscuro para leerse siempre igual. */
+  background: linear-gradient(to bottom, rgba(7, 9, 10, 0.72), rgba(7, 9, 10, 0));
+  color: #fff;
+  --lang-active-fg: #07090a;
+}
+
+.hub-header__mark {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-sport);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hub-header__mark svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* -------------------------------------------------------- pantalla partida */
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100svh;
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 4vw, 4rem) clamp(2.5rem, 6vw, 5rem);
+  overflow: hidden;
+  text-decoration: none;
+  isolation: isolate;
+  transition: flex-grow 0.6s var(--ease);
+}
+
+.panel__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1.2s var(--ease), filter 0.6s var(--ease);
+}
+
+.panel__veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: opacity 0.6s var(--ease);
+}
+
+.panel:hover .panel__bg,
+.panel:focus-visible .panel__bg {
+  transform: scale(1.05);
+}
+
+/* --- panel deportivo --- */
+
+.panel--scm {
+  color: var(--scm-text);
+  --surface: var(--scm-surface);
+}
+
+.panel--scm .panel__bg {
+  background-color: var(--scm-surface);
+  background-image: var(--photo-scm, none);
+  /* Sin foto: una malla diagonal tenue evita el plano liso y da textura. */
+  filter: saturate(0.85) contrast(1.05);
+}
+
+.panel--scm .panel__veil {
+  background:
+    repeating-linear-gradient(
+      115deg,
+      rgba(198, 242, 78, 0.05) 0px,
+      rgba(198, 242, 78, 0.05) 1px,
+      transparent 1px,
+      transparent 42px
+    ),
+    linear-gradient(180deg, rgba(7, 9, 10, 0.35) 0%, rgba(7, 9, 10, 0.92) 78%);
+}
+
+/* --- panel lifestyle --- */
+
+.panel--magno {
+  color: var(--magno-text);
+  --surface: var(--magno-surface);
+}
+
+.panel--magno .panel__bg {
+  background-color: var(--magno-surface);
+  background-image: var(--photo-magno, none);
+}
+
+.panel--magno .panel__veil {
+  background:
+    radial-gradient(120% 80% at 70% 10%, rgba(168, 134, 63, 0.16) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(251, 248, 243, 0.3) 0%, rgba(251, 248, 243, 0.94) 74%);
+}
+
+/* --- contenido del panel --- */
+
+.panel__eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: var(--space-md);
+}
+
+.panel__title {
+  font-size: clamp(2.4rem, 5.2vw, 4.6rem);
+  margin-bottom: var(--space-sm);
+}
+
+.panel--scm .panel__title {
+  font-family: var(--font-sport);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.panel--magno .panel__title {
+  font-family: var(--font-lux);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.panel__desc {
+  max-width: 34ch;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  margin-bottom: var(--space-lg);
+}
+
+.panel--scm .panel__desc {
+  color: var(--scm-muted);
+}
+
+.panel--magno .panel__desc {
+  color: var(--magno-muted);
+}
+
+.panel__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid currentColor;
+  align-self: flex-start;
+  transition: gap 0.35s var(--ease);
+}
+
+.panel--scm .panel__cta {
+  color: var(--scm-accent);
+}
+
+.panel--magno .panel__cta {
+  color: var(--magno-accent);
+}
+
+.panel:hover .panel__cta,
+.panel:focus-visible .panel__cta {
+  gap: 1.4rem;
+}
+
+.panel__cta svg {
+  width: 18px;
+  height: 10px;
+}
+
+/* En pantallas anchas el panel señalado gana espacio: refuerza que son dos
+   caminos distintos, no dos mitades iguales. */
+@media (min-width: 900px) and (hover: hover) {
+  .split:has(.panel:hover) .panel {
+    flex-grow: 0.9;
+  }
+
+  .split {
+    display: flex;
+  }
+
+  .panel {
+    flex: 1 1 0;
+  }
+
+  .split:has(.panel:hover) .panel:hover {
+    flex-grow: 1.25;
+  }
+}
+
+@media (max-width: 899px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    min-height: 62svh;
+  }
+}
+
+/* ------------------------------------------------------------- el grupo */
+
+.group {
+  background: var(--scm-surface);
+  color: var(--scm-text);
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* En la portada el antetítulo va en gris sobre las fotos, pero en la sección
+   del grupo se enmarca con el acento igual que en las páginas de marca. */
+.group .panel__eyebrow {
+  color: var(--scm-accent);
+  opacity: 1;
+}
+
+.group__lead {
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+  font-family: var(--font-sport);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+}
+
+.group__lead em {
+  font-style: normal;
+  color: var(--scm-accent);
+}
+
+.group__text {
+  color: var(--scm-muted);
+  max-width: 62ch;
+  margin-bottom: var(--space-md);
+}
+
+.group__points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.group__point h3 {
+  font-family: var(--font-sport);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--scm-accent);
+  margin-bottom: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.group__point p {
+  color: var(--scm-muted);
+  font-size: 0.95rem;
+}
+
+/* ----------------------------------------------------------------- footer */
+
+.hub-footer {
+  background: var(--scm-surface);
+  color: var(--scm-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding-block: var(--space-xl);
+  font-size: 0.85rem;
+}
+
+.hub-footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-xl);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hub-footer a {
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+.hub-footer a:hover {
+  color: var(--scm-accent);
+}
