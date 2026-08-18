@@ -398,22 +398,14 @@ body {
   background: #0a0a0b;
 }
 
-/* Los retratos ocupan su propia franja a la derecha en lugar de estirarse a
-   todo lo ancho. Las fotos de presentación son verticales (4:5) y a pantalla
-   completa se recortarían justo por la cara; en una franja estrecha y alta
-   apenas pierden nada. El borde izquierdo se desvanece con una máscara para
-   que la foto se funda con el fondo y no parezca pegada.
-
-   Dentro de esa franja se apilan cuatro fotos que se relevan por
-   fundido. El ritmo lo marca data-interval en el HTML. */
+/* La fotografía es el fondo de la portada: ocupa la pantalla entera, de lado
+   a lado, y el titular va encima. Dentro se apilan cuatro fotos que se
+   relevan por fundido; el ritmo lo marca data-interval en el HTML. */
 .hero__portraits {
   position: absolute;
-  inset: 0 0 0 auto;
+  inset: 0;
   z-index: -2;
-  width: 54%;
   background-color: #101013;
-  mask-image: linear-gradient(90deg, transparent 0%, #000 30%);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 30%);
 }
 
 .hero__portrait {
@@ -425,9 +417,9 @@ body {
      propio --photo-size y --photo-position en el style del HTML, y si no los
      lleva usa el general de la portada. */
   background-size: var(--photo-size, var(--photo-hero-size, cover));
-  background-position: var(--photo-position, var(--photo-hero-position, center top));
+  background-position: var(--photo-position, var(--photo-hero-position, center 25%));
   opacity: 0;
-  transition: opacity 0.45s var(--ease);
+  transition: opacity 0.5s var(--ease);
 }
 
 .hero__portrait.is-active {
@@ -441,30 +433,19 @@ body {
   opacity: 1;
 }
 
+/* Con la foto a pantalla completa el velo es lo que hace legible el titular,
+   y tiene que funcionar con cualquier fotografía, clara u oscura. Por eso son
+   tres capas: una lateral que oscurece el lado del texto, una inferior que
+   asienta la imagen sobre la sección siguiente y una superior que sostiene la
+   cabecera fija. */
 .hero__veil {
   position: absolute;
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(10, 10, 11, 0.96) 0%, rgba(10, 10, 11, 0.7) 38%, rgba(10, 10, 11, 0) 62%),
-    linear-gradient(0deg, rgba(10, 10, 11, 0.92) 2%, rgba(10, 10, 11, 0) 46%);
-}
-
-/* Trama vertical muy tenue: da textura al lado del texto sin competir con
-   la fotografía. */
-.hero__grid {
-  position: absolute;
-  inset: 0 46% 0 0;
-  z-index: -1;
-  background-image: repeating-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.05) 0px,
-    rgba(255, 255, 255, 0.05) 1px,
-    transparent 1px,
-    transparent 12.5%
-  );
-  mask-image: linear-gradient(180deg, transparent, #000 30%, #000 65%, transparent);
-  -webkit-mask-image: linear-gradient(180deg, transparent, #000 30%, #000 65%, transparent);
+    linear-gradient(90deg, rgba(10, 10, 11, 0.92) 0%, rgba(10, 10, 11, 0.72) 34%, rgba(10, 10, 11, 0.3) 68%, rgba(10, 10, 11, 0.15) 100%),
+    linear-gradient(0deg, rgba(10, 10, 11, 0.95) 0%, rgba(10, 10, 11, 0.35) 38%, rgba(10, 10, 11, 0) 62%),
+    linear-gradient(180deg, rgba(10, 10, 11, 0.7) 0%, rgba(10, 10, 11, 0) 22%);
 }
 
 .hero .container {
@@ -472,25 +453,17 @@ body {
   z-index: 1;
 }
 
-/* Sin sitio para dos columnas, la foto pasa a fondo completo y el velo se
-   refuerza para que el titular siga leyéndose encima. */
+/* En móvil la foto sigue a pantalla completa, pero el texto ocupa todo el
+   ancho: el velo pasa a ser de abajo arriba para no apagar la imagen entera. */
 @media (max-width: 939px) {
-  .hero__portraits {
-    width: 100%;
-    mask-image: none;
-    -webkit-mask-image: none;
-  }
-
   .hero__portrait {
-    background-position: var(--photo-position-mobile, var(--photo-hero-position-mobile, center 18%));
+    background-position: var(--photo-position-mobile, var(--photo-hero-position-mobile, center 20%));
   }
 
   .hero__veil {
-    background: linear-gradient(0deg, rgba(10, 10, 11, 0.96) 12%, rgba(10, 10, 11, 0.55) 62%, rgba(10, 10, 11, 0.7) 100%);
-  }
-
-  .hero__grid {
-    display: none;
+    background:
+      linear-gradient(0deg, rgba(10, 10, 11, 0.97) 8%, rgba(10, 10, 11, 0.72) 46%, rgba(10, 10, 11, 0.4) 100%),
+      linear-gradient(180deg, rgba(10, 10, 11, 0.75) 0%, rgba(10, 10, 11, 0) 26%);
   }
 }
 

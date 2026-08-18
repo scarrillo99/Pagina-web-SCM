@@ -90,21 +90,23 @@
    Magno: fotografía a pantalla completa de instalaciones o costa. */
 
 /* La portada de SCM lleva CUATRO fotos que se van relevando solas cada
-   segundo. Cada una es un fichero en assets/img/; para cambiar una basta con
-   sustituir el fichero conservando el nombre, sin tocar código.
+   segundo, a pantalla completa: la fotografía es el fondo entero y el titular
+   va encima. Cada una es un fichero en assets/img/; para cambiar una basta
+   con sustituir el fichero conservando el nombre, sin tocar código.
 
-   Formato: vertical 1080 x 1350 (el de una imagen de presentación para
-   redes). Ocupan una franja alta a la derecha de la pantalla, así que la cara
-   no se recorta.
+   Formato: HORIZONTAL, 1920 x 1080 o parecido, porque ocupa toda la pantalla.
+   Una foto vertical también entra, pero al llenar una pantalla apaisada se le
+   recorta bastante por arriba y por abajo.
+
+   Escoged fotos con aire en la mitad izquierda: ahí cae el titular.
 
    El nombre del jugador y su club van en el HTML, en data-name y data-club de
    cada diapositiva. La velocidad se cambia en data-interval, en milisegundos.
 
-   Encuadre. --photo-hero-size y --photo-hero-position valen para las cuatro.
-   Están puestos en 150 % anclado abajo porque la foto de presentación de
-   Mangala con el Getafe lleva incrustada arriba la franja de escudos de su
-   trayectoria: ampliarla y anclarla abajo deja ese tercio superior fuera. Una
-   foto limpia, sin grafismo, se ve mejor con cover.
+   Encuadre. --photo-hero-position sube o baja el recorte en escritorio y
+   --photo-hero-position-mobile hace lo mismo en móvil, por separado. Está en
+   25 % para que la cara quede en el tercio superior y no la corte la parte de
+   arriba de la pantalla.
 
    Si una foto concreta necesita otro encuadre, se le pone su propio
    --photo-size y --photo-position en el style de su diapositiva, en
@@ -115,8 +117,8 @@ body.page-scm {
   --photo-hero3: url('../img/hero-scm-3.jpg');
   --photo-hero4: url('../img/hero-scm-4.jpg');
 
-  --photo-hero-size: auto 150%;
-  --photo-hero-position: center bottom;
-  --photo-hero-position-mobile: center bottom;
+  --photo-hero-size: cover;
+  --photo-hero-position: center 25%;
+  --photo-hero-position-mobile: center 20%;
 }
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

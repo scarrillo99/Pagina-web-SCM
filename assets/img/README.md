@@ -46,47 +46,44 @@ hay que tocar el HTML.
 
 | Fichero | Tamaño | Dónde sale |
 |---|---|---|
-| `hero-scm-1..4.jpg` | 1080×1350 | Portada, las cuatro fotos que rotan. **Ya están enchufadas**: basta con sustituir cada fichero |
+| `hero-scm-1..4.jpg` | 1920×1080 | Portada a pantalla completa, las cuatro fotos que rotan. **Ya están enchufadas**: basta con sustituir cada fichero |
 | `hub-scm.jpg` | 1400×1800 | Mitad izquierda de la portada del grupo |
 | `equipo-1..6.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
 | `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad. Aquí encajan la firma del contrato, la llegada al aeropuerto y los retratos con cifras |
 | `partner-*.jpg` | 1200×750 | Los cinco bloques de SCM x Magno |
 
 **El hero ya está conectado.** En `assets/img/hero-scm-1.jpg` a
-`hero-scm-4.jpg` hay ahora cuatro fondos provisionales. Para poner las fotos
-reales solo hay que **sustituir esos ficheros conservando el nombre**: no hay
-que tocar ni una línea de código.
+`hero-scm-4.jpg` hay ahora cuatro marcadores que dicen en pantalla qué fichero
+sustituye cada uno. Para poner las fotos reales solo hay que **sustituir esos
+ficheros conservando el nombre**: no hay que tocar ni una línea de código.
 
-**El hero.** Son **cuatro fotos verticales** de jugadores de la agencia,
-formato 1080 x 1350 o parecido, que es justo el de una imagen de presentación
-para redes. Se relevan solas por fundido. Ocupan una franja alta a la derecha
-de la pantalla y su borde izquierdo se funde con el fondo, así que la cara no
-se recorta. En móvil pasan a fondo completo con un velo oscuro encima.
+**El hero.** La fotografía es el fondo de toda la portada, de lado a lado, con
+el titular encima. Son **cuatro fotos que se relevan solas** por fundido.
 
-Lo que se puede ajustar, todo en `scm/index.html` salvo el encuadre:
+Formato: **horizontal, 1920 x 1080** o parecido. Una foto vertical de
+presentación también entra, pero al llenar una pantalla apaisada se le recorta
+bastante por arriba y por abajo, así que se aprovechan mucho mejor las
+horizontales.
 
-- **La velocidad**, en `data-interval` del bloque `hero__portraits`, en
-  milisegundos. Ahora está en `1000`, un segundo. Si resulta agitado, `4000`
-  deja respirar cada foto.
+Escoged fotos con **aire en la mitad izquierda**: ahí cae el titular. Y que en
+cada una salga **solo el jugador**: es la primera pantalla de la agencia y una
+imagen con dos personas resta fuerza. Las fotos de firma de contrato o de
+llegada quedan mejor en la sección Actualidad.
+
+Lo que se puede ajustar:
+
+- **La velocidad**, en `data-interval` del bloque `hero__portraits` de
+  `scm/index.html`, en milisegundos. Ahora está en `1000`, un segundo. Si
+  resulta agitado, `4000` deja respirar cada foto.
 - **El nombre y el club** de abajo a la derecha, en `data-name` y `data-club`
   de cada diapositiva. Cambian solos al cambiar la foto.
 - **El encuadre general**, en `photos.css`: `--photo-hero-position` sube o
   baja el recorte en escritorio y `--photo-hero-position-mobile` hace lo mismo
-  en móvil, por separado.
+  en móvil, por separado. Están en 25 % y 20 % para que la cara quede en el
+  tercio superior.
 - **El encuadre de una foto suelta**, si una necesita otro recorte que las
   demás: se le añade su propio `--photo-size` y `--photo-position` en el
   `style` de su diapositiva y esa manda sobre el general.
-
-La foto de presentación de Mangala con el Getafe lleva incrustada arriba la
-franja de escudos de su trayectoria. El encuadre general está calculado para
-dejarla fuera: `--photo-hero-size: auto 150%` amplía la imagen y
-`--photo-hero-position: center bottom` la ancla abajo, así que ese tercio
-superior no se ve. Si las cuatro acaban siendo fotos limpias, sin grafismo, se
-cambia a `--photo-hero-size: cover`.
-
-En cada foto debe salir **solo el jugador**: es la primera pantalla de la
-agencia y una imagen con dos personas resta fuerza. Las fotos de firma de
-contrato o de llegada quedan mejor en la sección Actualidad.
 
 Hace falta autorización de imagen de cada jugador y, si aparece la equipación,
 también conviene comprobarlo con el club.
