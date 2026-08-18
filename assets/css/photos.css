@@ -30,7 +30,10 @@
   /* --photo-team6: url('../img/equipo-6.jpg'); */
 
   /* --- Actualidad de SCM ------------------------------------------------
-     Horizontales 16:10, 1200 x 750. Capturas o fotos de cada publicación. */
+     Horizontales 16:10, 1200 x 750.
+     Sugerencia con el material que hay: la firma del contrato en la 1, la
+     llegada al aeropuerto con la bufanda en la 2 y el retrato de Mangala
+     con sus cifras en la 3. */
   /* --photo-news1: url('../img/actualidad-1.jpg'); */
   /* --photo-news2: url('../img/actualidad-2.jpg'); */
   /* --photo-news3: url('../img/actualidad-3.jpg'); */
@@ -77,11 +80,20 @@
 
 /* Los heroes llevan su propia imagen por página.
 
-   SCM: foto de marketing de un jugador de la agencia, horizontal, con el
-   sujeto hacia la derecha para que el titular caiga sobre el lado despejado.
-   Con --photo-hero-position se ajusta el encuadre sin recortar el fichero.
+   SCM: retrato VERTICAL de un jugador de la agencia, 1080 x 1350 o similar.
+   Ocupa una franja alta a la derecha, así que una foto de presentación en
+   formato de redes encaja sin recortarse por la cara. Con
+   --photo-hero-position se sube o baja el encuadre en escritorio, y con
+   --photo-hero-position-mobile se ajusta aparte para el móvil, donde la
+   foto pasa a fondo completo.
 
    Magno: fotografía a pantalla completa de instalaciones o costa. */
 
-/* body.page-scm { --photo-hero: url('../img/hero-scm.jpg'); --photo-hero-position: center 20%; } */
+/*
+body.page-scm {
+  --photo-hero: url('../img/hero-scm.jpg');
+  --photo-hero-position: center 12%;
+  --photo-hero-position-mobile: center 15%;
+}
+*/
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

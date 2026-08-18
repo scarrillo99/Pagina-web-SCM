@@ -21,8 +21,8 @@ window.I18N_DICT = {
       'Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera del campo. Rendimiento, salud, imagen y patrimonio, en un solo equipo.',
     'hero.cta1': 'Hablemos',
     'hero.cta2': 'Ver servicios',
-    'hero.creditName': 'Nombre del jugador',
-    'hero.creditClub': 'Club actual',
+    'hero.creditName': 'Orel Mangala',
+    'hero.creditClub': 'Getafe CF',
 
     'stats.1.label': 'Agentes a tiempo completo',
     'stats.1.text':
@@ -292,8 +292,8 @@ window.I18N_DICT = {
       'We advise professional footballers across the board and stand beside them on and off the pitch. Performance, health, image and wealth, handled by one team.',
     'hero.cta1': "Let's talk",
     'hero.cta2': 'See services',
-    'hero.creditName': 'Player name',
-    'hero.creditClub': 'Current club',
+    'hero.creditName': 'Orel Mangala',
+    'hero.creditClub': 'Getafe CF',
 
     'stats.1.label': 'Full-time agents',
     'stats.1.text':

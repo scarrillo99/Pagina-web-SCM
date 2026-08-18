@@ -389,8 +389,8 @@ body {
 .hero {
   position: relative;
   min-height: 100svh;
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  align-items: center;
   padding-block: clamp(8rem, 16vh, 11rem) clamp(3.5rem, 9vh, 6rem);
   overflow: hidden;
   color: #fff;
@@ -398,41 +398,72 @@ body {
   background: #0a0a0b;
 }
 
-/* La foto del jugador vive aquí. Sin ella el hero sigue funcionando: queda
-   un degradado oscuro con la trama de líneas. */
-.hero__bg {
+/* El retrato del jugador ocupa su propia franja a la derecha en lugar de
+   estirarse a todo lo ancho. Las fotos de presentación son verticales (4:5)
+   y a pantalla completa se recortarían justo por la cara; en una franja
+   estrecha y alta apenas pierden nada. El borde izquierdo se desvanece con
+   una máscara para que la foto se funda con el fondo y no parezca pegada. */
+.hero__portrait {
   position: absolute;
-  inset: 0;
-  z-index: -3;
-  background-color: #141416;
+  inset: 0 0 0 auto;
+  z-index: -2;
+  width: 54%;
+  background-color: #101013;
   background-image: var(--photo-hero, none);
   background-size: cover;
-  background-position: var(--photo-hero-position, center 25%);
+  background-position: var(--photo-hero-position, center top);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 30%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 30%);
 }
 
 .hero__veil {
   position: absolute;
   inset: 0;
-  z-index: -2;
+  z-index: -1;
   background:
-    linear-gradient(100deg, rgba(10, 10, 11, 0.94) 0%, rgba(10, 10, 11, 0.62) 46%, rgba(10, 10, 11, 0.22) 72%),
-    linear-gradient(0deg, rgba(10, 10, 11, 0.96) 4%, rgba(10, 10, 11, 0) 62%);
+    linear-gradient(90deg, rgba(10, 10, 11, 0.96) 0%, rgba(10, 10, 11, 0.7) 38%, rgba(10, 10, 11, 0) 62%),
+    linear-gradient(0deg, rgba(10, 10, 11, 0.92) 2%, rgba(10, 10, 11, 0) 46%);
 }
 
-/* Trama vertical muy tenue: da textura sin competir con la foto. */
+/* Trama vertical muy tenue: da textura al lado del texto sin competir con
+   la fotografía. */
 .hero__grid {
   position: absolute;
-  inset: 0;
+  inset: 0 46% 0 0;
   z-index: -1;
   background-image: repeating-linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.05) 0px,
     rgba(255, 255, 255, 0.05) 1px,
     transparent 1px,
-    transparent 11.111%
+    transparent 12.5%
   );
   mask-image: linear-gradient(180deg, transparent, #000 30%, #000 65%, transparent);
   -webkit-mask-image: linear-gradient(180deg, transparent, #000 30%, #000 65%, transparent);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sin sitio para dos columnas, la foto pasa a fondo completo y el velo se
+   refuerza para que el titular siga leyéndose encima. */
+@media (max-width: 939px) {
+  .hero__portrait {
+    width: 100%;
+    mask-image: none;
+    -webkit-mask-image: none;
+    background-position: var(--photo-hero-position-mobile, center 18%);
+  }
+
+  .hero__veil {
+    background: linear-gradient(0deg, rgba(10, 10, 11, 0.96) 12%, rgba(10, 10, 11, 0.55) 62%, rgba(10, 10, 11, 0.7) 100%);
+  }
+
+  .hero__grid {
+    display: none;
+  }
 }
 
 .hero__eyebrow {
@@ -455,7 +486,7 @@ body {
 }
 
 .hero__title {
-  font-size: clamp(2.6rem, 7.6vw, 6.8rem);
+  font-size: clamp(2.3rem, 5.1vw, 4.5rem);
   max-width: 15ch;
   margin-bottom: var(--space-lg);
 }
@@ -466,8 +497,8 @@ body {
 }
 
 .hero__lead {
-  font-size: clamp(1rem, 1.45vw, 1.2rem);
-  max-width: 48ch;
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  max-width: 42ch;
   margin-bottom: var(--space-xl);
   color: rgba(255, 255, 255, 0.78);
   line-height: 1.7;
@@ -483,24 +514,37 @@ body {
 .hero__credit {
   position: absolute;
   right: var(--gutter);
-  bottom: clamp(3.5rem, 9vh, 6rem);
+  bottom: clamp(2rem, 5vh, 3rem);
   z-index: 1;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  max-width: 20ch;
-  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1;
+}
+
+.hero__credit::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: var(--red);
 }
 
 .hero__credit strong {
-  display: block;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
 }
 
-@media (max-width: 900px) {
+.hero__credit span::before {
+  content: '· ';
+  opacity: 0.6;
+}
+
+@media (max-width: 939px) {
   .hero__credit {
     display: none;
   }

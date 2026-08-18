@@ -49,16 +49,23 @@ hay que tocar el HTML.
 | `hero-scm.jpg` | 1920×1080 | Portada, a pantalla completa |
 | `hub-scm.jpg` | 1400×1800 | Mitad izquierda de la portada del grupo |
 | `equipo-1..6.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
-| `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad |
+| `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad. Aquí encajan la firma del contrato, la llegada al aeropuerto y los retratos con cifras |
 | `partner-*.jpg` | 1200×750 | Los cinco bloques de SCM x Magno |
 
-**El hero.** Es el sitio para la foto de marketing de un jugador de la
-agencia. Debe ser horizontal y con el jugador hacia la derecha: el titular
-cae sobre el lado izquierdo y encima hay un degradado oscuro. Fotos de
-sesión o de club, no de partido. Con `--photo-hero-position` se ajusta el
-encuadre sin recortar el fichero. Debajo, a la derecha, hay un crédito con
-el nombre del jugador y su club actual: se edita en `i18n-scm.js`
-(`hero.creditName` y `hero.creditClub`).
+**El hero.** Va una foto **vertical** de un jugador de la agencia, formato
+1080 x 1350 o parecido, que es justo el de una imagen de presentación para
+redes. Ocupa una franja alta a la derecha de la pantalla y su borde
+izquierdo se funde con el fondo, así que la cara no se recorta. En móvil
+pasa a fondo completo con un velo oscuro encima.
+
+- `--photo-hero-position` sube o baja el encuadre en escritorio.
+- `--photo-hero-position-mobile` hace lo mismo para móvil, por separado.
+- El crédito de abajo a la derecha se edita en `i18n-scm.js`, en
+  `hero.creditName` y `hero.creditClub`.
+
+Debe salir **solo el jugador**: es la primera pantalla de la agencia y una
+foto con dos personas resta fuerza. Las fotos de firma de contrato o de
+llegada quedan mejor en la sección Actualidad.
 
 Hace falta autorización de imagen del jugador y, si aparece la equipación,
 también conviene comprobarlo con el club.
