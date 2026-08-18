@@ -7,6 +7,7 @@ window.I18N_DICT = {
     'nav.lang': 'Idioma',
     'nav.menu': 'Menú',
     'nav.about': 'Agencia',
+    'nav.group': 'SCM Group',
     'nav.history': 'Historia',
     'nav.services': 'Servicios',
     'nav.focus': 'Enfoque',
@@ -26,9 +27,10 @@ window.I18N_DICT = {
 
     'stats.1.label': 'Agentes a tiempo completo',
     'stats.1.text':
-      'Conectados en España, Italia, Portugal, Inglaterra y Bélgica, y también en Asia, Emiratos Árabes Unidos y Estados Unidos.',
+      'Agentes que trabajan para nuestros jugadores en distintos mercados, abriendo oportunidades y sentándose a negociar cada operación. Presencia directa en España, Italia, Portugal, Inglaterra y Bélgica, y también en Asia, Emiratos Árabes Unidos y Estados Unidos.',
     'stats.2.label': 'Scouts en todo el mundo',
-    'stats.2.text': 'Scouts internos con amplia experiencia en grandes clubes europeos.',
+    'stats.2.text':
+      'Scouts de primer nivel, con experiencia en grandes clubes europeos, que rastrean el mercado nacional e internacional tanto para clubes como para nuestros jugadores.',
     'stats.3.label': 'Años de experiencia',
     'stats.3.text': 'Trayectoria en la gestión integral de jugadores profesionales.',
 
@@ -46,6 +48,26 @@ window.I18N_DICT = {
     'about.v4': 'Visión',
     'about.v5': 'Innovación',
     'about.v6': 'Sostenibilidad',
+
+    'threesixty.section': 'SCM Group Holding',
+    'threesixty.title': '360 grados: <em>siempre el ángulo correcto</em>',
+    'threesixty.p1':
+      'SCM es una agencia deportiva integral con sede en Marbella, concretamente en La Quinta. El origen de SCM se encuentra en <strong>SCM Group Holding</strong>, un grupo empresarial de referencia en España.',
+    'threesixty.p2':
+      'Además de su experiencia en el ámbito deportivo, SCM cuenta con el respaldo del sólido conocimiento empresarial, económico y médico de SCM Group Holding, así como de sus empresas vinculadas y alianzas estratégicas.',
+    'threesixty.capsTitle': 'Lo que cubre el grupo',
+    'caps.1': 'Traspasos',
+    'caps.2': 'Contratos',
+    'caps.3': 'Marketing y PR',
+    'caps.4': 'Entrenamiento individual',
+    'caps.5': 'Atención médica',
+    'caps.6': 'Desarrollo personal',
+    'caps.7': 'Coaching mental',
+    'caps.8': 'Generación de patrimonio',
+    'caps.9': 'Merchandising',
+    'caps.10': 'Supervisión académica',
+    'caps.11': 'Servicio de concierge',
+    'caps.12': 'Asesoramiento fiscal',
 
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
@@ -239,7 +261,6 @@ window.I18N_DICT = {
     'contact.title': 'Kick off',
     'contact.lead':
       'Tanto si eres jugador, familia o club, escríbenos. Respondemos a todo y lo que nos cuentes se queda entre nosotros.',
-    'contact.phone': 'Teléfono',
     'contact.email': 'Email',
     'contact.address': 'Dirección',
     'contact.follow': 'Síguenos',
@@ -278,6 +299,7 @@ window.I18N_DICT = {
     'nav.lang': 'Language',
     'nav.menu': 'Menu',
     'nav.about': 'Agency',
+    'nav.group': 'SCM Group',
     'nav.history': 'History',
     'nav.services': 'Services',
     'nav.focus': 'Approach',
@@ -297,9 +319,10 @@ window.I18N_DICT = {
 
     'stats.1.label': 'Full-time agents',
     'stats.1.text':
-      'Connected across Spain, Italy, Portugal, England and Belgium, as well as Asia, the United Arab Emirates and the United States.',
+      'Agents working for our players across different markets, opening up opportunities and sitting at the table for every deal. Direct presence in Spain, Italy, Portugal, England and Belgium, as well as Asia, the United Arab Emirates and the United States.',
     'stats.2.label': 'Scouts worldwide',
-    'stats.2.text': 'In-house scouts with extensive experience at major European clubs.',
+    'stats.2.text':
+      'Top-level scouts, with experience at major European clubs, covering the domestic and international market both for clubs and for our players.',
     'stats.3.label': 'Years of experience',
     'stats.3.text': 'A track record in the complete management of professional players.',
 
@@ -317,6 +340,26 @@ window.I18N_DICT = {
     'about.v4': 'Vision',
     'about.v5': 'Innovation',
     'about.v6': 'Sustainability',
+
+    'threesixty.section': 'SCM Group Holding',
+    'threesixty.title': '360 degrees: <em>always the right angle</em>',
+    'threesixty.p1':
+      'SCM is a full-service sports agency based in Marbella, in La Quinta. Its origin lies in <strong>SCM Group Holding</strong>, a leading business group in Spain.',
+    'threesixty.p2':
+      'Beyond its experience in sport, SCM is backed by the solid business, financial and medical knowledge of SCM Group Holding, along with its associated companies and strategic alliances.',
+    'threesixty.capsTitle': 'What the group covers',
+    'caps.1': 'Transfers',
+    'caps.2': 'Contracts',
+    'caps.3': 'Marketing and PR',
+    'caps.4': 'Individual training',
+    'caps.5': 'Medical care',
+    'caps.6': 'Personal development',
+    'caps.7': 'Mental coaching',
+    'caps.8': 'Asset generation',
+    'caps.9': 'Merchandising',
+    'caps.10': 'Academic supervision',
+    'caps.11': 'Concierge service',
+    'caps.12': 'Tax support',
 
     'statement.1': 'Our competence <em>completes</em> your talent',
 
@@ -508,7 +551,6 @@ window.I18N_DICT = {
     'contact.title': 'Kick off',
     'contact.lead':
       'Whether you are a player, a family or a club, write to us. We answer everything, and what you tell us stays between us.',
-    'contact.phone': 'Phone',
     'contact.email': 'Email',
     'contact.address': 'Address',
     'contact.follow': 'Follow us',

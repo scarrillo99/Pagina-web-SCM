@@ -567,6 +567,13 @@ body {
   border-right: 1px solid var(--line);
 }
 
+.stat__icon {
+  width: 34px;
+  height: 34px;
+  color: var(--red);
+  margin-bottom: var(--space-lg);
+}
+
 .stat:last-child {
   border-right: none;
 }
@@ -637,41 +644,71 @@ body {
   font-weight: 600;
 }
 
-/* Los valores van como retícula de fichas, sin barras de porcentaje. */
+/* Los valores se leen como barras horizontales que se llenan al entrar en
+   pantalla. El relleno arranca en cero y crece con un retardo distinto por
+   fila, así la lista se completa de arriba abajo. */
 .values {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: var(--space-lg);
+  align-content: start;
 }
 
-.value {
-  background: var(--surface);
-  padding: var(--space-lg) var(--space-md);
+.value__head {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  transition: background-color 0.35s var(--ease);
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.55rem;
 }
 
-.value:hover {
-  background: var(--surface-2);
-}
-
-.value svg {
-  width: 26px;
-  height: 26px;
+.value__icon {
+  width: 19px;
+  height: 19px;
   color: var(--red);
+  flex-shrink: 0;
 }
 
-.value p {
+.value__name {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   text-transform: uppercase;
-  letter-spacing: -0.005em;
-  line-height: 1.2;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.value__pct {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.value__track {
+  height: 6px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.value__fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--red);
+  transition: width 1.3s var(--ease);
+  transition-delay: var(--bar-delay, 0s);
+}
+
+.value.is-visible .value__fill {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .value__fill {
+    width: 100%;
+    transition: none;
+  }
 }
 
 /* ---------------------------------------------------------------- historia */
@@ -1544,4 +1581,140 @@ body {
   padding-top: var(--space-lg);
   border-top: 1px solid var(--line);
   font-size: 0.78rem;
+}
+
+
+/* ------------------------------------------------------------ 360 grados */
+
+.threesixty {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Anillo punteado de fondo: el guiño a los 360 grados, girando muy despacio
+   y con muy poca presencia para no competir con el texto. */
+.threesixty__ring {
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  width: min(46vw, 620px);
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  color: var(--red);
+  opacity: 0.1;
+  pointer-events: none;
+  animation: threesixty-spin 90s linear infinite;
+}
+
+@keyframes threesixty-spin {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .threesixty__ring {
+    animation: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .threesixty__ring {
+    display: none;
+  }
+}
+
+.threesixty .container {
+  position: relative;
+  z-index: 1;
+}
+
+.threesixty__text {
+  display: grid;
+  gap: var(--space-lg);
+  max-width: 72ch;
+}
+
+.threesixty__text p {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.threesixty__text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Doce capacidades. Las columnas se fijan por tramos, y todas dividen a doce
+   de forma exacta, para que nunca quede una fila coja. */
+.capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: var(--space-2xl);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+@media (min-width: 480px) {
+  .capabilities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 720px) {
+  .capabilities {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .capabilities {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.capability {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  transition: background-color 0.35s var(--ease);
+}
+
+.capability::after {
+  content: '';
+  position: absolute;
+  inset: auto auto 0 0;
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  transition: width 0.35s var(--ease);
+}
+
+.capability:hover {
+  background: var(--surface-2);
+}
+
+.capability:hover::after {
+  width: 100%;
+}
+
+.capability svg {
+  width: 34px;
+  height: 34px;
+  color: var(--red);
+}
+
+.capability p {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
 }

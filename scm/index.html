@@ -41,6 +41,7 @@
 
       <nav class="nav" data-nav aria-label="Principal">
         <a class="nav__link" href="#agencia" data-i18n="nav.about">Agencia</a>
+        <a class="nav__link" href="#grupo" data-i18n="nav.group">SCM Group</a>
         <a class="nav__link" href="#historia" data-i18n="nav.history">Historia</a>
         <a class="nav__link" href="#servicios" data-i18n="nav.services">Servicios</a>
         <a class="nav__link" href="#enfoque" data-i18n="nav.focus">Enfoque</a>
@@ -147,11 +148,13 @@
         <div class="container">
           <div class="stats__grid">
             <div class="stat" data-reveal>
+              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="16" cy="14" r="6" stroke="currentColor" stroke-width="2.4" /><path d="M32 20a6 6 0 10-4-10.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M4 42a12 12 0 0124 0M32 42a12 12 0 00-6-10.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
               <p class="stat__value"><span data-count="10">10</span></p>
               <p class="stat__label" data-i18n="stats.1.label">Agentes a tiempo completo</p>
               <p class="stat__text" data-i18n="stats.1.text">Conectados por toda Europa y Asia.</p>
             </div>
             <div class="stat" data-reveal style="--reveal-delay: 0.08s">
+              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="15" cy="27" r="9" stroke="currentColor" stroke-width="2.4" /><circle cx="33" cy="27" r="9" stroke="currentColor" stroke-width="2.4" /><path d="M24 27h0M15 18l3-8h12l3 8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
               <p class="stat__value"><span>+</span><span data-count="15">15</span></p>
               <p class="stat__label" data-i18n="stats.2.label">Scouts en todo el mundo</p>
               <p class="stat__text" data-i18n="stats.2.text">
@@ -159,6 +162,7 @@
               </p>
             </div>
             <div class="stat" data-reveal style="--reveal-delay: 0.16s">
+              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="2.4" /><path d="M24 13v6l4 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M16 29l-3 15 11-6 11 6-3-15" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
               <p class="stat__value"><span>+</span><span data-count="15">15</span></p>
               <p class="stat__label" data-i18n="stats.3.label">Años de experiencia</p>
               <p class="stat__text" data-i18n="stats.3.text">
@@ -189,60 +193,146 @@
               <p data-i18n-html="about.p3" data-reveal>Invertimos desde el inicio.</p>
             </div>
 
-            <div class="values" data-reveal>
-              <div class="value">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <circle cx="12" cy="8" r="3.6" stroke="currentColor" stroke-width="1.8" />
-                  <path d="M4.5 20a7.5 7.5 0 0115 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-                <p data-i18n="about.v1">Soporte individual</p>
+            <div class="values">
+              <div class="value" data-reveal style="--bar-delay: 0.15s">
+                <div class="value__head">
+                  <svg class="value__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.6" stroke="currentColor" stroke-width="1.9" /><path d="M4.5 20a7.5 7.5 0 0115 0" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /></svg>
+                  <p class="value__name" data-i18n="about.v1">Soporte individual</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><span class="value__fill"></span></div>
               </div>
-              <div class="value">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M2 12s3.8-6 10-6 10 6 10 6-3.8 6-10 6-10-6-10-6z" stroke="currentColor" stroke-width="1.8" />
-                  <circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.8" />
-                </svg>
-                <p data-i18n="about.v2">Transparencia</p>
+
+              <div class="value" data-reveal style="--bar-delay: 0.27s">
+                <div class="value__head">
+                  <svg class="value__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 12s3.8-6 10-6 10 6 10 6-3.8 6-10 6-10-6-10-6z" stroke="currentColor" stroke-width="1.9" /><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.9" /></svg>
+                  <p class="value__name" data-i18n="about.v2">Transparencia</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><span class="value__fill"></span></div>
               </div>
-              <div class="value">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path
-                    d="M12 20.5S3.5 15.4 3.5 9.6A4.6 4.6 0 0112 7.2a4.6 4.6 0 018.5 2.4c0 5.8-8.5 10.9-8.5 10.9z"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p data-i18n="about.v3">Lealtad</p>
+
+              <div class="value" data-reveal style="--bar-delay: 0.39s">
+                <div class="value__head">
+                  <svg class="value__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20.5S3.5 15.4 3.5 9.6A4.6 4.6 0 0112 7.2a4.6 4.6 0 018.5 2.4c0 5.8-8.5 10.9-8.5 10.9z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" /></svg>
+                  <p class="value__name" data-i18n="about.v3">Lealtad</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><span class="value__fill"></span></div>
               </div>
-              <div class="value">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M3 17l6-2.2 5.5-8.4L21 4l-2.4 6.5-8.4 5.5L8 22" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                  <circle cx="14" cy="10" r="1.8" stroke="currentColor" stroke-width="1.8" />
-                </svg>
-                <p data-i18n="about.v4">Visión</p>
+
+              <div class="value" data-reveal style="--bar-delay: 0.51s">
+                <div class="value__head">
+                  <svg class="value__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17l6-2.2 5.5-8.4L21 4l-2.4 6.5-8.4 5.5L8 22" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" /><circle cx="14" cy="10" r="1.7" stroke="currentColor" stroke-width="1.9" /></svg>
+                  <p class="value__name" data-i18n="about.v4">Visión</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><span class="value__fill"></span></div>
               </div>
-              <div class="value">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M9 18h6M10 21h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                  <path
-                    d="M12 3a6 6 0 013.6 10.8c-.6.5-.9 1.1-.9 1.7v.5H9.3v-.5c0-.6-.3-1.2-.9-1.7A6 6 0 0112 3z"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p data-i18n="about.v5">Innovación</p>
+
+              <div class="value" data-reveal style="--bar-delay: 0.63s">
+                <div class="value__head">
+                  <svg class="value__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18h6M10 21h4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /><path d="M12 3a6 6 0 013.6 10.8c-.6.5-.9 1.1-.9 1.7v.5H9.3v-.5c0-.6-.3-1.2-.9-1.7A6 6 0 0112 3z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" /></svg>
+                  <p class="value__name" data-i18n="about.v5">Innovación</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><span class="value__fill"></span></div>
               </div>
-              <div class="value">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 21c0-6 2-10 8-12 0 7-3 11-8 12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                  <path d="M12 21c0-4-1.4-7-5-8.6C7 17 9 20 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                </svg>
-                <p data-i18n="about.v6">Sostenibilidad</p>
+
+              <div class="value" data-reveal style="--bar-delay: 0.75s">
+                <div class="value__head">
+                  <svg class="value__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c0-6 2-10 8-12 0 7-3 11-8 12z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" /><path d="M12 21c0-4-1.4-7-5-8.6C7 17 9 20 12 21z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" /></svg>
+                  <p class="value__name" data-i18n="about.v6">Sostenibilidad</p>
+                  <p class="value__pct">100%</p>
+                </div>
+                <div class="value__track"><span class="value__fill"></span></div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- =============================================== 360 grados ==== -->
+      <section class="section threesixty" id="grupo">
+        <svg class="threesixty__ring" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+          <circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="1" stroke-dasharray="2 10" />
+          <circle cx="100" cy="100" r="74" stroke="currentColor" stroke-width="1" />
+          <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="1" stroke-dasharray="14 8" />
+        </svg>
+
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="threesixty.section">SCM Group Holding</p>
+          </div>
+
+          <h2 class="section__title" data-i18n-html="threesixty.title" data-reveal>
+            360 grados: <em>siempre el ángulo correcto</em>
+          </h2>
+
+          <div class="threesixty__text">
+            <p data-i18n-html="threesixty.p1" data-reveal>
+              SCM es una agencia deportiva integral con sede en Marbella.
+            </p>
+            <p data-i18n-html="threesixty.p2" data-reveal>
+              Cuenta con el respaldo de SCM Group Holding.
+            </p>
+          </div>
+
+          <p class="tag__section" style="margin-left: 0; margin-top: 3rem" data-i18n="threesixty.capsTitle" data-reveal>
+            Lo que cubre el grupo
+          </p>
+
+          <ul class="capabilities" data-reveal>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M6 16h30l-7-7M42 32H12l7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.1">Traspasos</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M11 6h18l8 8v28H11z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M29 6v9h8M18 26h12M18 33h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.2">Contratos</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 19v10h7l16 9V10l-16 9H8z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M37 18a10 10 0 010 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.3">Marketing y PR</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="29" cy="9" r="4.5" stroke="currentColor" stroke-width="2.4" /><path d="M13 44l6-13 7-5 2-9-9 4-4 7M26 26l6 6 3 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.4">Entrenamiento individual</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 42S7 32 7 19A9 9 0 0124 15 9 9 0 0141 19c0 13-17 23-17 23z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M19 22h10M24 17v10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.5">Atención médica</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="19" cy="13" r="6" stroke="currentColor" stroke-width="2.4" /><path d="M7 42a12 12 0 0124 0" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M34 24l7-7m0 0h-6m6 0v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.6">Desarrollo personal</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M18 43V33c-6-3-10-8.4-10-14A11 11 0 0130 12.6c1.4 3 4.4 4.6 6.4 7 1.8 2.2.4 5.4-2.4 5.4H31v5a4 4 0 01-4 4h-4" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M22 20l-3 4h5l-3 4" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.7">Coaching mental</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="4.6" stroke="currentColor" stroke-width="2.4" /><path d="M11 12v11c0 2.6 5.8 4.6 13 4.6s13-2 13-4.6V12" stroke="currentColor" stroke-width="2.4" /><path d="M11 23v11c0 2.6 5.8 4.6 13 4.6s13-2 13-4.6V23" stroke="currentColor" stroke-width="2.4" /></svg>
+              <p data-i18n="caps.8">Generación de patrimonio</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M18 8l6 4 6-4 10 5-4 8-4-2v21H16V19l-4 2-4-8 10-5z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.9">Merchandising</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 9l19 8-19 8-19-8 19-8z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M13 21v11c0 3 5 6 11 6s11-3 11-6V21M43 17v11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.10">Supervisión académica</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M11 33a13 13 0 0126 0z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M7 38h34M24 16v4M24 12v.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.11">Servicio de concierge</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="11" y="5" width="26" height="38" rx="3" stroke="currentColor" stroke-width="2.4" /><path d="M18 14h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M18 24h.1M24 24h.1M30 24h.1M18 32h.1M24 32h.1M30 32v6" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.12">Asesoramiento fiscal</p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -1102,10 +1192,6 @@
 
               <div class="contact__channels">
                 <div class="contact__channel" data-reveal>
-                  <span data-i18n="contact.phone">Teléfono</span>
-                  <a href="tel:+34654746172">+34 654 746 172</a>
-                </div>
-                <div class="contact__channel" data-reveal>
                   <span data-i18n="contact.email">Email</span>
                   <a href="mailto:info@scmsportsagency.com">info@scmsportsagency.com</a>
                 </div>
@@ -1295,6 +1381,7 @@
             <h4 data-i18n="footer.nav">Navegación</h4>
             <ul>
               <li><a href="#agencia" data-i18n="nav.about">Agencia</a></li>
+              <li><a href="#grupo" data-i18n="nav.group">SCM Group</a></li>
               <li><a href="#historia" data-i18n="nav.history">Historia</a></li>
               <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
               <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>

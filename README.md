@@ -59,11 +59,16 @@ assets/img/
 
 ## Secciones de cada página
 
-**SCM**: portada con foto de jugador, cifras del equipo, quiénes somos con los
-seis valores, historia en cronología, los siete servicios, nuestro enfoque,
-el equipo con retratos, red de clubes con escudos, actualidad enlazada a
-Instagram, enfoque internacional, el proceso de seis pasos, la alianza con
-Magno y contacto.
+**SCM**: portada con retrato de jugador, cifras del equipo, quiénes somos con
+los seis valores en barras animadas, SCM Group Holding con las doce
+capacidades del grupo, historia en cronología, los siete servicios, nuestro
+enfoque, el equipo con retratos, red de clubes con escudos, actualidad
+enlazada a Instagram, enfoque internacional, el proceso de seis pasos, la
+alianza con Magno y contacto.
+
+En el contacto de SCM solo figura el correo. El teléfono sigue publicado en
+Magno; si tampoco debe aparecer allí, se quita el bloque `contact__channel`
+del teléfono en `magno/index.html`.
 
 **Magno**: portada, entrenamiento y rendimiento, vídeos de Instagram,
 lifestyle, los cinco centros, en imágenes, cómo reservar y contacto.

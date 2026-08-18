@@ -16,7 +16,7 @@ window.I18N_DICT = {
       'Concierge en exclusiva para futbolistas profesionales. Campos, entrenamiento de élite, recuperación, villas y desplazamientos.',
     'magno.cta': 'Entrar en Magno',
 
-    'group.eyebrow': 'El grupo',
+    'group.eyebrow': 'SCM Group',
     'group.lead': 'Un mismo jugador, <em>dos casas</em>',
     'group.text':
       'SCM Sports Agency y Magno Marbella trabajan para el mismo cliente: el futbolista profesional. Una le lleva la carrera: contratos, rendimiento, salud, imagen y finanzas. La otra se ocupa de todo lo que ocurre cuando aterriza en la Costa del Sol.',
@@ -55,7 +55,7 @@ window.I18N_DICT = {
       'Concierge exclusively for professional footballers. Pitches, elite training, recovery, villas and travel.',
     'magno.cta': 'Enter Magno',
 
-    'group.eyebrow': 'The group',
+    'group.eyebrow': 'SCM Group',
     'group.lead': 'One player, <em>two houses</em>',
     'group.text':
       'SCM Sports Agency and Magno Marbella work for the same client: the professional footballer. One runs the career: contracts, performance, health, image and finances. The other handles everything that happens once they land on the Costa del Sol.',
