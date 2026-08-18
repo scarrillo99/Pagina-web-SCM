@@ -7,6 +7,7 @@ window.I18N_DICT = {
     'nav.lang': 'Idioma',
     'nav.menu': 'Menú',
     'nav.training': 'Entrenamiento',
+    'nav.videos': 'Vídeos',
     'nav.lifestyle': 'Lifestyle',
     'nav.venues': 'Centros',
     'nav.how': 'Cómo reservar',
@@ -45,6 +46,20 @@ window.I18N_DICT = {
     'training.4.title': 'Fotógrafo y vídeo',
     'training.4.text':
       'Fotógrafo profesional en pista para sesiones de entrenamiento y contenido de marca personal.',
+
+    'reels.section': 'Entrenamiento individual',
+    'reels.title': 'Así es una <em>sesión</em>',
+    'reels.lead':
+      'Grabamos el trabajo de cada jugador y lo publicamos en nuestro Instagram. Estos son algunos de los vídeos.',
+    'reels.1.label': '1 vs 1',
+    'reels.1.title': 'Sesión individual con técnico',
+    'reels.2.label': 'Fuerza',
+    'reels.2.title': 'Trabajo de gimnasio',
+    'reels.3.label': 'Finalización',
+    'reels.3.title': 'Series de disparo a puerta',
+    'reels.4.label': 'Recuperación',
+    'reels.4.title': 'Fisioterapia y descarga',
+    'reels.cta': 'Ver todos en Instagram',
 
     'lifestyle.section': 'Lifestyle',
     'lifestyle.title': 'Y cuando acaba el entrenamiento',
@@ -117,7 +132,7 @@ window.I18N_DICT = {
       'Escríbenos con las fechas y el tipo de estancia. Preparamos una propuesta a medida, con total confidencialidad.',
     'contact.email': 'Email',
     'contact.phone': 'Teléfono',
-    'contact.instagram': 'Instagram',
+    'contact.follow': 'Síguenos',
     'contact.address': 'Dirección',
 
     'form.name': 'Nombre',
@@ -158,6 +173,7 @@ window.I18N_DICT = {
     'nav.lang': 'Language',
     'nav.menu': 'Menu',
     'nav.training': 'Training',
+    'nav.videos': 'Videos',
     'nav.lifestyle': 'Lifestyle',
     'nav.venues': 'Venues',
     'nav.how': 'How to book',
@@ -196,6 +212,20 @@ window.I18N_DICT = {
     'training.4.title': 'Photographer and video',
     'training.4.text':
       'On-site professional photographer for training sessions and personal-brand content.',
+
+    'reels.section': 'Individual training',
+    'reels.title': 'What a <em>session</em> looks like',
+    'reels.lead':
+      'We film every player’s work and post it on our Instagram. Here are a few of the videos.',
+    'reels.1.label': '1 vs 1',
+    'reels.1.title': 'One to one session with a coach',
+    'reels.2.label': 'Strength',
+    'reels.2.title': 'Gym work',
+    'reels.3.label': 'Finishing',
+    'reels.3.title': 'Shooting drills',
+    'reels.4.label': 'Recovery',
+    'reels.4.title': 'Physiotherapy and cooldown',
+    'reels.cta': 'See them all on Instagram',
 
     'lifestyle.section': 'Lifestyle',
     'lifestyle.title': 'And once training is over',
@@ -268,7 +298,7 @@ window.I18N_DICT = {
       'Write to us with your dates and the kind of stay you have in mind. We will put together a tailored proposal, in complete confidence.',
     'contact.email': 'E-mail',
     'contact.phone': 'Telephone',
-    'contact.instagram': 'Instagram',
+    'contact.follow': 'Follow us',
     'contact.address': 'Address',
 
     'form.name': 'Name',

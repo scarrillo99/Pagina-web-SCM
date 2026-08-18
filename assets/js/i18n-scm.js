@@ -1,24 +1,36 @@
 /* Diccionario de SCM Sports Agency.
    Los textos provienen del dossier de la agencia; la traducción al inglés es
-   una adaptación, no una traducción literal. */
+   una adaptación, no una traducción literal.
+   Sin rayas ni guiones largos en la copia: se usan comas y puntos. */
 window.I18N_DICT = {
   es: {
     'nav.lang': 'Idioma',
     'nav.menu': 'Menú',
     'nav.about': 'Agencia',
+    'nav.history': 'Historia',
     'nav.services': 'Servicios',
     'nav.focus': 'Enfoque',
     'nav.team': 'Equipo',
-    'nav.process': 'Proceso',
+    'nav.news': 'Actualidad',
     'nav.magno': 'Magno',
     'nav.contact': 'Contacto',
 
+    'hero.eyebrow': 'Agencia 360º de futbolistas profesionales',
     'hero.title': 'Tú pones el talento.<br>Nosotros, <em>todo lo demás</em>',
     'hero.lead':
       'Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera del campo. Rendimiento, salud, imagen y patrimonio, en un solo equipo.',
     'hero.cta1': 'Hablemos',
     'hero.cta2': 'Ver servicios',
-    'hero.claim': 'Inimitable',
+    'hero.creditName': 'Nombre del jugador',
+    'hero.creditClub': 'Club actual',
+
+    'stats.1.label': 'Agentes a tiempo completo',
+    'stats.1.text':
+      'Conectados en España, Italia, Portugal, Inglaterra y Bélgica, y también en Asia, Emiratos Árabes Unidos y Estados Unidos.',
+    'stats.2.label': 'Scouts en todo el mundo',
+    'stats.2.text': 'Scouts internos con amplia experiencia en grandes clubes europeos.',
+    'stats.3.label': 'Años de experiencia',
+    'stats.3.text': 'Trayectoria en la gestión integral de jugadores profesionales.',
 
     'about.section': 'Quiénes somos',
     'about.title': 'Cada jugador es <em>único</em>',
@@ -37,12 +49,25 @@ window.I18N_DICT = {
 
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
-    'vision.section': 'Visión y propósito',
-    'vision.title': 'El talento es solo el punto de partida',
-    'vision.p1':
-      'En SCM Sports Agency creemos que un jugador no se construye solo en el terreno de juego. El talento es el punto de partida, pero hay un espacio importante que cubrir, y que tiene en el entorno a su principal protagonista: el que lo impulsa, lo protege y lo ayuda a crecer como profesional y como persona.',
-    'vision.p2':
-      'Nuestra misión es acompañar al jugador y a su entorno en todas las decisiones clave de su carrera, desde el entrenamiento y el rendimiento deportivo hasta la gestión de su imagen, sus finanzas y su vida personal. No esperamos a que el éxito llegue solo: lo construimos juntos, día a día.',
+    'history.section': 'Historia',
+    'history.title': 'De una oficina en Marbella a <em>cinco ligas</em>',
+    'history.lead':
+      'Quince años acompañando carreras. Estos son los momentos que explican cómo trabajamos hoy.',
+    'history.1.title': 'Los primeros jugadores',
+    'history.1.text':
+      'La agencia nace en Marbella con una idea sencilla: pocos jugadores, muy atendidos. El modelo de plan personalizado por futbolista se define desde el primer día.',
+    'history.2.title': 'El salto a Europa',
+    'history.2.text':
+      'Se incorporan agentes en Italia, Portugal, Inglaterra y Bélgica. La cartera empieza a moverse fuera de España y se abre la red de contactos con clubes europeos.',
+    'history.3.title': 'El modelo 360º',
+    'history.3.text':
+      'Entran en el equipo psicólogos, nutricionistas y preparadores. La agencia deja de ser solo representación y pasa a cubrir salud, rendimiento, imagen y finanzas.',
+    'history.4.title': 'Scouting propio',
+    'history.4.text':
+      'Se consolida una red de más de quince scouts internos con experiencia en grandes clubes, repartidos por Europa, Asia y Oriente Medio.',
+    'history.5.title': 'Alianza con Magno Marbella',
+    'history.5.text':
+      'La Costa del Sol se convierte en base de pretemporadas y training camps. Magno se integra como socio estratégico para todo lo que ocurre fuera del campo.',
 
     'services.section': 'Nuestros servicios',
     'services.title': 'Una agencia 360º',
@@ -109,6 +134,8 @@ window.I18N_DICT = {
 
     'focus.section': 'Así potenciamos el talento',
     'focus.title': 'Nuestro enfoque',
+    'focus.lead':
+      'Cinco principios que se aplican igual a un juvenil que a un internacional.',
     'focus.1.title': 'Ser uno más en la agencia',
     'focus.1.text':
       'Cada jugador recibe un plan personalizado y la misma dedicación, esté empezando o jugando en la élite.',
@@ -125,24 +152,44 @@ window.I18N_DICT = {
     'focus.5.text':
       'Les guiamos para invertir con inteligencia y asegurar su futuro más allá del fútbol.',
 
-    'team.section': 'Player management',
-    'team.title': 'El equipo detrás del jugador',
+    'team.section': 'El equipo',
+    'team.title': 'Quién está detrás',
     'team.lead':
-      'Agentes internos, scouts repartidos por el mundo y ex-futbolistas profesionales que conocen el vestuario desde dentro.',
-    'team.1.label': 'Agentes a tiempo completo',
-    'team.1.text':
-      'Estratégicamente conectados en toda Europa —España, Italia, Portugal, Inglaterra y Bélgica— y en Asia, Emiratos Árabes Unidos, Estados Unidos y otros mercados clave.',
-    'team.2.label': 'Scouts en todo el mundo',
-    'team.2.text': 'Scouts internos con amplia experiencia en grandes clubes europeos.',
-    'team.3.label': 'Años de experiencia',
-    'team.3.text': 'Trayectoria en la gestión integral de jugadores profesionales.',
-    'team.4.label': 'Ex-jugadores profesionales',
-    'team.4.text':
-      'Profesionales con experiencia en La Liga, Bundesliga, Belgian Pro League, Serie A, Premier League y Primeira Liga.',
+      'Agentes internos, scouts y ex futbolistas profesionales con experiencia en La Liga, Bundesliga, Belgian Pro League, Serie A, Premier League y Primeira Liga.',
+    'team.role1': 'Dirección',
+    'team.role2': 'Agente',
+    'team.role3': 'Scouting',
+    'team.role4': 'Rendimiento',
+    'team.role5': 'Marketing',
+    'team.role6': 'Legal y fiscal',
+    'team.note':
+      'El equipo completo, con agentes en cada mercado, está disponible bajo petición para clubes y directores deportivos.',
 
-    'clubs.title': 'Red de clubes',
+    'clubs.section': 'Red de clubes',
+    'clubs.title': 'Con quién hablamos <em>cada semana</em>',
+    'clubs.lead':
+      'Relación directa con los principales clubes europeos y con muchos clubes de menor perfil, donde a menudo está la oportunidad correcta.',
     'clubs.note':
-      'Mantenemos además relaciones sólidas con numerosos clubes de menor perfil, donde muchas veces está la oportunidad correcta.',
+      'Los escudos pertenecen a sus respectivos clubes y se muestran únicamente como referencia de nuestra red de contactos.',
+
+    'news.section': 'Actualidad',
+    'news.title': 'Lo último en <em>@scmsportsagency</em>',
+    'news.lead':
+      'Publicamos el día a día de la agencia en Instagram: fichajes, entrenamientos y el contenido que creamos para nuestros jugadores.',
+    'news.1.label': 'Mercado',
+    'news.1.title': 'Fichajes y renovaciones',
+    'news.1.text':
+      'Cada operación cerrada de nuestros jugadores, anunciada en cuanto se firma.',
+    'news.2.label': 'Entrenamiento',
+    'news.2.title': 'Trabajo diario',
+    'news.2.text':
+      'Sesiones de pretemporada, trabajo individual y preparación en la Costa del Sol.',
+    'news.3.label': 'Marca personal',
+    'news.3.title': 'Contenido propio',
+    'news.3.text':
+      'Nuestro equipo interno produce el contenido de marca personal de cada futbolista.',
+    'news.cta': 'Ver en Instagram',
+    'news.follow': 'Seguir a SCM en Instagram',
 
     'intl.section': 'Enfoque internacional',
     'intl.title': 'Donde su talento tenga <em>más oportunidades</em>',
@@ -182,8 +229,7 @@ window.I18N_DICT = {
     'partner.3.title': 'Experiencias VIP',
     'partner.3.text': 'Entrenamientos en centros de alto rendimiento y eventos exclusivos.',
     'partner.4.title': 'Training camps',
-    'partner.4.text':
-      'Convivencia, entrenamiento y preparación en entornos de primer nivel.',
+    'partner.4.text': 'Convivencia, entrenamiento y preparación en entornos de primer nivel.',
     'partner.5.title': 'Inversión inmobiliaria',
     'partner.5.text':
       'Oportunidades en real estate gracias a la red de Magno en el mercado de lujo.',
@@ -195,8 +241,8 @@ window.I18N_DICT = {
       'Tanto si eres jugador, familia o club, escríbenos. Respondemos a todo y lo que nos cuentes se queda entre nosotros.',
     'contact.phone': 'Teléfono',
     'contact.email': 'Email',
-    'contact.instagram': 'Instagram',
     'contact.address': 'Dirección',
+    'contact.follow': 'Síguenos',
 
     'form.name': 'Nombre y apellidos',
     'form.email': 'Email',
@@ -232,19 +278,30 @@ window.I18N_DICT = {
     'nav.lang': 'Language',
     'nav.menu': 'Menu',
     'nav.about': 'Agency',
+    'nav.history': 'History',
     'nav.services': 'Services',
     'nav.focus': 'Approach',
     'nav.team': 'Team',
-    'nav.process': 'Process',
+    'nav.news': 'News',
     'nav.magno': 'Magno',
     'nav.contact': 'Contact',
 
+    'hero.eyebrow': 'A 360º agency for professional footballers',
     'hero.title': 'You got the talent.<br>We got <em>your back</em>',
     'hero.lead':
       'We advise professional footballers across the board and stand beside them on and off the pitch. Performance, health, image and wealth, handled by one team.',
     'hero.cta1': "Let's talk",
     'hero.cta2': 'See services',
-    'hero.claim': 'Inimitable',
+    'hero.creditName': 'Player name',
+    'hero.creditClub': 'Current club',
+
+    'stats.1.label': 'Full-time agents',
+    'stats.1.text':
+      'Connected across Spain, Italy, Portugal, England and Belgium, as well as Asia, the United Arab Emirates and the United States.',
+    'stats.2.label': 'Scouts worldwide',
+    'stats.2.text': 'In-house scouts with extensive experience at major European clubs.',
+    'stats.3.label': 'Years of experience',
+    'stats.3.text': 'A track record in the complete management of professional players.',
 
     'about.section': 'Who we are',
     'about.title': 'Every player is <em>unique</em>',
@@ -263,12 +320,25 @@ window.I18N_DICT = {
 
     'statement.1': 'Our competence <em>completes</em> your talent',
 
-    'vision.section': 'Vision and purpose',
-    'vision.title': 'Talent is only the starting point',
-    'vision.p1':
-      'At SCM Sports Agency we believe a player is not built on the pitch alone. Talent is the starting point, but there is important ground to cover, and the player’s environment is the lead character in it: the one that drives them, protects them and helps them grow as a professional and as a person.',
-    'vision.p2':
-      'Our mission is to stand beside the player and their family through every key decision of their career, from training and on-pitch performance to their image, their finances and their personal life. We do not wait for success to arrive on its own: we build it together, day by day.',
+    'history.section': 'History',
+    'history.title': 'From one office in Marbella to <em>five leagues</em>',
+    'history.lead':
+      'Fifteen years alongside careers. These are the moments that explain how we work today.',
+    'history.1.title': 'The first players',
+    'history.1.text':
+      'The agency starts in Marbella with a simple idea: few players, properly looked after. The tailored plan per footballer is defined from day one.',
+    'history.2.title': 'Into Europe',
+    'history.2.text':
+      'Agents join in Italy, Portugal, England and Belgium. The portfolio starts moving outside Spain and the network of European club contacts opens up.',
+    'history.3.title': 'The 360º model',
+    'history.3.text':
+      'Psychologists, nutritionists and fitness coaches join the team. The agency stops being only representation and starts covering health, performance, image and finances.',
+    'history.4.title': 'In-house scouting',
+    'history.4.text':
+      'A network of more than fifteen in-house scouts with big-club experience takes shape across Europe, Asia and the Middle East.',
+    'history.5.title': 'The Magno Marbella alliance',
+    'history.5.text':
+      'The Costa del Sol becomes a base for pre-seasons and training camps. Magno joins as the strategic partner for everything off the pitch.',
 
     'services.section': 'Our services',
     'services.title': 'A 360º agency',
@@ -335,6 +405,8 @@ window.I18N_DICT = {
 
     'focus.section': 'How we grow talent',
     'focus.title': 'Our approach',
+    'focus.lead':
+      'Five principles that apply the same way to an academy player and to a full international.',
     'focus.1.title': 'Never just a number',
     'focus.1.text':
       'Every player gets a tailored plan and the same dedication, whether they are starting out or playing at the top.',
@@ -351,24 +423,43 @@ window.I18N_DICT = {
     'focus.5.text':
       'We guide them to invest intelligently and secure a future beyond football.',
 
-    'team.section': 'Player management',
-    'team.title': 'The team behind the player',
+    'team.section': 'The team',
+    'team.title': 'Who is behind it',
     'team.lead':
-      'In-house agents, scouts spread across the world and former professional footballers who know the dressing room from the inside.',
-    'team.1.label': 'Full-time agents',
-    'team.1.text':
-      'Strategically connected across Europe — Spain, Italy, Portugal, England and Belgium — as well as Asia, the United Arab Emirates, the United States and other key markets.',
-    'team.2.label': 'Scouts worldwide',
-    'team.2.text': 'In-house scouts with extensive experience at major European clubs.',
-    'team.3.label': 'Years of experience',
-    'team.3.text': 'A track record in the complete management of professional players.',
-    'team.4.label': 'Former professionals',
-    'team.4.text':
-      'Professionals with experience in La Liga, the Bundesliga, the Belgian Pro League, Serie A, the Premier League and the Primeira Liga.',
+      'In-house agents, scouts and former professional footballers with experience in La Liga, the Bundesliga, the Belgian Pro League, Serie A, the Premier League and the Primeira Liga.',
+    'team.role1': 'Management',
+    'team.role2': 'Agent',
+    'team.role3': 'Scouting',
+    'team.role4': 'Performance',
+    'team.role5': 'Marketing',
+    'team.role6': 'Legal and tax',
+    'team.note':
+      'The full team, with agents in each market, is available on request for clubs and sporting directors.',
 
-    'clubs.title': 'Club network',
+    'clubs.section': 'Club network',
+    'clubs.title': 'Who we speak to <em>every week</em>',
+    'clubs.lead':
+      'Direct relationships with the major European clubs and with many lower-profile clubs, which is often exactly where the right opportunity sits.',
     'clubs.note':
-      'We also maintain strong relationships with many lower-profile clubs, which is often exactly where the right opportunity sits.',
+      'All crests belong to their respective clubs and are shown purely as a reference to our network of contacts.',
+
+    'news.section': 'News',
+    'news.title': 'Latest on <em>@scmsportsagency</em>',
+    'news.lead':
+      'We post the agency’s day to day on Instagram: transfers, training and the content we create for our players.',
+    'news.1.label': 'Market',
+    'news.1.title': 'Transfers and renewals',
+    'news.1.text': 'Every deal our players close, announced the moment it is signed.',
+    'news.2.label': 'Training',
+    'news.2.title': 'The daily work',
+    'news.2.text':
+      'Pre-season sessions, individual work and preparation on the Costa del Sol.',
+    'news.3.label': 'Personal brand',
+    'news.3.title': 'Our own content',
+    'news.3.text':
+      'Our in-house team produces the personal-brand content for every footballer.',
+    'news.cta': 'View on Instagram',
+    'news.follow': 'Follow SCM on Instagram',
 
     'intl.section': 'International reach',
     'intl.title': 'Wherever talent finds <em>more opportunity</em>',
@@ -410,8 +501,7 @@ window.I18N_DICT = {
     'partner.4.title': 'Training camps',
     'partner.4.text': 'Living, training and preparation in first-class surroundings.',
     'partner.5.title': 'Real estate investment',
-    'partner.5.text':
-      'Opportunities through Magno’s network in the luxury property market.',
+    'partner.5.text': 'Opportunities through Magno’s network in the luxury property market.',
     'partner.cta': 'Discover Magno Marbella',
 
     'contact.section': 'Contact',
@@ -420,8 +510,8 @@ window.I18N_DICT = {
       'Whether you are a player, a family or a club, write to us. We answer everything, and what you tell us stays between us.',
     'contact.phone': 'Phone',
     'contact.email': 'Email',
-    'contact.instagram': 'Instagram',
     'contact.address': 'Address',
+    'contact.follow': 'Follow us',
 
     'form.name': 'Full name',
     'form.email': 'Email',

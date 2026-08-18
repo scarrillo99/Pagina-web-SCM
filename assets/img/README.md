@@ -1,55 +1,104 @@
 # Imágenes
 
-La web funciona sin ninguna foto: donde va una imagen se pinta un bloque de
-color de la paleta. Para poner las fotos reales **no hay que tocar el HTML**:
-se descomentan las líneas de `assets/css/photos.css` y se dejan los ficheros
-en esta carpeta.
+La web funciona sin ninguna fotografía: donde va una imagen se pinta un
+bloque de color con su icono, y donde va un escudo se ve el monograma del
+club. Todo lo que sigue mejora el resultado, pero nada de esto bloquea la
+publicación.
 
-## Logotipos
+## Escudos de clubes
 
-`logo-scm.png` y `logo-magno.png` están **reconstruidos a partir de los PDF
-de marca**: se extrajeron la imagen y su máscara de transparencia y se
-recompusieron con alfa, recortando el margen sobrante. Rondan los 500 px de
-ancho, que llega para la web pero no para imprimir ni para crecer.
+Están en `assets/img/clubes/`, un fichero por club. Los que hay ahora son
+**marcadores**: un círculo con el monograma. Para poner el escudo real basta
+con sustituir el fichero conservando el nombre:
 
-Si aparecen los originales en SVG o AI, basta con sustituirlos. El CSS los
-invierte a blanco donde el fondo es oscuro (`filter: invert(1)`), así que un
-vector monocromo funciona igual.
+```
+assets/img/clubes/real-madrid.svg   <- reemplazar por el escudo real
+assets/img/clubes/barcelona.svg
+...
+```
 
-## Fotografías que hacen falta
+Si el escudo que tenéis es PNG en vez de SVG, cambiad también la extensión en
+el `src` de `scm/index.html`. Se pueden ir poniendo de uno en uno: los que
+falten siguen mostrando el monograma.
+
+Formato recomendado: SVG, o PNG de 200 x 200 con fondo transparente.
+
+> **Aviso.** Los escudos son marcas registradas de cada club. Mostrarlos como
+> referencia de una red de contactos es habitual en el sector, pero conviene
+> que vuestra asesoría lo confirme, sobre todo si la web sugiere una relación
+> comercial que el club no ha autorizado. La nota al pie de la sección ya
+> aclara que los escudos pertenecen a sus clubes.
+
+## Logotipos de las marcas
+
+`logo-scm.png` y `logo-magno.png` están **reconstruidos a partir de los PDF**
+de marca, recomponiendo imagen y máscara de transparencia. Rondan los 500 px
+de ancho: llegan para la web, no para imprimir. Si aparecen los originales en
+SVG o AI, se sustituyen sin más. El CSS los invierte a blanco donde el fondo
+es oscuro (`filter: invert(1)`), así que un vector monocromo funciona igual.
+
+## Fotografías
+
+Se enchufan descomentando la línea que toque en `assets/css/photos.css`. No
+hay que tocar el HTML.
+
+### SCM Sports Agency
 
 | Fichero | Tamaño | Dónde sale |
 |---|---|---|
-| `hero-magno.jpg` | 1920×1080 | Portada de Magno, pantalla completa |
-| `hero-scm.jpg` | 1920×1080 | Portada de SCM — **opcional**, el hero rojo funciona solo |
+| `hero-scm.jpg` | 1920×1080 | Portada, a pantalla completa |
 | `hub-scm.jpg` | 1400×1800 | Mitad izquierda de la portada del grupo |
+| `equipo-1..6.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
+| `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad |
+| `partner-*.jpg` | 1200×750 | Los cinco bloques de SCM x Magno |
+
+**El hero.** Es el sitio para la foto de marketing de un jugador de la
+agencia. Debe ser horizontal y con el jugador hacia la derecha: el titular
+cae sobre el lado izquierdo y encima hay un degradado oscuro. Fotos de
+sesión o de club, no de partido. Con `--photo-hero-position` se ajusta el
+encuadre sin recortar el fichero. Debajo, a la derecha, hay un crédito con
+el nombre del jugador y su club actual: se edita en `i18n-scm.js`
+(`hero.creditName` y `hero.creditClub`).
+
+Hace falta autorización de imagen del jugador y, si aparece la equipación,
+también conviene comprobarlo con el club.
+
+### Magno Marbella
+
+| Fichero | Tamaño | Dónde sale |
+|---|---|---|
+| `hero-magno.jpg` | 1920×1080 | Portada, a pantalla completa |
 | `hub-magno.jpg` | 1400×1800 | Mitad derecha de la portada del grupo |
-| `magno-entrenamiento.jpg` | 1200×900 | Sección "En imágenes" (tarjeta ancha) |
-| `magno-gimnasio.jpg` | 1200×900 | Sección "En imágenes" |
-| `magno-villa.jpg` | 1200×900 | Sección "En imágenes" |
-| `og-grupo.jpg`, `og-scm.jpg`, `og-magno.jpg` | 1200×630 | Vista previa al compartir en WhatsApp, LinkedIn, X |
+| `magno-campos/sesiones/gimnasio/fotografo.jpg` | 1200×900 | Los cuatro servicios de entrenamiento |
+| `magno-villas/hoteles/vehiculos/nautica/eventos/shopping.jpg` | 1200×900 | Los seis servicios de lifestyle |
+| `reel-1..4.jpg` | 720×1280 | Portadas de los vídeos de Instagram, vertical 9:16 |
+| `magno-entrenamiento/recuperacion/villa.jpg` | 1200×900 | Sección En imágenes |
 
-Las fotos de instalaciones y villas de la guía de Magno sirven directamente
-para las tres de "En imágenes": gimnasio, sala de recuperación y villa con
-piscina.
+Las fotos de instalaciones y villas de vuestra guía de servicios sirven
+directamente para casi todos estos huecos.
 
-## Cómo elegirlas
+### Vídeos de Instagram
 
-- **Los heroes llevan texto encima.** Escoge fotos con una zona tranquila
-  (cielo, césped, agua) donde caiga el titular. Si la foto tiene mucho detalle
-  en el centro, el texto no se lee.
-- **SCM** pide fotografía de partido o entrenamiento. Como el hero es rojo, la
-  imagen debe aguantar un velo de ese color encima sin ensuciarse: mejor tomas
-  con contraste alto y poco color propio.
+La sección de vídeos no incrusta el reproductor de Instagram, que obligaría a
+cargar su script y a poner banner de cookies. Cada tarjeta es la portada del
+vídeo con un botón de reproducción que abre el reel en Instagram. Hay que
+hacer dos cosas por vídeo:
+
+1. Poner la miniatura en `--photo-reel1` y siguientes, en `photos.css`.
+2. Cambiar el `href` de la tarjeta en `magno/index.html` por la URL del reel.
+
+## Cómo elegir las fotos
+
+- **Los heroes llevan texto encima.** Escoged fotos con una zona tranquila
+  donde caiga el titular.
+- **SCM** pide fotografía de jugador con contraste alto; el hero le pone un
+  velo oscuro por encima.
 - **Magno** pide luz natural y planos amplios: instalaciones, villas, mar.
-  Nada de fotos de banco de imágenes con gente sonriendo a cámara.
+  Nada de banco de imágenes con gente sonriendo a cámara.
+- **Los retratos del equipo** deben tener el mismo encuadre en los seis. Una
+  rejilla con recortes distintos se nota mucho.
 
 ## Peso
 
-Exporta en **WebP** si puedes, o JPG al 80 %. Ninguna imagen debería pasar de
-**300 KB**; los heroes, de 500 KB.
-
-## Derechos
-
-No uses fotos de jugadores sin autorización de imagen, ni de villas sin
-permiso del propietario o de la agencia que las comercializa.
+Exportad en **WebP** si podéis, o JPG al 80 %. Ninguna imagen debería pasar
+de **300 KB**; los heroes, de 500 KB.

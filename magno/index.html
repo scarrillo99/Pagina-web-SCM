@@ -41,6 +41,7 @@
 
       <nav class="nav" data-nav aria-label="Principal">
         <a class="nav__link" href="#entrenamiento" data-i18n="nav.training">Entrenamiento</a>
+        <a class="nav__link" href="#videos" data-i18n="nav.videos">Vídeos</a>
         <a class="nav__link" href="#lifestyle" data-i18n="nav.lifestyle">Lifestyle</a>
         <a class="nav__link" href="#centros" data-i18n="nav.venues">Centros</a>
         <a class="nav__link" href="#reservar" data-i18n="nav.how">Cómo reservar</a>
@@ -48,6 +49,29 @@
       </nav>
 
       <div class="header__actions">
+        <div class="social">
+          <a href="https://www.instagram.com/magnomarbella/" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@magnomarbella" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.6" />
+              <path d="M10 9.2l5 2.8-5 2.8V9.2z" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/magno-marbella/" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6" />
+              <path d="M7 10.5V17M7 7.4v.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M11 17v-3.6a2.4 2.4 0 014.8 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
+
         <div class="lang-switch" role="group" data-i18n-attr="aria-label:nav.lang" aria-label="Idioma">
           <button class="lang-switch__btn" type="button" data-lang-btn="es" aria-pressed="true">
             <span>ES</span>
@@ -131,22 +155,29 @@
             Cinco centros deportivos en la Costa del Sol a disposición del jugador.
           </p>
 
-          <div class="services__grid">
+          <div class="services__grid services__grid--four">
             <article class="service" data-reveal>
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-train1)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <rect x="3" y="7" width="26" height="18" stroke="currentColor" stroke-width="1.3" />
                 <path d="M16 7v18" stroke="currentColor" stroke-width="1.3" />
                 <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.3" />
                 <path d="M3 12h4v8H3M29 12h-4v8h4" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="training.1.title">Alquiler de campos</h3>
-              <p class="service__text" data-i18n="training.1.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="training.1.title">Alquiler de campos</h3>
+                <p class="service__text" data-i18n="training.1.text">
                 Fútbol 11 y fútbol 7 por horas en cualquiera de nuestros centros.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.06s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-train2)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <circle cx="16" cy="6" r="3.2" stroke="currentColor" stroke-width="1.3" />
                 <path
                   d="M16 10v9M16 19l-5 10M16 19l5 10M9 13l7-2 7 2"
@@ -155,14 +186,19 @@
                   stroke-linecap="round"
                 />
               </svg>
-              <h3 class="service__title" data-i18n="training.2.title">Sesiones de élite</h3>
-              <p class="service__text" data-i18n="training.2.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="training.2.title">Sesiones de élite</h3>
+                <p class="service__text" data-i18n="training.2.text">
                 Entrenamiento privado con técnico especializado.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.12s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-train3)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path
                   d="M4 12v8M8 9v14M24 9v14M28 12v8M8 16h16"
                   stroke="currentColor"
@@ -170,24 +206,99 @@
                   stroke-linecap="round"
                 />
               </svg>
-              <h3 class="service__title" data-i18n="training.3.title">Gimnasio y recuperación</h3>
-              <p class="service__text" data-i18n="training.3.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="training.3.title">Gimnasio y recuperación</h3>
+                <p class="service__text" data-i18n="training.3.text">
                 Gimnasio, spa y fisioterapia en clínica o a domicilio.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.18s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-train4)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <rect x="3" y="9" width="26" height="17" stroke="currentColor" stroke-width="1.3" />
                 <path d="M11 9l2-3h6l2 3" stroke="currentColor" stroke-width="1.3" />
                 <circle cx="16" cy="17" r="5" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="training.4.title">Fotógrafo y vídeo</h3>
-              <p class="service__text" data-i18n="training.4.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="training.4.title">Fotógrafo y vídeo</h3>
+                <p class="service__text" data-i18n="training.4.text">
                 Fotógrafo profesional en pista, bajo petición.
               </p>
+              </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <!-- ==================================================== reels ====
+           Vídeos de Instagram de Magno. Sustituir cada href por la URL del
+           reel y su portada en assets/css/photos.css. -->
+      <section class="section services" id="videos">
+        <div class="container">
+          <p class="eyebrow" data-i18n="reels.section" data-reveal>Entrenamiento individual</p>
+          <h2 class="section__title" data-i18n-html="reels.title" data-reveal>
+            Así es una <em>sesión</em>
+          </h2>
+          <p class="section__lead" data-i18n="reels.lead" data-reveal>
+            Grabamos el trabajo de cada jugador y lo publicamos en nuestro Instagram.
+          </p>
+
+          <div class="reels__grid">
+            <a class="reel" href="https://www.instagram.com/magnomarbella/reels/" rel="noopener" data-reveal>
+              <div class="photo" style="--photo: var(--photo-reel1)"></div>
+              <span class="reel__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8V4z" /></svg>
+              </span>
+              <span class="reel__body">
+                <span class="reel__label" data-i18n="reels.1.label">1 vs 1</span>
+                <span class="reel__title" data-i18n="reels.1.title">Sesión individual con técnico</span>
+              </span>
+            </a>
+
+            <a class="reel" href="https://www.instagram.com/magnomarbella/reels/" rel="noopener" data-reveal style="--reveal-delay: 0.06s">
+              <div class="photo" style="--photo: var(--photo-reel2)"></div>
+              <span class="reel__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8V4z" /></svg>
+              </span>
+              <span class="reel__body">
+                <span class="reel__label" data-i18n="reels.2.label">Fuerza</span>
+                <span class="reel__title" data-i18n="reels.2.title">Trabajo de gimnasio</span>
+              </span>
+            </a>
+
+            <a class="reel" href="https://www.instagram.com/magnomarbella/reels/" rel="noopener" data-reveal style="--reveal-delay: 0.12s">
+              <div class="photo" style="--photo: var(--photo-reel3)"></div>
+              <span class="reel__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8V4z" /></svg>
+              </span>
+              <span class="reel__body">
+                <span class="reel__label" data-i18n="reels.3.label">Finalización</span>
+                <span class="reel__title" data-i18n="reels.3.title">Series de disparo a puerta</span>
+              </span>
+            </a>
+
+            <a class="reel" href="https://www.instagram.com/magnomarbella/reels/" rel="noopener" data-reveal style="--reveal-delay: 0.18s">
+              <div class="photo" style="--photo: var(--photo-reel4)"></div>
+              <span class="reel__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8V4z" /></svg>
+              </span>
+              <span class="reel__body">
+                <span class="reel__label" data-i18n="reels.4.label">Recuperación</span>
+                <span class="reel__title" data-i18n="reels.4.title">Fisioterapia y descarga</span>
+              </span>
+            </a>
+          </div>
+
+          <p class="reels__more" data-reveal>
+            <a class="btn btn--primary" href="https://www.instagram.com/magnomarbella/" rel="noopener" data-i18n="reels.cta">
+              Ver todos en Instagram
+            </a>
+          </p>
         </div>
       </section>
 
@@ -204,30 +315,42 @@
 
           <div class="services__grid">
             <article class="service" data-reveal>
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-life1)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path d="M3 15L16 5l13 10" stroke="currentColor" stroke-width="1.3" />
                 <path d="M6 14v13h20V14" stroke="currentColor" stroke-width="1.3" />
                 <path d="M13 27v-8h6v8" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="lifestyle.1.title">Villas y alojamiento</h3>
-              <p class="service__text" data-i18n="lifestyle.1.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="lifestyle.1.title">Villas y alojamiento</h3>
+                <p class="service__text" data-i18n="lifestyle.1.text">
                 Villas y residencias en Marbella y la Costa del Sol.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.06s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-life2)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path d="M4 28V7h13v21M17 28V13h11v15M2 28h28" stroke="currentColor" stroke-width="1.3" />
                 <path d="M8 12h4M8 17h4M8 22h4M21 18h3M21 23h3" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="lifestyle.2.title">Hoteles y concierge</h3>
-              <p class="service__text" data-i18n="lifestyle.2.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="lifestyle.2.title">Hoteles y concierge</h3>
+                <p class="service__text" data-i18n="lifestyle.2.text">
                 Reservas y concierge personalizado durante toda la estancia.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.12s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-life3)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path
                   d="M3 20v-4l3-6h20l3 6v4M3 20h26v4h-4v-4M7 24v-4H3v4"
                   stroke="currentColor"
@@ -237,25 +360,35 @@
                 <circle cx="9" cy="20" r="2" stroke="currentColor" stroke-width="1.3" />
                 <circle cx="23" cy="20" r="2" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="lifestyle.3.title">Vehículos de alta gama</h3>
-              <p class="service__text" data-i18n="lifestyle.3.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="lifestyle.3.title">Vehículos de alta gama</h3>
+                <p class="service__text" data-i18n="lifestyle.3.text">
                 Coches de lujo con o sin conductor y traslados.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.18s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-life4)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path d="M4 23h24l-3 5H7l-3-5z" stroke="currentColor" stroke-width="1.3" />
                 <path d="M8 23V12l14 11M16 12V4" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="lifestyle.4.title">Náutica y aviación</h3>
-              <p class="service__text" data-i18n="lifestyle.4.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="lifestyle.4.title">Náutica y aviación</h3>
+                <p class="service__text" data-i18n="lifestyle.4.text">
                 Yates, jets privados y coordinación de desplazamientos.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.24s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-life5)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path
                   d="M16 4l3.4 7.4 8 1-6 5.6 1.6 8L16 22.2 8.9 26l1.6-8-6-5.6 8-1L16 4z"
                   stroke="currentColor"
@@ -263,23 +396,31 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <h3 class="service__title" data-i18n="lifestyle.5.title">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="lifestyle.5.title">
                 Experiencias VIP y eventos
               </h3>
-              <p class="service__text" data-i18n="lifestyle.5.text">
+                <p class="service__text" data-i18n="lifestyle.5.text">
                 Eventos privados y acceso a espacios exclusivos.
               </p>
+              </div>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.3s">
-              <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <div class="service__media">
+                <div class="photo" style="--photo: var(--photo-life6)"></div>
+                <svg class="service__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <path d="M6 10h20l-2 18H8L6 10z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
                 <path d="M11 13V8a5 5 0 0110 0v5" stroke="currentColor" stroke-width="1.3" />
               </svg>
-              <h3 class="service__title" data-i18n="lifestyle.6.title">Personal shopping</h3>
-              <p class="service__text" data-i18n="lifestyle.6.text">
+              </div>
+              <div class="service__body">
+                <h3 class="service__title" data-i18n="lifestyle.6.title">Personal shopping</h3>
+                <p class="service__text" data-i18n="lifestyle.6.text">
                 Personal shopping y gestión del día a día.
               </p>
+              </div>
             </article>
           </div>
         </div>
@@ -449,8 +590,29 @@
                 <a href="tel:+34654746172">+34 654 746 172</a>
               </div>
               <div class="contact__channel" data-reveal>
-                <span data-i18n="contact.instagram">Instagram</span>
-                <a href="https://www.instagram.com/magnomarbella/" rel="noopener">@magnomarbella</a>
+                <span data-i18n="contact.follow">Síguenos</span>
+                <div class="social contact__social">
+          <a href="https://www.instagram.com/magnomarbella/" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@magnomarbella" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.6" />
+              <path d="M10 9.2l5 2.8-5 2.8V9.2z" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/magno-marbella/" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6" />
+              <path d="M7 10.5V17M7 7.4v.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M11 17v-3.6a2.4 2.4 0 014.8 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
               </div>
               <div class="contact__channel" data-reveal>
                 <span data-i18n="contact.address">Dirección</span>
@@ -566,6 +728,28 @@
             <p data-i18n="footer.tagline" style="max-width: 42ch">
               Concierge exclusivo para futbolistas profesionales y atletas de alto rendimiento.
             </p>
+            <div class="social">
+          <a href="https://www.instagram.com/magnomarbella/" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@magnomarbella" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.6" />
+              <path d="M10 9.2l5 2.8-5 2.8V9.2z" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/magno-marbella/" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6" />
+              <path d="M7 10.5V17M7 7.4v.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M11 17v-3.6a2.4 2.4 0 014.8 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
           </div>
 
           <div>

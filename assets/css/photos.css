@@ -1,37 +1,87 @@
 /* ==========================================================================
-   FOTOGRAFÍA — punto único donde se enchufan las imágenes reales.
+   FOTOGRAFÍA
 
-   Toda la web funciona sin una sola foto: donde debería ir una imagen se
-   pinta un bloque de color de la paleta de la marca. Para poner las fotos
-   definitivas basta con descomentar la línea que toque y apuntar al fichero.
-   No hay que tocar el HTML.
+   Punto único donde se enchufan todas las imágenes del sitio. La web funciona
+   entera sin ninguna: donde debería ir una foto se pinta un bloque de color
+   con su icono.
 
-   Las rutas son relativas a ESTE archivo (assets/css/), por eso empiezan
-   por ../img/.
+   Los escudos de los clubes NO se configuran aquí: son ficheros sueltos en
+   assets/img/clubes/. Ver assets/img/README.md.
 
-   Tamaños recomendados (WebP o JPG al 80 %):
-     heroes           1920 × 1080   horizontal, con zona tranquila para el texto
-     paneles portada  1400 × 1800   verticales, van a pantalla partida
-     en imágenes      1200 ×  900   horizontales
+   Para poner las imágenes reales se descomenta la línea que toque y se deja
+   el fichero en assets/img/. No hay que tocar el HTML.
+
+   Las rutas son relativas a ESTE archivo, por eso empiezan por ../img/.
    ========================================================================== */
 
 :root {
-  /* --- Portada del grupo ------------------------------------------------ */
+  /* --- Portada del grupo ------------------------------------------------
+     Verticales, 1400 x 1800. La de SCM lleva un velo oscuro encima. */
   /* --photo-scm: url('../img/hub-scm.jpg'); */
   /* --photo-magno: url('../img/hub-magno.jpg'); */
 
-  /* --- Sección "En imágenes" de Magno ----------------------------------- */
+  /* --- Equipo de SCM ----------------------------------------------------
+     Retratos verticales 4:5, 800 x 1000. Mismo encuadre en los seis. */
+  /* --photo-team1: url('../img/equipo-1.jpg'); */
+  /* --photo-team2: url('../img/equipo-2.jpg'); */
+  /* --photo-team3: url('../img/equipo-3.jpg'); */
+  /* --photo-team4: url('../img/equipo-4.jpg'); */
+  /* --photo-team5: url('../img/equipo-5.jpg'); */
+  /* --photo-team6: url('../img/equipo-6.jpg'); */
+
+  /* --- Actualidad de SCM ------------------------------------------------
+     Horizontales 16:10, 1200 x 750. Capturas o fotos de cada publicación. */
+  /* --photo-news1: url('../img/actualidad-1.jpg'); */
+  /* --photo-news2: url('../img/actualidad-2.jpg'); */
+  /* --photo-news3: url('../img/actualidad-3.jpg'); */
+
+  /* --- SCM x Magno ------------------------------------------------------
+     Horizontales 16:10, 1200 x 750. */
+  /* --photo-partner1: url('../img/partner-estancias.jpg'); */
+  /* --photo-partner2: url('../img/partner-villas.jpg'); */
+  /* --photo-partner3: url('../img/partner-vip.jpg'); */
+  /* --photo-partner4: url('../img/partner-camps.jpg'); */
+  /* --photo-partner5: url('../img/partner-inmobiliaria.jpg'); */
+
+  /* --- Magno, entrenamiento y rendimiento -------------------------------
+     Horizontales 4:3, 1200 x 900. */
+  /* --photo-train1: url('../img/magno-campos.jpg'); */
+  /* --photo-train2: url('../img/magno-sesiones.jpg'); */
+  /* --photo-train3: url('../img/magno-gimnasio.jpg'); */
+  /* --photo-train4: url('../img/magno-fotografo.jpg'); */
+
+  /* --- Magno, lifestyle -------------------------------------------------
+     Horizontales 4:3, 1200 x 900. */
+  /* --photo-life1: url('../img/magno-villas.jpg'); */
+  /* --photo-life2: url('../img/magno-hoteles.jpg'); */
+  /* --photo-life3: url('../img/magno-vehiculos.jpg'); */
+  /* --photo-life4: url('../img/magno-nautica.jpg'); */
+  /* --photo-life5: url('../img/magno-eventos.jpg'); */
+  /* --photo-life6: url('../img/magno-shopping.jpg'); */
+
+  /* --- Magno, vídeos de Instagram ---------------------------------------
+     Portadas verticales 9:16, 720 x 1280. Son la miniatura del reel; la URL
+     del vídeo se pone en el href de cada tarjeta en magno/index.html. */
+  /* --photo-reel1: url('../img/reel-1.jpg'); */
+  /* --photo-reel2: url('../img/reel-2.jpg'); */
+  /* --photo-reel3: url('../img/reel-3.jpg'); */
+  /* --photo-reel4: url('../img/reel-4.jpg'); */
+
+  /* --- Magno, en imágenes -----------------------------------------------
+     Horizontales 1200 x 900. */
   /* --photo-exp1: url('../img/magno-entrenamiento.jpg'); */
-  /* --photo-exp2: url('../img/magno-gimnasio.jpg'); */
+  /* --photo-exp2: url('../img/magno-recuperacion.jpg'); */
   /* --photo-exp3: url('../img/magno-villa.jpg'); */
+
 }
 
-/* El hero de cada marca lleva su propia imagen: descomenta la línea de la
-   página que estés vistiendo.
+/* Los heroes llevan su propia imagen por página.
 
-   SCM funciona sin foto —el hero es rojo con las cuñas naranjas, tal cual el
-   dossier— así que la imagen ahí es opcional. Magno sí la necesita: su hero
-   es fotografía a pantalla completa con un velo oscuro encima. */
+   SCM: foto de marketing de un jugador de la agencia, horizontal, con el
+   sujeto hacia la derecha para que el titular caiga sobre el lado despejado.
+   Con --photo-hero-position se ajusta el encuadre sin recortar el fichero.
 
-/* body.page-scm { --photo-hero: url('../img/hero-scm.jpg'); } */
+   Magno: fotografía a pantalla completa de instalaciones o costa. */
+
+/* body.page-scm { --photo-hero: url('../img/hero-scm.jpg'); --photo-hero-position: center 20%; } */
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

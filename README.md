@@ -3,10 +3,10 @@
 Sitio web estático de las dos marcas del grupo. Una portada común reparte a
 dos mundos con identidad propia:
 
-- **SCM Sports Agency** — agencia 360º de futbolistas profesionales. Rojo,
-  naranja y negro sobre blanco, con las cuñas diagonales y el sello
-  *INIMITABLE* del dossier de la agencia.
-- **Magno Marbella** — concierge en exclusiva para futbolistas profesionales
+- **SCM Sports Agency**, agencia 360º de futbolistas profesionales. Base
+  oscura con la fotografía del jugador como protagonista y el rojo de marca
+  como acento, más el sello *INIMITABLE* que encabeza cada sección.
+- **Magno Marbella**, concierge en exclusiva para futbolistas profesionales
   y atletas de alto rendimiento. Fondo hueso, serif y gris cálido, siguiendo
   su guía de servicios.
 
@@ -28,7 +28,7 @@ Y abrir <http://localhost:8000>.
 ## Estructura
 
 ```
-index.html            Portada del grupo — pantalla partida entre las dos marcas
+index.html            Portada del grupo, pantalla partida entre las dos marcas
 scm/index.html        SCM Sports Agency
 magno/index.html      Magno Marbella
 legal.html            Aviso legal (plantilla, ver abajo)
@@ -48,22 +48,37 @@ assets/js/
   i18n-hub.js         Textos de la portada
   i18n-scm.js         Textos de SCM
   i18n-magno.js       Textos de Magno
-  site.js             Menú, scroll, contadores, barras y formulario
+  site.js             Menú, scroll, contadores y formulario
 
 assets/img/
   logo-scm.png        Logotipo reconstruido del dossier (ver abajo)
   logo-magno.png      Sello reconstruido de la guía de servicios
   favicon*.svg        Iconos de pestaña
+  clubes/             Un fichero por escudo, sustituible uno a uno
 ```
+
+## Secciones de cada página
+
+**SCM**: portada con foto de jugador, cifras del equipo, quiénes somos con los
+seis valores, historia en cronología, los siete servicios, nuestro enfoque,
+el equipo con retratos, red de clubes con escudos, actualidad enlazada a
+Instagram, enfoque internacional, el proceso de seis pasos, la alianza con
+Magno y contacto.
+
+**Magno**: portada, entrenamiento y rendimiento, vídeos de Instagram,
+lifestyle, los cinco centros, en imágenes, cómo reservar y contacto.
+
+**Portada del grupo**: pantalla partida entre las dos marcas y la sección que
+explica qué comparten.
 
 ## De dónde sale el contenido
 
 Todos los textos, cifras y servicios provienen de los dos dossieres de marca:
 
-- `SCM SPORTS AGENCY.pdf` — quiénes somos, valores, los siete servicios, los
+- `SCM SPORTS AGENCY.pdf`: quiénes somos, valores, los siete servicios, los
   cinco enfoques, player management, enfoque internacional, el proceso de seis
   pasos y la alianza con Magno.
-- `Magno Marbella · Services & Pricing Guide.pdf` — los dos bloques de
+- `Magno Marbella · Services & Pricing Guide.pdf`: los dos bloques de
   servicio, los cinco centros deportivos y las condiciones de reserva.
 
 **Las tarifas del dossier de Magno no se publican.** La web habla de servicios
@@ -74,7 +89,45 @@ sitio para hacerlo es la sección `#centros` de `magno/index.html`.
 
 ## Pendiente antes de publicar
 
-### 1. Logotipos en vectorial
+### 1. La foto del hero de SCM
+
+La portada está preparada para una foto de marketing de un jugador de la
+agencia. Sin ella el hero se ve en negro con la trama de líneas, que funciona,
+pero pierde casi toda su fuerza. Se enchufa en `assets/css/photos.css` y el
+crédito de abajo a la derecha (nombre y club) se edita en `i18n-scm.js`.
+
+Hace falta autorización de imagen del jugador.
+
+### 2. Escudos de los clubes
+
+Los veinte escudos de `assets/img/clubes/` son marcadores con el monograma
+del club. Se sustituye el fichero conservando el nombre y aparecen solos. Ver
+`assets/img/README.md`, que incluye el aviso sobre uso de marcas ajenas.
+
+### 3. Fotos y nombres del equipo
+
+La sección Equipo tiene seis fichas con "Nombre Apellido" y una silueta. Hay
+que poner los nombres reales en `scm/index.html` y las fotos en `photos.css`.
+Si el equipo es mayor o menor de seis, se añaden o quitan bloques `.member`.
+
+### 4. Fechas de la historia
+
+Los años de la cronología son `20XX`. Hay que sustituirlos por las fechas
+reales o borrar el `<span>` del año si preferís una cronología sin fechas.
+
+### 5. Vídeos de Instagram de Magno
+
+Cada tarjeta de la sección de vídeos apunta al perfil general. Hay que poner
+la URL de cada reel en su `href` y la miniatura en `photos.css`.
+
+### 6. Redes sociales
+
+Los enlaces apuntan a `instagram.com/scmsportsagency`,
+`youtube.com/@scmsportsagency`, `linkedin.com/company/scm-sports-agency` y sus
+equivalentes de Magno, deducidos de los dossieres. Conviene comprobarlos y
+quitar los que no existan todavía.
+
+### 7. Logotipos en vectorial
 
 Los logos que hay ahora se han **reconstruido a partir de los PDF**: se han
 extraído la imagen y su máscara de transparencia y se han recompuesto. Son
@@ -86,17 +139,16 @@ Si tenéis los originales en SVG, AI o EPS, sustituid
 pantallas de alta densidad. El CSS los invierte a blanco donde hace falta con
 `filter: invert(1)`, así que un SVG monocromo funcionará igual.
 
-### 2. Fotografías
+### 8. Fotografías
 
 Todo funciona sin fotos: donde va una imagen se pinta un bloque de color. Para
 poner las reales se descomentan las líneas de `assets/css/photos.css`; no hay
 que tocar el HTML. El listado con tamaños está en `assets/img/README.md`.
 
-El hero de SCM funciona bien sin foto —es el rojo con las cuñas, igual que la
-portada del dossier—. El de Magno sí la necesita: es fotografía a pantalla
-completa.
+Los dos heroes son fotografía a pantalla completa con un velo oscuro encima.
+Sin imagen se ven en negro, lo cual es aceptable pero mucho menos potente.
 
-### 3. Textos legales
+### 9. Textos legales
 
 `legal.html` y `privacidad.html` son **plantillas con la estructura correcta**
 (LSSI-CE y RGPD). Ya llevan la dirección, el teléfono y el correo reales, pero
@@ -104,12 +156,6 @@ faltan la denominación social, el NIF y los datos registrales. Los dos
 documentos muestran un recuadro de aviso que debe borrarse cuando estén
 revisados por asesoría jurídica: mientras siga ahí, es señal de que no están
 listos.
-
-### 4. Instagram
-
-Los enlaces apuntan a `instagram.com/scmsportsagency` y
-`instagram.com/magnomarbella`, deducidos de los dossieres. Conviene
-comprobarlos.
 
 ---
 
@@ -195,8 +241,8 @@ Recordad cambiar `example.com` por el dominio definitivo en `sitemap.xml` y
   idioma está comprobado en las dos marcas y en los dos estados de scroll
   (mínimo 14,9:1).
 - **Tipografías desde Google Fonts** (Archivo, Inter, Cormorant Garamond,
-  Jost). Para no depender de Google —y quitar la mención de la política de
-  privacidad— se descargan a `assets/fonts/` y se sustituyen los `<link>` por
+  Jost). Para no depender de Google, y quitar la mención de la política de
+  privacidad, se descargan a `assets/fonts/` y se sustituyen los `<link>` por
   `@font-face`.
 - **Navegadores.** Se usa `:has()` para el efecto de la portada partida; donde
   no esté soportado, las dos mitades simplemente no se ensanchan al pasar el
@@ -204,3 +250,7 @@ Recordad cambiar `example.com` por el dominio definitivo en `sitemap.xml` y
 - **Apilamiento.** Los heroes llevan `isolation: isolate` porque sus capas de
   fondo van con `z-index` negativo; sin ese aislamiento se pintarían por
   detrás del propio fondo de la sección y no se verían.
+- **Secciones claras sobre base oscura.** En SCM, `.section--light` no
+  duplica componentes: solo redefine los tokens de color, así que las mismas
+  clases funcionan sobre fondo claro y oscuro.
+- **Sin rayas en la copia.** Los textos evitan el guion largo a propósito.

@@ -1,18 +1,18 @@
 /* ==========================================================================
-   HUB — portada del grupo. Pantalla partida entre el rojo de SCM y el hueso
-   de Magno. Las dos marcas atienden al mismo cliente, el futbolista
-   profesional: una le lleva la carrera, la otra todo lo demás.
+   HUB — portada del grupo. Pantalla partida entre el lado deportivo, en
+   negro con fotografía y el rojo de marca como único acento, y el lado
+   lifestyle en hueso. Sin naranja: el contraste lo hace la luz, no el color.
    ========================================================================== */
 
 :root {
+  --scm-ink: #0a0a0b;
+  --scm-ink-2: #121214;
   --scm-red: #f0180c;
-  --scm-red-dark: #cc180c;
-  --scm-orange: #fc600c;
-  --scm-ink: #0d0d0d;
+  --scm-text: #f6f6f5;
+  --scm-muted: #9a9aa1;
 
   --magno-surface: #edeee6;
   --magno-surface-2: #e3e4d9;
-  --magno-band: #b7b5b0;
   --magno-ink: #0d0d0d;
   --magno-text: #1a1a16;
   --magno-muted: #6b6b62;
@@ -25,7 +25,7 @@
 body {
   font-family: var(--font-body);
   background: var(--scm-ink);
-  color: #fff;
+  color: var(--scm-text);
 }
 
 /* --------------------------------------------------------------- cabecera */
@@ -36,11 +36,48 @@ body {
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: var(--space-md);
   padding: var(--space-lg) var(--gutter);
   color: #fff;
-  --lang-active-fg: #0d0d0d;
+  --lang-active-fg: #0a0a0b;
+}
+
+.hub-header__social {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.hub-header__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.3s var(--ease), background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.hub-header__social a:hover {
+  opacity: 1;
+  background: var(--scm-red);
+  border-color: var(--scm-red);
+  color: #fff;
+}
+
+.hub-header__social svg {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 620px) {
+  .hub-header__social {
+    display: none;
+  }
 }
 
 /* ---------------------------------------------------------- pantalla partida */
@@ -84,38 +121,36 @@ body {
 }
 
 .panel__logo {
-  height: 54px;
+  height: 52px;
   width: auto;
   margin-bottom: var(--space-xl);
-  /* El panel es un flex en columna: sin esto, el estirado del eje transversal
+  /* El panel es un flex en columna: sin esto el estirado del eje transversal
      ensancha la imagen y deforma el logotipo. */
   align-self: flex-start;
 }
 
-/* --- lado SCM: rojo con cuñas naranjas --- */
+/* --- lado SCM: negro con foto y una regla roja --- */
 
 .panel--scm {
-  color: #fff;
-  background: var(--scm-red);
+  color: var(--scm-text);
+  background: var(--scm-ink);
 }
 
 .panel--scm .panel__bg {
-  background-color: var(--scm-red);
+  background-color: var(--scm-ink-2);
   background-image: var(--photo-scm, none);
 }
 
 .panel--scm .panel__veil {
-  background: linear-gradient(180deg, rgba(204, 24, 12, 0.25) 0%, rgba(204, 24, 12, 0.8) 100%);
-}
-
-.panel--scm .panel__shard {
-  position: absolute;
-  inset: 0 0 0 auto;
-  z-index: -1;
-  width: 30%;
-  background: var(--scm-orange);
-  clip-path: polygon(52% 0, 100% 0, 100% 100%, 0 100%);
-  opacity: 0.9;
+  background:
+    linear-gradient(180deg, rgba(10, 10, 11, 0.5) 0%, rgba(10, 10, 11, 0.92) 72%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.045) 0px,
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px,
+      transparent 14%
+    );
 }
 
 .panel--scm .panel__logo {
@@ -145,11 +180,28 @@ body {
 /* --- contenido --- */
 
 .panel__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
   font-size: 0.66rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  opacity: 0.75;
   margin-bottom: var(--space-md);
+}
+
+.panel__eyebrow::before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: currentColor;
+}
+
+.panel--scm .panel__eyebrow {
+  color: var(--scm-red);
+}
+
+.panel--magno .panel__eyebrow {
+  color: var(--magno-muted);
 }
 
 .panel__title {
@@ -179,7 +231,7 @@ body {
 }
 
 .panel--scm .panel__desc {
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--scm-muted);
 }
 
 .panel--magno .panel__desc {
@@ -195,9 +247,13 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 2px solid currentColor;
   align-self: flex-start;
   transition: gap 0.35s var(--ease);
+}
+
+.panel--scm .panel__cta {
+  color: var(--scm-red);
 }
 
 .panel:hover .panel__cta,
@@ -242,7 +298,7 @@ body {
 
 .group {
   background: var(--scm-ink);
-  color: #fff;
+  color: var(--scm-text);
 }
 
 .group__eyebrow {
@@ -253,14 +309,14 @@ body {
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--scm-orange);
+  color: var(--scm-red);
   margin-bottom: var(--space-lg);
 }
 
 .group__eyebrow::before {
   content: '';
   width: 30px;
-  height: 1px;
+  height: 2px;
   background: currentColor;
 }
 
@@ -276,11 +332,11 @@ body {
 
 .group__lead em {
   font-style: normal;
-  color: var(--scm-orange);
+  color: var(--scm-red);
 }
 
 .group__text {
-  color: rgba(255, 255, 255, 0.66);
+  color: var(--scm-muted);
   max-width: 64ch;
   margin-bottom: var(--space-md);
   line-height: 1.75;
@@ -299,14 +355,14 @@ body {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--scm-orange);
+  color: var(--scm-red);
   margin-bottom: var(--space-sm);
   padding-top: var(--space-md);
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.18);
 }
 
 .group__point p {
-  color: rgba(255, 255, 255, 0.62);
+  color: var(--scm-muted);
   font-size: 0.94rem;
   line-height: 1.7;
 }
@@ -314,9 +370,9 @@ body {
 /* ----------------------------------------------------------------- footer */
 
 .hub-footer {
-  background: var(--scm-ink);
-  color: rgba(255, 255, 255, 0.55);
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  background: #050506;
+  color: var(--scm-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-block: var(--space-xl);
   font-size: 0.84rem;
 }
@@ -335,5 +391,5 @@ body {
 }
 
 .hub-footer a:hover {
-  color: var(--scm-orange);
+  color: var(--scm-red);
 }

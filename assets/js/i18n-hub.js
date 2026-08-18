@@ -18,7 +18,7 @@ window.I18N_DICT = {
     'group.eyebrow': 'El grupo',
     'group.lead': 'Un mismo jugador, <em>dos casas</em>',
     'group.text':
-      'SCM Sports Agency y Magno Marbella trabajan para el mismo cliente: el futbolista profesional. Una le lleva la carrera —contratos, rendimiento, salud, imagen y finanzas—. La otra se ocupa de todo lo que ocurre cuando aterriza en la Costa del Sol.',
+      'SCM Sports Agency y Magno Marbella trabajan para el mismo cliente: el futbolista profesional. Una le lleva la carrera: contratos, rendimiento, salud, imagen y finanzas. La otra se ocupa de todo lo que ocurre cuando aterriza en la Costa del Sol.',
     'group.text2':
       'Pretemporada, vacaciones, recuperación de una lesión o un training camp: el jugador entrena en centros de alto rendimiento, se aloja donde le conviene y no gestiona nada. Ese es el punto donde las dos marcas se encuentran.',
 
@@ -56,7 +56,7 @@ window.I18N_DICT = {
     'group.eyebrow': 'The group',
     'group.lead': 'One player, <em>two houses</em>',
     'group.text':
-      'SCM Sports Agency and Magno Marbella work for the same client: the professional footballer. One runs the career — contracts, performance, health, image and finances. The other handles everything that happens once they land on the Costa del Sol.',
+      'SCM Sports Agency and Magno Marbella work for the same client: the professional footballer. One runs the career: contracts, performance, health, image and finances. The other handles everything that happens once they land on the Costa del Sol.',
     'group.text2':
       'Pre-season, holidays, recovery from an injury or a training camp: the player trains at high-performance centres, stays where it suits them and organises nothing. That is where the two brands meet.',
 

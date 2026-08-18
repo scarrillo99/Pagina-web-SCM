@@ -431,40 +431,81 @@ body {
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-xl);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: var(--space-lg);
   margin-top: var(--space-2xl);
 }
 
+/* Entrenamiento son cuatro servicios: en pantalla ancha van en una sola fila
+   en lugar de dejar el cuarto solo debajo. */
+@media (min-width: 1000px) {
+  .services__grid--four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Cada servicio es una ficha con su propia fotografía. Mientras no haya
+   imagen se ve el bloque de color con el icono centrado, así que la retícula
+   nunca queda vacía. */
 .service {
-  padding-top: var(--space-lg);
-  border-top: 1px solid var(--line);
-  transition: border-color 0.4s var(--ease);
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease);
 }
 
 .service:hover {
-  border-top-color: var(--ink);
+  border-color: var(--ink);
+  transform: translateY(-4px);
 }
 
+.service__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.service__media .photo {
+  --photo-ratio: 4 / 3;
+  --photo-fallback: var(--surface-3);
+  transition: transform 0.8s var(--ease);
+}
+
+.service:hover .service__media .photo {
+  transform: scale(1.05);
+}
+
+/* Icono centrado sobre el hueco de la foto: hace de marcador y desaparece
+   visualmente en cuanto se pone la imagen real. */
 .service__icon {
-  width: 32px;
-  height: 32px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 46px;
+  height: 46px;
   color: var(--ink);
-  margin-bottom: var(--space-md);
-  opacity: 0.85;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.service__body {
+  padding: var(--space-lg);
+  flex-grow: 1;
 }
 
 .service__title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   margin-bottom: var(--space-sm);
+  line-height: 1.15;
 }
 
 .service__text {
   color: var(--muted);
-  font-size: 0.93rem;
-  line-height: 1.8;
+  font-size: 0.92rem;
+  line-height: 1.75;
 }
 
 /* ---------------------------------------------------------------- centros */
@@ -929,4 +970,169 @@ body {
   padding-top: var(--space-lg);
   border-top: 1px solid rgba(237, 238, 230, 0.18);
   font-size: 0.76rem;
+}
+
+
+/* ----------------------------------------------------------------- reels */
+
+/* Vídeos de Instagram. Sin conexión a Instagram no se puede incrustar el
+   reproductor sin cargar su script, así que cada ficha es un enlace con la
+   portada del vídeo y el botón de reproducción encima. Se sustituyen las
+   portadas en photos.css y las URL en el HTML. */
+.reels__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.reel {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--surface);
+  border: 1px solid var(--line-soft);
+  background: #22231d;
+  transition: transform 0.4s var(--ease);
+}
+
+.reel:hover {
+  transform: translateY(-4px);
+}
+
+.reel .photo {
+  --photo-ratio: 9 / 16;
+  --photo-fallback: #22231d;
+  --photo-overlay: linear-gradient(180deg, rgba(20, 21, 17, 0.15) 40%, rgba(20, 21, 17, 0.88) 100%);
+  transition: transform 0.8s var(--ease);
+}
+
+.reel:hover .photo {
+  transform: scale(1.05);
+}
+
+.reel__play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid rgba(237, 238, 230, 0.7);
+  background: rgba(20, 21, 17, 0.35);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  transition: background-color 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+
+.reel:hover .reel__play {
+  background: rgba(237, 238, 230, 0.92);
+  border-color: transparent;
+  color: #14150f;
+}
+
+.reel__play svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+}
+
+.reel__body {
+  display: block;
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.reel__label {
+  display: block;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 0.3rem;
+}
+
+.reel__title {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.reels__more {
+  margin-top: var(--space-2xl);
+}
+
+/* --------------------------------------------------------- redes sociales */
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  opacity: 0.65;
+  transition: opacity 0.3s var(--ease), background-color 0.3s var(--ease),
+    color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.social a:hover {
+  opacity: 1;
+  background: currentColor;
+}
+
+.social a:hover svg {
+  color: var(--surface);
+}
+
+.social svg {
+  width: 16px;
+  height: 16px;
+  transition: color 0.3s var(--ease);
+}
+
+.header .social {
+  gap: 0.4rem;
+}
+
+.header .social a {
+  width: 30px;
+  height: 30px;
+}
+
+.header .social svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 1180px) {
+  .header .social {
+    display: none;
+  }
+}
+
+.footer .social {
+  margin-top: var(--space-lg);
+  color: rgba(237, 238, 230, 0.7);
+}
+
+.footer .social a:hover svg {
+  color: var(--ink);
+}
+
+.contact__social {
+  margin-top: var(--space-sm);
 }
