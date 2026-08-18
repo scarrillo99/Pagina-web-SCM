@@ -36,7 +36,7 @@
      con sus cifras en la 3. */
   /* --photo-news1: url('../img/actualidad-1.jpg'); */
   /* --photo-news2: url('../img/actualidad-2.jpg'); */
-  /* --photo-news3: url('../img/actualidad-3.jpg'); */
+  --photo-news3: url('../img/actualidad-3.jpg');
 
   /* --- SCM x Magno ------------------------------------------------------
      Horizontales 16:10, 1200 x 750. */
@@ -104,9 +104,11 @@
    cada diapositiva. La velocidad se cambia en data-interval, en milisegundos.
 
    Encuadre. --photo-hero-position sube o baja el recorte en escritorio y
-   --photo-hero-position-mobile hace lo mismo en móvil, por separado. Está en
-   25 % para que la cara quede en el tercio superior y no la corte la parte de
-   arriba de la pantalla.
+   --photo-hero-position-mobile hace lo mismo en móvil, por separado. En
+   escritorio está en 25 % para que la cara quede en el tercio superior. En
+   móvil la pantalla es mucho más estrecha que la foto y se recorta por los
+   lados, así que el encuadre va desplazado al 68 % de ancho: las tres fotos
+   tienen al jugador a la derecha y así no se queda fuera.
 
    Si una foto concreta necesita otro encuadre, se le pone su propio
    --photo-size y --photo-position en el style de su diapositiva, en
@@ -115,10 +117,9 @@ body.page-scm {
   --photo-hero1: url('../img/hero-scm-1.jpg');
   --photo-hero2: url('../img/hero-scm-2.jpg');
   --photo-hero3: url('../img/hero-scm-3.jpg');
-  --photo-hero4: url('../img/hero-scm-4.jpg');
 
   --photo-hero-size: cover;
   --photo-hero-position: center 25%;
-  --photo-hero-position-mobile: center 20%;
+  --photo-hero-position-mobile: 68% 18%;
 }
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

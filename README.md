@@ -59,7 +59,7 @@ assets/img/
 
 ## Secciones de cada página
 
-**SCM**: portada a pantalla completa con cuatro fotos que se relevan, cifras del equipo, quiénes somos con
+**SCM**: portada a pantalla completa con tres fotos que se relevan, cifras del equipo, quiénes somos con
 los seis valores en barras animadas, SCM Group con las doce
 capacidades del grupo, historia en cronología, los siete servicios, nuestro
 enfoque, el equipo con retratos, red de clubes con escudos, actualidad
@@ -94,17 +94,12 @@ sitio para hacerlo es la sección `#centros` de `magno/index.html`.
 
 ## Pendiente antes de publicar
 
-### 1. Las cuatro fotos del hero de SCM
+### 1. Nombres de los jugadores de la portada
 
-La portada es una fotografía a pantalla completa con el titular encima, y
-rota cuatro fotos de jugadores de la agencia, una cada segundo. Ahora mismo
-son marcadores que dicen en pantalla qué fichero sustituye cada uno: se
-reemplazan `assets/img/hero-scm-1.jpg` a `hero-scm-4.jpg` conservando el
-nombre y aparecen solas, sin tocar código. Formato horizontal, 1920 x 1080. El nombre y el club de abajo a la derecha van
-en `data-name` y `data-club` de cada diapositiva, en `scm/index.html`, y la
-velocidad en `data-interval`, en milisegundos.
-
-Hace falta autorización de imagen del jugador.
+La portada ya lleva tres fotos reales rotando. Dos de ellas, las de la llegada
+al aeropuerto, salen **sin crédito** porque no sabemos quién es el jugador ni
+en qué club firmaba. Se pone en `data-name` y `data-club` de su diapositiva,
+en `scm/index.html`, y el crédito aparece solo.
 
 ### 2. Escudos de los clubes
 

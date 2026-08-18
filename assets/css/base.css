@@ -251,16 +251,21 @@ ol {
   position: relative;
   overflow: hidden;
   background-color: var(--photo-fallback, #1a1a1a);
-  background-image: var(--photo, none);
-  background-size: cover;
-  background-position: var(--photo-position, center);
   aspect-ratio: var(--photo-ratio, 3 / 4);
 }
 
+/* Dos capas: el velo arriba y la fotografía debajo. Van en el ::after y no en
+   el fondo del elemento porque el fondo se pinta por detrás de los hijos, y
+   los bloques sin foto llevan dentro un icono de marcador que hay que tapar
+   en cuanto llega la imagen real. Sin --photo esta capa es transparente y el
+   marcador se ve. */
 .photo::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--photo-overlay, none);
+  background-image: var(--photo-overlay, none), var(--photo, none);
+  background-size: auto, cover;
+  background-position: center, var(--photo-position, center);
+  background-repeat: no-repeat, no-repeat;
   pointer-events: none;
 }

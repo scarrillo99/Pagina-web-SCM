@@ -108,16 +108,16 @@
 
     <main id="main">
       <!-- ==================================================== hero ====
-           Cuatro fotos que se relevan solas. Cada una se enchufa en
-           assets/css/photos.css (--photo-hero1 a --photo-hero4) y lleva
-           encima el nombre del jugador y su club en data-name y data-club.
+           Las fotos que se relevan de fondo. Cada una se enchufa en
+           assets/css/photos.css (--photo-hero1 y siguientes) y lleva el
+           nombre del jugador y su club en data-name y data-club. Si una no
+           los lleva, no se muestra crédito en esa foto.
            La velocidad se cambia en data-interval, en milisegundos. -->
       <section class="hero">
         <div class="hero__portraits" data-hero-slider data-interval="1000" aria-hidden="true">
-          <span class="hero__portrait" style="--photo: var(--photo-hero1)" data-name="Orel Mangala" data-club="Getafe CF"></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero2)" data-name="Iker Pozo" data-club="Real Murcia"></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero3)" data-name="Jugador tres" data-club="Club actual"></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero4)" data-name="Jugador cuatro" data-club="Club actual"></span>
+          <span class="hero__portrait" style="--photo: var(--photo-hero1)" data-name="" data-club=""></span>
+          <span class="hero__portrait" style="--photo: var(--photo-hero2)" data-name="" data-club=""></span>
+          <span class="hero__portrait" style="--photo: var(--photo-hero3)" data-name="Orel Mangala" data-club="Getafe CF"></span>
         </div>
         <div class="hero__veil" aria-hidden="true"></div>
 
@@ -143,9 +143,9 @@
           </div>
         </div>
 
-        <p class="hero__credit" data-hero-credit>
-          <strong data-credit-name>Orel Mangala</strong>
-          <span data-credit-club>Getafe CF</span>
+        <p class="hero__credit" data-hero-credit hidden>
+          <strong data-credit-name></strong>
+          <span data-credit-club></span>
         </p>
       </section>
 

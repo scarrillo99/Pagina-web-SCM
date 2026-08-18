@@ -153,13 +153,23 @@
        manda is-active y solo una foto está visible a la vez. */
     slider.classList.add('is-running');
     slides[0].classList.add('is-active');
+    if (credit) {
+      var first = slides[0].getAttribute('data-name') || '';
+      credit.hidden = first === '';
+      if (creditName) creditName.textContent = first;
+      if (creditClub) creditClub.textContent = slides[0].getAttribute('data-club') || '';
+    }
 
     var show = function (next) {
       slides[index].classList.remove('is-active');
       index = next;
       slides[index].classList.add('is-active');
 
-      if (creditName) creditName.textContent = slides[index].getAttribute('data-name') || '';
+      var who = slides[index].getAttribute('data-name') || '';
+      /* Una foto sin nombre no lleva crédito: mejor nada que un "Nombre del
+         jugador" de relleno en la portada. */
+      if (credit) credit.hidden = who === '';
+      if (creditName) creditName.textContent = who;
       if (creditClub) creditClub.textContent = slides[index].getAttribute('data-club') || '';
     };
 

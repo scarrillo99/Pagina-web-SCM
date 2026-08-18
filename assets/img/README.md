@@ -46,50 +46,49 @@ hay que tocar el HTML.
 
 | Fichero | Tamaño | Dónde sale |
 |---|---|---|
-| `hero-scm-1..4.jpg` | 1920×1080 | Portada a pantalla completa, las cuatro fotos que rotan. **Ya están enchufadas**: basta con sustituir cada fichero |
+| `hero-scm-1..3.jpg` | 1920×1080 | Portada a pantalla completa, las fotos que rotan. **Ya están puestas** |
 | `hub-scm.jpg` | 1400×1800 | Mitad izquierda de la portada del grupo |
 | `equipo-1..6.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
-| `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad. Aquí encajan la firma del contrato, la llegada al aeropuerto y los retratos con cifras |
+| `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad. La tercera ya lleva el retrato de Mangala con sus cifras; faltan la de mercado y la de entrenamiento |
 | `partner-*.jpg` | 1200×750 | Los cinco bloques de SCM x Magno |
 
-**El hero ya está conectado.** En `assets/img/hero-scm-1.jpg` a
-`hero-scm-4.jpg` hay ahora cuatro marcadores que dicen en pantalla qué fichero
-sustituye cada uno. Para poner las fotos reales solo hay que **sustituir esos
-ficheros conservando el nombre**: no hay que tocar ni una línea de código.
+**El hero ya lleva fotos reales.** Son tres, recortadas a 16:9 desde las
+originales que subisteis:
 
-**El hero.** La fotografía es el fondo de toda la portada, de lado a lado, con
-el titular encima. Son **cuatro fotos que se relevan solas** por fundido.
+| Fichero | De dónde sale |
+|---|---|
+| `hero-scm-1.jpg` | Llegada con la bufanda del club, en el exterior del aeropuerto |
+| `hero-scm-2.jpg` | Llegada con el equipaje, dentro de la terminal |
+| `hero-scm-3.jpg` | Presentación de Orel Mangala con el Getafe |
 
-Formato: **horizontal, 1920 x 1080** o parecido. Una foto vertical de
-presentación también entra, pero al llenar una pantalla apaisada se le recorta
-bastante por arriba y por abajo, así que se aprovechan mucho mejor las
-horizontales.
+Para cambiar cualquiera basta con **sustituir el fichero conservando el
+nombre**, y para añadir una cuarta se copia una diapositiva en
+`scm/index.html` y se añade `--photo-hero4` en `photos.css`.
 
-Escoged fotos con **aire en la mitad izquierda**: ahí cae el titular. Y que en
-cada una salga **solo el jugador**: es la primera pantalla de la agencia y una
-imagen con dos personas resta fuerza. Las fotos de firma de contrato o de
-llegada quedan mejor en la sección Actualidad.
+**Cómo elegir las fotos.** Horizontal, 1920 x 1080. Con **aire en la mitad
+izquierda**, que es donde cae el titular, y con **el jugador a la derecha**:
+en móvil la pantalla es mucho más estrecha y el encuadre está desplazado al
+68 % de ancho para no dejarlo fuera. Que salga **solo el jugador**.
 
-Lo que se puede ajustar:
+Las fotos con grafismo incrustado (escudos de trayectoria, cifras de carrera)
+no funcionan de fondo: llevan su propia tipografía y chocan con el titular de
+la portada. Esas van mejor en la sección Actualidad, donde el texto va debajo
+de la imagen y no encima.
+
+**Lo que se puede ajustar:**
 
 - **La velocidad**, en `data-interval` del bloque `hero__portraits` de
   `scm/index.html`, en milisegundos. Ahora está en `1000`, un segundo. Si
   resulta agitado, `4000` deja respirar cada foto.
-- **El nombre y el club** de abajo a la derecha, en `data-name` y `data-club`
-  de cada diapositiva. Cambian solos al cambiar la foto.
-- **El encuadre general**, en `photos.css`: `--photo-hero-position` sube o
-  baja el recorte en escritorio y `--photo-hero-position-mobile` hace lo mismo
-  en móvil, por separado. Están en 25 % y 20 % para que la cara quede en el
-  tercio superior.
-- **El encuadre de una foto suelta**, si una necesita otro recorte que las
-  demás: se le añade su propio `--photo-size` y `--photo-position` en el
-  `style` de su diapositiva y esa manda sobre el general.
+- **El nombre y el club**, en `data-name` y `data-club` de cada diapositiva.
+  La foto que los deja vacíos no muestra crédito.
+- **El encuadre general**, en `photos.css`: `--photo-hero-position` para
+  escritorio y `--photo-hero-position-mobile` para móvil.
+- **El encuadre de una foto suelta**: se le añade su propio `--photo-size` y
+  `--photo-position` en el `style` de su diapositiva.
 
 Hace falta autorización de imagen de cada jugador y, si aparece la equipación,
 también conviene comprobarlo con el club.
-
-Si de momento solo hay una foto buena, se puede dejar una sola diapositiva en
-el HTML: con menos de dos el carrusel no arranca y se ve fija, sin errores.
 
 ### Magno Marbella
 

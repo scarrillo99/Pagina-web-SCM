@@ -528,6 +528,12 @@ body {
   line-height: 1;
 }
 
+/* display: flex gana al display: none que el navegador aplica a [hidden], así
+   que hay que apagarlo a mano en las fotos que no llevan crédito. */
+.hero__credit[hidden] {
+  display: none;
+}
+
 .hero__credit::before {
   content: '';
   width: 22px;
