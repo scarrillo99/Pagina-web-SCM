@@ -2,6 +2,7 @@
 window.I18N_DICT = {
   es: {
     'nav.lang': 'Idioma',
+    'group.name': 'SCM Group',
 
     'scm.eyebrow': 'Agencia 360º · Fútbol profesional',
     'scm.title': 'SCM Sports Agency',
@@ -40,6 +41,7 @@ window.I18N_DICT = {
 
   en: {
     'nav.lang': 'Language',
+    'group.name': 'SCM Group',
 
     'scm.eyebrow': '360º agency · Professional football',
     'scm.title': 'SCM Sports Agency',

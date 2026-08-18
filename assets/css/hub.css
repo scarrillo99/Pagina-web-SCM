@@ -1,25 +1,38 @@
 /* ==========================================================================
-   HUB — portada del grupo. Pantalla partida entre el lado deportivo, en
-   negro con fotografía y el rojo de marca como único acento, y el lado
-   lifestyle en hueso. Sin naranja: el contraste lo hace la luz, no el color.
+   HUB — portada del grupo.
+
+   Las dos marcas se presentan como iguales: misma retícula, mismo tamaño de
+   logotipo y los mismos elementos a la misma altura en los dos lados. Eso lo
+   consigue una rejilla compartida (subgrid): las filas las define el
+   contenedor, no cada panel, así que logotipo, filete, antetítulo, título,
+   descripción y enlace caen exactamente a la misma altura aunque los textos
+   midan distinto.
+
+   El color se usa con cuentagotas. Lo que separa a las dos marcas es la luz,
+   no la saturación: carbón a un lado, hueso al otro.
    ========================================================================== */
 
 :root {
-  --scm-ink: #0a0a0b;
-  --scm-ink-2: #121214;
-  --scm-red: #f0180c;
-  --scm-text: #f6f6f5;
-  --scm-muted: #9a9aa1;
+  --scm-ink: #0e0e10;
+  --scm-ink-2: #16161a;
+  --scm-text: #f4f4f3;
+  --scm-muted: #9d9da4;
+  --scm-line: rgba(255, 255, 255, 0.16);
+  --scm-accent: #e0180d;
 
   --magno-surface: #edeee6;
-  --magno-surface-2: #e3e4d9;
-  --magno-ink: #0d0d0d;
   --magno-text: #1a1a16;
   --magno-muted: #6b6b62;
+  --magno-line: rgba(13, 13, 13, 0.18);
+  --magno-accent: #0d0d0d;
 
   --font-sport: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   --font-lux: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Alto reservado al logotipo. Es el mismo en las dos marcas: es lo que
+     pide que se lean como empresas hermanas. */
+  --logo-h: 62px;
 }
 
 body {
@@ -30,23 +43,47 @@ body {
 
 /* --------------------------------------------------------------- cabecera */
 
+/* La cabecera se parte en dos igual que la portada, para que cada mitad
+   tome el color que le corresponde y todo se lea. */
 .hub-header {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 50;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: var(--space-lg) 0;
+  pointer-events: none;
+}
+
+.hub-header > * {
+  pointer-events: auto;
+}
+
+.hub-header__group {
+  padding-left: clamp(1.5rem, 5vw, 5rem);
+  font-family: var(--font-sport);
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: rgba(244, 244, 243, 0.72);
+}
+
+.hub-header__controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: var(--space-md);
-  padding: var(--space-lg) var(--gutter);
-  color: #fff;
-  --lang-active-fg: #0a0a0b;
+  padding-right: clamp(1.5rem, 5vw, 5rem);
+  color: var(--magno-text);
+  --lang-active-fg: #edeee6;
 }
 
 .hub-header__social {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.4rem;
 }
 
 .hub-header__social a {
@@ -57,16 +94,12 @@ body {
   height: 32px;
   border: 1px solid currentColor;
   border-radius: 50%;
-  opacity: 0.6;
-  transition: opacity 0.3s var(--ease), background-color 0.3s var(--ease),
-    border-color 0.3s var(--ease), color 0.3s var(--ease);
+  opacity: 0.55;
+  transition: opacity 0.3s var(--ease);
 }
 
 .hub-header__social a:hover {
   opacity: 1;
-  background: var(--scm-red);
-  border-color: var(--scm-red);
-  color: #fff;
 }
 
 .hub-header__social svg {
@@ -74,62 +107,84 @@ body {
   height: 15px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 899px) {
+  /* Apilados, la cabecera cae siempre sobre el panel oscuro. */
+  .hub-header {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-header__group {
+    display: none;
+  }
+
+  .hub-header__controls {
+    color: var(--scm-text);
+    --lang-active-fg: #0e0e10;
+  }
+}
+
+@media (max-width: 520px) {
   .hub-header__social {
     display: none;
   }
 }
 
-/* ---------------------------------------------------------- pantalla partida */
+/* ----------------------------------------------------- pantalla partida */
 
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* Ocho filas: aire, los seis elementos de cada marca, y aire. */
+  grid-template-rows:
+    minmax(6.5rem, 1fr)
+    auto
+    auto
+    auto
+    auto
+    auto
+    auto
+    minmax(3.5rem, 1fr);
   min-height: 100svh;
 }
 
 .panel {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: minmax(0, 1fr);
+  /* Sin relleno vertical: desplazaría las filas del subgrid y rompería la
+     alineación entre las dos mitades. El aire lo dan las filas 1 y 8. */
+  padding-inline: clamp(1.5rem, 5vw, 5rem);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 4vw, 4rem) clamp(2.5rem, 6vw, 5rem);
-  overflow: hidden;
-  text-decoration: none;
   isolation: isolate;
-  transition: flex-grow 0.6s var(--ease);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.panel__bg,
+.panel__veil {
+  grid-area: 1 / 1 / -1 / -1;
+  position: absolute;
+  inset: 0;
 }
 
 .panel__bg {
-  position: absolute;
-  inset: 0;
   z-index: -2;
   background-size: cover;
   background-position: center;
-  transition: transform 1.2s var(--ease);
+  transition: transform 1.4s var(--ease);
 }
 
 .panel__veil {
-  position: absolute;
-  inset: 0;
   z-index: -1;
 }
 
 .panel:hover .panel__bg,
 .panel:focus-visible .panel__bg {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
-.panel__logo {
-  height: 52px;
-  width: auto;
-  margin-bottom: var(--space-xl);
-  /* El panel es un flex en columna: sin esto el estirado del eje transversal
-     ensancha la imagen y deforma el logotipo. */
-  align-self: flex-start;
-}
-
-/* --- lado SCM: negro con foto y una regla roja --- */
+/* --- lado SCM --- */
 
 .panel--scm {
   color: var(--scm-text);
@@ -137,31 +192,22 @@ body {
 }
 
 .panel--scm .panel__bg {
-  background-color: var(--scm-ink-2);
+  background-color: var(--scm-ink);
   background-image: var(--photo-scm, none);
 }
 
 .panel--scm .panel__veil {
   background:
-    linear-gradient(180deg, rgba(10, 10, 11, 0.5) 0%, rgba(10, 10, 11, 0.92) 72%),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.045) 0px,
-      rgba(255, 255, 255, 0.045) 1px,
-      transparent 1px,
-      transparent 14%
-    );
+    radial-gradient(120% 90% at 70% 0%, rgba(255, 255, 255, 0.07) 0%, transparent 62%),
+    linear-gradient(180deg, rgba(14, 14, 16, 0.55) 0%, rgba(14, 14, 16, 0.93) 78%);
 }
 
-.panel--scm .panel__logo {
-  filter: invert(1) brightness(2);
-}
-
-/* --- lado Magno: hueso --- */
+/* --- lado Magno --- */
 
 .panel--magno {
   color: var(--magno-text);
   background: var(--magno-surface);
+  border-left: 1px solid rgba(13, 13, 13, 0.12);
 }
 
 .panel--magno .panel__bg {
@@ -170,34 +216,53 @@ body {
 }
 
 .panel--magno .panel__veil {
-  background: linear-gradient(180deg, rgba(237, 238, 230, 0.4) 0%, rgba(237, 238, 230, 0.94) 72%);
+  background: linear-gradient(180deg, rgba(237, 238, 230, 0.55) 0%, rgba(237, 238, 230, 0.95) 78%);
 }
 
+/* --- los seis elementos, cada uno en su fila --- */
+
+.panel__logo {
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+  height: var(--logo-h);
+  width: auto;
+  object-fit: contain;
+}
+
+/* El sello de Magno es blanco en origen: sobre hueso se pasa a negro. Es
+   monocromo, así que invertirlo no altera ningún color de marca. */
 .panel--magno .panel__logo {
   filter: invert(1);
 }
 
-/* --- contenido --- */
+.panel__rule {
+  grid-row: 3;
+  align-self: center;
+  width: 54px;
+  height: 2px;
+  margin-block: var(--space-lg);
+}
+
+.panel--scm .panel__rule {
+  background: var(--scm-accent);
+}
+
+.panel--magno .panel__rule {
+  background: var(--magno-accent);
+}
 
 .panel__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-  font-size: 0.66rem;
-  letter-spacing: 0.3em;
+  grid-row: 4;
+  align-self: end;
+  font-size: 0.64rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   margin-bottom: var(--space-md);
 }
 
-.panel__eyebrow::before {
-  content: '';
-  width: 30px;
-  height: 2px;
-  background: currentColor;
-}
-
 .panel--scm .panel__eyebrow {
-  color: var(--scm-red);
+  color: var(--scm-muted);
 }
 
 .panel--magno .panel__eyebrow {
@@ -205,8 +270,10 @@ body {
 }
 
 .panel__title {
-  font-size: clamp(2rem, 4.4vw, 3.8rem);
-  margin-bottom: var(--space-sm);
+  grid-row: 5;
+  align-self: end;
+  font-size: clamp(1.9rem, 3.6vw, 3.1rem);
+  margin-bottom: var(--space-lg);
 }
 
 .panel--scm .panel__title {
@@ -214,20 +281,23 @@ body {
   font-weight: 800;
   letter-spacing: -0.035em;
   text-transform: uppercase;
-  line-height: 0.94;
+  line-height: 0.95;
 }
 
 .panel--magno .panel__title {
   font-family: var(--font-lux);
   font-weight: 300;
   letter-spacing: 0.01em;
+  line-height: 1.02;
 }
 
 .panel__desc {
-  max-width: 36ch;
-  font-size: clamp(0.94rem, 1.1vw, 1.04rem);
-  line-height: 1.7;
-  margin-bottom: var(--space-lg);
+  grid-row: 6;
+  align-self: start;
+  max-width: 34ch;
+  font-size: clamp(0.92rem, 1.05vw, 1rem);
+  line-height: 1.75;
+  margin-bottom: var(--space-xl);
 }
 
 .panel--scm .panel__desc {
@@ -239,100 +309,128 @@ body {
 }
 
 .panel__cta {
+  grid-row: 7;
+  align-self: start;
+  justify-self: start;
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.22em;
+  gap: 0.75rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   font-weight: 600;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid currentColor;
-  align-self: flex-start;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid currentColor;
   transition: gap 0.35s var(--ease);
-}
-
-.panel--scm .panel__cta {
-  color: var(--scm-red);
 }
 
 .panel:hover .panel__cta,
 .panel:focus-visible .panel__cta {
-  gap: 1.4rem;
+  gap: 1.5rem;
 }
 
 .panel__cta svg {
-  width: 18px;
+  width: 20px;
   height: 10px;
 }
 
+/* En pantalla ancha el panel señalado gana algo de sitio, sin exagerar. */
 @media (min-width: 900px) and (hover: hover) {
-  .split {
-    display: flex;
-  }
-
   .panel {
-    flex: 1 1 0;
+    transition: flex-grow 0.6s var(--ease);
   }
 
-  .split:has(.panel:hover) .panel {
-    flex-grow: 0.9;
+  .split {
+    grid-template-columns: 1fr 1fr;
+    transition: grid-template-columns 0.6s var(--ease);
   }
 
-  .split:has(.panel:hover) .panel:hover {
-    flex-grow: 1.25;
+  .split:has(.panel--scm:hover) {
+    grid-template-columns: 1.08fr 0.92fr;
+  }
+
+  .split:has(.panel--magno:hover) {
+    grid-template-columns: 0.92fr 1.08fr;
   }
 }
 
+/* Apilados en móvil el subgrid no aplica: cada panel vuelve a ser una
+   columna independiente. */
 @media (max-width: 899px) {
   .split {
-    grid-template-columns: 1fr;
+    display: block;
+    min-height: 0;
   }
 
   .panel {
-    min-height: 62svh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 78svh;
+    padding-block: clamp(5rem, 12vh, 8rem) clamp(3rem, 8vh, 5rem);
+  }
+
+  .panel--magno {
+    border-left: none;
+    border-top: 1px solid rgba(13, 13, 13, 0.12);
+  }
+
+  /* En flex, align-self pasa a gobernar el eje horizontal: sin resetearlo,
+     el logotipo y el filete se irían a la derecha. */
+  .panel > * {
+    grid-row: auto;
+    align-self: auto;
+    justify-self: auto;
+  }
+
+  .panel__rule {
+    margin-block: var(--space-lg);
   }
 }
 
 /* ------------------------------------------------------------- el grupo */
 
 .group {
-  background: var(--scm-ink);
+  background: var(--scm-ink-2);
   color: var(--scm-text);
+  border-top: 1px solid var(--scm-line);
 }
 
 .group__eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  font-size: 0.68rem;
+  gap: 0.75rem;
+  font-size: 0.64rem;
   font-weight: 600;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--scm-red);
+  color: var(--scm-muted);
   margin-bottom: var(--space-lg);
 }
 
 .group__eyebrow::before {
   content: '';
-  width: 30px;
+  width: 34px;
   height: 2px;
-  background: currentColor;
+  background: var(--scm-accent);
 }
 
 .group__lead {
   font-family: var(--font-sport);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   line-height: 1;
   font-size: clamp(1.7rem, 4vw, 3rem);
   margin-bottom: var(--space-lg);
 }
 
+/* El énfasis no cambia de color: solo se subraya con un filete de marca.
+   Un bloque entero de rojo sobre negro pesaba demasiado. */
 .group__lead em {
   font-style: normal;
-  color: var(--scm-red);
+  box-shadow: inset 0 -0.14em 0 var(--scm-accent);
 }
 
 .group__text {
@@ -351,14 +449,14 @@ body {
 
 .group__point h3 {
   font-family: var(--font-sport);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--scm-red);
+  color: var(--scm-text);
   margin-bottom: var(--space-sm);
   padding-top: var(--space-md);
-  border-top: 2px solid rgba(255, 255, 255, 0.18);
+  border-top: 2px solid var(--scm-line);
 }
 
 .group__point p {
@@ -370,9 +468,9 @@ body {
 /* ----------------------------------------------------------------- footer */
 
 .hub-footer {
-  background: #050506;
+  background: var(--scm-ink);
   color: var(--scm-muted);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid var(--scm-line);
   padding-block: var(--space-xl);
   font-size: 0.84rem;
 }
@@ -391,5 +489,5 @@ body {
 }
 
 .hub-footer a:hover {
-  color: var(--scm-red);
+  color: var(--scm-text);
 }

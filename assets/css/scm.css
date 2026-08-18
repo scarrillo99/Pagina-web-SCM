@@ -255,7 +255,6 @@ body {
 .brand img {
   height: 44px;
   width: auto;
-  filter: invert(1) brightness(2);
 }
 
 .nav {
@@ -1186,8 +1185,10 @@ body {
   width: auto;
 }
 
+/* Sobre fondo oscuro se usa la variante clara del logotipo, no un filtro de
+   inversión: invertir convertía el naranja del ojo de la marca en cian. */
 .partner__logo--scm {
-  filter: invert(1) brightness(2);
+  height: 52px;
 }
 
 .partner__x {
@@ -1458,7 +1459,6 @@ body {
 .footer__logo {
   height: 46px;
   width: auto;
-  filter: invert(1) brightness(2);
   margin-bottom: var(--space-md);
 }
 
