@@ -133,12 +133,23 @@ body.page-scm {
   /* --photo-team5: url('../img/equipo-5.jpg'); */
   /* --photo-team6: url('../img/equipo-6.jpg'); */
 
+  /* --- SCM x Magno ------------------------------------------------------
+     Horizontales 16:10, 1200 x 750. Los cinco bloques de la portada:
+     estancias, villas, experiencias VIP, training camps e inmobiliaria. Las
+     fotos de la guía de servicios de Magno sirven directamente. */
+  /* --photo-partner1: url('../img/partner-estancias.jpg'); */
+  /* --photo-partner2: url('../img/partner-villas.jpg'); */
+  /* --photo-partner3: url('../img/partner-vip.jpg'); */
+  /* --photo-partner4: url('../img/partner-camps.jpg'); */
+  /* --photo-partner5: url('../img/partner-inmobiliaria.jpg'); */
+
   /* --- Actualidad -------------------------------------------------------
      Horizontales 16:10, 1200 x 750. Una por publicación. Al añadir tarjetas
      nuevas se añaden aquí --photo-news4 y siguientes. */
   /* --photo-news1: url('../img/actualidad-1.jpg'); */
   /* --photo-news2: url('../img/actualidad-2.jpg'); */
   --photo-news3: url('../img/actualidad-3.jpg');
+  /* --photo-news4: url('../img/actualidad-4.jpg'); */
 }
 
 /* ==========================================================================

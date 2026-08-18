@@ -78,8 +78,8 @@ además mejora el posicionamiento: Google indexa "agencia de futbolistas
 Marbella" y "servicios" por separado en vez de todo en un mismo documento.
 
 La **portada** presenta la compañía y reparte al resto: cifras, tres accesos
-grandes, el arranque de la historia, la red y la actualidad. No lo cuenta todo,
-invita a entrar.
+grandes, el arranque de la historia, la red, la alianza con Magno y la
+actualidad. No lo cuenta todo, invita a entrar.
 
 El sitio es HTML plano, sin plantillas, así que **la cabecera y el pie están
 repetidos en las ocho páginas**. Si se cambia un enlace del menú hay que
@@ -152,12 +152,13 @@ el equipo no son seis, se añaden o se quitan bloques `.member`.
 
 ### 5. Publicaciones de Actualidad
 
-`scm/actualidad.html` lleva tres tarjetas de ejemplo, una por categoría, con el
-texto marcado como marcador. Cada tarjeta es un bloque `<a class="post">` con
-un comentario encima que explica qué cambiar: la categoría (`data-category`
-vale `transfers`, `renewals` o `daily`), la fecha, el titular, el texto, el
-enlace y la variable de la foto. Para añadir una publicación se copia el bloque
-entero.
+`scm/actualidad.html` lleva cuatro tarjetas que describen qué se publica en
+cada categoría. Sirven tal cual mientras no haya publicaciones reales.
+
+Cada tarjeta es un bloque `<a class="post">` con un comentario encima que
+explica qué cambiar: la categoría (`data-category` vale `transfers`, `renewals`
+o `daily`), el titular, el texto, el enlace y la variable de la foto. Para
+añadir una publicación se copia el bloque entero.
 
 ### 6. Escudos de los clubes
 
@@ -168,10 +169,17 @@ sobre uso de marcas ajenas.
 
 ### 7. Cifras que conviene confirmar
 
-La portada publica **10 agentes**, **15 scouts** y **8 mercados con presencia
-directa**. Los dos primeros venían del dossier; el tercero sale de contar los
-mercados que el propio dossier enumera. Conviene confirmarlos antes de
-publicar, porque son las cifras que un director deportivo va a mirar primero.
+La portada publica **10 agentes**, **15 scouts**, **8 mercados con presencia
+directa** y **12 años de experiencia**. Los dos primeros venían del dossier; el
+tercero sale de contar los mercados que el propio dossier enumera.
+
+El cuarto merece una decisión vuestra: el dossier hablaba de **15 años**, pero
+la historia que ahora cuenta la web arranca **en 2014**, y de 2014 a hoy van
+12. Se ha puesto 12 para que las dos cifras de la web no se contradigan. Si el
+recorrido real es de 15 años porque empezó antes, se cambia el `data-count` de
+la cuarta cifra en `scm/index.html` y la fecha de la historia.
+
+Son las cifras que un director deportivo va a mirar primero.
 
 ### 8. Redes sociales
 
@@ -291,3 +299,8 @@ en `sitemap.xml`, `robots.txt` y las etiquetas `canonical` de cada página.
   del propio fondo de la sección.
 - **Sin rayas en la copia.** Los textos evitan el guion largo a propósito, y
   los puntos de las listas son rombos, no guiones.
+- **El sello INIMITABLE** del dossier encabeza cada bloque principal, con la
+  barra ámbar delante y el nombre de la sección debajo.
+- **El logotipo de Magno viene ya en blanco.** No hay que invertirlo sobre
+  fondo oscuro: invertirlo lo pinta de negro y desaparece. En la portada del
+  grupo y en la cabecera de Magno, donde el fondo es hueso, sí se invierte.

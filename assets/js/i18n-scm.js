@@ -33,7 +33,7 @@ window.I18N_DICT = {
     'hero.lead':
       'Asesoramiento, gestión y acompañamiento para futbolistas profesionales. Dentro y fuera del campo, con una sola estructura detrás.',
     'hero.cta1': 'Hablemos',
-    'hero.cta2': 'Conocer SCM',
+    'hero.cta2': 'Ver servicios',
 
     'home.origin.text':
       'Empezamos en Marbella cuidando de futbolistas de élite fuera del campo. <em>La confianza llegó antes que cualquier contrato.</em>',
@@ -336,7 +336,6 @@ window.I18N_DICT = {
     'news.filter.daily': 'Trabajo diario',
     'news.empty': 'No hay publicaciones en esta categoría todavía.',
     'news.follow': 'Seguir a SCM en Instagram',
-    'news.readMore': 'Ver publicación',
 
     /* --------------------------------------------------------- contacto */
     'contact.eyebrow': 'Contacto',
@@ -377,6 +376,49 @@ window.I18N_DICT = {
     'footer.legal': 'Aviso legal',
     'footer.privacy': 'Privacidad',
     'footer.group': 'Volver al grupo',
+
+    /* --------------------------------------------- SCM Sports x Magno */
+    'partner.section': 'SCM Sports \u00d7 Magno',
+    'partner.title': 'Nuestro socio estrat\u00e9gico',
+    'partner.lead':
+      'El rendimiento de un jugador tambi\u00e9n depende de lo que vive fuera del campo. En esa \u00e1rea contamos con Magno Marbella, expertos en experiencias y servicios del m\u00e1s alto nivel para futbolistas profesionales.',
+    'partner.1.title': 'Estancias y desplazamientos',
+    'partner.1.text': 'Organizaci\u00f3n adaptada a la agenda deportiva del jugador.',
+    'partner.2.title': 'Villas, hoteles y veh\u00edculos',
+    'partner.2.text': 'Alojamiento y transporte ajustados a cada necesidad.',
+    'partner.3.title': 'Experiencias VIP',
+    'partner.3.text': 'Entrenamientos en centros de alto rendimiento y eventos exclusivos.',
+    'partner.4.title': 'Training camps',
+    'partner.4.text': 'Convivencia, entrenamiento y preparaci\u00f3n en entornos de primer nivel.',
+    'partner.5.title': 'Inversi\u00f3n inmobiliaria',
+    'partner.5.text': 'Oportunidades en real estate gracias a la red de Magno en el mercado de lujo.',
+    'partner.cta': 'Conocer Magno Marbella',
+
+    'statement.4':
+      'El rendimiento del jugador da fuerza al agente, y el trabajo del agente convierte esa fuerza en <em>oportunidades reales</em>',
+
+    'metrics.4.label': 'A\u00f1os de experiencia',
+    'metrics.4.text':
+      'Desde 2014 en Marbella, primero atendiendo a futbolistas de \u00e9lite fuera del campo y despu\u00e9s acompa\u00f1\u00e1ndolos tambi\u00e9n en su carrera.',
+
+    'network.clubs.lead':
+      'Relaci\u00f3n directa con los principales clubes europeos y con muchos clubes de menor perfil, donde a menudo est\u00e1 la oportunidad correcta.',
+
+    'news.1.label': 'Fichajes',
+    'news.1.title': 'Fichajes',
+    'news.1.text': 'Cada operaci\u00f3n cerrada de nuestros jugadores, anunciada en cuanto se firma.',
+    'news.2.label': 'Renovaciones',
+    'news.2.title': 'Renovaciones',
+    'news.2.text': 'Continuidad y mejora de contrato en el club en el que el jugador ya est\u00e1.',
+    'news.3.label': 'Trabajo diario',
+    'news.3.title': 'Trabajo diario',
+    'news.3.text': 'Sesiones de pretemporada, trabajo individual y preparaci\u00f3n en la Costa del Sol.',
+    'news.4.label': 'Trabajo diario',
+    'news.4.title': 'Contenido propio',
+    'news.4.text': 'Nuestro equipo interno produce el contenido de marca personal de cada futbolista.',
+    'news.cta': 'Ver en Instagram',
+
+    'footer.cookies': 'Cookies',
     'footer.rights': 'Todos los derechos reservados.'
   },
 
@@ -403,7 +445,7 @@ window.I18N_DICT = {
     'hero.lead':
       'Advice, management and support for professional footballers. On and off the pitch, with one structure behind it.',
     'hero.cta1': "Let's talk",
-    'hero.cta2': 'About SCM',
+    'hero.cta2': 'See services',
 
     'home.origin.text':
       'We started in Marbella looking after elite footballers off the pitch. <em>Trust came long before any contract.</em>',
@@ -695,7 +737,6 @@ window.I18N_DICT = {
     'news.filter.daily': 'Daily work',
     'news.empty': 'No posts in this category yet.',
     'news.follow': 'Follow SCM on Instagram',
-    'news.readMore': 'View post',
 
     'contact.eyebrow': 'Contact',
     'contact.title': 'Kick off',
@@ -734,6 +775,48 @@ window.I18N_DICT = {
     'footer.legal': 'Legal notice',
     'footer.privacy': 'Privacy',
     'footer.group': 'Back to the group',
+
+    'partner.section': 'SCM Sports \u00d7 Magno',
+    'partner.title': 'Our strategic partner',
+    'partner.lead':
+      'A player\u2019s performance also depends on what happens away from the pitch. That is where Magno Marbella comes in, specialists in top-level experiences and services for professional footballers.',
+    'partner.1.title': 'Stays and travel',
+    'partner.1.text': 'Organised around the player\u2019s sporting calendar.',
+    'partner.2.title': 'Villas, hotels and vehicles',
+    'partner.2.text': 'Accommodation and transport matched to every need.',
+    'partner.3.title': 'VIP experiences',
+    'partner.3.text': 'Training at high-performance centres and exclusive events.',
+    'partner.4.title': 'Training camps',
+    'partner.4.text': 'Living, training and preparing in first-class surroundings.',
+    'partner.5.title': 'Real estate investment',
+    'partner.5.text': 'Opportunities through Magno\u2019s network in the luxury market.',
+    'partner.cta': 'Discover Magno Marbella',
+
+    'statement.4':
+      'The player\u2019s performance gives the agent strength, and the agent\u2019s work turns that strength into <em>real opportunities</em>',
+
+    'metrics.4.label': 'Years of experience',
+    'metrics.4.text':
+      'In Marbella since 2014, first looking after elite footballers off the pitch and later standing beside them in their careers too.',
+
+    'network.clubs.lead':
+      'Direct relationships with the leading European clubs and with many smaller ones, where the right opportunity often sits.',
+
+    'news.1.label': 'Transfers',
+    'news.1.title': 'Transfers',
+    'news.1.text': 'Every deal our players close, announced the moment it is signed.',
+    'news.2.label': 'Renewals',
+    'news.2.title': 'Renewals',
+    'news.2.text': 'Extensions and improved terms at the club the player is already at.',
+    'news.3.label': 'Daily work',
+    'news.3.title': 'Daily work',
+    'news.3.text': 'Pre-season sessions, individual work and preparation on the Costa del Sol.',
+    'news.4.label': 'Daily work',
+    'news.4.title': 'Our own content',
+    'news.4.text': 'Our in-house team produces the personal-brand content for every footballer.',
+    'news.cta': 'View on Instagram',
+
+    'footer.cookies': 'Cookies',
     'footer.rights': 'All rights reserved.'
   }
 };
