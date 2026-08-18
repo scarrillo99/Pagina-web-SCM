@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Servicios · SCM Sports Agency</title>
+    <meta name="description" content="Asesoramiento integral, análisis de rendimiento, apoyo psicológico deportivo, nutrición, desarrollo deportivo, marca personal e inversiones para futbolistas profesionales." />
+    <meta name="theme-color" content="#0b0d10" />
+    <link rel="canonical" href="https://example.com/scm/servicios.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SCM Sports Agency" />
+    <meta property="og:title" content="Servicios · SCM Sports Agency" />
+    <meta property="og:description" content="Asesoramiento integral, análisis de rendimiento, apoyo psicológico deportivo, nutrición, desarrollo deportivo, marca personal e inversiones para futbolistas profesionales." />
+    <meta property="og:image" content="../assets/img/og-scm.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/scm.css" />
+    <link rel="stylesheet" href="../assets/css/photos.css" />
+  </head>
+
+  <body class="page-scm">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <!-- ==================================================== cabecera ====
+         Se repite en las siete páginas. Si se cambia un enlace hay que
+         cambiarlo en todas: el sitio es HTML plano, sin plantillas. -->
+    <header class="header" data-header>
+      <a class="brand" href="index.html" aria-label="SCM Sports Agency">
+        <img src="../assets/img/logo-scm-light.png" alt="SCM Sports Agency" width="120" height="34" />
+      </a>
+
+      <nav class="nav" data-nav aria-label="Principal">
+        <a class="nav__link" href="index.html" data-i18n="nav.home">Inicio</a>
+        <a class="nav__link" href="agencia.html" data-i18n="nav.agency">Agencia</a>
+        <a class="nav__link" href="historia.html" data-i18n="nav.history">Historia</a>
+        <a class="nav__link" href="grupo.html" data-i18n="nav.group">SCM Group</a>
+        <a class="nav__link" href="servicios.html" aria-current="page" data-i18n="nav.services">Servicios</a>
+        <a class="nav__link" href="red.html" data-i18n="nav.network">Red</a>
+        <a class="nav__link" href="actualidad.html" data-i18n="nav.news">Actualidad</a>
+        <a class="nav__link nav__link--mobile" href="contacto.html" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="social">
+          <a href="https://www.instagram.com/scmsportsagency/" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></a>
+          <a href="https://www.youtube.com/@scmsportsagency" rel="noopener" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M10 9.2l5 2.8-5 2.8V9.2z" fill="currentColor"/></svg></a>
+          <a href="https://www.linkedin.com/company/scm-sports-agency/" rel="noopener" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7 10.5V17M7 7.4v.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M11 17v-3.6a2.4 2.4 0 014.8 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        </div>
+
+        <a class="btn btn--primary header__cta" href="contacto.html">
+          <span data-i18n="nav.contact">Contacto</span>
+        </a>
+
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:nav.lang" aria-label="Idioma">
+          <button class="lang-switch__btn" type="button" data-lang-btn="es" aria-pressed="true">
+            <span>ES</span>
+          </button>
+          <button class="lang-switch__btn" type="button" data-lang-btn="en" aria-pressed="false">
+            <span>EN</span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          data-i18n-attr="aria-label:nav.menu"
+          aria-label="Menú"
+        >
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- ============================================ cabecera de página ==== -->
+      <section class="pagehead">
+        <span class="pagehead__media" style="--photo: var(--photo-head-servicios)" data-parallax="24" aria-hidden="true"></span>
+        <span class="pagehead__veil" aria-hidden="true"></span>
+
+        <div class="container">
+          <div class="pagehead__inner">
+            <nav class="crumbs" aria-label="Migas de pan" data-reveal>
+              <a href="index.html" data-i18n="common.back">SCM</a>
+              <span>/</span>
+              <span>Servicios</span>
+            </nav>
+            <p class="eyebrow" data-i18n="services.eyebrow" data-reveal style="--reveal-delay: 0.05s">Nuestros servicios</p>
+            <h1 class="pagehead__title display t-display-lg" data-i18n-html="services.title" data-reveal="mask" style="--reveal-delay: 0.1s">Siete frentes <em>abiertos a la vez</em></h1>
+            <p class="lead" data-i18n="services.lead" data-reveal style="--reveal-delay: 0.18s">No nos limitamos a negociar contratos. Cubrimos todas las áreas que un futbolista necesita para llegar a su máximo nivel y sostenerlo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================== servicios ==== -->
+      <section class="section wash">
+        <div class="container">
+          <article class="strip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv1)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="2.4"/><path d="M16 5v6M16 21v6M5 16h6M21 16h6"/><path d="M8.2 8.2l3.6 3.6M20.2 20.2l3.6 3.6M23.8 8.2l-3.6 3.6M11.8 20.2l-3.6 3.6"/></svg></span>
+              <span class="strip__index">01</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="2.4"/><path d="M16 5v6M16 21v6M5 16h6M21 16h6"/><path d="M8.2 8.2l3.6 3.6M20.2 20.2l3.6 3.6M23.8 8.2l-3.6 3.6M11.8 20.2l-3.6 3.6"/></svg></span>
+              <h2 class="strip__title" data-i18n="services.1.title">Asesoramiento integral</h2>
+              <p class="strip__text" data-i18n="services.1.text">Cada decisión fuera del campo acaba impactando en la carrera. Trabajamos con visión de conjunto para que cada paso empuje en la misma dirección.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.1.a">El rendimiento en el campo conectado con la estabilidad fuera de él</li>
+                <li data-i18n="services.1.b">Decisiones pensadas a largo plazo, no para la próxima ventana</li>
+                <li data-i18n="services.1.c">Un solo equipo de confianza, sin soluciones sueltas por cada frente</li>
+              </ul>
+            </div>
+          </article>
+          <article class="strip strip--flip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv2)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="24" height="18" rx="1.5"/><path d="M16 7v18"/><circle cx="16" cy="16" r="3"/><path d="M4 12h3v8H4M28 12h-3v8h3"/><path d="M10 20l3-4 4 2 5-6" stroke-dasharray="1.6 2"/></svg></span>
+              <span class="strip__index">02</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="24" height="18" rx="1.5"/><path d="M16 7v18"/><circle cx="16" cy="16" r="3"/><path d="M4 12h3v8H4M28 12h-3v8h3"/><path d="M10 20l3-4 4 2 5-6" stroke-dasharray="1.6 2"/></svg></span>
+              <h2 class="strip__title" data-i18n="services.2.title">Análisis de rendimiento</h2>
+              <p class="strip__text" data-i18n="services.2.text">Lo que el jugador muestra en competición decide su presente y su futuro. Lo abordamos con método, datos e imagen.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.2.a">Estudio técnico y táctico adaptado a su posición y a sus cualidades</li>
+                <li data-i18n="services.2.b">Vídeo de partidos y entrenamientos para identificar patrones</li>
+                <li data-i18n="services.2.c">Sesiones de análisis presenciales para reforzar lo trabajado</li>
+                <li data-i18n="services.2.d">Espacios de práctica para llevarlo al campo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="strip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv3)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 27v-4a8 8 0 10-8-7.6"/><path d="M12 15.4V27"/><path d="M6 19h4M4 23h6"/><path d="M17 11.5c1.2 1.2 1.2 2.8 0 4s-1.2 2.8 0 4"/></svg></span>
+              <span class="strip__index">03</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 27v-4a8 8 0 10-8-7.6"/><path d="M12 15.4V27"/><path d="M6 19h4M4 23h6"/><path d="M17 11.5c1.2 1.2 1.2 2.8 0 4s-1.2 2.8 0 4"/></svg></span>
+              <h2 class="strip__title" data-i18n="services.3.title">Apoyo psicológico deportivo</h2>
+              <p class="strip__text" data-i18n="services.3.text">El estado mental decide tanto como la preparación física. Lo tratamos como un pilar más, no como un recurso de emergencia.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.3.a">Confianza, motivación, concentración y atención</li>
+                <li data-i18n="services.3.b">Acompañamiento en competición para los momentos que deciden</li>
+                <li data-i18n="services.3.c">Prevención y recuperación de lesiones con apoyo emocional</li>
+                <li data-i18n="services.3.d">Adaptación al equipo, al cuerpo técnico y a un país nuevo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="strip strip--flip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv4)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 5v22"/><path d="M22 10c1.5 4-1 8-5 9 0-4 1.5-7.5 5-9z"/><path d="M10 22c-1.2-3 .8-6 4-6.8"/></svg></span>
+              <span class="strip__index">04</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 5v22"/><path d="M22 10c1.5 4-1 8-5 9 0-4 1.5-7.5 5-9z"/><path d="M10 22c-1.2-3 .8-6 4-6.8"/></svg></span>
+              <h2 class="strip__title" data-i18n="services.4.title">Plan de nutrición</h2>
+              <p class="strip__text" data-i18n="services.4.text">La alimentación entra directamente en el rendimiento y en la recuperación. El plan se ajusta a su realidad, no a un manual.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.4.a">Adaptado a su posición, a su esfuerzo y a la intensidad de juego</li>
+                <li data-i18n="services.4.b">Recuperación optimizada tras entrenamientos y partidos</li>
+                <li data-i18n="services.4.c">Control de cargas y necesidades energéticas para prevenir lesiones</li>
+                <li data-i18n="services.4.d">Hábitos que se sostienen fuera de la temporada</li>
+              </ul>
+            </div>
+          </article>
+          <article class="strip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv5)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 24l6-6 5 3 6-8 7 5"/><circle cx="10" cy="18" r="1.8"/><circle cx="21" cy="13" r="1.8"/><path d="M4 28h24"/><path d="M26 5v6h-6" /></svg></span>
+              <span class="strip__index">05</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 24l6-6 5 3 6-8 7 5"/><circle cx="10" cy="18" r="1.8"/><circle cx="21" cy="13" r="1.8"/><path d="M4 28h24"/><path d="M26 5v6h-6" /></svg></span>
+              <h2 class="strip__title" data-i18n="services.5.title">Desarrollo deportivo</h2>
+              <p class="strip__text" data-i18n="services.5.text">Un proyecto individual que evoluciona con el jugador y se ajusta a lo que va pasando durante la temporada.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.5.a">Ajustado al calendario de partidos y a las cargas de entrenamiento</li>
+                <li data-i18n="services.5.b">Atento a su historial de lesiones y a las molestias que aparecen</li>
+                <li data-i18n="services.5.c">Orientado a proteger la salud antes que a forzar el rendimiento</li>
+                <li data-i18n="services.5.d">Enfocado a llegar al máximo en los partidos que deciden</li>
+              </ul>
+            </div>
+          </article>
+          <article class="strip strip--flip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv6)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="12" r="5"/><path d="M16 17v10l-4-2.5-4 2.5V19"/><path d="M24 19v8"/><path d="M6 8c-2 2.6-2 5.4 0 8M26 8c2 2.6 2 5.4 0 8"/></svg></span>
+              <span class="strip__index">06</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="12" r="5"/><path d="M16 17v10l-4-2.5-4 2.5V19"/><path d="M24 19v8"/><path d="M6 8c-2 2.6-2 5.4 0 8M26 8c2 2.6 2 5.4 0 8"/></svg></span>
+              <h2 class="strip__title" data-i18n="services.6.title">Marca personal</h2>
+              <p class="strip__text" data-i18n="services.6.text">Convertimos su imagen en una marca sólida, con equipo interno de marketing y producción de contenido propia.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.6.a">Estrategia a medida con capacidades internas, sin externalizar</li>
+                <li data-i18n="services.6.b">Una marca auténtica, que resista el paso de los años</li>
+                <li data-i18n="services.6.c">Gestión profesional de redes y creación de contenido</li>
+                <li data-i18n="services.6.d">Patrocinios y acuerdos negociados en las mejores condiciones</li>
+              </ul>
+            </div>
+          </article>
+          <article class="strip" data-reveal>
+            <div class="strip__media">
+              <span class="strip__photo" style="--photo: var(--photo-serv7)"></span>
+              <span class="strip__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4l10 4v7c0 6-4 10-10 13C10 25 6 21 6 15V8z"/><path d="M11 17l3.5-3.5 3 3L21 12"/><path d="M21 15v-3h-3"/></svg></span>
+              <span class="strip__index">07</span>
+            </div>
+            <div class="strip__body">
+              <span class="strip__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4l10 4v7c0 6-4 10-10 13C10 25 6 21 6 15V8z"/><path d="M11 17l3.5-3.5 3 3L21 12"/><path d="M21 15v-3h-3"/></svg></span>
+              <h2 class="strip__title" data-i18n="services.7.title">Inversiones y patrimonio</h2>
+              <p class="strip__text" data-i18n="services.7.text">Lo que se consigue en el campo tiene que reflejarse fuera. Nos aseguramos de que el éxito de hoy sea seguridad mañana.</p>
+              <ul class="strip__points">
+                <li data-i18n="services.7.a">Educación financiera desde el primer contrato</li>
+                <li data-i18n="services.7.b">Asesoramiento en la compra de propiedades</li>
+                <li data-i18n="services.7.c">Planificación de inversiones con criterio y sin prisa</li>
+                <li data-i18n="services.7.d">Acompañamiento en cada decisión económica importante</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ======================================================= cita ==== -->
+      <section class="section quote section--light">
+        <div class="container">
+          <p class="quote__text" data-i18n-html="services.quote" data-reveal>
+            Muchos jugadores con talento se frenan cuando aparecen
+            <em>retos que nadie les enseñó a afrontar</em>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ marca hermana ==== -->
+      <section class="section section--light bridge">
+        <div class="container">
+          <div class="bridge__inner">
+            <div data-reveal>
+              <p class="eyebrow" data-i18n="bridge.label">Marca hermana</p>
+              <h2 class="bridge__title" data-i18n-html="bridge.title" style="margin-top: var(--space-md)">
+                Todo lo que ocurre <em>cuando aterriza</em>
+              </h2>
+              <p class="bridge__text" data-i18n="bridge.text">
+                Magno Marbella se ocupa de la vida del jugador fuera del campo: estancias, villas,
+                desplazamientos, training camps y experiencias en la Costa del Sol. Es donde empezó
+                nuestra historia.
+              </p>
+            </div>
+            <a class="btn btn--ghost" href="../magno/" data-reveal style="--reveal-delay: 0.1s">
+              <span data-i18n="bridge.cta">Conocer Magno Marbella</span>
+              <svg viewBox="0 0 24 12" fill="none" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================= pie ==== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img src="../assets/img/logo-scm-light.png" alt="SCM Sports Agency" width="127" height="36" />
+            <p class="footer__tagline" data-i18n="footer.tagline">
+              Asesoramiento, gestión y acompañamiento integral de futbolistas profesionales.
+              Marbella, España.
+            </p>
+            <div class="social">
+            <a href="https://www.instagram.com/scmsportsagency/" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></a>
+            <a href="https://www.youtube.com/@scmsportsagency" rel="noopener" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M10 9.2l5 2.8-5 2.8V9.2z" fill="currentColor"/></svg></a>
+            <a href="https://www.linkedin.com/company/scm-sports-agency/" rel="noopener" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7 10.5V17M7 7.4v.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M11 17v-3.6a2.4 2.4 0 014.8 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer__title" data-i18n="footer.nav">Navegación</p>
+            <nav class="footer__list" aria-label="Pie">
+            <a href="index.html" data-i18n="nav.home">Inicio</a>
+            <a href="agencia.html" data-i18n="nav.agency">Agencia</a>
+            <a href="historia.html" data-i18n="nav.history">Historia</a>
+            <a href="grupo.html" data-i18n="nav.group">SCM Group</a>
+            <a href="servicios.html" data-i18n="nav.services">Servicios</a>
+            <a href="red.html" data-i18n="nav.network">Red</a>
+            <a href="actualidad.html" data-i18n="nav.news">Actualidad</a>
+              <a href="contacto.html" data-i18n="nav.contact">Contacto</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer__title" data-i18n="footer.legalTitle">Legal</p>
+            <nav class="footer__list" aria-label="Legal">
+              <a href="../legal.html" data-i18n="footer.legal">Aviso legal</a>
+              <a href="../privacidad.html" data-i18n="footer.privacy">Privacidad</a>
+              <a href="../" data-i18n="footer.group">Volver al grupo</a>
+              <a href="../magno/" data-i18n="nav.magno">Magno Marbella</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>&copy; <span data-year>2026</span> SCM Sports Agency. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+          <p><a href="mailto:info@scmsportsagency.com">info@scmsportsagency.com</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/i18n-scm.js"></script>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/site.js"></script>
+  </body>
+</html>

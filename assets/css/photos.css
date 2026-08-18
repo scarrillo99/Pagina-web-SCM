@@ -2,14 +2,14 @@
    FOTOGRAFÍA
 
    Punto único donde se enchufan todas las imágenes del sitio. La web funciona
-   entera sin ninguna: donde debería ir una foto se pinta un bloque de color
-   con su icono.
+   entera sin ninguna: donde debería ir una foto se pinta un bloque con su
+   icono o un degradado de marca.
 
    Los escudos de los clubes NO se configuran aquí: son ficheros sueltos en
    assets/img/clubes/. Ver assets/img/README.md.
 
-   Para poner las imágenes reales se descomenta la línea que toque y se deja
-   el fichero en assets/img/. No hay que tocar el HTML.
+   Para poner una imagen se descomenta su línea y se deja el fichero en
+   assets/img/. No hay que tocar el HTML.
 
    Las rutas son relativas a ESTE archivo, por eso empiezan por ../img/.
    ========================================================================== */
@@ -19,32 +19,6 @@
      Verticales, 1400 x 1800. La de SCM lleva un velo oscuro encima. */
   /* --photo-scm: url('../img/hub-scm.jpg'); */
   /* --photo-magno: url('../img/hub-magno.jpg'); */
-
-  /* --- Equipo de SCM ----------------------------------------------------
-     Retratos verticales 4:5, 800 x 1000. Mismo encuadre en los seis. */
-  /* --photo-team1: url('../img/equipo-1.jpg'); */
-  /* --photo-team2: url('../img/equipo-2.jpg'); */
-  /* --photo-team3: url('../img/equipo-3.jpg'); */
-  /* --photo-team4: url('../img/equipo-4.jpg'); */
-  /* --photo-team5: url('../img/equipo-5.jpg'); */
-  /* --photo-team6: url('../img/equipo-6.jpg'); */
-
-  /* --- Actualidad de SCM ------------------------------------------------
-     Horizontales 16:10, 1200 x 750.
-     Sugerencia con el material que hay: la firma del contrato en la 1, la
-     llegada al aeropuerto con la bufanda en la 2 y el retrato de Mangala
-     con sus cifras en la 3. */
-  /* --photo-news1: url('../img/actualidad-1.jpg'); */
-  /* --photo-news2: url('../img/actualidad-2.jpg'); */
-  --photo-news3: url('../img/actualidad-3.jpg');
-
-  /* --- SCM x Magno ------------------------------------------------------
-     Horizontales 16:10, 1200 x 750. */
-  /* --photo-partner1: url('../img/partner-estancias.jpg'); */
-  /* --photo-partner2: url('../img/partner-villas.jpg'); */
-  /* --photo-partner3: url('../img/partner-vip.jpg'); */
-  /* --photo-partner4: url('../img/partner-camps.jpg'); */
-  /* --photo-partner5: url('../img/partner-inmobiliaria.jpg'); */
 
   /* --- Magno, entrenamiento y rendimiento -------------------------------
      Horizontales 4:3, 1200 x 900. */
@@ -63,8 +37,8 @@
   /* --photo-life6: url('../img/magno-shopping.jpg'); */
 
   /* --- Magno, vídeos de Instagram ---------------------------------------
-     Portadas verticales 9:16, 720 x 1280. Son la miniatura del reel; la URL
-     del vídeo se pone en el href de cada tarjeta en magno/index.html. */
+     Portadas verticales 9:16, 720 x 1280. La URL del reel se pone en el href
+     de cada tarjeta, en magno/index.html. */
   /* --photo-reel1: url('../img/reel-1.jpg'); */
   /* --photo-reel2: url('../img/reel-2.jpg'); */
   /* --photo-reel3: url('../img/reel-3.jpg'); */
@@ -75,45 +49,23 @@
   /* --photo-exp1: url('../img/magno-entrenamiento.jpg'); */
   /* --photo-exp2: url('../img/magno-recuperacion.jpg'); */
   /* --photo-exp3: url('../img/magno-villa.jpg'); */
-
 }
 
-/* Los heroes llevan su propia imagen por página.
+/* ==========================================================================
+   SCM SPORTS AGENCY
+   ========================================================================== */
 
-   SCM: retrato VERTICAL de un jugador de la agencia, 1080 x 1350 o similar.
-   Ocupa una franja alta a la derecha, así que una foto de presentación en
-   formato de redes encaja sin recortarse por la cara. Con
-   --photo-hero-position se sube o baja el encuadre en escritorio, y con
-   --photo-hero-position-mobile se ajusta aparte para el móvil, donde la
-   foto pasa a fondo completo.
-
-   Magno: fotografía a pantalla completa de instalaciones o costa. */
-
-/* La portada de SCM lleva CUATRO fotos que se van relevando solas cada
-   segundo, a pantalla completa: la fotografía es el fondo entero y el titular
-   va encima. Cada una es un fichero en assets/img/; para cambiar una basta
-   con sustituir el fichero conservando el nombre, sin tocar código.
-
-   Formato: HORIZONTAL, 1920 x 1080 o parecido, porque ocupa toda la pantalla.
-   Una foto vertical también entra, pero al llenar una pantalla apaisada se le
-   recorta bastante por arriba y por abajo.
-
-   Escoged fotos con aire en la mitad izquierda: ahí cae el titular.
-
-   El nombre del jugador y su club van en el HTML, en data-name y data-club de
-   cada diapositiva. La velocidad se cambia en data-interval, en milisegundos.
-
-   Encuadre. --photo-hero-position sube o baja el recorte en escritorio y
-   --photo-hero-position-mobile hace lo mismo en móvil, por separado. En
-   escritorio está en 25 % para que la cara quede en el tercio superior. En
-   móvil la pantalla es mucho más estrecha que la foto y se recorta por los
-   lados, así que el encuadre va desplazado al 68 % de ancho: las tres fotos
-   tienen al jugador a la derecha y así no se queda fuera.
-
-   Si una foto concreta necesita otro encuadre, se le pone su propio
-   --photo-size y --photo-position en el style de su diapositiva, en
-   scm/index.html, y esa manda sobre el general. */
 body.page-scm {
+  /* --- Portada ----------------------------------------------------------
+     Las fotos del hero se relevan solas cada ocho segundos, a pantalla
+     completa. Formato HORIZONTAL, 1920 x 1080.
+
+     Elegidlas con aire en la mitad izquierda, que es donde cae el titular, y
+     con el jugador a la derecha: en móvil la pantalla es mucho más estrecha y
+     el encuadre está desplazado al 68 % de ancho para no dejarlo fuera.
+
+     Para añadir una cuarta se copia una diapositiva en scm/index.html y se
+     añade aquí --photo-hero4. */
   --photo-hero1: url('../img/hero-scm-1.jpg');
   --photo-hero2: url('../img/hero-scm-2.jpg');
   --photo-hero3: url('../img/hero-scm-3.jpg');
@@ -121,5 +73,76 @@ body.page-scm {
   --photo-hero-size: cover;
   --photo-hero-position: center 25%;
   --photo-hero-position-mobile: 68% 18%;
+
+  /* --- Accesos de la portada -------------------------------------------
+     Verticales u horizontales, 1200 x 1500. Se ven en blanco y negro y
+     recuperan el color al pasar el ratón. Ahora reutilizan las fotos del
+     hero; en cuanto haya material propio se cambian por el suyo. */
+  --photo-gate1: url('../img/hero-scm-1.jpg');
+  --photo-gate2: url('../img/hero-scm-3.jpg');
+  --photo-gate3: url('../img/hero-scm-2.jpg');
+
+  /* --- Historia ---------------------------------------------------------
+     Horizontales 16:9, 1600 x 900.
+     story   Bloque de la portada. Encaja una foto de Marbella o de la Costa
+             del Sol, que es donde empieza todo.
+     story2  Magno Marbella: villa, estancia o servicio.
+     story6  Fútbol internacional: estadio, palco, reunión. */
+  /* --photo-story: url('../img/historia-marbella.jpg'); */
+  /* --photo-story2: url('../img/historia-magno.jpg'); */
+  /* --photo-story6: url('../img/historia-internacional.jpg'); */
+
+  /* --- Cabeceras de página ----------------------------------------------
+     Horizontales 1920 x 1080. Sin foto se pinta un degradado de marca, que
+     funciona perfectamente: no es obligatorio rellenarlas todas. */
+  /* --photo-head-agencia: url('../img/head-agencia.jpg'); */
+  /* --photo-head-historia: url('../img/head-historia.jpg'); */
+  /* --photo-head-grupo: url('../img/head-grupo.jpg'); */
+  /* --photo-head-servicios: url('../img/head-servicios.jpg'); */
+  /* --photo-head-red: url('../img/head-red.jpg'); */
+  /* --photo-head-actualidad: url('../img/head-actualidad.jpg'); */
+  /* --photo-head-contacto: url('../img/head-contacto.jpg'); */
+
+  /* --- Servicios --------------------------------------------------------
+     Horizontales 4:3, 1200 x 900. Una por servicio, en el mismo orden en que
+     salen en la página. Mientras falten se ve el icono del servicio en
+     grande, que ya explica de qué va cada uno.
+       1 Asesoramiento integral      reunión, despacho, conversación
+       2 Análisis de rendimiento     vídeo, datos, pizarra táctica
+       3 Apoyo psicológico           sesión, concentración, vestuario
+       4 Nutrición                   cocina, comida real, laboratorio
+       5 Desarrollo deportivo        entrenamiento individual, gimnasio
+       6 Marca personal              rodaje, cámara, sesión de fotos
+       7 Inversiones y patrimonio    firma, propiedad, oficina */
+  /* --photo-serv1: url('../img/serv-asesoramiento.jpg'); */
+  /* --photo-serv2: url('../img/serv-analisis.jpg'); */
+  /* --photo-serv3: url('../img/serv-psicologia.jpg'); */
+  /* --photo-serv4: url('../img/serv-nutricion.jpg'); */
+  /* --photo-serv5: url('../img/serv-desarrollo.jpg'); */
+  /* --photo-serv6: url('../img/serv-marca.jpg'); */
+  /* --photo-serv7: url('../img/serv-inversiones.jpg'); */
+
+  /* --- Equipo -----------------------------------------------------------
+     Retratos verticales 4:5, 800 x 1000. Mismo encuadre en los seis: una
+     rejilla con recortes distintos se nota mucho. Se ven en blanco y negro y
+     recuperan el color al pasar el ratón. */
+  /* --photo-team1: url('../img/equipo-1.jpg'); */
+  /* --photo-team2: url('../img/equipo-2.jpg'); */
+  /* --photo-team3: url('../img/equipo-3.jpg'); */
+  /* --photo-team4: url('../img/equipo-4.jpg'); */
+  /* --photo-team5: url('../img/equipo-5.jpg'); */
+  /* --photo-team6: url('../img/equipo-6.jpg'); */
+
+  /* --- Actualidad -------------------------------------------------------
+     Horizontales 16:10, 1200 x 750. Una por publicación. Al añadir tarjetas
+     nuevas se añaden aquí --photo-news4 y siguientes. */
+  /* --photo-news1: url('../img/actualidad-1.jpg'); */
+  /* --photo-news2: url('../img/actualidad-2.jpg'); */
+  --photo-news3: url('../img/actualidad-3.jpg');
 }
+
+/* ==========================================================================
+   MAGNO MARBELLA
+   ========================================================================== */
+
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

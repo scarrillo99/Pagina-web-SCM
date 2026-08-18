@@ -105,11 +105,30 @@ body {
   color: var(--accent);
 }
 
+/* En móvil la tabla no cabe: en vez de empujar la página entera, se le da su
+   propio desplazamiento horizontal. */
+.doc .table-scroll {
+  overflow-x: auto;
+  margin-bottom: var(--space-lg);
+  -webkit-overflow-scrolling: touch;
+}
+
 .doc table {
   width: 100%;
+  min-width: 22rem;
   border-collapse: collapse;
   margin-bottom: var(--space-lg);
   font-size: 0.9rem;
+}
+
+.doc .table-scroll table {
+  margin-bottom: 0;
+}
+
+/* Las URL largas de la política de cookies parten de línea en lugar de
+   estirar la celda. */
+.doc td a {
+  overflow-wrap: anywhere;
 }
 
 .doc th,

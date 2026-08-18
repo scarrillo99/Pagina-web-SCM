@@ -1,9 +1,89 @@
 # Imágenes
 
 La web funciona sin ninguna fotografía: donde va una imagen se pinta un
-bloque de color con su icono, y donde va un escudo se ve el monograma del
-club. Todo lo que sigue mejora el resultado, pero nada de esto bloquea la
-publicación.
+degradado de marca con su icono, y donde va un escudo se ve el monograma del
+club. Todo lo que sigue mejora el resultado, pero nada bloquea la publicación.
+
+Las fotos se enchufan **descomentando la línea que toque en
+`assets/css/photos.css`**. No hay que tocar el HTML.
+
+## Cómo elegir las fotos
+
+- **Las cabeceras llevan texto encima.** Escoged fotos con una zona tranquila
+  a la izquierda, que es donde cae el titular.
+- **SCM** pide fotografía de contraste alto; encima va siempre un velo oscuro.
+- **Magno** pide luz natural y planos amplios: instalaciones, villas, mar.
+  Nada de banco de imágenes con gente sonriendo a cámara.
+- **Los retratos del equipo** deben tener el mismo encuadre en los seis. Una
+  rejilla con recortes distintos se nota mucho.
+- Exportad en **WebP** si podéis, o JPG al 80 %. Ninguna imagen debería pasar
+  de **300 KB**; las de portada, de 500 KB.
+
+---
+
+## SCM Sports Agency
+
+### La portada
+
+Tres fotos que se relevan solas cada ocho segundos, a pantalla completa.
+
+| Fichero | Tamaño | Estado |
+|---|---|---|
+| `hero-scm-1.jpg` | 1920×1080 | Llegada con la bufanda, en el exterior |
+| `hero-scm-2.jpg` | 1920×1080 | Llegada con el equipaje, en la terminal |
+| `hero-scm-3.jpg` | 1920×1080 | Presentación de Orel Mangala con el Getafe |
+
+Formato **horizontal**. Con **aire en la mitad izquierda** y **el jugador a la
+derecha**: en móvil la pantalla es mucho más estrecha y el encuadre está
+desplazado al 68 % de ancho para no dejarlo fuera. Que salga **solo el
+jugador**.
+
+Las fotos con grafismo incrustado, tipo escudos de trayectoria o cifras de
+carrera, no funcionan de fondo: llevan su propia tipografía y chocan con el
+titular. Esas van mejor en Actualidad, donde el texto queda debajo.
+
+Para cambiar una basta con sustituir el fichero conservando el nombre. Para
+añadir una cuarta se copia una diapositiva en `scm/index.html` y se añade
+`--photo-hero4` en `photos.css`.
+
+Lo que se puede ajustar:
+
+- **La velocidad**, en `data-interval` del bloque `hero__portraits`, en
+  milisegundos. Ahora está en `8000`.
+- **El nombre y el club**, en `data-name` y `data-club` de cada diapositiva.
+  La foto que los deja vacíos no muestra crédito.
+- **El encuadre general**, en `photos.css`: `--photo-hero-position` para
+  escritorio y `--photo-hero-position-mobile` para móvil.
+- **El encuadre de una foto suelta**: se le añade su propio `--photo-size` y
+  `--photo-position` en el `style` de su diapositiva.
+
+Hace falta autorización de imagen de cada jugador y, si aparece la equipación,
+conviene comprobarlo también con el club.
+
+### El resto de huecos
+
+| Variable | Fichero sugerido | Tamaño | Dónde sale |
+|---|---|---|---|
+| `--photo-gate1..3` | `gate-*.jpg` | 1200×1500 | Los tres accesos de la portada. Ahora reutilizan las fotos del hero |
+| `--photo-story` | `historia-marbella.jpg` | 1600×900 | Bloque de historia en la portada. Encaja Marbella o la Costa del Sol |
+| `--photo-story2` | `historia-magno.jpg` | 1600×900 | Cronología: Magno Marbella, villa o estancia |
+| `--photo-story6` | `historia-internacional.jpg` | 1600×900 | Cronología: estadio, palco, reunión |
+| `--photo-head-*` | `head-*.jpg` | 1920×1080 | Cabecera de cada página interior. Sin foto se pinta un degradado de marca, que funciona: no es obligatorio rellenarlas |
+| `--photo-serv1..7` | `serv-*.jpg` | 1200×900 | Uno por servicio, en el orden de la página |
+| `--photo-team1..6` | `equipo-*.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
+| `--photo-news1..3` | `actualidad-*.jpg` | 1200×750 | Tarjetas de Actualidad. La tercera ya lleva el retrato con las cifras |
+
+Qué pide cada servicio, por orden:
+
+1. **Asesoramiento integral** · reunión, despacho, conversación
+2. **Análisis de rendimiento** · vídeo, datos, pizarra táctica
+3. **Apoyo psicológico** · sesión, concentración, vestuario
+4. **Nutrición** · cocina, comida real, laboratorio
+5. **Desarrollo deportivo** · entrenamiento individual, gimnasio
+6. **Marca personal** · rodaje, cámara, sesión de fotos
+7. **Inversiones y patrimonio** · firma, propiedad, oficina
+
+---
 
 ## Escudos de clubes
 
@@ -17,11 +97,12 @@ assets/img/clubes/barcelona.svg
 ...
 ```
 
-Si el escudo que tenéis es PNG en vez de SVG, cambiad también la extensión en
-el `src` de `scm/index.html`. Se pueden ir poniendo de uno en uno: los que
-falten siguen mostrando el monograma.
+Si el escudo es PNG en vez de SVG, hay que cambiar también la extensión en el
+`src` de `scm/red.html`, que es donde salen: en el muro y en las dos cintas en
+movimiento. Se pueden ir poniendo de uno en uno; los que falten siguen
+mostrando el monograma.
 
-Formato recomendado: SVG, o PNG de 200 x 200 con fondo transparente.
+Formato recomendado: SVG, o PNG de 200 × 200 con fondo transparente.
 
 > **Aviso.** Los escudos son marcas registradas de cada club. Mostrarlos como
 > referencia de una red de contactos es habitual en el sector, pero conviene
@@ -29,67 +110,22 @@ Formato recomendado: SVG, o PNG de 200 x 200 con fondo transparente.
 > comercial que el club no ha autorizado. La nota al pie de la sección ya
 > aclara que los escudos pertenecen a sus clubes.
 
+---
+
 ## Logotipos de las marcas
 
-`logo-scm.png` y `logo-magno.png` están **reconstruidos a partir de los PDF**
-de marca, recomponiendo imagen y máscara de transparencia. Rondan los 500 px
-de ancho: llegan para la web, no para imprimir. Si aparecen los originales en
-SVG o AI, se sustituyen sin más. El CSS los invierte a blanco donde el fondo
-es oscuro (`filter: invert(1)`), así que un vector monocromo funciona igual.
+`logo-scm.png`, `logo-scm-light.png` y `logo-magno.png` están **reconstruidos
+a partir de los PDF** de marca, recomponiendo imagen y máscara de
+transparencia. Rondan los 500 px de ancho: llegan para la web, no para
+imprimir. Si aparecen los originales en SVG o AI, se sustituyen sin más.
 
-## Fotografías
+La versión clara conserva el naranja del ojo: se generó píxel a píxel en vez
+de invertir el logo con un filtro, porque `invert()` convertía ese naranja en
+cian.
 
-Se enchufan descomentando la línea que toque en `assets/css/photos.css`. No
-hay que tocar el HTML.
+---
 
-### SCM Sports Agency
-
-| Fichero | Tamaño | Dónde sale |
-|---|---|---|
-| `hero-scm-1..3.jpg` | 1920×1080 | Portada a pantalla completa, las fotos que rotan. **Ya están puestas** |
-| `hub-scm.jpg` | 1400×1800 | Mitad izquierda de la portada del grupo |
-| `equipo-1..6.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
-| `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad. La tercera ya lleva el retrato de Mangala con sus cifras; faltan la de mercado y la de entrenamiento |
-| `partner-*.jpg` | 1200×750 | Los cinco bloques de SCM x Magno |
-
-**El hero ya lleva fotos reales.** Son tres, recortadas a 16:9 desde las
-originales que subisteis:
-
-| Fichero | De dónde sale |
-|---|---|
-| `hero-scm-1.jpg` | Llegada con la bufanda del club, en el exterior del aeropuerto |
-| `hero-scm-2.jpg` | Llegada con el equipaje, dentro de la terminal |
-| `hero-scm-3.jpg` | Presentación de Orel Mangala con el Getafe |
-
-Para cambiar cualquiera basta con **sustituir el fichero conservando el
-nombre**, y para añadir una cuarta se copia una diapositiva en
-`scm/index.html` y se añade `--photo-hero4` en `photos.css`.
-
-**Cómo elegir las fotos.** Horizontal, 1920 x 1080. Con **aire en la mitad
-izquierda**, que es donde cae el titular, y con **el jugador a la derecha**:
-en móvil la pantalla es mucho más estrecha y el encuadre está desplazado al
-68 % de ancho para no dejarlo fuera. Que salga **solo el jugador**.
-
-Las fotos con grafismo incrustado (escudos de trayectoria, cifras de carrera)
-no funcionan de fondo: llevan su propia tipografía y chocan con el titular de
-la portada. Esas van mejor en la sección Actualidad, donde el texto va debajo
-de la imagen y no encima.
-
-**Lo que se puede ajustar:**
-
-- **La velocidad**, en `data-interval` del bloque `hero__portraits` de
-  `scm/index.html`, en milisegundos. Ahora está en `8000`, ocho segundos.
-- **El nombre y el club**, en `data-name` y `data-club` de cada diapositiva.
-  La foto que los deja vacíos no muestra crédito.
-- **El encuadre general**, en `photos.css`: `--photo-hero-position` para
-  escritorio y `--photo-hero-position-mobile` para móvil.
-- **El encuadre de una foto suelta**: se le añade su propio `--photo-size` y
-  `--photo-position` en el `style` de su diapositiva.
-
-Hace falta autorización de imagen de cada jugador y, si aparece la equipación,
-también conviene comprobarlo con el club.
-
-### Magno Marbella
+## Magno Marbella
 
 | Fichero | Tamaño | Dónde sale |
 |---|---|---|
@@ -107,24 +143,8 @@ directamente para casi todos estos huecos.
 
 La sección de vídeos no incrusta el reproductor de Instagram, que obligaría a
 cargar su script y a poner banner de cookies. Cada tarjeta es la portada del
-vídeo con un botón de reproducción que abre el reel en Instagram. Hay que
-hacer dos cosas por vídeo:
+vídeo con un botón que abre el reel en Instagram. Hay que hacer dos cosas por
+vídeo:
 
 1. Poner la miniatura en `--photo-reel1` y siguientes, en `photos.css`.
 2. Cambiar el `href` de la tarjeta en `magno/index.html` por la URL del reel.
-
-## Cómo elegir las fotos
-
-- **Los heroes llevan texto encima.** Escoged fotos con una zona tranquila
-  donde caiga el titular.
-- **SCM** pide fotografía de jugador con contraste alto; el hero le pone un
-  velo oscuro por encima.
-- **Magno** pide luz natural y planos amplios: instalaciones, villas, mar.
-  Nada de banco de imágenes con gente sonriendo a cámara.
-- **Los retratos del equipo** deben tener el mismo encuadre en los seis. Una
-  rejilla con recortes distintos se nota mucho.
-
-## Peso
-
-Exportad en **WebP** si podéis, o JPG al 80 %. Ninguna imagen debería pasar
-de **300 KB**; los heroes, de 500 KB.
