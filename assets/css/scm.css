@@ -2,9 +2,8 @@
    SCM SPORTS AGENCY — sistema de diseño
 
    Firma boutique de fútbol internacional. Base oscura con profundidad por
-   capas, ámbar de marca reservado al acento y una serif en cursiva que
-   aparece solo en los momentos editoriales: es el hilo de Marbella dentro de
-   una marca deportiva.
+   capas y el rojo de marca reservado al acento. Un solo par tipográfico:
+   Archivo para los titulares e Inter para el texto.
 
    Índice
      01  Tokens
@@ -28,43 +27,46 @@
 /* ------------------------------------------------------------- 01 tokens */
 
 :root {
-  /* Profundidad: seis planos de oscuridad, no uno. El salto entre secciones
-     contiguas es deliberadamente pequeño; lo que da relieve son los lavados
-     de color y las líneas, no el contraste bruto. */
-  --ink-950: #07080a;
-  --ink-900: #0b0d10;
-  --ink-850: #101317;
-  --ink-800: #161a20;
-  --ink-750: #1b2028;
-  --ink-700: #232932;
+  /* Profundidad: varios planos de negro en lugar de uno solo. El tono es el
+     neutro de la marca, sin desviarse a azul. */
+  --ink-950: #060607;
+  --ink-900: #0a0a0b;
+  --ink-850: #121214;
+  --ink-800: #1b1b1f;
+  --ink-750: #232328;
+  --ink-700: #2c2c33;
 
-  --bone: #f4f2ed;
-  --bone-2: #e9e6de;
-  --bone-3: #dcd8ce;
+  --bone: #f2f2f0;
+  --bone-2: #e7e7e4;
+  --bone-3: #dcdcd8;
 
-  /* Ámbar de marca. El tono claro es para fondos oscuros y el oscuro para
-     los fondos hueso; los dos pasan AA sobre su fondo. */
-  --accent: #c8823f;
-  --accent-lift: #dfa366;
-  --accent-ink: #8a5623;
-  --accent-deep: #6b3f17;
+  /* Rojo de marca. Es el color de los rellenos, las barras y los iconos.
+     --accent-text es el mismo rojo un punto más claro, y se usa cuando el
+     rojo va como TEXTO sobre fondo oscuro: el de marca se queda en 3,96 sobre
+     los planos más claros y no llega al mínimo legible.
+     Sobre hueso ninguno de los dos vale, así que las secciones claras usan
+     --accent-ink. */
+  --accent: #f0180c;
+  --accent-text: #ff4a3b;
+  --accent-lift: #ff3d2e;
+  --accent-ink: #c41208;
+  --accent-deep: #8f0c04;
 
   --surface: var(--ink-900);
   --surface-2: var(--ink-850);
   --surface-3: var(--ink-800);
-  --text: #f2f1ee;
-  --muted: #9aa0a8;
-  --line: rgba(242, 241, 238, 0.1);
-  --line-strong: rgba(242, 241, 238, 0.22);
-  --accent-on: var(--accent);
+  --text: #f6f6f5;
+  --muted: #9a9aa1;
+  --line: rgba(255, 255, 255, 0.13);
+  --line-strong: rgba(255, 255, 255, 0.28);
+  --accent-on: var(--accent-text);
 
   --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-editorial: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
 
   /* La etiqueta del idioma activo se pinta del color de lo que hay detrás de
      la cabecera; en SCM el fondo es siempre oscuro. */
-  --lang-active-fg: #0b0d10;
+  --lang-active-fg: #000;
 
   --shadow-lift: 0 24px 60px -32px rgba(0, 0, 0, 0.9);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -76,10 +78,10 @@
   --surface: var(--bone);
   --surface-2: var(--bone-2);
   --surface-3: var(--bone-3);
-  --text: #141618;
-  --muted: #5a6069;
-  --line: rgba(20, 22, 24, 0.14);
-  --line-strong: rgba(20, 22, 24, 0.3);
+  --text: #101012;
+  --muted: #5c5c62;
+  --line: rgba(16, 16, 18, 0.14);
+  --line-strong: rgba(16, 16, 18, 0.3);
   --accent-on: var(--accent-ink);
   background: var(--bone);
   color: var(--text);
@@ -109,7 +111,7 @@ body.page-scm::before {
 
 ::selection {
   background: var(--accent);
-  color: #0b0d10;
+  color: #000;
 }
 
 /* --------------------------------------------- 02 tipografía y utilidades */
@@ -119,10 +121,9 @@ body.page-scm::before {
 .display {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   text-transform: uppercase;
-  letter-spacing: -0.022em;
-  line-height: 0.9;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
 }
 
 .display em {
@@ -132,13 +133,15 @@ body.page-scm::before {
 
 /* La serif en cursiva es el hilo de Marbella: aparece en las frases que
    hablan de origen, relación y trato, nunca en la información operativa. */
+/* Frase destacada. En el diseño de la marca el peso lo lleva la Archivo en
+   mayúsculas, no una serif: la cita se distingue por tamaño, no por familia. */
 .editorial {
-  font-family: var(--font-editorial);
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.005em;
-  line-height: 1.24;
-  text-transform: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 /* El titular de portada no busca el tamaño máximo sino el peso justo: con la
@@ -222,12 +225,12 @@ body.page-scm::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(70% 90% at 82% 8%, rgba(200, 130, 63, 0.13), transparent 62%),
-    radial-gradient(60% 70% at 4% 96%, rgba(200, 130, 63, 0.07), transparent 60%);
+    radial-gradient(70% 90% at 82% 8%, rgba(240, 24, 12, 0.13), transparent 62%),
+    radial-gradient(60% 70% at 4% 96%, rgba(240, 24, 12, 0.07), transparent 60%);
 }
 
 .wash--cool::before {
-  background: radial-gradient(75% 80% at 12% 0%, rgba(120, 150, 190, 0.09), transparent 64%);
+  background: radial-gradient(75% 80% at 12% 0%, rgba(150, 150, 160, 0.09), transparent 64%);
 }
 
 .rule {
@@ -249,7 +252,6 @@ body.page-scm::before {
   gap: 0.7rem;
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   font-size: clamp(1.1rem, 2vw, 1.45rem);
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -311,7 +313,7 @@ body.page-scm::before {
 /* El relleno entra por la izquierda en lugar de encenderse de golpe. */
 .btn--primary {
   background: var(--accent);
-  color: #0b0d10;
+  color: #000;
 }
 
 .btn--primary::before {
@@ -627,7 +629,7 @@ body.page-scm::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(80% 70% at 78% 28%, rgba(200, 130, 63, 0.16), transparent 66%);
+  background: radial-gradient(80% 70% at 78% 28%, rgba(240, 24, 12, 0.16), transparent 66%);
   mix-blend-mode: soft-light;
 }
 
@@ -757,8 +759,8 @@ body.page-scm::before {
      relieve; en cuanto se define --photo, la imagen lo sustituye. */
   background-image: var(
     --photo,
-    radial-gradient(90% 70% at 78% 12%, rgba(200, 130, 63, 0.22), transparent 62%),
-    radial-gradient(70% 60% at 8% 90%, rgba(120, 150, 190, 0.12), transparent 60%)
+    radial-gradient(90% 70% at 78% 12%, rgba(240, 24, 12, 0.22), transparent 62%),
+    radial-gradient(70% 60% at 8% 90%, rgba(150, 150, 160, 0.12), transparent 60%)
   );
   background-size: cover;
   background-position: var(--photo-position, center 30%);
@@ -863,7 +865,6 @@ body.page-scm::before {
   gap: 0.15rem;
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   font-size: clamp(3.4rem, 7vw, 5.4rem);
   line-height: 0.86;
   letter-spacing: -0.04em;
@@ -930,7 +931,7 @@ body.page-scm::before {
   background-color: var(--ink-850);
   background-image: var(
     --photo,
-    radial-gradient(85% 70% at 60% 18%, rgba(200, 130, 63, 0.2), transparent 64%)
+    radial-gradient(85% 70% at 60% 18%, rgba(240, 24, 12, 0.2), transparent 64%)
   );
   background-size: cover;
   background-position: center;
@@ -965,7 +966,6 @@ body.page-scm::before {
 .gateway__title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   text-transform: uppercase;
   letter-spacing: -0.015em;
   font-size: clamp(1.5rem, 2.6vw, 2.1rem);
@@ -1006,23 +1006,26 @@ body.page-scm::before {
   width: 1rem;
 }
 
-/* Cita a toda página, en serif. Es el recurso editorial de la marca. */
+/* Manifiesto a toda página: el recurso de siempre, Archivo en mayúsculas muy
+   grande sobre una franja algo más clara que el resto. */
 .quote {
   padding-block: clamp(4rem, 11vw, 9rem);
+  background: var(--surface-2);
+  border-block: 1px solid var(--line);
 }
 
 .quote__text {
-  font-family: var(--font-editorial);
-  font-weight: 300;
-  font-style: italic;
-  font-size: clamp(1.8rem, 5vw, 3.6rem);
-  line-height: 1.16;
-  letter-spacing: 0.002em;
-  max-width: 22ch;
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(1.7rem, 4.4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  max-width: 26ch;
 }
 
 .quote__text em {
-  font-style: italic;
+  font-style: normal;
   color: var(--accent-on);
 }
 
@@ -1125,8 +1128,8 @@ body.page-scm::before {
      plano liso. */
   background-image: var(
     --photo,
-    radial-gradient(85% 85% at 72% 14%, rgba(200, 130, 63, 0.18), transparent 62%),
-    radial-gradient(70% 70% at 8% 90%, rgba(120, 150, 190, 0.11), transparent 60%)
+    radial-gradient(85% 85% at 72% 14%, rgba(240, 24, 12, 0.18), transparent 62%),
+    radial-gradient(70% 70% at 8% 90%, rgba(150, 150, 160, 0.11), transparent 60%)
   );
   background-size: cover;
   background-position: center;
@@ -1160,7 +1163,7 @@ body.page-scm::before {
   z-index: 1;
   padding: 0.6rem 1rem;
   background: var(--accent);
-  color: #0b0d10;
+  color: #000;
   font-family: var(--font-display);
   font-size: 0.72rem;
   font-weight: 700;
@@ -1182,7 +1185,6 @@ body.page-scm::before {
 .strip__title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   text-transform: uppercase;
   letter-spacing: -0.015em;
   font-size: clamp(1.55rem, 3vw, 2.35rem);
@@ -1260,7 +1262,7 @@ body.page-scm::before {
 
 .ecosystem__badge::after {
   inset: -28px;
-  border-color: rgba(200, 130, 63, 0.16);
+  border-color: rgba(240, 24, 12, 0.16);
 }
 
 .ecosystem__badge svg {
@@ -1439,7 +1441,6 @@ body.page-scm::before {
 .stage__when {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   font-size: clamp(1.6rem, 3.4vw, 2.5rem);
   letter-spacing: -0.02em;
   line-height: 1;
@@ -1461,7 +1462,6 @@ body.page-scm::before {
 .stage__title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   text-transform: uppercase;
   letter-spacing: -0.015em;
   font-size: clamp(1.5rem, 3vw, 2.3rem);
@@ -1488,14 +1488,15 @@ body.page-scm::before {
 .stage__pull {
   margin-top: var(--space-lg);
   padding-left: var(--space-lg);
-  border-left: 1px solid var(--accent-on);
-  font-family: var(--font-editorial);
-  font-style: italic;
-  font-weight: 300;
-  font-size: clamp(1.2rem, 2.4vw, 1.75rem);
-  line-height: 1.28;
+  border-left: 2px solid var(--accent-on);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
   color: var(--text);
-  max-width: 34ch;
+  max-width: 30ch;
 }
 
 /* Hueco de fotografía de la cronología. Sin imagen enchufada no se queda en
@@ -1509,8 +1510,8 @@ body.page-scm::before {
   background-color: var(--surface-2);
   background-image: var(
     --photo,
-    radial-gradient(80% 90% at 75% 10%, rgba(200, 130, 63, 0.2), transparent 62%),
-    radial-gradient(70% 70% at 6% 92%, rgba(120, 150, 190, 0.12), transparent 60%)
+    radial-gradient(80% 90% at 75% 10%, rgba(240, 24, 12, 0.2), transparent 62%),
+    radial-gradient(70% 70% at 6% 92%, rgba(150, 150, 160, 0.12), transparent 60%)
   );
   background-size: cover;
   background-position: center;
@@ -1630,7 +1631,7 @@ body.page-scm::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 60% at 50% 50%, rgba(200, 130, 63, 0.16), transparent 70%);
+  background: radial-gradient(60% 60% at 50% 50%, rgba(240, 24, 12, 0.16), transparent 70%);
   opacity: 0;
   transition: opacity 0.5s var(--ease-out);
 }
@@ -1779,7 +1780,7 @@ body.page-scm::before {
 .filter[aria-pressed='true'] {
   background: var(--accent);
   border-color: var(--accent);
-  color: #0b0d10;
+  color: #000;
 }
 
 .posts {
@@ -1832,7 +1833,7 @@ body.page-scm::before {
   inset: 0;
   background-image: var(
     --photo,
-    radial-gradient(85% 85% at 74% 12%, rgba(200, 130, 63, 0.16), transparent 62%)
+    radial-gradient(85% 85% at 74% 12%, rgba(240, 24, 12, 0.16), transparent 62%)
   );
   background-size: cover;
   background-position: center;
@@ -1863,7 +1864,7 @@ body.page-scm::before {
   z-index: 1;
   padding: 0.45rem 0.85rem;
   background: var(--accent);
-  color: #0b0d10;
+  color: #000;
   font-family: var(--font-display);
   font-size: 0.62rem;
   font-weight: 700;
@@ -1962,7 +1963,7 @@ body.page-scm::before {
   background-color: var(--surface-3);
   background-image: var(
     --photo,
-    radial-gradient(80% 70% at 50% 20%, rgba(200, 130, 63, 0.12), transparent 66%)
+    radial-gradient(80% 70% at 50% 20%, rgba(240, 24, 12, 0.12), transparent 66%)
   );
   background-size: cover;
   background-position: center;
@@ -2109,7 +2110,6 @@ body.page-scm::before {
 .principle__title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 112%;
   text-transform: uppercase;
   letter-spacing: -0.012em;
   font-size: clamp(1.25rem, 2.2vw, 1.7rem);
@@ -2389,7 +2389,7 @@ a.channel__value:hover {
   inset: 0;
   background-image: var(
     --photo,
-    radial-gradient(85% 85% at 70% 14%, rgba(200, 130, 63, 0.16), transparent 62%)
+    radial-gradient(85% 85% at 70% 14%, rgba(240, 24, 12, 0.16), transparent 62%)
   );
   background-size: cover;
   background-position: center;
@@ -2453,12 +2453,13 @@ a.channel__value:hover {
 }
 
 .bridge__title {
-  font-family: var(--font-editorial);
-  font-style: italic;
-  font-weight: 300;
-  font-size: clamp(1.9rem, 4.4vw, 3.2rem);
-  line-height: 1.16;
-  max-width: 22ch;
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  line-height: 1;
+  max-width: 20ch;
 }
 
 .bridge__text {
@@ -2674,7 +2675,6 @@ body.page-scm.js-on.is-ready #main {
     border-bottom: 1px solid var(--line);
     font-size: clamp(1.35rem, 6vw, 2.1rem);
     font-weight: 700;
-    font-stretch: 112%;
     letter-spacing: -0.01em;
     color: var(--text);
     opacity: 0;

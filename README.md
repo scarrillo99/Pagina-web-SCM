@@ -5,8 +5,8 @@ mundos con identidad propia:
 
 - **SCM Sports Agency**, firma boutique de Marbella dedicada al asesoramiento,
   la gestión y el acompañamiento de futbolistas profesionales. Base oscura por
-  capas, ámbar de marca como acento y una serif en cursiva que aparece solo en
-  los momentos editoriales.
+  capas, el rojo de marca como acento y el sello INIMITABLE encabezando cada
+  bloque.
 - **Magno Marbella**, concierge en exclusiva para futbolistas profesionales y
   atletas de alto rendimiento. Fondo hueso, serif y gris cálido.
 
@@ -87,14 +87,15 @@ cambiarlo en las ocho. Es el precio de no tener que compilar nada para publicar.
 
 ## Sistema de diseño
 
-- **Color.** Seis planos de oscuridad en vez de un negro plano, más el hueso
-  de las secciones claras. El acento es un **ámbar apagado** (`#c8823f` sobre
-  oscuro, `#8a5623` sobre claro), no el rojo anterior.
-- **Tipografía.** Archivo variable para titulares, aprovechando su eje de
-  anchura, que es lo que la separa de cualquier grotesca de plantilla. Inter
-  para el texto. Y **Cormorant Garamond en cursiva** solo en las frases que
-  hablan de origen, relación y trato: la serif es el hilo de Marbella dentro de
-  una marca deportiva.
+- **Color.** El **rojo de marca** `#f0180c`, sobre varios planos de negro en
+  lugar de uno solo. Tres tonos con función distinta: `--accent` para rellenos,
+  barras e iconos; `--accent-text`, un punto más claro, para cuando el rojo va
+  como texto sobre fondo oscuro, porque el de marca se queda en 3,96:1 sobre
+  los planos más claros; y `--accent-ink`, más oscuro, para las secciones de
+  fondo hueso, donde el rojo de marca tampoco llega.
+- **Tipografía.** Archivo para titulares en mayúsculas con el tracking cerrado
+  e Inter para el texto. Sin serif: el peso lo lleva la Archivo, y las frases
+  de manifiesto se distinguen por tamaño, no por familia.
 - **Profundidad.** Grano de película sobre todo el documento, lavados de color
   radiales detrás de algunas secciones y degradados de marca donde todavía no
   hay fotografía. Nunca un bloque de color liso.
@@ -283,10 +284,14 @@ en `sitemap.xml`, `robots.txt` y las etiquetas `canonical` de cada página.
   Las tipografías se sirven desde el propio dominio, así que no hay ninguna
   petición externa y no hace falta banner de consentimiento. Si se añade
   analítica, sí.
+- **Qué tipografía usa cada marca.** SCM va con Archivo e Inter; Magno con
+  Cormorant Garamond e Inter. `assets/css/fonts.css` carga las tres, solo en
+  los subconjuntos latin y latin-ext. Si algún día se quita una familia hay que
+  comprobar antes qué marca la usa: no son intercambiables.
 - **Accesibilidad.** Enlace de salto, foco visible, `aria-label` en los
   controles, `aria-current` en la página activa y respeto a
   `prefers-reduced-motion`. Todos los textos de SCM pasan el contraste AA;
-  el mínimo medido es 5,46:1.
+  el mínimo medido es 4,56:1, que es el propio rojo de marca sobre el negro.
 - **Rendimiento.** Sin dependencias, sin framework y sin fundido de salida
   entre páginas. Las animaciones usan solo `transform` y `opacity`, y el
   parallax recalcula una vez por fotograma con `requestAnimationFrame`.
