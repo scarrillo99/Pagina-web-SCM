@@ -78,8 +78,7 @@ de la imagen y no encima.
 **Lo que se puede ajustar:**
 
 - **La velocidad**, en `data-interval` del bloque `hero__portraits` de
-  `scm/index.html`, en milisegundos. Ahora está en `1000`, un segundo. Si
-  resulta agitado, `4000` deja respirar cada foto.
+  `scm/index.html`, en milisegundos. Ahora está en `8000`, ocho segundos.
 - **El nombre y el club**, en `data-name` y `data-club` de cada diapositiva.
   La foto que los deja vacíos no muestra crédito.
 - **El encuadre general**, en `photos.css`: `--photo-hero-position` para

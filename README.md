@@ -149,7 +149,7 @@ poner las reales se descomentan las líneas de `assets/css/photos.css`; no hay
 que tocar el HTML. El listado con tamaños está en `assets/img/README.md`.
 
 Los dos heroes son fotografía a pantalla completa con un velo oscuro encima.
-El de SCM rota cuatro fotos; el de Magno es fija.
+El de SCM rota tres fotos; el de Magno es fija.
 
 ### 9. Textos legales
 
