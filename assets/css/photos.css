@@ -89,11 +89,24 @@
 
    Magno: fotografía a pantalla completa de instalaciones o costa. */
 
-/*
+/* El hero de SCM ya está enchufado: basta con dejar el fichero
+   assets/img/hero-scm.jpg y aparece solo, sin tocar una línea de código.
+   Mientras no exista, el hero se ve en carbón y no se rompe nada.
+
+   Los valores de abajo están calculados para la foto de presentación de
+   Mangala con el Getafe, que lleva la franja de escudos incrustada arriba:
+   --photo-hero-size la amplía un 150 % y --photo-hero-position la ancla
+   abajo, así que ese tercio superior queda fuera del encuadre y solo se ve
+   al jugador. Si algún día se usa una foto limpia, sin grafismo, basta con
+   poner --photo-hero-size: cover.
+
+   Para afinar el encuadre solo hay que tocar esos dos valores: subir el
+   porcentaje de --photo-hero-size recorta más por arriba, y bajarlo recorta
+   menos. Con 150 % se deja fuera el tercio superior. */
 body.page-scm {
   --photo-hero: url('../img/hero-scm.jpg');
-  --photo-hero-position: center 12%;
-  --photo-hero-position-mobile: center 15%;
+  --photo-hero-size: auto 150%;
+  --photo-hero-position: center bottom;
+  --photo-hero-position-mobile: center bottom;
 }
-*/
 /* body.page-magno { --photo-hero: url('../img/hero-magno.jpg'); } */

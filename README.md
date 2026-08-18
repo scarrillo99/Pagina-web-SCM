@@ -60,7 +60,7 @@ assets/img/
 ## Secciones de cada página
 
 **SCM**: portada con retrato de jugador, cifras del equipo, quiénes somos con
-los seis valores en barras animadas, SCM Group Holding con las doce
+los seis valores en barras animadas, SCM Group con las doce
 capacidades del grupo, historia en cronología, los siete servicios, nuestro
 enfoque, el equipo con retratos, red de clubes con escudos, actualidad
 enlazada a Instagram, enfoque internacional, el proceso de seis pasos, la

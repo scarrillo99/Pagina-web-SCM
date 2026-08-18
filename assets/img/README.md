@@ -46,11 +46,23 @@ hay que tocar el HTML.
 
 | Fichero | Tamaño | Dónde sale |
 |---|---|---|
-| `hero-scm.jpg` | 1920×1080 | Portada, a pantalla completa |
+| `hero-scm.jpg` | 1080×1350 | Portada. **Ya está enchufado**: basta con sustituir el fichero |
 | `hub-scm.jpg` | 1400×1800 | Mitad izquierda de la portada del grupo |
 | `equipo-1..6.jpg` | 800×1000 | Retratos del equipo, vertical 4:5 |
 | `actualidad-1..3.jpg` | 1200×750 | Tarjetas de la sección Actualidad. Aquí encajan la firma del contrato, la llegada al aeropuerto y los retratos con cifras |
 | `partner-*.jpg` | 1200×750 | Los cinco bloques de SCM x Magno |
+
+**El hero ya está conectado.** En `assets/img/hero-scm.jpg` hay ahora un
+fondo provisional del color de la marca. Para poner la foto real solo hay que
+**sustituir ese fichero conservando el nombre**: no hay que tocar ni una
+línea de código.
+
+La foto de presentación de Mangala con el Getafe lleva incrustada arriba la
+franja de escudos de su trayectoria. El encuadre está calculado para dejarla
+fuera: `--photo-hero-size: auto 150%` amplía la imagen y
+`--photo-hero-position: center bottom` la ancla abajo, así que ese tercio
+superior no se ve. Si algún día se usa una foto limpia, sin grafismo, se
+cambia a `--photo-hero-size: cover`.
 
 **El hero.** Va una foto **vertical** de un jugador de la agencia, formato
 1080 x 1350 o parecido, que es justo el de una imagen de presentación para

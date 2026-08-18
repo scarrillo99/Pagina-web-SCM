@@ -49,12 +49,12 @@ window.I18N_DICT = {
     'about.v5': 'Innovación',
     'about.v6': 'Sostenibilidad',
 
-    'threesixty.section': 'SCM Group Holding',
+    'threesixty.section': 'SCM Group',
     'threesixty.title': '360 grados: <em>siempre el ángulo correcto</em>',
     'threesixty.p1':
-      'SCM es una agencia deportiva integral con sede en Marbella, concretamente en La Quinta. El origen de SCM se encuentra en <strong>SCM Group Holding</strong>, un grupo empresarial de referencia en España.',
+      'SCM es una agencia deportiva integral con sede en Marbella, concretamente en La Quinta. El origen de SCM se encuentra en <strong>SCM Group</strong>, un grupo empresarial de referencia en España.',
     'threesixty.p2':
-      'Además de su experiencia en el ámbito deportivo, SCM cuenta con el respaldo del sólido conocimiento empresarial, económico y médico de SCM Group Holding, así como de sus empresas vinculadas y alianzas estratégicas.',
+      'Además de su experiencia en el ámbito deportivo, SCM cuenta con el respaldo del sólido conocimiento empresarial, económico y médico de SCM Group, así como de sus empresas vinculadas y alianzas estratégicas.',
     'threesixty.capsTitle': 'Lo que cubre el grupo',
     'caps.1': 'Traspasos',
     'caps.2': 'Contratos',
@@ -341,12 +341,12 @@ window.I18N_DICT = {
     'about.v5': 'Innovation',
     'about.v6': 'Sustainability',
 
-    'threesixty.section': 'SCM Group Holding',
+    'threesixty.section': 'SCM Group',
     'threesixty.title': '360 degrees: <em>always the right angle</em>',
     'threesixty.p1':
-      'SCM is a full-service sports agency based in Marbella, in La Quinta. Its origin lies in <strong>SCM Group Holding</strong>, a leading business group in Spain.',
+      'SCM is a full-service sports agency based in Marbella, in La Quinta. Its origin lies in <strong>SCM Group</strong>, a leading business group in Spain.',
     'threesixty.p2':
-      'Beyond its experience in sport, SCM is backed by the solid business, financial and medical knowledge of SCM Group Holding, along with its associated companies and strategic alliances.',
+      'Beyond its experience in sport, SCM is backed by the solid business, financial and medical knowledge of SCM Group, along with its associated companies and strategic alliances.',
     'threesixty.capsTitle': 'What the group covers',
     'caps.1': 'Transfers',
     'caps.2': 'Contracts',
