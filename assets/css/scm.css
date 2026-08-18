@@ -398,25 +398,47 @@ body {
   background: #0a0a0b;
 }
 
-/* El retrato del jugador ocupa su propia franja a la derecha en lugar de
-   estirarse a todo lo ancho. Las fotos de presentación son verticales (4:5)
-   y a pantalla completa se recortarían justo por la cara; en una franja
-   estrecha y alta apenas pierden nada. El borde izquierdo se desvanece con
-   una máscara para que la foto se funda con el fondo y no parezca pegada. */
-.hero__portrait {
+/* Los retratos ocupan su propia franja a la derecha en lugar de estirarse a
+   todo lo ancho. Las fotos de presentación son verticales (4:5) y a pantalla
+   completa se recortarían justo por la cara; en una franja estrecha y alta
+   apenas pierden nada. El borde izquierdo se desvanece con una máscara para
+   que la foto se funda con el fondo y no parezca pegada.
+
+   Dentro de esa franja se apilan cuatro fotos que se relevan por
+   fundido. El ritmo lo marca data-interval en el HTML. */
+.hero__portraits {
   position: absolute;
   inset: 0 0 0 auto;
   z-index: -2;
   width: 54%;
   background-color: #101013;
-  background-image: var(--photo-hero, none);
-  /* --photo-hero-size permite ampliar la foto para dejar fuera del encuadre
-     lo que sobre, por ejemplo una franja de grafismo en la parte superior.
-     Con cover se ve entera. */
-  background-size: var(--photo-hero-size, cover);
-  background-position: var(--photo-hero-position, center top);
   mask-image: linear-gradient(90deg, transparent 0%, #000 30%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 30%);
+}
+
+.hero__portrait {
+  position: absolute;
+  inset: 0;
+  background-color: #101013;
+  background-image: var(--photo, none);
+  /* El encuadre se puede afinar foto a foto: cada diapositiva acepta su
+     propio --photo-size y --photo-position en el style del HTML, y si no los
+     lleva usa el general de la portada. */
+  background-size: var(--photo-size, var(--photo-hero-size, cover));
+  background-position: var(--photo-position, var(--photo-hero-position, center top));
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+
+.hero__portrait.is-active {
+  opacity: 1;
+}
+
+/* Sin JavaScript no hay relevo: se ve la primera foto fija y ya. El carrusel
+   marca el contenedor con is-running al arrancar, así que basta con mirar si
+   esa clase está o no. */
+.hero__portraits:not(.is-running) .hero__portrait:first-child {
+  opacity: 1;
 }
 
 .hero__veil {
@@ -453,11 +475,14 @@ body {
 /* Sin sitio para dos columnas, la foto pasa a fondo completo y el velo se
    refuerza para que el titular siga leyéndose encima. */
 @media (max-width: 939px) {
-  .hero__portrait {
+  .hero__portraits {
     width: 100%;
     mask-image: none;
     -webkit-mask-image: none;
-    background-position: var(--photo-hero-position-mobile, center 18%);
+  }
+
+  .hero__portrait {
+    background-position: var(--photo-position-mobile, var(--photo-hero-position-mobile, center 18%));
   }
 
   .hero__veil {

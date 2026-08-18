@@ -128,6 +128,69 @@
     });
   }
 
+  /* ---------------------------------------------------------- hero rotativo */
+
+  /* La portada de SCM apila varias fotos y las va relevando. El intervalo se
+     lee de data-interval, así que cambiar la velocidad es tocar un número en
+     el HTML y nada más.
+
+     Se para en tres casos: si el visitante pide menos movimiento, si la
+     pestaña deja de estar visible (no tiene sentido gastar repintados en
+     segundo plano) y si solo hay una foto enchufada. */
+  function initHeroSlider() {
+    var slider = document.querySelector('[data-hero-slider]');
+    if (!slider) return;
+
+    var slides = [].slice.call(slider.querySelectorAll('.hero__portrait'));
+    if (slides.length < 2) return;
+
+    var credit = document.querySelector('[data-hero-credit]');
+    var creditName = credit ? credit.querySelector('[data-credit-name]') : null;
+    var creditClub = credit ? credit.querySelector('[data-credit-club]') : null;
+
+    var index = 0;
+    /* is-running apaga el respaldo sin JavaScript del CSS: a partir de aquí
+       manda is-active y solo una foto está visible a la vez. */
+    slider.classList.add('is-running');
+    slides[0].classList.add('is-active');
+
+    var show = function (next) {
+      slides[index].classList.remove('is-active');
+      index = next;
+      slides[index].classList.add('is-active');
+
+      if (creditName) creditName.textContent = slides[index].getAttribute('data-name') || '';
+      if (creditClub) creditClub.textContent = slides[index].getAttribute('data-club') || '';
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var interval = parseInt(slider.getAttribute('data-interval'), 10);
+    if (isNaN(interval) || interval < 400) interval = 4000;
+
+    var timer = null;
+
+    var start = function () {
+      if (timer !== null) return;
+      timer = window.setInterval(function () {
+        show((index + 1) % slides.length);
+      }, interval);
+    };
+
+    var stop = function () {
+      if (timer === null) return;
+      window.clearInterval(timer);
+      timer = null;
+    };
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) stop();
+      else start();
+    });
+
+    start();
+  }
+
   /* ------------------------------------------------------------ formulario */
 
   /* El formulario no tiene backend todavía: abre el cliente de correo con el
@@ -178,6 +241,7 @@
     initHeader();
     initNav();
     initReveal();
+    initHeroSlider();
     initCounters();
     initForm();
     initYear();

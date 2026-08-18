@@ -59,7 +59,7 @@ assets/img/
 
 ## Secciones de cada página
 
-**SCM**: portada con retrato de jugador, cifras del equipo, quiénes somos con
+**SCM**: portada con cuatro retratos de jugador que se relevan, cifras del equipo, quiénes somos con
 los seis valores en barras animadas, SCM Group con las doce
 capacidades del grupo, historia en cronología, los siete servicios, nuestro
 enfoque, el equipo con retratos, red de clubes con escudos, actualidad
@@ -94,12 +94,14 @@ sitio para hacerlo es la sección `#centros` de `magno/index.html`.
 
 ## Pendiente antes de publicar
 
-### 1. La foto del hero de SCM
+### 1. Las cuatro fotos del hero de SCM
 
-La portada está preparada para una foto de marketing de un jugador de la
-agencia. Sin ella el hero se ve en negro con la trama de líneas, que funciona,
-pero pierde casi toda su fuerza. Se enchufa en `assets/css/photos.css` y el
-crédito de abajo a la derecha (nombre y club) se edita en `i18n-scm.js`.
+La portada rota cuatro fotos de marketing de jugadores de la agencia, una cada
+segundo. Ahora mismo son marcadores en carbón: se sustituyen los ficheros
+`assets/img/hero-scm-1.jpg` a `hero-scm-4.jpg` conservando el nombre y
+aparecen solas, sin tocar código. El nombre y el club de abajo a la derecha van
+en `data-name` y `data-club` de cada diapositiva, en `scm/index.html`, y la
+velocidad en `data-interval`, en milisegundos.
 
 Hace falta autorización de imagen del jugador.
 
@@ -150,8 +152,8 @@ Todo funciona sin fotos: donde va una imagen se pinta un bloque de color. Para
 poner las reales se descomentan las líneas de `assets/css/photos.css`; no hay
 que tocar el HTML. El listado con tamaños está en `assets/img/README.md`.
 
-Los dos heroes son fotografía a pantalla completa con un velo oscuro encima.
-Sin imagen se ven en negro, lo cual es aceptable pero mucho menos potente.
+El hero de SCM son cuatro retratos verticales que rotan; el de Magno, una
+fotografía a pantalla completa. Los dos llevan un velo oscuro encima.
 
 ### 9. Textos legales
 

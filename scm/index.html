@@ -108,10 +108,17 @@
 
     <main id="main">
       <!-- ==================================================== hero ====
-           La foto del jugador se enchufa en assets/css/photos.css. Sustituir
-           también el crédito de abajo a la derecha por su nombre y su club. -->
+           Cuatro fotos que se relevan solas. Cada una se enchufa en
+           assets/css/photos.css (--photo-hero1 a --photo-hero4) y lleva
+           encima el nombre del jugador y su club en data-name y data-club.
+           La velocidad se cambia en data-interval, en milisegundos. -->
       <section class="hero">
-        <div class="hero__portrait" aria-hidden="true"></div>
+        <div class="hero__portraits" data-hero-slider data-interval="1000" aria-hidden="true">
+          <span class="hero__portrait" style="--photo: var(--photo-hero1)" data-name="Orel Mangala" data-club="Getafe CF"></span>
+          <span class="hero__portrait" style="--photo: var(--photo-hero2)" data-name="Iker Pozo" data-club="Real Murcia"></span>
+          <span class="hero__portrait" style="--photo: var(--photo-hero3)" data-name="Jugador tres" data-club="Club actual"></span>
+          <span class="hero__portrait" style="--photo: var(--photo-hero4)" data-name="Jugador cuatro" data-club="Club actual"></span>
+        </div>
         <div class="hero__veil" aria-hidden="true"></div>
         <div class="hero__grid" aria-hidden="true"></div>
 
@@ -137,9 +144,9 @@
           </div>
         </div>
 
-        <p class="hero__credit">
-          <strong data-i18n="hero.creditName">Nombre del jugador</strong>
-          <span data-i18n="hero.creditClub">Club actual</span>
+        <p class="hero__credit" data-hero-credit>
+          <strong data-credit-name>Orel Mangala</strong>
+          <span data-credit-club>Getafe CF</span>
         </p>
       </section>
 
