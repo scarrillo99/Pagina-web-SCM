@@ -33,13 +33,13 @@ window.I18N_DICT = {
     'stats.3.text': 'Trayectoria en la gestión integral de jugadores profesionales.',
 
     'about.section': 'Quiénes somos',
-    'about.title': 'Cada jugador es <em>único</em>',
+    'about.title': 'Cada carrera es <em>única</em>',
     'about.p1':
-      'En SCM Sports asesoramos íntegramente a <strong>futbolistas profesionales</strong>, acompañándolos dentro y fuera del campo.',
+      'En SCM asesoramos íntegramente a <strong>profesionales del fútbol</strong> y los acompañamos dentro y fuera del campo. En el césped, en el banquillo y en el análisis.',
     'about.p2':
-      'Creamos <strong>planes personalizados</strong> porque cada jugador es único y merece la misma dedicación, esté en la cima o camino a ella.',
+      'Creamos <strong>planes personalizados</strong> porque no hay dos carreras iguales, y todas reciben la misma dedicación, estén en la cima o camino a ella.',
     'about.p3':
-      '<strong>Invertimos desde el inicio</strong> para construir carreras sólidas, con un equipo experto en potenciar cada área de su éxito.',
+      '<strong>Invertimos desde el inicio</strong> para construir trayectorias sólidas, con un equipo experto en potenciar cada área. Aquí no hay carteras: hay una familia que trabaja junta.',
     'about.v1': 'Soporte individual',
     'about.v2': 'Transparencia',
     'about.v3': 'Lealtad',
@@ -323,13 +323,13 @@ window.I18N_DICT = {
     'stats.3.text': 'A track record in the complete management of professional players.',
 
     'about.section': 'Who we are',
-    'about.title': 'Every player is <em>unique</em>',
+    'about.title': 'Every career is <em>unique</em>',
     'about.p1':
-      'At SCM Sports we advise <strong>professional footballers</strong> across every area of their lives, on and off the pitch.',
+      'At SCM we advise <strong>football professionals</strong> across the board and stand beside them on and off the pitch. On the grass, on the bench and in the analysis room.',
     'about.p2':
-      'We build <strong>tailored plans</strong>, because every player is different and deserves the same dedication, whether they are at the top or on their way there.',
+      'We build <strong>tailored plans</strong> because no two careers are alike, and every one gets the same dedication, at the top or on the way there.',
     'about.p3':
-      'We <strong>invest from day one</strong> to build solid careers, with a team that knows how to strengthen every area of a player’s success.',
+      '<strong>We invest from day one</strong> to build solid careers, with a team that strengthens every area. There are no portfolios here: there is a family that works together.',
     'about.v1': 'Individual support',
     'about.v2': 'Transparency',
     'about.v3': 'Loyalty',
