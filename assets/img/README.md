@@ -13,7 +13,7 @@ encima que la oscurece para que se lea el texto.
 
 | Fichero | Estado |
 |---|---|
-| `hub-scm.jpg` | **Puesta.** Recortada de la foto de la llegada con la bufanda |
+| `hub-scm.jpg` | **Puesta.** El jugador en el córner con el estadio lleno detrás |
 | `hub-magno.jpg` | **Falta.** Encaja una villa, la costa o una instalación deportiva de Marbella |
 
 Mientras no exista la de Magno, ese lado se ve en hueso liso. Funciona, pero al
@@ -22,6 +22,30 @@ mandar ahora mismo.
 
 Escoged una con **el motivo hacia el centro o la derecha**: el logotipo, el
 titular y el botón caen en el lado izquierdo del panel.
+
+## Qué foto hay en cada sitio
+
+De las once que se subieron, estas cinco están colocadas:
+
+| Hueco | Foto |
+|---|---|
+| Portada del grupo, mitad de SCM | Jugador en el córner, estadio lleno |
+| Portada de SCM, foto 1 | Acción de partido contra el Zenit |
+| Portada de SCM, foto 2 | Rueda de prensa |
+| Portada de SCM, foto 3 | Presentación de Orel Mangala con el Getafe |
+| Actualidad, Fichajes | Presentación con la bufanda del Real Murcia |
+| Actualidad, Trabajo diario | Banda del campo durante el partido |
+| Actualidad, Marca personal | Retrato de Mangala con sus cifras |
+
+Las seis restantes no se han usado porque no encajan en ningún hueco de esta
+versión de la web, no porque estén mal: el jugador del Real Murcia en partido,
+el del Getafe contra el Tottenham, dos más de banda y, sobre todo, **la reunión
+de oficina revisando documentos**, que es una imagen muy buena para explicar el
+asesoramiento y que merece un sitio. Están en el historial del repositorio y se
+recuperan en cuanto haya dónde ponerlas.
+
+Los originales se borran del árbol después de recortarlos, para que la web no
+arrastre 20 MB de fotos sin comprimir. Siguen en el historial.
 
 ## Escudos de clubes
 

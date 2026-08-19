@@ -40,8 +40,8 @@
      Sugerencia con el material que hay: la firma del contrato en la 1, la
      llegada al aeropuerto con la bufanda en la 2 y el retrato de Mangala
      con sus cifras en la 3. */
-  /* --photo-news1: url('../img/actualidad-1.jpg'); */
-  /* --photo-news2: url('../img/actualidad-2.jpg'); */
+  --photo-news1: url('../img/actualidad-1.jpg');
+  --photo-news2: url('../img/actualidad-2.jpg');
   --photo-news3: url('../img/actualidad-3.jpg');
 
   /* --- SCM x Magno ------------------------------------------------------
