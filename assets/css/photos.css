@@ -16,8 +16,14 @@
 
 :root {
   /* --- Portada del grupo ------------------------------------------------
-     Verticales, 1400 x 1800. La de SCM lleva un velo oscuro encima. */
-  /* --photo-scm: url('../img/hub-scm.jpg'); */
+     Es la primera pantalla de la web: la pantalla partida entre las dos
+     marcas. Verticales, 1400 x 1800, con un velo encima que las oscurece.
+
+     La de SCM ya está puesta, recortada de la foto de la llegada con la
+     bufanda. Falta la de Magno: encaja una villa, la costa o una instalación
+     deportiva de Marbella. Mientras no exista, ese lado se ve en hueso liso,
+     que funciona pero pesa menos que el de al lado. */
+  --photo-scm: url('../img/hub-scm.jpg');
   /* --photo-magno: url('../img/hub-magno.jpg'); */
 
   /* --- Equipo de SCM ----------------------------------------------------

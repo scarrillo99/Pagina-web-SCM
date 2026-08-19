@@ -5,6 +5,24 @@ bloque de color con su icono, y donde va un escudo se ve el monograma del
 club. Todo lo que sigue mejora el resultado, pero nada de esto bloquea la
 publicación.
 
+## La portada del grupo
+
+Es la primera pantalla de la web: la pantalla partida entre las dos marcas.
+Cada mitad tiene su fotografía de fondo, vertical, **1400 x 1800**, con un velo
+encima que la oscurece para que se lea el texto.
+
+| Fichero | Estado |
+|---|---|
+| `hub-scm.jpg` | **Puesta.** Recortada de la foto de la llegada con la bufanda |
+| `hub-magno.jpg` | **Falta.** Encaja una villa, la costa o una instalación deportiva de Marbella |
+
+Mientras no exista la de Magno, ese lado se ve en hueso liso. Funciona, pero al
+lado del otro pesa mucho menos, así que es la foto más rentable que podéis
+mandar ahora mismo.
+
+Escoged una con **el motivo hacia el centro o la derecha**: el logotipo, el
+titular y el botón caen en el lado izquierdo del panel.
+
 ## Escudos de clubes
 
 Están en `assets/img/clubes/`, un fichero por club. Los que hay ahora son

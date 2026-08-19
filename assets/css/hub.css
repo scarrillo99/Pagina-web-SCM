@@ -154,18 +154,23 @@ body {
   grid-template-columns: minmax(0, 1fr);
   /* Sin relleno vertical: desplazaría las filas del subgrid y rompería la
      alineación entre las dos mitades. El aire lo dan las filas 1 y 8. */
-  padding-inline: clamp(1.5rem, 5vw, 5rem);
+  --panel-pad: clamp(1.5rem, 5vw, 5rem);
+  padding-inline: var(--panel-pad);
   position: relative;
   isolation: isolate;
   text-decoration: none;
   overflow: hidden;
 }
 
+/* inset: 0 se resuelve contra la caja de relleno, no contra la del borde, así
+   que sin los márgenes negativos la fotografía se quedaba corta justo por el
+   ancho del padding y dejaba dos franjas del color de fondo a los lados. */
 .panel__bg,
 .panel__veil {
   grid-area: 1 / 1 / -1 / -1;
   position: absolute;
   inset: 0;
+  margin-inline: calc(-1 * var(--panel-pad));
 }
 
 .panel__bg {
@@ -196,10 +201,15 @@ body {
   background-image: var(--photo-scm, none);
 }
 
+/* Con fotografía detrás el velo es lo que hace legible el titular, y tiene que
+   aguantar tanto un cielo claro como un fondo oscuro. Por eso son tres capas:
+   una lateral que oscurece el lado del texto, una vertical que asienta el
+   bloque y el brillo tenue de arriba, que da relieve. */
 .panel--scm .panel__veil {
   background:
-    radial-gradient(120% 90% at 70% 0%, rgba(255, 255, 255, 0.07) 0%, transparent 62%),
-    linear-gradient(180deg, rgba(14, 14, 16, 0.55) 0%, rgba(14, 14, 16, 0.93) 78%);
+    radial-gradient(120% 90% at 72% 0%, rgba(255, 255, 255, 0.06) 0%, transparent 60%),
+    linear-gradient(90deg, rgba(14, 14, 16, 0.9) 0%, rgba(14, 14, 16, 0.62) 55%, rgba(14, 14, 16, 0.42) 100%),
+    linear-gradient(180deg, rgba(14, 14, 16, 0.7) 0%, rgba(14, 14, 16, 0.55) 38%, rgba(14, 14, 16, 0.95) 100%);
 }
 
 /* --- lado Magno --- */
