@@ -1,15 +1,10 @@
 /* ==========================================================================
-   SITE — comportamiento común de las tres marcas.
-
-   Todo es progresivo: sin JavaScript la web se lee entera, los enlaces
-   navegan y los formularios se envían. Aquí solo se añade capa de
-   experiencia.
+   SITE — comportamiento común: cabecera al hacer scroll, menú móvil,
+   revelado de secciones, contadores y validación del formulario.
    ========================================================================== */
 
 (function () {
   'use strict';
-
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   /* ---------------------------------------------------------------- header */
 
@@ -31,11 +26,6 @@
     var toggle = document.querySelector('[data-nav-toggle]');
     var nav = document.querySelector('[data-nav]');
     if (!toggle || !nav) return;
-
-    /* El índice alimenta el escalonado de la entrada de cada enlace. */
-    [].forEach.call(nav.querySelectorAll('.nav__link'), function (link, i) {
-      link.style.setProperty('--i', String(i));
-    });
 
     var close = function () {
       toggle.setAttribute('aria-expanded', 'false');
@@ -66,7 +56,7 @@
     if (!items.length) return;
 
     if (!('IntersectionObserver' in window)) {
-      [].forEach.call(items, function (el) {
+      items.forEach(function (el) {
         el.classList.add('is-visible');
       });
       return;
@@ -80,10 +70,10 @@
           observer.unobserve(entry.target);
         });
       },
-      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
     );
 
-    [].forEach.call(items, function (el) {
+    items.forEach(function (el) {
       observer.observe(el);
     });
   }
@@ -95,7 +85,7 @@
     if (isNaN(target)) return;
 
     var decimals = (el.getAttribute('data-count').split('.')[1] || '').length;
-    var duration = 1600;
+    var duration = 1400;
     var start = null;
 
     var step = function (timestamp) {
@@ -114,8 +104,9 @@
     var counters = document.querySelectorAll('[data-count]');
     if (!counters.length) return;
 
-    if (reduced.matches || !('IntersectionObserver' in window)) {
-      [].forEach.call(counters, function (el) {
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || !('IntersectionObserver' in window)) {
+      counters.forEach(function (el) {
         el.textContent = el.getAttribute('data-count');
       });
       return;
@@ -129,20 +120,23 @@
           observer.unobserve(entry.target);
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.6 }
     );
 
-    [].forEach.call(counters, function (el) {
+    counters.forEach(function (el) {
       observer.observe(el);
     });
   }
 
   /* ---------------------------------------------------------- hero rotativo */
 
-  /* La portada apila varias fotos y las va relevando. El intervalo se lee de
-     data-interval, así que cambiar la velocidad es tocar un número en el
-     HTML. Se para si el visitante pide menos movimiento, si la pestaña deja
-     de estar visible y si solo hay una foto enchufada. */
+  /* La portada de SCM apila varias fotos y las va relevando. El intervalo se
+     lee de data-interval, así que cambiar la velocidad es tocar un número en
+     el HTML y nada más.
+
+     Se para en tres casos: si el visitante pide menos movimiento, si la
+     pestaña deja de estar visible (no tiene sentido gastar repintados en
+     segundo plano) y si solo hay una foto enchufada. */
   function initHeroSlider() {
     var slider = document.querySelector('[data-hero-slider]');
     if (!slider) return;
@@ -155,34 +149,41 @@
     var creditClub = credit ? credit.querySelector('[data-credit-club]') : null;
 
     var index = 0;
+    /* is-running apaga el respaldo sin JavaScript del CSS: a partir de aquí
+       manda is-active y solo una foto está visible a la vez. */
+    slider.classList.add('is-running');
+    slides[0].classList.add('is-active');
+    if (credit) {
+      var first = slides[0].getAttribute('data-name') || '';
+      credit.hidden = first === '';
+      if (creditName) creditName.textContent = first;
+      if (creditClub) creditClub.textContent = slides[0].getAttribute('data-club') || '';
+    }
 
-    var paint = function () {
+    var show = function (next) {
+      slides[index].classList.remove('is-active');
+      index = next;
+      slides[index].classList.add('is-active');
+
       var who = slides[index].getAttribute('data-name') || '';
-      /* Una foto sin nombre no lleva crédito: mejor nada que un relleno. */
+      /* Una foto sin nombre no lleva crédito: mejor nada que un "Nombre del
+         jugador" de relleno en la portada. */
       if (credit) credit.hidden = who === '';
       if (creditName) creditName.textContent = who;
       if (creditClub) creditClub.textContent = slides[index].getAttribute('data-club') || '';
     };
 
-    /* is-running apaga el respaldo sin JavaScript del CSS. */
-    slider.classList.add('is-running');
-    slides[0].classList.add('is-active');
-    paint();
-
-    if (reduced.matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     var interval = parseInt(slider.getAttribute('data-interval'), 10);
-    if (isNaN(interval) || interval < 1200) interval = 8000;
+    if (isNaN(interval) || interval < 400) interval = 4000;
 
     var timer = null;
 
     var start = function () {
       if (timer !== null) return;
       timer = window.setInterval(function () {
-        slides[index].classList.remove('is-active');
-        index = (index + 1) % slides.length;
-        slides[index].classList.add('is-active');
-        paint();
+        show((index + 1) % slides.length);
       }, interval);
     };
 
@@ -198,98 +199,6 @@
     });
 
     start();
-  }
-
-  /* ------------------------------------------------------------- parallax */
-
-  /* Desplazamiento corto de las capas de fondo, calculado en un solo
-     requestAnimationFrame por fotograma. La amplitud la fija data-parallax
-     en píxeles; por encima de 40 empieza a notarse como truco. */
-  function initParallax() {
-    if (reduced.matches) return;
-    if (!window.matchMedia('(min-width: 1024px) and (pointer: fine)').matches) return;
-
-    var layers = [].slice.call(document.querySelectorAll('[data-parallax]'));
-    if (!layers.length) return;
-
-    var ticking = false;
-
-    var update = function () {
-      ticking = false;
-      var vh = window.innerHeight;
-      layers.forEach(function (el) {
-        var rect = el.getBoundingClientRect();
-        if (rect.bottom < 0 || rect.top > vh) return;
-        var amount = parseFloat(el.getAttribute('data-parallax')) || 24;
-        /* -1 arriba de la pantalla, 1 abajo. */
-        var progress = (rect.top + rect.height / 2 - vh / 2) / vh;
-        el.style.transform = 'translate3d(0,' + (progress * amount).toFixed(2) + 'px,0)';
-      });
-    };
-
-    var onScroll = function () {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
-  }
-
-  /* ------------------------------------------------------ filtro actualidad */
-
-  function initFilters() {
-    var group = document.querySelector('[data-filters]');
-    if (!group) return;
-
-    var buttons = [].slice.call(group.querySelectorAll('[data-filter]'));
-    var posts = [].slice.call(document.querySelectorAll('[data-category]'));
-    var empty = document.querySelector('[data-posts-empty]');
-    if (!buttons.length || !posts.length) return;
-
-    var apply = function (value) {
-      var shown = 0;
-      posts.forEach(function (post) {
-        var match = value === 'all' || post.getAttribute('data-category') === value;
-        post.hidden = !match;
-        if (match) shown++;
-      });
-      if (empty) empty.hidden = shown > 0;
-    };
-
-    buttons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        buttons.forEach(function (other) {
-          other.setAttribute('aria-pressed', String(other === btn));
-        });
-        apply(btn.getAttribute('data-filter'));
-      });
-    });
-  }
-
-  /* --------------------------------------------------- entrada de página */
-
-  /* Solo entrada, no salida. Un fundido de salida obliga a retrasar la
-     navegación unos cientos de milisegundos en CADA clic, y eso se nota más
-     que lo que aporta: la web tiene que ir rápida antes que lucida. La
-     entrada, en cambio, no cuesta nada porque ocurre mientras el navegador ya
-     está pintando. */
-  function initPageEntrance() {
-    if (reduced.matches) return;
-    /* js-on marca que hay JavaScript: solo entonces el CSS se permite partir
-       de opacidad cero. Sin script, el contenido se ve desde el primer byte. */
-    document.body.classList.add('js-on');
-    var reveal = function () {
-      document.body.classList.add('is-ready');
-    };
-    window.requestAnimationFrame(function () {
-      window.requestAnimationFrame(reveal);
-    });
-    /* Red de seguridad: si por lo que sea el fotograma no llega, el contenido
-       no puede quedarse invisible. */
-    window.setTimeout(reveal, 400);
   }
 
   /* ------------------------------------------------------------ formulario */
@@ -333,7 +242,7 @@
   /* --------------------------------------------------------------- año pie */
 
   function initYear() {
-    [].forEach.call(document.querySelectorAll('[data-year]'), function (el) {
+    document.querySelectorAll('[data-year]').forEach(function (el) {
       el.textContent = String(new Date().getFullYear());
     });
   }
@@ -344,9 +253,6 @@
     initReveal();
     initHeroSlider();
     initCounters();
-    initParallax();
-    initFilters();
-    initPageEntrance();
     initForm();
     initYear();
   }

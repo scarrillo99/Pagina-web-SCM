@@ -1,17 +1,17 @@
 # Web SCM Sports Agency · Magno Marbella
 
-Sitio estático de las dos marcas del grupo. Una portada común reparte a dos
-mundos con identidad propia:
+Sitio web estático de las dos marcas del grupo. Una portada común reparte a
+dos mundos con identidad propia:
 
-- **SCM Sports Agency**, firma boutique de Marbella dedicada al asesoramiento,
-  la gestión y el acompañamiento de futbolistas profesionales. Base oscura por
-  capas, el rojo de marca como acento y el sello INIMITABLE encabezando cada
-  bloque.
-- **Magno Marbella**, concierge en exclusiva para futbolistas profesionales y
-  atletas de alto rendimiento. Fondo hueso, serif y gris cálido.
+- **SCM Sports Agency**, agencia 360º de futbolistas profesionales. Base
+  oscura con la fotografía del jugador como protagonista y el rojo de marca
+  como acento, más el sello *INIMITABLE* que encabeza cada sección.
+- **Magno Marbella**, concierge en exclusiva para futbolistas profesionales
+  y atletas de alto rendimiento. Fondo hueso, serif y gris cálido, siguiendo
+  su guía de servicios.
 
-Las dos atienden al mismo cliente: una le lleva la carrera, la otra todo lo que
-ocurre cuando aterriza en la Costa del Sol.
+Las dos marcas atienden al mismo cliente: una le lleva la carrera, la otra
+todo lo que ocurre cuando aterriza en la Costa del Sol.
 
 Sin build, sin dependencias, sin framework. HTML, CSS y JavaScript planos.
 
@@ -28,203 +28,156 @@ Y abrir <http://localhost:8000>.
 ## Estructura
 
 ```
-index.html              Portada del grupo, pantalla partida entre las dos marcas
-
-scm/index.html          SCM · Portada
-scm/agencia.html        SCM · La agencia (quiénes somos, valores, enfoque, método, equipo)
-scm/historia.html       SCM · Nuestra historia
-scm/grupo.html          SCM · SCM Group, el ecosistema de doce áreas
-scm/servicios.html      SCM · Los siete servicios
-scm/red.html            SCM · Red internacional y mercados
-scm/actualidad.html     SCM · Fichajes, renovaciones y trabajo diario
-scm/contacto.html       SCM · Contacto
-
-magno/index.html        Magno Marbella
-legal.html              Aviso legal (plantilla, ver abajo)
-privacidad.html         Política de privacidad y cookies (plantilla)
-404.html                Página de error
+index.html            Portada del grupo, pantalla partida entre las dos marcas
+scm/index.html        SCM Sports Agency
+magno/index.html      Magno Marbella
+legal.html            Aviso legal (plantilla, ver abajo)
+privacidad.html       Política de privacidad y cookies (plantilla)
+404.html              Página de error
 
 assets/css/
-  fonts.css             Tipografías alojadas aquí, no en Google
-  base.css              Reset, espaciados y utilidades comunes
-  hub.css               Portada del grupo
-  scm.css               Sistema de diseño de SCM
-  magno.css             Marca lifestyle
-  photos.css            Único sitio donde se enchufan las fotos
-  doc.css               Páginas legales
+  base.css            Reset, espaciados y utilidades comunes
+  hub.css             Portada del grupo
+  scm.css             Marca deportiva
+  magno.css           Marca lifestyle
+  photos.css          Único sitio donde se enchufan las fotos
+  doc.css             Páginas legales
 
 assets/js/
-  i18n.js               Motor de traducción (compartido)
-  i18n-hub.js           Textos de la portada del grupo
-  i18n-scm.js           Textos de SCM, compartidos por sus ocho páginas
-  i18n-magno.js         Textos de Magno
-  site.js               Cabecera, menú, revelados, contadores, carrusel,
-                        parallax, filtros y formulario
+  i18n.js             Motor de traducción (compartido)
+  i18n-hub.js         Textos de la portada
+  i18n-scm.js         Textos de SCM
+  i18n-magno.js       Textos de Magno
+  site.js             Menú, scroll, contadores y formulario
 
-assets/fonts/           Archivo, Inter y Cormorant Garamond en woff2
 assets/img/
-  logo-scm.png          Logotipo reconstruido del dossier (ver abajo)
-  logo-magno.png        Sello reconstruido de la guía de servicios
-  clubes/               Un fichero por escudo, sustituible uno a uno
+  logo-scm.png        Logotipo reconstruido del dossier (ver abajo)
+  logo-magno.png      Sello reconstruido de la guía de servicios
+  favicon*.svg        Iconos de pestaña
+  clubes/             Un fichero por escudo, sustituible uno a uno
 ```
 
----
+## Secciones de cada página
 
-## Arquitectura de SCM
+**SCM**: portada a pantalla completa con tres fotos que se relevan, cifras del equipo, quiénes somos con
+los seis valores en barras animadas, SCM Group con las doce
+capacidades del grupo, historia en cronología, los siete servicios, nuestro
+enfoque, el equipo con retratos, red de clubes con escudos, actualidad
+enlazada a Instagram, enfoque internacional, el proceso de seis pasos, la
+alianza con Magno y contacto.
 
-SCM dejó de ser una sola página con scroll infinito. Ahora son **ocho páginas
-independientes**, cada una con su URL, su título y su descripción, lo que
-además mejora el posicionamiento: Google indexa "agencia de futbolistas
-Marbella" y "servicios" por separado en vez de todo en un mismo documento.
+En el contacto de SCM solo figura el correo. El teléfono sigue publicado en
+Magno; si tampoco debe aparecer allí, se quita el bloque `contact__channel`
+del teléfono en `magno/index.html`.
 
-La **portada** presenta la compañía y reparte al resto: cifras, tres accesos
-grandes, el arranque de la historia, la red, la alianza con Magno y la
-actualidad. No lo cuenta todo, invita a entrar.
+**Magno**: portada, entrenamiento y rendimiento, vídeos de Instagram,
+lifestyle, los cinco centros, en imágenes, cómo reservar y contacto.
 
-El sitio es HTML plano, sin plantillas, así que **la cabecera y el pie están
-repetidos en las ocho páginas**. Si se cambia un enlace del menú hay que
-cambiarlo en las ocho. Es el precio de no tener que compilar nada para publicar.
-
-## Sistema de diseño
-
-- **Color.** El **rojo de marca** `#f0180c`, sobre varios planos de negro en
-  lugar de uno solo. Tres tonos con función distinta: `--accent` para rellenos,
-  barras e iconos; `--accent-text`, un punto más claro, para cuando el rojo va
-  como texto sobre fondo oscuro, porque el de marca se queda en 3,96:1 sobre
-  los planos más claros; y `--accent-ink`, más oscuro, para las secciones de
-  fondo hueso, donde el rojo de marca tampoco llega.
-- **Tipografía.** Archivo para titulares en mayúsculas con el tracking cerrado
-  e Inter para el texto. Sin serif: el peso lo lleva la Archivo, y las frases
-  de manifiesto se distinguen por tamaño, no por familia.
-- **Profundidad.** Grano de película sobre todo el documento, lavados de color
-  radiales detrás de algunas secciones y degradados de marca donde todavía no
-  hay fotografía. Nunca un bloque de color liso.
-- **Movimiento.** Revelado al entrar en pantalla, contadores, máscara en los
-  titulares, parallax corto solo en escritorio con ratón, cinta de escudos y
-  hover sobre imagen. Todo con `transform` y `opacity`, y todo apagado con
-  `prefers-reduced-motion`.
-- **Sin fundido de salida entre páginas** a propósito: obligaría a retrasar
-  cada clic unos cientos de milisegundos. La entrada sí se anima porque no
-  cuesta nada.
+**Portada del grupo**: pantalla partida entre las dos marcas y la sección que
+explica qué comparten.
 
 ## De dónde sale el contenido
 
-Los servicios, los valores, el proceso y los datos del grupo provienen del
-dossier de la agencia. La historia, la nueva estructura y el tono los
-proporcionó la propiedad.
+Todos los textos, cifras y servicios provienen de los dos dossieres de marca:
+
+- `SCM SPORTS AGENCY.pdf`: quiénes somos, valores, los siete servicios, los
+  cinco enfoques, player management, enfoque internacional, el proceso de seis
+  pasos y la alianza con Magno.
+- `Magno Marbella · Services & Pricing Guide.pdf`: los dos bloques de
+  servicio, los cinco centros deportivos y las condiciones de reserva.
 
 **Las tarifas del dossier de Magno no se publican.** La web habla de servicios
-y remite a propuesta escrita.
+y remite a propuesta escrita. Si en algún momento se decide publicarlas, el
+sitio para hacerlo es la sección `#centros` de `magno/index.html`.
 
 ---
 
 ## Pendiente antes de publicar
 
-### 1. Los nombres de la sección Historia
+### 1. Nombres de los jugadores de la portada
 
-En `scm/historia.html` aparecen tres nombres de futbolistas como referencia
-del entorno en el que trabaja la agencia, con una nota debajo que aclara que no
-implican representación, contrato ni vínculo comercial.
+La portada ya lleva tres fotos reales rotando. Dos de ellas, las de la llegada
+al aeropuerto, salen **sin crédito** porque no sabemos quién es el jugador ni
+en qué club firmaba. Se pone en `data-name` y `data-club` de su diapositiva,
+en `scm/index.html`, y el crédito aparece solo.
 
-**Conviene que lo revise vuestra asesoría jurídica antes de publicar.** Citar
-el nombre de un deportista profesional en una web comercial puede requerir su
-autorización aunque la afirmación sea cierta y aunque no se sugiera relación
-contractual. Los nombres están en un solo sitio del HTML, en el bloque
-`<ul class="names">`, y se quitan o se cambian en un minuto.
+### 2. Escudos de los clubes
 
-### 2. Nombres de los jugadores de la portada
+Los veinte escudos de `assets/img/clubes/` son marcadores con el monograma
+del club. Se sustituye el fichero conservando el nombre y aparecen solos. Ver
+`assets/img/README.md`, que incluye el aviso sobre uso de marcas ajenas.
 
-Dos de las tres fotos del hero salen **sin crédito** porque no sabemos quién es
-el jugador ni en qué club firmaba. Se pone en `data-name` y `data-club` de su
-diapositiva, en `scm/index.html`, y el crédito aparece solo.
+### 3. Fotos y nombres del equipo
 
-### 3. Fotografías
+La sección Equipo tiene seis fichas con "Nombre Apellido" y una silueta. Hay
+que poner los nombres reales en `scm/index.html` y las fotos en `photos.css`.
+Si el equipo es mayor o menor de seis, se añaden o quitan bloques `.member`.
 
-Todo funciona sin fotos: donde va una imagen se pinta un degradado de marca con
-su icono. Para poner las reales se descomentan las líneas de
-`assets/css/photos.css`; no hay que tocar el HTML. El listado con tamaños y
-sugerencias está en `assets/img/README.md`.
+### 4. Fechas de la historia
 
-### 4. Fotos y nombres del equipo
+Los años de la cronología son `20XX`. Hay que sustituirlos por las fechas
+reales o borrar el `<span>` del año si preferís una cronología sin fechas.
 
-La sección Equipo de `scm/agencia.html` tiene seis fichas con "Nombre Apellido"
-y una silueta. Los nombres se ponen en el HTML y las fotos en `photos.css`. Si
-el equipo no son seis, se añaden o se quitan bloques `.member`.
+### 5. Vídeos de Instagram de Magno
 
-### 5. Publicaciones de Actualidad
+Cada tarjeta de la sección de vídeos apunta al perfil general. Hay que poner
+la URL de cada reel en su `href` y la miniatura en `photos.css`.
 
-`scm/actualidad.html` lleva cuatro tarjetas que describen qué se publica en
-cada categoría. Sirven tal cual mientras no haya publicaciones reales.
-
-Cada tarjeta es un bloque `<a class="post">` con un comentario encima que
-explica qué cambiar: la categoría (`data-category` vale `transfers`, `renewals`
-o `daily`), el titular, el texto, el enlace y la variable de la foto. Para
-añadir una publicación se copia el bloque entero.
-
-### 6. Escudos de los clubes
-
-Los veinte escudos de `assets/img/clubes/` son marcadores con el monograma del
-club. Se sustituye el fichero conservando el nombre y aparecen solos, en el
-muro y en las dos cintas. Ver `assets/img/README.md`, que incluye el aviso
-sobre uso de marcas ajenas.
-
-### 7. Cifras que conviene confirmar
-
-La portada publica **10 agentes**, **15 scouts**, **8 mercados con presencia
-directa** y **12 años de experiencia**. Los dos primeros venían del dossier; el
-tercero sale de contar los mercados que el propio dossier enumera.
-
-El cuarto merece una decisión vuestra: el dossier hablaba de **15 años**, pero
-la historia que ahora cuenta la web arranca **en 2014**, y de 2014 a hoy van
-12. Se ha puesto 12 para que las dos cifras de la web no se contradigan. Si el
-recorrido real es de 15 años porque empezó antes, se cambia el `data-count` de
-la cuarta cifra en `scm/index.html` y la fecha de la historia.
-
-Son las cifras que un director deportivo va a mirar primero.
-
-### 8. Redes sociales
+### 6. Redes sociales
 
 Los enlaces apuntan a `instagram.com/scmsportsagency`,
-`youtube.com/@scmsportsagency` y `linkedin.com/company/scm-sports-agency`.
-Conviene comprobarlos y quitar los que no existan todavía.
+`youtube.com/@scmsportsagency`, `linkedin.com/company/scm-sports-agency` y sus
+equivalentes de Magno, deducidos de los dossieres. Conviene comprobarlos y
+quitar los que no existan todavía.
 
-### 9. Logotipos en vectorial
+### 7. Logotipos en vectorial
 
-Los logos actuales se **reconstruyeron a partir de los PDF** de marca. Son PNG
-de unos 500 px de ancho, suficientes para la web actual pero no para crecer ni
-para imprimir. Si aparecen los originales en SVG, AI o EPS, se sustituyen
-`assets/img/logo-scm.png` y `logo-scm-light.png` y se gana nitidez en pantallas
-de alta densidad.
+Los logos que hay ahora se han **reconstruido a partir de los PDF**: se han
+extraído la imagen y su máscara de transparencia y se han recompuesto. Son
+PNG de unos 500 px de ancho, suficientes para la web actual pero no para
+crecer ni para imprimir.
 
-### 10. Textos legales
+Si tenéis los originales en SVG, AI o EPS, sustituid
+`assets/img/logo-scm.png` y `assets/img/logo-magno.png` y ganaréis nitidez en
+pantallas de alta densidad. El CSS los invierte a blanco donde hace falta con
+`filter: invert(1)`, así que un SVG monocromo funcionará igual.
+
+### 8. Fotografías
+
+Todo funciona sin fotos: donde va una imagen se pinta un bloque de color. Para
+poner las reales se descomentan las líneas de `assets/css/photos.css`; no hay
+que tocar el HTML. El listado con tamaños está en `assets/img/README.md`.
+
+Los dos heroes son fotografía a pantalla completa con un velo oscuro encima.
+El de SCM rota tres fotos; el de Magno es fija.
+
+### 9. Textos legales
 
 `legal.html` y `privacidad.html` son **plantillas con la estructura correcta**
-(LSSI-CE y RGPD). Faltan la denominación social, el NIF y los datos
-registrales. Los dos muestran un recuadro de aviso que debe borrarse cuando
-estén revisados por asesoría jurídica: mientras siga ahí, es señal de que no
-están listos.
-
-Nota: al alojar las tipografías en el propio servidor, la web ya **no hace
-ninguna petición a Google**, así que la política de privacidad no tiene que
-mencionarlo.
+(LSSI-CE y RGPD). Ya llevan la dirección, el teléfono y el correo reales, pero
+faltan la denominación social, el NIF y los datos registrales. Los dos
+documentos muestran un recuadro de aviso que debe borrarse cuando estén
+revisados por asesoría jurídica: mientras siga ahí, es señal de que no están
+listos.
 
 ---
 
 ## Cómo se editan los textos
 
 Todo el texto visible vive en los diccionarios `assets/js/i18n-*.js`, en
-español e inglés. El HTML lleva la versión por defecto, que se sustituye al
-cargar la página. Las ocho páginas de SCM comparten `i18n-scm.js`: se edita una
-frase y cambia en todas.
+español e inglés. El HTML solo lleva la versión por defecto, que se sustituye
+al cargar la página.
+
+Para cambiar una frase, se busca su clave y se edita en los dos idiomas:
 
 ```js
-'hero.lead': 'Asesoramiento, gestión y…',    // en el bloque es
-'hero.lead': 'Advice, management and…',      // en el bloque en
+'hero.lead': 'Asesoramos íntegramente a…',   // en el bloque es
+'hero.lead': 'We advise professional…',      // en el bloque en
 ```
 
-El idioma elegido se guarda en el navegador y se mantiene al saltar entre
-páginas. Si el visitante llega con el navegador en inglés, la web arranca en
-inglés sola.
+El idioma elegido se guarda en el navegador y se mantiene al saltar entre las
+tres páginas. Si el visitante llega con el navegador en inglés, la web arranca
+en inglés sola.
 
 Para marcar texto nuevo como traducible:
 
@@ -246,12 +199,12 @@ Para recibir los envíos de verdad, lo más rápido es un servicio de formulario
 (Formspree, Web3Forms, Netlify Forms):
 
 1. Dar de alta el formulario y copiar la URL que dan.
-2. En el `<form>` de `scm/contacto.html`, cambiar `data-mailto-form="…"` por
+2. En el `<form>`, cambiar `data-mailto-form="…"` por
    `action="URL_DEL_SERVICIO" method="POST"`.
 
-El manejador de `site.js` solo actúa sobre formularios con `data-mailto-form`,
-así que al quitar ese atributo el envío pasa a ser normal sin tocar el
-JavaScript.
+El manejador de `site.js` solo actúa sobre formularios con
+`data-mailto-form`, así que al quitar ese atributo el envío pasa a ser normal
+sin tocar el JavaScript.
 
 Los formularios de SCM van a `info@scmsportsagency.com` y los de Magno a
 `magnomarbellaservices@gmail.com`.
@@ -272,40 +225,52 @@ publicación: la raíz (`.`).
 
 ### Dominios
 
-La estructura está pensada para un dominio con dos rutas (`dominio.com/scm/` y
-`dominio.com/magno/`). Recordad cambiar `example.com` por el dominio definitivo
-en `sitemap.xml`, `robots.txt` y las etiquetas `canonical` de cada página.
+La estructura está pensada para un dominio con dos rutas
+(`dominio.com/scm/` y `dominio.com/magno/`). Si cada marca acaba con dominio
+propio, se puede apuntar cada uno a su carpeta desde el hosting; los enlaces
+entre marcas son relativos y habría que revisarlos.
+
+Recordad cambiar `example.com` por el dominio definitivo en `sitemap.xml` y
+`robots.txt`.
 
 ---
 
 ## Detalles técnicos
 
-- **Sin cookies y sin terceros.** Solo `localStorage` para recordar el idioma.
-  Las tipografías se sirven desde el propio dominio, así que no hay ninguna
-  petición externa y no hace falta banner de consentimiento. Si se añade
-  analítica, sí.
-- **Qué tipografía usa cada marca.** SCM va con Archivo e Inter; Magno con
-  Cormorant Garamond e Inter. `assets/css/fonts.css` carga las tres, solo en
-  los subconjuntos latin y latin-ext. Si algún día se quita una familia hay que
-  comprobar antes qué marca la usa: no son intercambiables.
+- **Sin cookies.** Solo `localStorage` para recordar el idioma. Por eso no
+  hace falta banner de consentimiento; si se añade analítica, sí.
 - **Accesibilidad.** Enlace de salto, foco visible, `aria-label` en los
-  controles, `aria-current` en la página activa y respeto a
-  `prefers-reduced-motion`. Todos los textos de SCM pasan el contraste AA;
-  el mínimo medido es 4,56:1, que es el propio rojo de marca sobre el negro.
-- **Rendimiento.** Sin dependencias, sin framework y sin fundido de salida
-  entre páginas. Las animaciones usan solo `transform` y `opacity`, y el
-  parallax recalcula una vez por fotograma con `requestAnimationFrame`.
-- **Comprobado.** En cada cambio se pasa una auditoría automática de las doce
-  páginas en escritorio, tablet y móvil: errores de consola, recursos rotos,
-  desbordamiento horizontal, imágenes deformadas, enlaces sin destino, enlaces
-  internos rotos, cobertura de traducciones y contraste.
+  controles y respeto a `prefers-reduced-motion`. El contraste del selector de
+  idioma está comprobado en las dos marcas y en los dos estados de scroll
+  (mínimo 14,9:1).
+
+  Quedan **dos puntos por debajo del mínimo AA**, los dos por el mismo motivo:
+  el rojo de marca es muy luminoso.
+
+  1. El texto blanco de los botones rojos se queda en **4,34:1** y el mínimo es
+     4,5. Se arregla oscureciendo un punto el relleno del botón (`#e0150b` da
+     4,9) o poniendo el texto en negro (4,84). Las dos opciones cambian algo el
+     aspecto, así que la decisión es de la propiedad.
+  2. El nombre de sección del sello INIMITABLE, cuando cae sobre una sección de
+     fondo claro, da **3,87:1**. Se arregla usando un rojo más oscuro solo en
+     esas secciones (`#c41208` da 5,45).
+
+  No son fallos nuevos: vienen del propio color de marca. Mientras no se
+  decida, conviene saber que están ahí.
+- **Tipografías alojadas aquí, no en Google.** Archivo, Inter, Cormorant
+  Garamond y Jost viven en `assets/fonts/` y se declaran en
+  `assets/css/fonts.css`. La web no hace ninguna petición externa, carga sin
+  una conexión extra y la política de privacidad no tiene que mencionar a
+  Google. Quién usa qué, para no borrar por error la familia de otra marca:
+  Archivo e Inter son de SCM y de la portada del grupo; Cormorant Garamond y
+  Jost son de Magno.
+- **Navegadores.** Se usa `:has()` para el efecto de la portada partida; donde
+  no esté soportado, las dos mitades simplemente no se ensanchan al pasar el
+  ratón.
 - **Apilamiento.** Los heroes llevan `isolation: isolate` porque sus capas de
-  fondo van con `z-index` negativo; sin ese aislamiento se pintarían por detrás
-  del propio fondo de la sección.
-- **Sin rayas en la copia.** Los textos evitan el guion largo a propósito, y
-  los puntos de las listas son rombos, no guiones.
-- **El sello INIMITABLE** del dossier encabeza cada bloque principal, con la
-  barra ámbar delante y el nombre de la sección debajo.
-- **El logotipo de Magno viene ya en blanco.** No hay que invertirlo sobre
-  fondo oscuro: invertirlo lo pinta de negro y desaparece. En la portada del
-  grupo y en la cabecera de Magno, donde el fondo es hueso, sí se invierte.
+  fondo van con `z-index` negativo; sin ese aislamiento se pintarían por
+  detrás del propio fondo de la sección y no se verían.
+- **Secciones claras sobre base oscura.** En SCM, `.section--light` no
+  duplica componentes: solo redefine los tokens de color, así que las mismas
+  clases funcionan sobre fondo claro y oscuro.
+- **Sin rayas en la copia.** Los textos evitan el guion largo a propósito.
