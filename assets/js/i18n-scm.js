@@ -29,8 +29,8 @@ window.I18N_DICT = {
     'stats.2.label': 'Scouts en todo el mundo',
     'stats.2.text':
       'Scouts de primer nivel, con experiencia en grandes clubes europeos, que rastrean el mercado nacional e internacional tanto para clubes como para nuestros jugadores.',
-    'stats.3.label': 'Años de experiencia',
-    'stats.3.text': 'Trayectoria en la gestión integral de jugadores profesionales.',
+    'stats.3.label': 'Años de trayectoria',
+    'stats.3.text': 'Desde 2014 en Marbella, primero en el rendimiento y el entorno y después también en la carrera.',
 
     'about.section': 'Quiénes somos',
     'about.title': 'Cada carrera es <em>única</em>',
@@ -69,25 +69,78 @@ window.I18N_DICT = {
 
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
-    'history.section': 'Historia',
-    'history.title': 'De una oficina en Marbella a <em>cinco ligas</em>',
+    'history.section': 'Nuestra historia',
+    'history.title':
+      'De pioneros en el rendimiento de élite a una <em>agencia de representación global</em>',
     'history.lead':
-      'Quince años acompañando carreras. Estos son los momentos que explican cómo trabajamos hoy.',
-    'history.1.title': 'Los primeros jugadores',
-    'history.1.text':
-      'La agencia nace en Marbella con una idea sencilla: pocos jugadores, muy atendidos. El modelo de plan personalizado por futbolista se define desde el primer día.',
-    'history.2.title': 'El salto a Europa',
-    'history.2.text':
-      'Se incorporan agentes en Italia, Portugal, Inglaterra y Bélgica. La cartera empieza a moverse fuera de España y se abre la red de contactos con clubes europeos.',
-    'history.3.title': 'El modelo 360º',
-    'history.3.text':
-      'Entran en el equipo psicólogos, nutricionistas y preparadores. La agencia deja de ser solo representación y pasa a cubrir salud, rendimiento, imagen y finanzas.',
-    'history.4.title': 'Scouting propio',
-    'history.4.text':
-      'Se consolida una red de más de quince scouts internos con experiencia en grandes clubes, repartidos por Europa, Asia y Oriente Medio.',
-    'history.5.title': 'Alianza con Magno Marbella',
-    'history.5.text':
-      'La Costa del Sol se convierte en base de pretemporadas y training camps. Magno se integra como socio estratégico para todo lo que ocurre fuera del campo.',
+      'Nacidos en la raíz de Magno Marbella en 2014. Un ecosistema boutique 360º alrededor del futbolista profesional.',
+
+    'legacy.1.label': 'Años de trayectoria',
+    'legacy.1.note': 'Desde 2014, primero en el rendimiento y el entorno, después también en la carrera.',
+    'legacy.2.label': 'Jugadores al año',
+    'legacy.2.note': 'Los que pasan cada temporada por Magno Marbella.',
+    'legacy.3.label': 'Años de representación',
+    'legacy.3.note': 'Trayectoria directa de SCM en el mercado de intermediación.',
+    'legacy.4.label': 'Ligas de operación',
+    'legacy.4.note': 'España, Italia, Bélgica y Reino Unido, más el mercado internacional.',
+
+    'ch1.when': '2014',
+    'ch1.where': 'Marbella · Magno Marbella',
+    'ch1.title': 'El origen: la excelencia en el detalle',
+    'ch1.p1':
+      'SCM no nace en un despacho. Nace sobre el terreno de juego y en el entorno más exigente del fútbol de élite. En 2014 arranca <strong>Magno Marbella</strong> con una visión clara: gestionar el lifestyle, la preparación física y el bienestar del futbolista durante sus vacaciones y su pretemporada.',
+    'ch1.p2':
+      'Fuimos <strong>pioneros en el entrenamiento individualizado para futbolistas de élite en su periodo de descanso</strong>. En una época en la que esa cultura no existía, convertimos el tiempo libre en preparación para llegar a la pretemporada al máximo nivel.',
+    'ch1.p3':
+      'Lo que empezó con Sam trabajando de forma artesanal es hoy un equipo multidisciplinar con más de cinco profesionales fijos en temporada alta.',
+
+    'ch2.when': 'El entorno',
+    'ch2.where': 'Blindado al 100 %',
+    'ch2.title': 'Para rendir en el campo, todo lo de fuera tiene que estar resuelto',
+    'ch2.p1':
+      'Un futbolista no rinde si tiene la cabeza en la logística. Por eso el servicio cubre todo lo que ocurre alrededor, con la misma exigencia que el entrenamiento.',
+    'ch2.i1.title': 'Logística y desplazamientos',
+    'ch2.i1.text': 'Aviación privada, recogidas en aeropuerto y flota de alta gama.',
+    'ch2.i2.title': 'Alojamiento',
+    'ch2.i2.text': 'Villas privadas y hoteles de lujo, con la discreción que hace falta.',
+    'ch2.i3.title': 'Rendimiento y metodología',
+    'ch2.i3.text':
+      'Sesiones individuales en campo y gimnasio con nuestros preparadores, para hacer evolucionar al jugador y potenciar su rendimiento físico y táctico.',
+    'ch2.i4.title': 'Experiencias y ocio',
+    'ch2.i4.text': 'Gestión completa del tiempo libre, sin que el jugador tenga que resolver nada.',
+
+    'ch3.when': 'La confianza',
+    'ch3.where': 'De Marbella al mercado',
+    'ch3.title': 'De gestionar el entorno a gestionar la carrera',
+    'ch3.p1':
+      'La confianza no se impone, se gana con hechos. Del trato cercano y protegido en Marbella salió que los propios jugadores nos pidieran dar el siguiente paso: <strong>la gestión directa de su carrera y la intermediación en sus fichajes</strong>.',
+    'ch3.p2':
+      'Entendimos que el acompañamiento de aquellas semanas intensas era el mismo que necesitaban durante todo el año. De ahí salieron las primeras operaciones en <strong>España, Italia, Bélgica y el mercado internacional</strong>.',
+    'ch3.namesTitle': 'Por nuestras instalaciones han pasado, entre otros',
+    'ch3.note':
+      'Estos nombres se citan como referencia del entorno en el que trabajamos. No implican representación, contrato ni vínculo comercial actual con SCM Sports Agency.',
+
+    'ch4.when': 'SCM hoy',
+    'ch4.where': 'Servicio boutique · Mentalidad global',
+    'ch4.title': 'El ecosistema SCM',
+    'ch4.p1':
+      'Con la base de Magno Marbella y más de siete años de trayectoria directa en representación, creamos <strong>SCM Sports Agency</strong>. Trasladamos la misma metodología a un modelo de agencia boutique.',
+    'ch4.p2':
+      'Somos una empresa con <strong>mentalidad internacional por ADN</strong>. La ubicación en Marbella y una red sin fronteras nos permiten conectar el talento con los clubes y los mercados más competitivos. Aquí el futbolista no es un número: es un proyecto integral donde cuidamos su rendimiento, su entorno y su carrera.',
+
+    'gallery.title': 'El archivo',
+    'gallery.lead':
+      'Los primeros entrenamientos, los primeros veranos y la gente que pasó por aquí antes de que esto fuera una agencia.',
+
+    'pillars.title': 'Lo que cubre el ecosistema',
+    'pillars.1.title': 'Entrenamiento individualizado',
+    'pillars.1.text': 'Campo y gimnasio con preparadores propios y metodología definida.',
+    'pillars.2.title': 'Aviación privada y logística VIP',
+    'pillars.2.text': 'Vuelos, traslados y flota de alta gama, coordinados de puerta a puerta.',
+    'pillars.3.title': 'Villas y hoteles',
+    'pillars.3.text': 'Alojamiento exclusivo en la Costa del Sol, con servicio y seguridad.',
+    'pillars.4.title': 'Gestión de carrera',
+    'pillars.4.text': 'Intermediación, contratos y decisiones de carrera durante todo el año.',
 
     'services.section': 'Nuestros servicios',
     'services.title': 'Una agencia 360º',
@@ -319,7 +372,7 @@ window.I18N_DICT = {
     'stats.2.label': 'Scouts worldwide',
     'stats.2.text':
       'Top-level scouts, with experience at major European clubs, covering the domestic and international market both for clubs and for our players.',
-    'stats.3.label': 'Years of experience',
+    'stats.3.label': 'Years of track record',
     'stats.3.text': 'A track record in the complete management of professional players.',
 
     'about.section': 'Who we are',
@@ -359,25 +412,78 @@ window.I18N_DICT = {
 
     'statement.1': 'Our competence <em>completes</em> your talent',
 
-    'history.section': 'History',
-    'history.title': 'From one office in Marbella to <em>five leagues</em>',
+    'history.section': 'Our story',
+    'history.title':
+      'From pioneers in elite performance to a <em>global representation agency</em>',
     'history.lead':
-      'Fifteen years alongside careers. These are the moments that explain how we work today.',
-    'history.1.title': 'The first players',
-    'history.1.text':
-      'The agency starts in Marbella with a simple idea: few players, properly looked after. The tailored plan per footballer is defined from day one.',
-    'history.2.title': 'Into Europe',
-    'history.2.text':
-      'Agents join in Italy, Portugal, England and Belgium. The portfolio starts moving outside Spain and the network of European club contacts opens up.',
-    'history.3.title': 'The 360º model',
-    'history.3.text':
-      'Psychologists, nutritionists and fitness coaches join the team. The agency stops being only representation and starts covering health, performance, image and finances.',
-    'history.4.title': 'In-house scouting',
-    'history.4.text':
-      'A network of more than fifteen in-house scouts with big-club experience takes shape across Europe, Asia and the Middle East.',
-    'history.5.title': 'The Magno Marbella alliance',
-    'history.5.text':
-      'The Costa del Sol becomes a base for pre-seasons and training camps. Magno joins as the strategic partner for everything off the pitch.',
+      'Born out of Magno Marbella in 2014. A boutique 360º ecosystem around the professional footballer.',
+
+    'legacy.1.label': 'Years of track record',
+    'legacy.1.note': 'Since 2014, first in performance and environment, later in careers too.',
+    'legacy.2.label': 'Players a year',
+    'legacy.2.note': 'Those who come through Magno Marbella every season.',
+    'legacy.3.label': 'Years in representation',
+    'legacy.3.note': 'SCM\u2019s direct track record in the transfer market.',
+    'legacy.4.label': 'Leagues we operate in',
+    'legacy.4.note': 'Spain, Italy, Belgium and the United Kingdom, plus the wider market.',
+
+    'ch1.when': '2014',
+    'ch1.where': 'Marbella · Magno Marbella',
+    'ch1.title': 'The origin: excellence in the detail',
+    'ch1.p1':
+      'SCM was not born in an office. It was born on the pitch and in the most demanding corner of elite football. In 2014 <strong>Magno Marbella</strong> started with a clear idea: managing the lifestyle, the physical preparation and the wellbeing of footballers during their holidays and pre-season.',
+    'ch1.p2':
+      'We were <strong>pioneers in individual training for elite footballers during their time off</strong>. At a point when that culture did not exist, we turned downtime into preparation for reaching pre-season at full level.',
+    'ch1.p3':
+      'What began with Sam working one to one is now a multidisciplinary team with more than five full-time professionals in high season.',
+
+    'ch2.when': 'The environment',
+    'ch2.where': 'Fully covered',
+    'ch2.title': 'To perform on the pitch, everything off it has to be solved',
+    'ch2.p1':
+      'A footballer cannot perform with his mind on logistics. That is why the service covers everything around him, held to the same standard as the training.',
+    'ch2.i1.title': 'Logistics and travel',
+    'ch2.i1.text': 'Private aviation, airport pick-ups and a high-end vehicle fleet.',
+    'ch2.i2.title': 'Accommodation',
+    'ch2.i2.text': 'Private villas and luxury hotels, with the discretion it takes.',
+    'ch2.i3.title': 'Performance and method',
+    'ch2.i3.text':
+      'Individual sessions on the pitch and in the gym with our own coaches, to move the player forward and sharpen his physical and tactical level.',
+    'ch2.i4.title': 'Experiences and leisure',
+    'ch2.i4.text': 'Free time handled end to end, with nothing left for the player to sort out.',
+
+    'ch3.when': 'Trust',
+    'ch3.where': 'From Marbella to the market',
+    'ch3.title': 'From managing the environment to managing the career',
+    'ch3.p1':
+      'Trust is not imposed, it is earned. Out of that close, protected treatment in Marbella came the players themselves asking us to take the next step: <strong>running their careers directly and handling their transfers</strong>.',
+    'ch3.p2':
+      'We understood that the support of those intense weeks was the same they needed all year round. From there came the first deals in <strong>Spain, Italy, Belgium and the international market</strong>.',
+    'ch3.namesTitle': 'Among those who have come through our facilities',
+    'ch3.note':
+      'These names are cited as a reference to the environment we work in. They do not imply representation, a contract or any current commercial tie to SCM Sports Agency.',
+
+    'ch4.when': 'SCM today',
+    'ch4.where': 'Boutique service · Global mindset',
+    'ch4.title': 'The SCM ecosystem',
+    'ch4.p1':
+      'On the base of Magno Marbella and more than seven years of direct experience in representation, we created <strong>SCM Sports Agency</strong>. We carried the same method into a boutique agency model.',
+    'ch4.p2':
+      'We are a company with an <strong>international mindset by DNA</strong>. Our base in Marbella and a network without borders let us connect talent with the most competitive clubs and markets. Here a footballer is not a number: he is a complete project covering his performance, his environment and his career.',
+
+    'gallery.title': 'The archive',
+    'gallery.lead':
+      'The first training sessions, the first summers and the people who came through before this was an agency.',
+
+    'pillars.title': 'What the ecosystem covers',
+    'pillars.1.title': 'Individual training',
+    'pillars.1.text': 'Pitch and gym with our own coaches and a defined method.',
+    'pillars.2.title': 'Private aviation and VIP logistics',
+    'pillars.2.text': 'Flights, transfers and a high-end fleet, coordinated door to door.',
+    'pillars.3.title': 'Villas and hotels',
+    'pillars.3.text': 'Exclusive accommodation on the Costa del Sol, with service and security.',
+    'pillars.4.title': 'Career management',
+    'pillars.4.text': 'Transfers, contracts and career decisions, all year round.',
 
     'services.section': 'Our services',
     'services.title': 'A 360º agency',

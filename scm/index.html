@@ -164,8 +164,8 @@
             </div>
             <div class="stat" data-reveal style="--reveal-delay: 0.16s">
               <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="2.4" /><path d="M24 13v6l4 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M16 29l-3 15 11-6 11 6-3-15" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
-              <p class="stat__value"><span>+</span><span data-count="15">15</span></p>
-              <p class="stat__label" data-i18n="stats.3.label">Años de experiencia</p>
+              <p class="stat__value"><span>+</span><span data-count="10">10</span></p>
+              <p class="stat__label" data-i18n="stats.3.label">Años de trayectoria</p>
               <p class="stat__text" data-i18n="stats.3.text">
                 En la gestión integral de jugadores profesionales.
               </p>
@@ -347,61 +347,243 @@
       </section>
 
       <!-- ================================================= historia ====
-           Los años son PROVISIONALES. Sustituir por las fechas reales de la
-           agencia antes de publicar, o borrar el <span> del año si preferís
-           una cronología sin fechas. -->
+           El relato de la marca. Los nombres del capítulo 3 se citan como
+           referencia del entorno, con su nota legal justo debajo: conviene que
+           lo revise la asesoría antes de publicar. Ver README.
+
+           La galería son seis huecos vacíos. La foto se enchufa en
+           assets/css/photos.css y el nombre, el año y el lugar se escriben
+           aquí, en cada figure. -->
       <section class="section" id="historia">
         <div class="container">
           <div class="tag" data-reveal>
             <p class="tag__mark">Inimitable</p>
-            <p class="tag__section" data-i18n="history.section">Historia</p>
+            <p class="tag__section" data-i18n="history.section">Nuestra historia</p>
           </div>
 
           <h2 class="section__title" data-i18n-html="history.title" data-reveal>
-            De una oficina en Marbella a <em>cinco ligas</em>
+            De pioneros en el rendimiento de élite a una
+            <em>agencia de representación global</em>
           </h2>
-          <p class="section__lead" data-i18n="history.lead" data-reveal>
-            Quince años acompañando carreras.
+          <p
+            class="section__lead"
+            data-i18n="history.lead"
+            data-reveal
+            style="margin-bottom: clamp(2.5rem, 6vw, 4rem)"
+          >
+            Nacidos en la raíz de Magno Marbella en 2014. Un ecosistema boutique 360º alrededor
+            del futbolista profesional.
           </p>
 
-          <div class="history__timeline">
-            <article class="milestone" data-reveal>
-              <p class="milestone__year">20XX</p>
-              <h3 class="milestone__title" data-i18n="history.1.title">Los primeros jugadores</h3>
-              <p class="milestone__text" data-i18n="history.1.text">
-                La agencia nace en Marbella con una idea sencilla.
-              </p>
+          <div class="legacy__grid">
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.00s">
+              <p class="legacy__value"><span class="legacy__plus" aria-hidden="true">+</span><span data-count="10">10</span></p>
+              <h3 class="legacy__label" data-i18n="legacy.1.label">Etiqueta</h3>
+              <p class="legacy__note" data-i18n="legacy.1.note">Nota</p>
             </article>
-            <article class="milestone" data-reveal>
-              <p class="milestone__year">20XX</p>
-              <h3 class="milestone__title" data-i18n="history.2.title">El salto a Europa</h3>
-              <p class="milestone__text" data-i18n="history.2.text">
-                Se incorporan agentes en Italia, Portugal, Inglaterra y Bélgica.
-              </p>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.08s">
+              <p class="legacy__value"><span class="legacy__plus" aria-hidden="true">+</span><span data-count="70">70</span></p>
+              <h3 class="legacy__label" data-i18n="legacy.2.label">Etiqueta</h3>
+              <p class="legacy__note" data-i18n="legacy.2.note">Nota</p>
             </article>
-            <article class="milestone" data-reveal>
-              <p class="milestone__year">20XX</p>
-              <h3 class="milestone__title" data-i18n="history.3.title">El modelo 360º</h3>
-              <p class="milestone__text" data-i18n="history.3.text">
-                Entran psicólogos, nutricionistas y preparadores.
-              </p>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.16s">
+              <p class="legacy__value"><span class="legacy__plus" aria-hidden="true">+</span><span data-count="7">7</span></p>
+              <h3 class="legacy__label" data-i18n="legacy.3.label">Etiqueta</h3>
+              <p class="legacy__note" data-i18n="legacy.3.note">Nota</p>
             </article>
-            <article class="milestone" data-reveal>
-              <p class="milestone__year">20XX</p>
-              <h3 class="milestone__title" data-i18n="history.4.title">Scouting propio</h3>
-              <p class="milestone__text" data-i18n="history.4.text">
-                Más de quince scouts internos repartidos por el mundo.
-              </p>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.24s">
+              <p class="legacy__value"><span data-count="4">4</span></p>
+              <h3 class="legacy__label" data-i18n="legacy.4.label">Etiqueta</h3>
+              <p class="legacy__note" data-i18n="legacy.4.note">Nota</p>
             </article>
-            <article class="milestone" data-reveal>
-              <p class="milestone__year">20XX</p>
-              <h3 class="milestone__title" data-i18n="history.5.title">
-                Alianza con Magno Marbella
-              </h3>
-              <p class="milestone__text" data-i18n="history.5.text">
-                La Costa del Sol se convierte en base de pretemporadas.
-              </p>
+          </div>
+
+          <div class="chapters">
+            <article class="chapter" data-reveal>
+              <div>
+                <p class="chapter__when" data-i18n="ch1.when">2014</p>
+                <span class="chapter__where" data-i18n="ch1.where">Marbella · Magno Marbella</span>
+              </div>
+              <div>
+                <h3 class="chapter__title" data-i18n="ch1.title">
+                  El origen: la excelencia en el detalle
+                </h3>
+                <p class="chapter__text" data-i18n-html="ch1.p1">SCM no nace en un despacho.</p>
+                <p class="chapter__text" data-i18n-html="ch1.p2">Fuimos pioneros.</p>
+                <p class="chapter__text" data-i18n-html="ch1.p3">Hoy es un equipo multidisciplinar.</p>
+              </div>
             </article>
+
+            <article class="chapter" data-reveal>
+              <div>
+                <p class="chapter__when" data-i18n="ch2.when">El entorno</p>
+                <span class="chapter__where" data-i18n="ch2.where">Blindado al 100 %</span>
+              </div>
+              <div>
+                <h3 class="chapter__title" data-i18n="ch2.title">
+                  Para rendir en el campo, todo lo de fuera tiene que estar resuelto
+                </h3>
+                <p class="chapter__text" data-i18n="ch2.p1">
+                  Un futbolista no rinde si tiene la cabeza en la logística.
+                </p>
+                <ul class="chapter__list">
+                <li>
+                  <b data-i18n="ch2.i1.title">Título</b>
+                  <span data-i18n="ch2.i1.text">Texto</span>
+                </li>
+                <li>
+                  <b data-i18n="ch2.i2.title">Título</b>
+                  <span data-i18n="ch2.i2.text">Texto</span>
+                </li>
+                <li>
+                  <b data-i18n="ch2.i3.title">Título</b>
+                  <span data-i18n="ch2.i3.text">Texto</span>
+                </li>
+                <li>
+                  <b data-i18n="ch2.i4.title">Título</b>
+                  <span data-i18n="ch2.i4.text">Texto</span>
+                </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="chapter" data-reveal>
+              <div>
+                <p class="chapter__when" data-i18n="ch3.when">La confianza</p>
+                <span class="chapter__where" data-i18n="ch3.where">De Marbella al mercado</span>
+              </div>
+              <div>
+                <h3 class="chapter__title" data-i18n="ch3.title">
+                  De gestionar el entorno a gestionar la carrera
+                </h3>
+                <p class="chapter__text" data-i18n-html="ch3.p1">La confianza se gana con hechos.</p>
+                <p class="chapter__text" data-i18n-html="ch3.p2">
+                  De ahí salieron las primeras operaciones.
+                </p>
+
+                <p
+                  class="legacy__label"
+                  style="margin-top: var(--space-xl)"
+                  data-i18n="ch3.namesTitle"
+                >
+                  Por nuestras instalaciones han pasado, entre otros
+                </p>
+                <ul class="names"><li>Marcus Rashford</li><li>Gareth Bale</li><li>James Rodríguez</li><li>Manuel Lanzini</li><li>Noni Madueke</li><li>Dean Huijsen</li><li>Samuel Chukwueze</li><li>Orbelín Pineda</li></ul>
+                <p class="names__note" data-i18n="ch3.note">
+                  Estos nombres se citan como referencia del entorno en el que trabajamos.
+                </p>
+              </div>
+            </article>
+
+            <article class="chapter" data-reveal>
+              <div>
+                <p class="chapter__when" data-i18n="ch4.when">SCM hoy</p>
+                <span class="chapter__where" data-i18n="ch4.where">
+                  Servicio boutique · Mentalidad global
+                </span>
+              </div>
+              <div>
+                <h3 class="chapter__title" data-i18n="ch4.title">El ecosistema SCM</h3>
+                <p class="chapter__text" data-i18n-html="ch4.p1">Creamos SCM Sports Agency.</p>
+                <p class="chapter__text" data-i18n-html="ch4.p2">
+                  Mentalidad internacional por ADN.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <h3
+            class="section__title"
+            style="font-size: clamp(1.4rem, 2.6vw, 2rem); margin-top: clamp(3rem, 7vw, 5rem)"
+            data-i18n="pillars.title"
+            data-reveal
+          >
+            Lo que cubre el ecosistema
+          </h3>
+          <div class="pillars">
+            <article class="pillar" data-reveal style="--reveal-delay: 0.00s">
+              <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 6v6"/><circle cx="16" cy="4" r="1.6"/><path d="M9 26l4-9h6l4 9"/><path d="M11 13l5-1 5 1"/><path d="M5 26h22"/></svg></span>
+              <h3 class="pillar__title" data-i18n="pillars.1.title">Entrenamiento individualizado</h3>
+              <p class="pillar__text" data-i18n="pillars.1.text">Texto</p>
+            </article>
+            <article class="pillar" data-reveal style="--reveal-delay: 0.07s">
+              <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l26-8-6 11-5-2-3 6-2-6z"/><path d="M18 18l7-7"/></svg></span>
+              <h3 class="pillar__title" data-i18n="pillars.2.title">Aviación privada y logística VIP</h3>
+              <p class="pillar__text" data-i18n="pillars.2.text">Texto</p>
+            </article>
+            <article class="pillar" data-reveal style="--reveal-delay: 0.14s">
+              <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15L16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-7h6v7"/></svg></span>
+              <h3 class="pillar__title" data-i18n="pillars.3.title">Villas y hoteles</h3>
+              <p class="pillar__text" data-i18n="pillars.3.text">Texto</p>
+            </article>
+            <article class="pillar" data-reveal style="--reveal-delay: 0.21s">
+              <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 25l6-6 5 3 5-8 6 5"/><circle cx="11" cy="19" r="1.8"/><circle cx="21" cy="14" r="1.8"/><path d="M5 28h22"/><path d="M26 5v6h-6"/></svg></span>
+              <h3 class="pillar__title" data-i18n="pillars.4.title">Gestión de carrera</h3>
+              <p class="pillar__text" data-i18n="pillars.4.text">Texto</p>
+            </article>
+          </div>
+
+          <h3
+            class="section__title"
+            style="font-size: clamp(1.4rem, 2.6vw, 2rem); margin-top: clamp(3rem, 7vw, 5rem)"
+            data-i18n="gallery.title"
+            data-reveal
+          >
+            El archivo
+          </h3>
+          <p class="section__lead" data-i18n="gallery.lead" data-reveal>
+            Los primeros entrenamientos, los primeros veranos y la gente que pasó por aquí antes
+            de que esto fuera una agencia.
+          </p>
+          <div class="gallery">
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy1)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Nombre del jugador</span>
+                <span class="shot__meta">2014 · Marbella Football Center</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy2)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Nombre del jugador</span>
+                <span class="shot__meta">2016 · Dama de Noche</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy3)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Nombre del jugador</span>
+                <span class="shot__meta">2018 · Marbella Football Center</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy4)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Nombre del jugador</span>
+                <span class="shot__meta">2020 · Marbella</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy5)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Nombre del jugador</span>
+                <span class="shot__meta">2022 · Dama de Noche</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy6)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Nombre del jugador</span>
+                <span class="shot__meta">2024 · Marbella</span>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

@@ -94,43 +94,58 @@ sitio para hacerlo es la sección `#centros` de `magno/index.html`.
 
 ## Pendiente antes de publicar
 
-### 1. Nombres de los jugadores de la portada
+### 1. Los nombres de la sección Historia
+
+En el tercer capítulo aparecen ocho futbolistas citados como referencia del
+entorno en el que trabaja la agencia, con una nota debajo que aclara que no
+implican representación, contrato ni vínculo comercial actual.
+
+**Conviene que lo revise vuestra asesoría jurídica antes de publicar.** Citar
+el nombre de un deportista profesional en una web comercial puede requerir su
+autorización aunque la afirmación sea cierta y aunque no se sugiera relación
+contractual. Cuanto más conocido es el nombre, más conviene tenerlo por
+escrito. Están en un solo sitio del HTML, en el bloque `<ul class="names">` de
+la sección Historia, y se quitan o se cambian en un minuto.
+
+### 2. La galería de archivo
+
+Los seis huecos de la galería están vacíos. Cada foto se enchufa en
+`assets/css/photos.css` (`--photo-legacy1` a `--photo-legacy6`) y el nombre, el
+año y el lugar se escriben en su `<figure>` de `scm/index.html`. Al pasar el
+ratón aparece ese pie sobre la foto.
+
+### 3. Nombres de los jugadores de la portada
 
 La portada ya lleva tres fotos reales rotando. Dos de ellas, las de la llegada
 al aeropuerto, salen **sin crédito** porque no sabemos quién es el jugador ni
 en qué club firmaba. Se pone en `data-name` y `data-club` de su diapositiva,
 en `scm/index.html`, y el crédito aparece solo.
 
-### 2. Escudos de los clubes
+### 4. Escudos de los clubes
 
 Los veinte escudos de `assets/img/clubes/` son marcadores con el monograma
 del club. Se sustituye el fichero conservando el nombre y aparecen solos. Ver
 `assets/img/README.md`, que incluye el aviso sobre uso de marcas ajenas.
 
-### 3. Fotos y nombres del equipo
+### 5. Fotos y nombres del equipo
 
 La sección Equipo tiene seis fichas con "Nombre Apellido" y una silueta. Hay
 que poner los nombres reales en `scm/index.html` y las fotos en `photos.css`.
 Si el equipo es mayor o menor de seis, se añaden o quitan bloques `.member`.
 
-### 4. Fechas de la historia
-
-Los años de la cronología son `20XX`. Hay que sustituirlos por las fechas
-reales o borrar el `<span>` del año si preferís una cronología sin fechas.
-
-### 5. Vídeos de Instagram de Magno
+### 6. Vídeos de Instagram de Magno
 
 Cada tarjeta de la sección de vídeos apunta al perfil general. Hay que poner
 la URL de cada reel en su `href` y la miniatura en `photos.css`.
 
-### 6. Redes sociales
+### 7. Redes sociales
 
 Los enlaces apuntan a `instagram.com/scmsportsagency`,
 `youtube.com/@scmsportsagency`, `linkedin.com/company/scm-sports-agency` y sus
 equivalentes de Magno, deducidos de los dossieres. Conviene comprobarlos y
 quitar los que no existan todavía.
 
-### 7. Logotipos en vectorial
+### 8. Logotipos en vectorial
 
 Los logos que hay ahora se han **reconstruido a partir de los PDF**: se han
 extraído la imagen y su máscara de transparencia y se han recompuesto. Son
@@ -142,7 +157,7 @@ Si tenéis los originales en SVG, AI o EPS, sustituid
 pantallas de alta densidad. El CSS los invierte a blanco donde hace falta con
 `filter: invert(1)`, así que un SVG monocromo funcionará igual.
 
-### 8. Fotografías
+### 9. Fotografías
 
 Todo funciona sin fotos: donde va una imagen se pinta un bloque de color. Para
 poner las reales se descomentan las líneas de `assets/css/photos.css`; no hay
@@ -151,7 +166,7 @@ que tocar el HTML. El listado con tamaños está en `assets/img/README.md`.
 Los dos heroes son fotografía a pantalla completa con un velo oscuro encima.
 El de SCM rota tres fotos; el de Magno es fija.
 
-### 9. Textos legales
+### 10. Textos legales
 
 `legal.html` y `privacidad.html` son **plantillas con la estructura correcta**
 (LSSI-CE y RGPD). Ya llevan la dirección, el teléfono y el correo reales, pero

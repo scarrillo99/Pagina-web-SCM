@@ -35,6 +35,20 @@
   /* --photo-team5: url('../img/equipo-5.jpg'); */
   /* --photo-team6: url('../img/equipo-6.jpg'); */
 
+  /* --- Archivo de la historia -------------------------------------------
+     Horizontales 4:3, 1200 x 900. Son las fotos antiguas: los primeros
+     entrenamientos y los primeros veranos en Marbella. Se ven en blanco y
+     negro y recuperan el color al pasar el ratón.
+
+     El nombre, el año y el lugar de cada una NO se ponen aquí: se escriben
+     en su <figure> de scm/index.html, dentro de la sección Historia. */
+  /* --photo-legacy1: url('../img/archivo-1.jpg'); */
+  /* --photo-legacy2: url('../img/archivo-2.jpg'); */
+  /* --photo-legacy3: url('../img/archivo-3.jpg'); */
+  /* --photo-legacy4: url('../img/archivo-4.jpg'); */
+  /* --photo-legacy5: url('../img/archivo-5.jpg'); */
+  /* --photo-legacy6: url('../img/archivo-6.jpg'); */
+
   /* --- Actualidad de SCM ------------------------------------------------
      Horizontales 16:10, 1200 x 750.
      Sugerencia con el material que hay: la firma del contrato en la 1, la

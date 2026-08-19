@@ -718,57 +718,445 @@ body {
   }
 }
 
-/* ---------------------------------------------------------------- historia */
+/* ---------------------------------------------------------------- historia
 
-.history__timeline {
-  margin-top: var(--space-2xl);
-  display: grid;
-  gap: 0;
-}
+   El relato de la marca: cifras de trayectoria, capítulos colgando de un raíl,
+   galería de archivo y las cuatro capacidades del ecosistema. Es la sección
+   más larga de la página, así que cada bloque lleva su propio ritmo para que
+   no se lea como una lista.
+   -------------------------------------------------------------------------- */
 
-.milestone {
+/* --- cifras de trayectoria --- */
+
+.legacy__grid {
   display: grid;
-  gap: var(--space-sm) var(--space-xl);
-  padding-block: var(--space-xl);
   border-top: 1px solid var(--line);
-  align-items: start;
-  transition: background-color 0.35s var(--ease);
+  border-left: 1px solid var(--line);
+  margin-bottom: clamp(3rem, 8vw, 5.5rem);
 }
 
-@media (min-width: 780px) {
-  .milestone {
-    grid-template-columns: 9rem 1fr 1.2fr;
-    align-items: baseline;
+@media (min-width: 560px) {
+  .legacy__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.milestone:last-child {
-  border-bottom: 1px solid var(--line);
+@media (min-width: 1000px) {
+  .legacy__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.milestone__year {
+.legacy__item {
+  position: relative;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.legacy__item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--red), transparent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.7s var(--ease);
+}
+
+.legacy__item.is-visible::after {
+  transform: scaleY(1);
+}
+
+.legacy__value {
+  display: flex;
+  align-items: baseline;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(2.6rem, 5.4vw, 3.9rem);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: var(--space-md);
+}
+
+.legacy__plus {
   color: var(--red);
+  margin-right: 0.05em;
+}
+
+.legacy__label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.legacy__note {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* --- capítulos del relato --- */
+
+.chapter {
+  position: relative;
+  display: grid;
+  gap: var(--space-lg);
+  padding: clamp(2.2rem, 5vw, 3.4rem) 0 clamp(2.2rem, 5vw, 3.4rem) clamp(1.8rem, 4vw, 3.2rem);
+}
+
+@media (min-width: 900px) {
+  .chapter {
+    grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+    gap: clamp(2rem, 4vw, 3.5rem);
+    align-items: start;
+  }
+}
+
+/* El raíl es un borde del propio bloque: así no hay que dibujar una línea
+   absoluta que se descuadre al cambiar el alto del contenido. */
+.chapter::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+.chapter::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: clamp(2.2rem, 5vw, 3.4rem);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--red);
+  transform: translate(-50%, -3px) scale(0.4);
+  opacity: 0;
+  transition: transform 0.6s var(--ease), opacity 0.5s var(--ease);
+}
+
+.chapter.is-visible::after {
+  transform: translate(-50%, -3px) scale(1);
+  opacity: 1;
+}
+
+.chapter:last-of-type::after {
+  background: var(--red);
+}
+
+.chapter__when {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  letter-spacing: -0.03em;
   line-height: 1;
+  color: var(--red);
   font-variant-numeric: tabular-nums;
 }
 
-.milestone__title {
-  font-family: var(--font-display);
-  font-weight: 700;
+.chapter__where {
+  display: block;
+  margin-top: 0.55rem;
+  font-family: var(--font-body);
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
-.milestone__text {
+.chapter__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  line-height: 1;
+  margin-bottom: var(--space-md);
+}
+
+.chapter__text {
+  font-size: 1rem;
+  line-height: 1.72;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.7;
+  max-width: 58ch;
+}
+
+.chapter__text + .chapter__text {
+  margin-top: var(--space-md);
+}
+
+.chapter__text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Desglose de servicios dentro de un capítulo. */
+.chapter__list {
+  display: grid;
+  gap: 0;
+  margin-top: var(--space-lg);
+  border-top: 1px solid var(--line);
+  max-width: 58ch;
+}
+
+.chapter__list li {
+  display: grid;
+  gap: 0.2rem;
+  padding-block: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.chapter__list b {
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.chapter__list span {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* Nombres de referencia, con su nota al pie justo debajo. */
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: var(--space-lg);
+}
+
+.names li {
+  padding: 0.5rem 0.95rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  transition: border-color 0.4s var(--ease), color 0.4s var(--ease);
+}
+
+.names li:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.names__note {
+  margin-top: var(--space-md);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 58ch;
+}
+
+/* --- galería de archivo --- */
+
+.gallery {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.shot {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background-color: var(--surface-3);
+  /* Sin foto de archivo queda el degradado de marca, con relieve, en lugar de
+     un rectángulo plano que parece un fallo de carga. */
+  background-image: var(
+    --photo,
+    radial-gradient(90% 90% at 70% 15%, rgba(240, 24, 12, 0.16), transparent 62%),
+    radial-gradient(70% 70% at 10% 90%, rgba(150, 150, 160, 0.09), transparent 60%)
+  );
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  filter: grayscale(1);
+  transition: filter 0.6s var(--ease);
+}
+
+.shot:hover,
+.shot:focus-within {
+  filter: grayscale(0);
+}
+
+/* Marcador mientras no haya foto de archivo. */
+.shot__mark {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--line-strong);
+}
+
+.shot__mark svg {
+  width: 42px;
+}
+
+.shot__veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(10, 10, 11, 0.92) 0%, rgba(10, 10, 11, 0) 58%);
+  opacity: 0.5;
+  transition: opacity 0.5s var(--ease);
+}
+
+.shot:hover .shot__veil,
+.shot:focus-within .shot__veil {
+  opacity: 1;
+}
+
+.shot__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: clamp(0.9rem, 2vw, 1.3rem);
+  transform: translateY(0.6rem);
+  opacity: 0;
+  transition: transform 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+
+.shot:hover .shot__caption,
+.shot:focus-within .shot__caption {
+  transform: none;
+  opacity: 1;
+}
+
+.shot__who {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #f6f6f5;
+}
+
+.shot__meta {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ff5548;
+}
+
+/* Sin puntero fino no hay hover: en táctil el pie se ve siempre. */
+@media (hover: none) {
+  .shot {
+    filter: none;
+  }
+
+  .shot__veil {
+    opacity: 1;
+  }
+
+  .shot__caption {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* --- las cuatro capacidades del ecosistema --- */
+
+.pillars {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+@media (min-width: 620px) {
+  .pillars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1080px) {
+  .pillars {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.pillar {
+  position: relative;
+  display: grid;
+  gap: var(--space-md);
+  align-content: start;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background: var(--surface);
+  overflow: hidden;
+  transition: background-color 0.5s var(--ease);
+}
+
+.pillar:hover {
+  background: var(--surface-2);
+}
+
+.pillar::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: linear-gradient(90deg, var(--red), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s var(--ease);
+}
+
+.pillar:hover::before {
+  transform: scaleX(1);
+}
+
+.pillar__icon {
+  width: 40px;
+  height: 40px;
+  color: var(--red);
+}
+
+.pillar__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.pillar__text {
+  font-size: 0.9rem;
+  line-height: 1.62;
+  color: var(--muted);
 }
 
 /* --------------------------------------------------------------- servicios */
