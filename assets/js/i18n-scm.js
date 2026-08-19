@@ -202,6 +202,31 @@ window.I18N_DICT = {
     'services.7.c': 'Planificación de inversiones inteligentes',
     'services.7.d': 'Acompañamiento en cada decisión económica clave',
 
+
+    'services.8.title': 'Asesoramiento jurídico',
+    'services.8.text':
+      'Un contrato mal leído condiciona años de carrera. Revisamos cada documento antes de que se firme y estamos también cuando hay que reclamar.',
+    'services.8.a': 'Revisión y negociación de contratos, cláusulas y anexos',
+    'services.8.b': 'Derechos de imagen y su explotación comercial',
+    'services.8.c': 'Normativa federativa y trámites ante clubes y organismos',
+    'services.8.d': 'Defensa jurídica cuando aparece el conflicto',
+
+    'services.9.title': 'Gestión del entorno',
+    'services.9.text':
+      'Todo lo que ocurre fuera del campo lo lleva <strong>Magno Marbella</strong>, nuestra marca hermana en la Costa del Sol. El jugador no tiene que resolver nada.',
+    'services.9.a': 'Estancias en villas y hoteles, con la discreción que hace falta',
+    'services.9.b': 'Aviación privada, traslados y flota de alta gama',
+    'services.9.c': 'Training camps y trabajo individual en centros de alto rendimiento',
+    'services.9.d': 'Agenda, tiempo libre y familia, resueltos de puerta a puerta',
+
+    'services.10.title': 'Educación deportiva',
+    'services.10.text':
+      'La carrera dura poco y la vida sigue después. Preparamos al jugador para las dos cosas a la vez, desde el primer contrato.',
+    'services.10.a': 'Supervisión académica compatible con el calendario de competición',
+    'services.10.b': 'Idiomas orientados al mercado al que va',
+    'services.10.c': 'Formación en medios: cómo hablar con la prensa y con el club',
+    'services.10.d': 'Preparación de la etapa posterior al fútbol',
+
     'statement.2':
       'Muchos jugadores con talento ven frenado su crecimiento cuando aparecen <em>retos que no saben cómo afrontar</em>',
 
@@ -544,6 +569,31 @@ window.I18N_DICT = {
     'services.7.b': 'Advice on property purchases',
     'services.7.c': 'Planning intelligent investments',
     'services.7.d': 'Support through every major financial decision',
+
+
+    'services.8.title': 'Legal advice',
+    'services.8.text':
+      'A contract read badly can shape years of a career. We go through every document before it is signed, and we are there when something has to be claimed.',
+    'services.8.a': 'Review and negotiation of contracts, clauses and annexes',
+    'services.8.b': 'Image rights and their commercial use',
+    'services.8.c': 'Federation rules and paperwork with clubs and governing bodies',
+    'services.8.d': 'Legal defence when a dispute comes up',
+
+    'services.9.title': 'Off-pitch management',
+    'services.9.text':
+      'Everything that happens away from the pitch is handled by <strong>Magno Marbella</strong>, our sister brand on the Costa del Sol. The player has nothing to sort out.',
+    'services.9.a': 'Stays in private villas and hotels, with the discretion it takes',
+    'services.9.b': 'Private aviation, transfers and a high-end fleet',
+    'services.9.c': 'Training camps and individual work at high-performance centres',
+    'services.9.d': 'Schedule, free time and family, handled door to door',
+
+    'services.10.title': 'Sporting education',
+    'services.10.text':
+      'A career is short and life carries on afterwards. We prepare the player for both at once, starting with the first contract.',
+    'services.10.a': 'Academic supervision that fits the fixture calendar',
+    'services.10.b': 'Languages aimed at the market he is heading to',
+    'services.10.c': 'Media training: how to speak to the press and to the club',
+    'services.10.d': 'Getting ready for the stage that comes after football',
 
     'statement.2':
       'Many talented players stall the moment they face <em>challenges nobody taught them to handle</em>',
