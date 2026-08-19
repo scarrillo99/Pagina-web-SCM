@@ -50,9 +50,9 @@ window.I18N_DICT = {
     'threesixty.section': 'SCM Group',
     'threesixty.title': '360 grados: <em>siempre el ángulo correcto</em>',
     'threesixty.p1':
-      'SCM es una agencia deportiva integral con sede en Marbella, concretamente en La Quinta. El origen de SCM se encuentra en <strong>SCM Group</strong>, un grupo empresarial de referencia en España.',
+      'SCM es una agencia deportiva integral con sede en Marbella. Su origen está en <strong>SCM Group</strong>, un grupo empresarial de referencia a nivel nacional e internacional.',
     'threesixty.p2':
-      'Además de su experiencia en el ámbito deportivo, SCM cuenta con el respaldo del sólido conocimiento empresarial, económico y médico de SCM Group, así como de sus empresas vinculadas y alianzas estratégicas.',
+      'Además de su experiencia en el ámbito deportivo, SCM cuenta con el respaldo de <strong>SCM Group</strong>: su sólido conocimiento empresarial y económico, y la gestión de futbolistas de alto nivel que desarrolla junto a <strong>Magno Marbella</strong>. A eso se suman sus empresas vinculadas y sus alianzas estratégicas.',
     'threesixty.capsTitle': 'Lo que cubre el grupo',
     'caps.1': 'Traspasos',
     'caps.2': 'Contratos',
@@ -340,9 +340,9 @@ window.I18N_DICT = {
     'threesixty.section': 'SCM Group',
     'threesixty.title': '360 degrees: <em>always the right angle</em>',
     'threesixty.p1':
-      'SCM is a full-service sports agency based in Marbella, in La Quinta. Its origin lies in <strong>SCM Group</strong>, a leading business group in Spain.',
+      'SCM is a full-service sports agency based in Marbella. Its origin lies in <strong>SCM Group</strong>, a leading business group at home and abroad.',
     'threesixty.p2':
-      'Beyond its experience in sport, SCM is backed by the solid business, financial and medical knowledge of SCM Group, along with its associated companies and strategic alliances.',
+      'Beyond its experience in sport, SCM is backed by <strong>SCM Group</strong>: its solid business and financial expertise, and the management of top-level footballers it runs alongside <strong>Magno Marbella</strong>. Its associated companies and strategic partnerships come with it.',
     'threesixty.capsTitle': 'What the group covers',
     'caps.1': 'Transfers',
     'caps.2': 'Contracts',
