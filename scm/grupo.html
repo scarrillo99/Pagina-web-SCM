@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SCM Sports Agency — Agencia 360º de futbolistas profesionales</title>
+    <title>SCM Group · SCM Sports Agency</title>
     <meta
       name="description"
-      content="Agencia 360º de representación y gestión integral de futbolistas profesionales en Marbella. Rendimiento, apoyo psicológico, nutrición, marca personal, inversiones y proyección internacional."
+      content="SCM Group: el ecosistema 360º que acompaña al futbolista dentro y fuera del campo."
     />
     <meta name="theme-color" content="#0a0a0b" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SCM Sports Agency" />
+    <meta property="og:title" content="SCM Group — SCM Sports Agency" />
     <meta
       property="og:description"
       content="Tú pones el talento. Nosotros, todo lo demás. Agencia 360º de futbolistas profesionales."
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../assets/css/photos.css" />
   </head>
 
-  <body class="page-scm">
+  <body class="page-scm page-sub">
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
     <!-- ==================================================== cabecera ==== -->
@@ -36,13 +36,13 @@
 
       <nav class="nav" data-nav aria-label="Principal">
         <a class="nav__link" href="agencia.html" data-i18n="nav.about">Agencia</a>
-        <a class="nav__link" href="grupo.html" data-i18n="nav.group">SCM Group</a>
+        <a class="nav__link" aria-current="page" href="#grupo" data-i18n="nav.group">SCM Group</a>
         <a class="nav__link" href="historia.html" data-i18n="nav.history">Historia</a>
         <a class="nav__link" href="servicios.html" data-i18n="nav.services">Servicios</a>
         <a class="nav__link" href="enfoque.html" data-i18n="nav.focus">Enfoque</a>
         <a class="nav__link" href="equipo.html" data-i18n="nav.team">Equipo</a>
         <a class="nav__link" href="actualidad.html" data-i18n="nav.news">Actualidad</a>
-        <a class="nav__link" href="#magno" data-i18n="nav.magno">Magno</a>
+        <a class="nav__link" href="../magno/" data-i18n="nav.magno">Magno</a>
         <a class="nav__link" href="contacto.html" data-i18n="nav.contact">Contacto</a>
       </nav>
 
@@ -102,155 +102,88 @@
     </header>
 
     <main id="main">
-      <!-- ==================================================== hero ====
-           Las fotos que se relevan de fondo. Cada una se enchufa en
-           assets/css/photos.css (--photo-hero1 y siguientes) y lleva el
-           nombre del jugador y su club en data-name y data-club. Si una no
-           los lleva, no se muestra crédito en esa foto.
-           La velocidad se cambia en data-interval, en milisegundos. -->
-      <section class="hero">
-        <div class="hero__portraits" data-hero-slider data-interval="8000" aria-hidden="true">
-          <span class="hero__portrait" style="--photo: var(--photo-hero1)" data-name="" data-club=""></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero2)" data-name="" data-club=""></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero3)" data-name="Orel Mangala" data-club="Getafe CF"></span>
-        </div>
-        <div class="hero__veil" aria-hidden="true"></div>
 
-        <div class="container">
-          <p class="hero__eyebrow" data-i18n="hero.eyebrow">
-            Agencia 360º de futbolistas profesionales
-          </p>
-          <h1 class="hero__title display" data-i18n-html="hero.title">
-            Tú pones el talento.<br />Nosotros, <em>todo lo demás</em>
-          </h1>
-          <p class="hero__lead" data-i18n="hero.lead">
-            Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera
-            del campo.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="contacto.html">
-              <span data-i18n="hero.cta1">Hablemos</span>
-              <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
-                <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" />
-              </svg>
-            </a>
-            <a class="btn btn--ghost" href="servicios.html" data-i18n="hero.cta2">Ver servicios</a>
-          </div>
-        </div>
+      <!-- =============================================== 360 grados ==== -->
+      <section class="section threesixty" id="grupo">
+        <svg class="threesixty__ring" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+          <circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="1" stroke-dasharray="2 10" />
+          <circle cx="100" cy="100" r="74" stroke="currentColor" stroke-width="1" />
+          <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="1" stroke-dasharray="14 8" />
+        </svg>
 
-        <p class="hero__credit" data-hero-credit hidden>
-          <strong data-credit-name></strong>
-          <span data-credit-club></span>
-        </p>
-      </section>
-
-      <!-- =================================================== cifras ==== -->
-      <section class="stats">
-        <div class="container">
-          <div class="stats__grid">
-            <div class="stat" data-reveal>
-              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="16" cy="14" r="6" stroke="currentColor" stroke-width="2.4" /><path d="M32 20a6 6 0 10-4-10.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M4 42a12 12 0 0124 0M32 42a12 12 0 00-6-10.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
-              <p class="stat__value"><span data-count="10">10</span></p>
-              <p class="stat__label" data-i18n="stats.1.label">Agentes a tiempo completo</p>
-              <p class="stat__text" data-i18n="stats.1.text">Conectados por toda Europa y Asia.</p>
-            </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.08s">
-              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="15" cy="27" r="9" stroke="currentColor" stroke-width="2.4" /><circle cx="33" cy="27" r="9" stroke="currentColor" stroke-width="2.4" /><path d="M24 27h0M15 18l3-8h12l3 8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
-              <p class="stat__value"><span>+</span><span data-count="15">15</span></p>
-              <p class="stat__label" data-i18n="stats.2.label">Scouts en todo el mundo</p>
-              <p class="stat__text" data-i18n="stats.2.text">
-                Con experiencia en grandes clubes europeos.
-              </p>
-            </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.16s">
-              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="2.4" /><path d="M24 13v6l4 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M16 29l-3 15 11-6 11 6-3-15" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
-              <p class="stat__value"><span>+</span><span data-count="10">10</span></p>
-              <p class="stat__label" data-i18n="stats.3.label">Años de trayectoria</p>
-              <p class="stat__text" data-i18n="stats.3.text">
-                En la gestión integral de jugadores profesionales.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================================================ manifiesto ==== -->
-      <section class="section section--tight statement">
-        <div class="container">
-          <p data-i18n-html="statement.1" data-reveal>
-            Nuestra competencia <em>completa</em> tu talento
-          </p>
-        </div>
-      </section>
-
-      <!-- =============================================== SCM x MAGNO ==== -->
-      <section class="section" id="magno">
         <div class="container">
           <div class="tag" data-reveal>
             <p class="tag__mark">Inimitable</p>
-            <p class="tag__section" data-i18n="partner.section">SCM Sports × Magno</p>
+            <p class="tag__section" data-i18n="threesixty.section">SCM Group</p>
           </div>
 
-          <div class="partner__head" data-reveal>
-            <img
-              class="partner__logo partner__logo--scm"
-              src="../assets/img/logo-scm-light.png"
-              alt="SCM Sports Agency"
-            />
-            <span class="partner__x" aria-hidden="true">×</span>
-            <img class="partner__logo" src="../assets/img/logo-magno.png" alt="Magno Marbella" />
-          </div>
-
-          <h2 class="section__title" data-i18n="partner.title" data-reveal>
-            Nuestro socio estratégico
+          <h2 class="section__title" data-i18n-html="threesixty.title" data-reveal>
+            360 grados: <em>siempre el ángulo correcto</em>
           </h2>
-          <p class="section__lead" data-i18n="partner.lead" data-reveal>
-            El rendimiento también depende de lo que ocurre fuera del campo.
-          </p>
 
-          <div class="partner__grid">
-            <article class="partner__item" data-reveal>
-              <div class="photo" style="--photo: var(--photo-partner1)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.1.title">Estancias y desplazamientos</h3>
-                <p data-i18n="partner.1.text">Adaptados a la agenda deportiva.</p>
-              </div>
-            </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.06s">
-              <div class="photo" style="--photo: var(--photo-partner2)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.2.title">Villas, hoteles y vehículos</h3>
-                <p data-i18n="partner.2.text">Ajustados a cada necesidad.</p>
-              </div>
-            </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.12s">
-              <div class="photo" style="--photo: var(--photo-partner3)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.3.title">Experiencias VIP</h3>
-                <p data-i18n="partner.3.text">Centros de alto rendimiento y eventos exclusivos.</p>
-              </div>
-            </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.18s">
-              <div class="photo" style="--photo: var(--photo-partner4)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.4.title">Training camps</h3>
-                <p data-i18n="partner.4.text">Convivencia y preparación de primer nivel.</p>
-              </div>
-            </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.24s">
-              <div class="photo" style="--photo: var(--photo-partner5)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.5.title">Inversión inmobiliaria</h3>
-                <p data-i18n="partner.5.text">Oportunidades en el mercado de lujo.</p>
-              </div>
-            </article>
+          <div class="threesixty__text">
+            <p data-i18n-html="threesixty.p1" data-reveal>
+              SCM es una agencia deportiva integral con sede en Marbella.
+            </p>
+            <p data-i18n-html="threesixty.p2" data-reveal>
+              Cuenta con el respaldo de SCM Group y de Magno Marbella.
+            </p>
           </div>
 
-          <p style="margin-top: 2.5rem" data-reveal>
-            <a class="btn btn--ghost" href="../magno/" data-i18n="partner.cta">
-              Conocer Magno Marbella
-            </a>
+          <p class="tag__section" style="margin-left: 0; margin-top: 3rem" data-i18n="threesixty.capsTitle" data-reveal>
+            Lo que cubre el grupo
           </p>
+
+          <ul class="capabilities" data-reveal>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M6 16h30l-7-7M42 32H12l7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.1">Traspasos</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M11 6h18l8 8v28H11z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M29 6v9h8M18 26h12M18 33h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.2">Contratos</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 19v10h7l16 9V10l-16 9H8z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M37 18a10 10 0 010 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.3">Marketing y PR</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="29" cy="9" r="4.5" stroke="currentColor" stroke-width="2.4" /><path d="M13 44l6-13 7-5 2-9-9 4-4 7M26 26l6 6 3 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.4">Entrenamiento individual</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 42S7 32 7 19A9 9 0 0124 15 9 9 0 0141 19c0 13-17 23-17 23z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M19 22h10M24 17v10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.5">Atención médica</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="19" cy="13" r="6" stroke="currentColor" stroke-width="2.4" /><path d="M7 42a12 12 0 0124 0" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M34 24l7-7m0 0h-6m6 0v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.6">Desarrollo personal</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M18 43V33c-6-3-10-8.4-10-14A11 11 0 0130 12.6c1.4 3 4.4 4.6 6.4 7 1.8 2.2.4 5.4-2.4 5.4H31v5a4 4 0 01-4 4h-4" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M22 20l-3 4h5l-3 4" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.7">Coaching mental</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="4.6" stroke="currentColor" stroke-width="2.4" /><path d="M11 12v11c0 2.6 5.8 4.6 13 4.6s13-2 13-4.6V12" stroke="currentColor" stroke-width="2.4" /><path d="M11 23v11c0 2.6 5.8 4.6 13 4.6s13-2 13-4.6V23" stroke="currentColor" stroke-width="2.4" /></svg>
+              <p data-i18n="caps.8">Generación de patrimonio</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M18 8l6 4 6-4 10 5-4 8-4-2v21H16V19l-4 2-4-8 10-5z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
+              <p data-i18n="caps.9">Merchandising</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 9l19 8-19 8-19-8 19-8z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M13 21v11c0 3 5 6 11 6s11-3 11-6V21M43 17v11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.10">Supervisión académica</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M11 33a13 13 0 0126 0z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /><path d="M7 38h34M24 16v4M24 12v.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.11">Servicio de concierge</p>
+            </li>
+            <li class="capability">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="11" y="5" width="26" height="38" rx="3" stroke="currentColor" stroke-width="2.4" /><path d="M18 14h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M18 24h.1M24 24h.1M30 24h.1M18 32h.1M24 32h.1M30 32v6" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
+              <p data-i18n="caps.12">Asesoramiento fiscal</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -321,7 +254,7 @@
             <h4 data-i18n="footer.nav">Navegación</h4>
             <ul>
               <li><a href="agencia.html" data-i18n="nav.about">Agencia</a></li>
-              <li><a href="grupo.html" data-i18n="nav.group">SCM Group</a></li>
+              <li><a href="#grupo" data-i18n="nav.group">SCM Group</a></li>
               <li><a href="historia.html" data-i18n="nav.history">Historia</a></li>
               <li><a href="servicios.html" data-i18n="nav.services">Servicios</a></li>
               <li><a href="equipo.html" data-i18n="nav.team">Equipo</a></li>

@@ -2113,3 +2113,17 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.25;
 }
+
+/* ============================================================ subpáginas
+   Páginas interiores sin hero: la cabecera lleva el mismo fondo que al
+   hacer scroll y la primera sección arranca por debajo de ella. */
+.page-sub .header {
+  background: rgba(10, 10, 11, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom-color: var(--line);
+}
+
+.page-sub main > .section:first-child {
+  padding-top: clamp(8rem, 16vh, 11rem);
+}

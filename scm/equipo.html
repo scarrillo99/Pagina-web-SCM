@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SCM Sports Agency — Agencia 360º de futbolistas profesionales</title>
+    <title>Equipo · SCM Sports Agency</title>
     <meta
       name="description"
-      content="Agencia 360º de representación y gestión integral de futbolistas profesionales en Marbella. Rendimiento, apoyo psicológico, nutrición, marca personal, inversiones y proyección internacional."
+      content="El equipo multidisciplinar de SCM Sports Agency."
     />
     <meta name="theme-color" content="#0a0a0b" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SCM Sports Agency" />
+    <meta property="og:title" content="Equipo — SCM Sports Agency" />
     <meta
       property="og:description"
       content="Tú pones el talento. Nosotros, todo lo demás. Agencia 360º de futbolistas profesionales."
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../assets/css/photos.css" />
   </head>
 
-  <body class="page-scm">
+  <body class="page-scm page-sub">
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
     <!-- ==================================================== cabecera ==== -->
@@ -40,9 +40,9 @@
         <a class="nav__link" href="historia.html" data-i18n="nav.history">Historia</a>
         <a class="nav__link" href="servicios.html" data-i18n="nav.services">Servicios</a>
         <a class="nav__link" href="enfoque.html" data-i18n="nav.focus">Enfoque</a>
-        <a class="nav__link" href="equipo.html" data-i18n="nav.team">Equipo</a>
+        <a class="nav__link" aria-current="page" href="#equipo" data-i18n="nav.team">Equipo</a>
         <a class="nav__link" href="actualidad.html" data-i18n="nav.news">Actualidad</a>
-        <a class="nav__link" href="#magno" data-i18n="nav.magno">Magno</a>
+        <a class="nav__link" href="../magno/" data-i18n="nav.magno">Magno</a>
         <a class="nav__link" href="contacto.html" data-i18n="nav.contact">Contacto</a>
       </nav>
 
@@ -102,154 +102,110 @@
     </header>
 
     <main id="main">
-      <!-- ==================================================== hero ====
-           Las fotos que se relevan de fondo. Cada una se enchufa en
-           assets/css/photos.css (--photo-hero1 y siguientes) y lleva el
-           nombre del jugador y su club en data-name y data-club. Si una no
-           los lleva, no se muestra crédito en esa foto.
-           La velocidad se cambia en data-interval, en milisegundos. -->
-      <section class="hero">
-        <div class="hero__portraits" data-hero-slider data-interval="8000" aria-hidden="true">
-          <span class="hero__portrait" style="--photo: var(--photo-hero1)" data-name="" data-club=""></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero2)" data-name="" data-club=""></span>
-          <span class="hero__portrait" style="--photo: var(--photo-hero3)" data-name="Orel Mangala" data-club="Getafe CF"></span>
-        </div>
-        <div class="hero__veil" aria-hidden="true"></div>
 
-        <div class="container">
-          <p class="hero__eyebrow" data-i18n="hero.eyebrow">
-            Agencia 360º de futbolistas profesionales
-          </p>
-          <h1 class="hero__title display" data-i18n-html="hero.title">
-            Tú pones el talento.<br />Nosotros, <em>todo lo demás</em>
-          </h1>
-          <p class="hero__lead" data-i18n="hero.lead">
-            Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera
-            del campo.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="contacto.html">
-              <span data-i18n="hero.cta1">Hablemos</span>
-              <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
-                <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" />
-              </svg>
-            </a>
-            <a class="btn btn--ghost" href="servicios.html" data-i18n="hero.cta2">Ver servicios</a>
-          </div>
-        </div>
-
-        <p class="hero__credit" data-hero-credit hidden>
-          <strong data-credit-name></strong>
-          <span data-credit-club></span>
-        </p>
-      </section>
-
-      <!-- =================================================== cifras ==== -->
-      <section class="stats">
-        <div class="container">
-          <div class="stats__grid">
-            <div class="stat" data-reveal>
-              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="16" cy="14" r="6" stroke="currentColor" stroke-width="2.4" /><path d="M32 20a6 6 0 10-4-10.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M4 42a12 12 0 0124 0M32 42a12 12 0 00-6-10.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
-              <p class="stat__value"><span data-count="10">10</span></p>
-              <p class="stat__label" data-i18n="stats.1.label">Agentes a tiempo completo</p>
-              <p class="stat__text" data-i18n="stats.1.text">Conectados por toda Europa y Asia.</p>
-            </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.08s">
-              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="15" cy="27" r="9" stroke="currentColor" stroke-width="2.4" /><circle cx="33" cy="27" r="9" stroke="currentColor" stroke-width="2.4" /><path d="M24 27h0M15 18l3-8h12l3 8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
-              <p class="stat__value"><span>+</span><span data-count="15">15</span></p>
-              <p class="stat__label" data-i18n="stats.2.label">Scouts en todo el mundo</p>
-              <p class="stat__text" data-i18n="stats.2.text">
-                Con experiencia en grandes clubes europeos.
-              </p>
-            </div>
-            <div class="stat" data-reveal style="--reveal-delay: 0.16s">
-              <svg class="stat__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="19" r="12" stroke="currentColor" stroke-width="2.4" /><path d="M24 13v6l4 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><path d="M16 29l-3 15 11-6 11 6-3-15" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" /></svg>
-              <p class="stat__value"><span>+</span><span data-count="10">10</span></p>
-              <p class="stat__label" data-i18n="stats.3.label">Años de trayectoria</p>
-              <p class="stat__text" data-i18n="stats.3.text">
-                En la gestión integral de jugadores profesionales.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================================================ manifiesto ==== -->
-      <section class="section section--tight statement">
-        <div class="container">
-          <p data-i18n-html="statement.1" data-reveal>
-            Nuestra competencia <em>completa</em> tu talento
-          </p>
-        </div>
-      </section>
-
-      <!-- =============================================== SCM x MAGNO ==== -->
-      <section class="section" id="magno">
+      <!-- =================================================== equipo ====
+           Sustituir nombres y fotos por los del equipo real. Las fotos se
+           enchufan en assets/css/photos.css (--photo-team1 y siguientes). -->
+      <section class="section section--light" id="equipo">
         <div class="container">
           <div class="tag" data-reveal>
             <p class="tag__mark">Inimitable</p>
-            <p class="tag__section" data-i18n="partner.section">SCM Sports × Magno</p>
+            <p class="tag__section" data-i18n="team.section">El equipo</p>
           </div>
 
-          <div class="partner__head" data-reveal>
-            <img
-              class="partner__logo partner__logo--scm"
-              src="../assets/img/logo-scm-light.png"
-              alt="SCM Sports Agency"
-            />
-            <span class="partner__x" aria-hidden="true">×</span>
-            <img class="partner__logo" src="../assets/img/logo-magno.png" alt="Magno Marbella" />
-          </div>
-
-          <h2 class="section__title" data-i18n="partner.title" data-reveal>
-            Nuestro socio estratégico
-          </h2>
-          <p class="section__lead" data-i18n="partner.lead" data-reveal>
-            El rendimiento también depende de lo que ocurre fuera del campo.
+          <h2 class="section__title" data-i18n="team.title" data-reveal>Quién está detrás</h2>
+          <p class="section__lead" data-i18n="team.lead" data-reveal>
+            Agentes internos, scouts y ex futbolistas profesionales.
           </p>
 
-          <div class="partner__grid">
-            <article class="partner__item" data-reveal>
-              <div class="photo" style="--photo: var(--photo-partner1)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.1.title">Estancias y desplazamientos</h3>
-                <p data-i18n="partner.1.text">Adaptados a la agenda deportiva.</p>
+          <div class="team__grid">
+            <article class="member" data-reveal>
+              <div class="photo" style="--photo: var(--photo-team1)"></div>
+              <div class="member__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="9" stroke="currentColor" stroke-width="2.6" />
+                  <path d="M6 46a18 18 0 0136 0" stroke="currentColor" stroke-width="2.6" />
+                </svg>
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Nombre Apellido</h3>
+                <p class="member__role" data-i18n="team.role1">Dirección</p>
               </div>
             </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.06s">
-              <div class="photo" style="--photo: var(--photo-partner2)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.2.title">Villas, hoteles y vehículos</h3>
-                <p data-i18n="partner.2.text">Ajustados a cada necesidad.</p>
+
+            <article class="member" data-reveal style="--reveal-delay: 0.06s">
+              <div class="photo" style="--photo: var(--photo-team2)"></div>
+              <div class="member__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="9" stroke="currentColor" stroke-width="2.6" />
+                  <path d="M6 46a18 18 0 0136 0" stroke="currentColor" stroke-width="2.6" />
+                </svg>
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Nombre Apellido</h3>
+                <p class="member__role" data-i18n="team.role2">Agente</p>
               </div>
             </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.12s">
-              <div class="photo" style="--photo: var(--photo-partner3)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.3.title">Experiencias VIP</h3>
-                <p data-i18n="partner.3.text">Centros de alto rendimiento y eventos exclusivos.</p>
+
+            <article class="member" data-reveal style="--reveal-delay: 0.12s">
+              <div class="photo" style="--photo: var(--photo-team3)"></div>
+              <div class="member__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="9" stroke="currentColor" stroke-width="2.6" />
+                  <path d="M6 46a18 18 0 0136 0" stroke="currentColor" stroke-width="2.6" />
+                </svg>
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Nombre Apellido</h3>
+                <p class="member__role" data-i18n="team.role3">Scouting</p>
               </div>
             </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.18s">
-              <div class="photo" style="--photo: var(--photo-partner4)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.4.title">Training camps</h3>
-                <p data-i18n="partner.4.text">Convivencia y preparación de primer nivel.</p>
+
+            <article class="member" data-reveal style="--reveal-delay: 0.18s">
+              <div class="photo" style="--photo: var(--photo-team4)"></div>
+              <div class="member__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="9" stroke="currentColor" stroke-width="2.6" />
+                  <path d="M6 46a18 18 0 0136 0" stroke="currentColor" stroke-width="2.6" />
+                </svg>
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Nombre Apellido</h3>
+                <p class="member__role" data-i18n="team.role4">Rendimiento</p>
               </div>
             </article>
-            <article class="partner__item" data-reveal style="--reveal-delay: 0.24s">
-              <div class="photo" style="--photo: var(--photo-partner5)"></div>
-              <div class="partner__body">
-                <h3 data-i18n="partner.5.title">Inversión inmobiliaria</h3>
-                <p data-i18n="partner.5.text">Oportunidades en el mercado de lujo.</p>
+
+            <article class="member" data-reveal style="--reveal-delay: 0.24s">
+              <div class="photo" style="--photo: var(--photo-team5)"></div>
+              <div class="member__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="9" stroke="currentColor" stroke-width="2.6" />
+                  <path d="M6 46a18 18 0 0136 0" stroke="currentColor" stroke-width="2.6" />
+                </svg>
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Nombre Apellido</h3>
+                <p class="member__role" data-i18n="team.role5">Marketing</p>
+              </div>
+            </article>
+
+            <article class="member" data-reveal style="--reveal-delay: 0.3s">
+              <div class="photo" style="--photo: var(--photo-team6)"></div>
+              <div class="member__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="9" stroke="currentColor" stroke-width="2.6" />
+                  <path d="M6 46a18 18 0 0136 0" stroke="currentColor" stroke-width="2.6" />
+                </svg>
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Nombre Apellido</h3>
+                <p class="member__role" data-i18n="team.role6">Legal y fiscal</p>
               </div>
             </article>
           </div>
 
-          <p style="margin-top: 2.5rem" data-reveal>
-            <a class="btn btn--ghost" href="../magno/" data-i18n="partner.cta">
-              Conocer Magno Marbella
-            </a>
+          <p class="team__note" data-i18n="team.note" data-reveal>
+            El equipo completo está disponible bajo petición.
           </p>
         </div>
       </section>
@@ -324,7 +280,7 @@
               <li><a href="grupo.html" data-i18n="nav.group">SCM Group</a></li>
               <li><a href="historia.html" data-i18n="nav.history">Historia</a></li>
               <li><a href="servicios.html" data-i18n="nav.services">Servicios</a></li>
-              <li><a href="equipo.html" data-i18n="nav.team">Equipo</a></li>
+              <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
               <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
               <li><a href="../" data-i18n="footer.group">Volver al grupo</a></li>
             </ul>
