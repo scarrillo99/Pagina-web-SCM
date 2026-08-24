@@ -1077,7 +1077,7 @@ body {
   font-size: 0.66rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #ff5548;
+  color: var(--muted);
 }
 
 /* Sin puntero fino no hay hover: en táctil el pie se ve siempre. */
@@ -2366,7 +2366,7 @@ body {
 .chip:hover {
   transform: translateY(-4px);
   border-color: var(--line-strong);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(240, 24, 12, 0.25),
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.28),
     0 0 24px rgba(190, 190, 198, 0.1);
 }
 

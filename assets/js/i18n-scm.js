@@ -111,15 +111,13 @@ window.I18N_DICT = {
     'legacy.4.label': 'Ligas de operación',
     'legacy.4.note': 'España, Italia, Bélgica y Reino Unido, más el mercado internacional.',
 
-    'ch1.when': '2014',
+    'ch1.when': 'Desde 2014',
     'ch1.where': 'Marbella · Magno Marbella',
-    'ch1.title': 'El origen: la excelencia en el detalle',
+    'ch1.title': 'Del entrenamiento de élite a gestionar carreras',
     'ch1.p1':
-      'SCM no nace en un despacho. Nace sobre el terreno de juego y en el entorno más exigente del fútbol de élite. En 2014 arranca <strong>Magno Marbella</strong> con una visión clara: gestionar el lifestyle, la preparación física y el bienestar del futbolista durante sus vacaciones y su pretemporada.',
+      'SCM nace en 2014 sobre el terreno de juego, en la raíz de <strong>Magno Marbella</strong>. Fuimos pioneros en el entrenamiento individualizado de futbolistas de élite durante su descanso, y hoy somos un equipo multidisciplinar: analistas de rendimiento, preparadores físicos, psicólogos y nutricionistas.',
     'ch1.p2':
-      'Fuimos <strong>pioneros en el entrenamiento individualizado para futbolistas de élite en su periodo de descanso</strong>. En una época en la que esa cultura no existía, convertimos el tiempo libre en preparación para llegar a la pretemporada al máximo nivel.',
-    'ch1.p3':
-      'Lo que empezó con Sam trabajando de forma artesanal es hoy un equipo multidisciplinar: analistas de rendimiento táctico, preparadores físicos, psicólogos deportivos y nutricionistas.',
+      'La confianza se ganó con hechos: los propios jugadores nos pidieron dar el siguiente paso, <strong>la gestión directa de su carrera y la intermediación en sus fichajes</strong>. De ahí salieron las primeras operaciones en España, Bélgica y el mercado internacional.',
 
     'ch2.when': 'Nuestros valores',
     'ch2.where': 'Se practican, no se enuncian',
@@ -512,15 +510,13 @@ window.I18N_DICT = {
     'legacy.4.label': 'Leagues we operate in',
     'legacy.4.note': 'Spain, Italy, Belgium and the United Kingdom, plus the wider market.',
 
-    'ch1.when': '2014',
+    'ch1.when': 'Since 2014',
     'ch1.where': 'Marbella · Magno Marbella',
-    'ch1.title': 'The origin: excellence in the detail',
+    'ch1.title': 'From elite training to managing careers',
     'ch1.p1':
-      'SCM was not born in an office. It was born on the pitch and in the most demanding corner of elite football. In 2014 <strong>Magno Marbella</strong> started with a clear idea: managing the lifestyle, the physical preparation and the wellbeing of footballers during their holidays and pre-season.',
+      'SCM was born in 2014 on the pitch, out of <strong>Magno Marbella</strong>. We were pioneers in individual training for elite footballers during their time off, and today we are a multidisciplinary team: performance analysts, fitness coaches, psychologists and nutritionists.',
     'ch1.p2':
-      'We were <strong>pioneers in individual training for elite footballers during their time off</strong>. At a point when that culture did not exist, we turned downtime into preparation for reaching pre-season at full level.',
-    'ch1.p3':
-      'What began with Sam working one to one is now a multidisciplinary team: tactical performance analysts, fitness coaches, sports psychologists and nutritionists.',
+      'Trust was earned with facts: the players themselves asked us to take the next step, <strong>running their careers directly and handling their transfers</strong>. From there came the first deals in Spain, Belgium and the international market.',
 
     'ch2.when': 'Our values',
     'ch2.where': 'Practiced, not preached',
