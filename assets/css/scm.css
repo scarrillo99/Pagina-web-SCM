@@ -2127,3 +2127,123 @@ body {
 .page-sub main > .section:first-child {
   padding-top: clamp(8rem, 16vh, 11rem);
 }
+
+/* =========================================================== metodología
+   Mockup de portátil con el informe semanal de análisis de vídeo. La captura
+   real se enchufa en photos.css (--photo-informe); sin ella queda el esquema
+   del informe dibujado, en la línea de los huecos de la galería. */
+.mockup {
+  align-self: center;
+  width: min(100%, 520px);
+  justify-self: end;
+}
+
+.mockup__screen {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--line);
+  border-radius: 10px 10px 2px 2px;
+  border-bottom-width: 14px;
+  background-color: var(--surface-3);
+  background-image: var(
+    --photo,
+    radial-gradient(90% 90% at 70% 15%, rgba(240, 24, 12, 0.14), transparent 62%),
+    radial-gradient(70% 70% at 10% 90%, rgba(150, 150, 160, 0.09), transparent 60%)
+  );
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.mockup__placeholder {
+  width: 62%;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+/* Al enchufar la captura real en photos.css, bajar la opacidad del esquema
+   a 0 aquí mismo para que solo se vea el informe. */
+
+.mockup__caption {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Herramientas: solo logotipos, sin explicaciones. */
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+.tools__logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ============================================================ CTA final
+   Manifiesto con foto de fondo (túnel de vestuarios, primer plano). El tono
+   oscuro lo pone el velo; la foto se enchufa en photos.css (--photo-cta). */
+.statement--photo {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.statement--photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: var(--photo, none);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.statement--photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(10, 10, 11, 0.72), rgba(10, 10, 11, 0.88));
+}
+
+.statement--photo p {
+  color: #fff;
+}
+
+/* ============================================================ hero vídeo
+   Bucle sutil de fondo (cortes de análisis y entrenamientos). Se activa al
+   descomentar el <video> del hero; las fotos quedan de respaldo. */
+.hero__video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__video ~ .hero__portraits {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .mockup {
+    justify-self: start;
+  }
+}

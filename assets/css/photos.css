@@ -41,7 +41,7 @@
      negro y recuperan el color al pasar el ratón.
 
      El nombre, el año y el lugar de cada una NO se ponen aquí: se escriben
-     en su <figure> de scm/index.html, dentro de la sección Historia. */
+     en su <figure> de scm/historia.html, en la sección Historia. */
   /* --photo-legacy1: url('../img/archivo-1.jpg'); */
   /* --photo-legacy2: url('../img/archivo-2.jpg'); */
   /* --photo-legacy3: url('../img/archivo-3.jpg'); */
@@ -96,6 +96,20 @@
   /* --photo-exp2: url('../img/magno-recuperacion.jpg'); */
   /* --photo-exp3: url('../img/magno-villa.jpg'); */
 
+
+  /* ------------------------------------------------ contenido nuevo ----
+     Ranuras pendientes de foto. Descomentar al subir cada archivo a
+     assets/img/ con ese nombre.
+     - iker-accion.jpg: Iker Pozo en partido oficial (caso de éxito).
+     - informe-analisis.jpg: captura real del informe de vídeo
+       (Wyscout / BeSoccer Pro) para el mockup de Metodología.
+     - cta-tunel.jpg: primer plano en el túnel de vestuarios, foco y
+       mentalidad de élite (CTA final de Contacto).
+     - archivo-1..6.jpg: galería histórica de Historia, en este orden:
+       Rashford, Bale, James Rodríguez, Chukwueze, Huijsen, Mangala. */
+  /* --photo-iker: url('../img/iker-accion.jpg'); */
+  /* --photo-informe: url('../img/informe-analisis.jpg'); */
+  /* --photo-cta: url('../img/cta-tunel.jpg'); */
 }
 
 /* Los heroes llevan su propia imagen por página.

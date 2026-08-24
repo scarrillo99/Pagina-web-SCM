@@ -16,30 +16,31 @@ window.I18N_DICT = {
     'nav.magno': 'Magno',
     'nav.contact': 'Contacto',
 
-    'hero.eyebrow': 'Agencia 360º de futbolistas profesionales',
-    'hero.title': 'Tú pones el talento.<br>Nosotros, <em>todo lo demás</em>',
+    'hero.eyebrow': 'Proyección de carrera, metodología individualizada y gestión 360º desde la máxima exigencia',
+    'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
     'hero.lead':
-      'Asesoramos íntegramente a futbolistas profesionales y les acompañamos dentro y fuera del campo. Rendimiento, salud, imagen y patrimonio, en un solo equipo.',
+      'Agencia boutique internacional de representación, asesoramiento de carreras y desarrollo táctico de futbolistas y entrenadores.',
     'hero.cta1': 'Hablemos',
     'hero.cta2': 'Ver servicios',
 
-    'stats.1.label': 'Agentes a tiempo completo',
+    'stats.1.label': 'Jugadores seleccionados',
     'stats.1.text':
-      'Agentes que trabajan para nuestros jugadores en distintos mercados, abriendo oportunidades y sentándose a negociar cada operación. Presencia directa en España, Italia, Portugal, Inglaterra y Bélgica, y también en Asia, Emiratos Árabes Unidos y Estados Unidos.',
-    'stats.2.label': 'Scouts en todo el mundo',
+      'Cartera reducida y elegida a conciencia, compitiendo en Primera, Segunda y Tercera División de España, Rusia, Bélgica, Polonia y Croacia.',
+    'stats.2.label': 'Ofertas de clubes al año',
     'stats.2.text':
-      'Scouts de primer nivel, con experiencia en grandes clubes europeos, que rastrean el mercado nacional e internacional tanto para clubes como para nuestros jugadores.',
-    'stats.3.label': 'Años de trayectoria',
-    'stats.3.text': 'Desde 2014 en Marbella, primero en el rendimiento y el entorno y después también en la carrera.',
+      'Promedio por jugador que evoluciona con nuestra metodología, con foco en ventas y traspasos. Medimos resultados con datos, con imágenes y con el interés real del mercado.',
+    'stats.3.label': 'Años para pasar de libre a 1.500.000 €',
+    'stats.3.text':
+      'Iker Pozo: de agente libre en el verano de 2025 a un traspaso internacional de 1.500.000 € en el verano de 2026, tras dos años de trabajo individual con SCM.',
 
     'about.section': 'Quiénes somos',
-    'about.title': 'Cada carrera es <em>única</em>',
+    'about.title': 'No esperamos al talento: <em>lo evolucionamos</em>',
     'about.p1':
-      'En SCM asesoramos íntegramente a <strong>profesionales del fútbol</strong> y los acompañamos dentro y fuera del campo. En el césped, en el banquillo y en el análisis.',
+      'La mayoría de agencias espera pasivamente a que el jugador la rompa por sí solo para monetizarlo. En SCM <strong>invertimos tiempo y recursos desde el primer día</strong> en desarrollar a la persona y al futbolista, con una metodología individual que lo lleva al fútbol profesional y lo consolida en el tiempo.',
     'about.p2':
-      'Creamos <strong>planes personalizados</strong> porque no hay dos carreras iguales, y todas reciben la misma dedicación, estén en la cima o camino a ella.',
+      '<strong>Modelo boutique ético, win-win:</strong> exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos. No cobramos el 10% a futbolistas con sueldos bajos: venimos a llevarlos a sueldos profesionales sostenibles y a que aprendan a tomar buenas decisiones para mantenerse.',
     'about.p3':
-      '<strong>Invertimos desde el inicio</strong> para construir trayectorias sólidas, con un equipo experto en potenciar cada área. Aquí no hay carteras: hay una familia que trabaja junta.',
+      '<strong>Buscamos buenas personas</strong> con buenos entornos y mentalidad de crecimiento. No solo talento: jugadores entrenables que confían, aplican lo que trabajamos y lo trasladan al campo a medida que el fútbol evoluciona.',
     'about.v1': 'Soporte individual',
     'about.v2': 'Transparencia',
     'about.v3': 'Lealtad',
@@ -128,9 +129,32 @@ window.I18N_DICT = {
     'ch4.p2':
       'Somos una empresa con <strong>mentalidad internacional por ADN</strong>. La ubicación en Marbella y una red sin fronteras nos permiten conectar el talento con los clubes y los mercados más competitivos. Aquí el futbolista no es un número: es un proyecto integral donde cuidamos su rendimiento, su entorno y su carrera.',
 
+    'caso.section': 'Caso de éxito',
+    'caso.title': 'Iker Pozo: de libre a <em>1.500.000 €</em>',
+    'caso.lead':
+      'Dos años de trabajo individual con la metodología SCM, medidos en datos, imágenes e interés de mercado.',
+    'caso.1.label': 'Agente libre',
+    'caso.1.note': 'Verano de 2025, sin equipo.',
+    'caso.2.label': 'Años de metodología individual',
+    'caso.2.note': 'Análisis semanal, plan personalizado y seguimiento continuo.',
+    'caso.3.label': 'Traspaso internacional',
+    'caso.3.note': 'Verano de 2026, venta por 1.500.000 €.',
+    'caso.elite': 'Experiencia e intermediación directa con futbolistas de Primera División europea: Iker Pozo, Orel Mangala o Frederik Kondogbia, entre otros.',
+
+    'met.section': 'Metodología',
+    'met.title': 'Cada partido, <em>analizado</em>',
+    'met.lead':
+      'Videollamada individual tras cada partido analizando cortes de vídeo. Trabajamos cómo hacer mejor lo que exige su cuerpo técnico según su posición, potenciando sus condiciones naturales.',
+    'met.team': 'Equipo multidisciplinar',
+    'met.tools': 'Herramientas de análisis',
+    'met.mockup': 'Informe semanal de análisis de vídeo',
+
+    'cta.title': 'Mentalidad de élite',
+    'cta.text': 'Si quieres evolucionar, hablemos.',
+
     'gallery.title': 'El archivo',
     'gallery.lead':
-      'Los primeros entrenamientos, los primeros veranos y la gente que pasó por aquí antes de que esto fuera una agencia.',
+      'Fotos de archivo y entrenamientos de los jugadores TOP que han pasado por nuestra estructura en Marbella.',
 
     'pillars.title': 'Lo que cubre el ecosistema',
     'pillars.1.title': 'Entrenamiento individualizado',
@@ -277,12 +301,12 @@ window.I18N_DICT = {
       'El mismo camino para un juvenil que para un internacional. Cambia la escala, no el método.',
     'process.1.title': 'Primer contacto',
     'process.1.text': 'Escuchamos su situación, sus objetivos y los de su entorno.',
-    'process.2.title': 'Diagnóstico 360º',
-    'process.2.text': 'Analizamos rendimiento, salud, contrato, imagen y finanzas.',
+    'process.2.title': 'Análisis 360º del perfil',
+    'process.2.text': 'Seguimiento deportivo inicial y análisis del perfil personal, la mentalidad y el entorno.',
     'process.3.title': 'Plan personalizado',
     'process.3.text': 'Definimos objetivos y responsables por cada área.',
-    'process.4.title': 'Implementación',
-    'process.4.text': 'Ponemos el plan en marcha con el equipo especialista.',
+    'process.4.title': 'Análisis semanal de rendimiento',
+    'process.4.text': 'Videollamada individual tras cada partido, con cortes de vídeo según su posición y sus condiciones.',
     'process.5.title': 'Acompañamiento continuo',
     'process.5.text': 'Revisamos y ajustamos a lo largo de toda la temporada.',
     'process.6.title': 'Proyección internacional',
@@ -359,30 +383,31 @@ window.I18N_DICT = {
     'nav.magno': 'Magno',
     'nav.contact': 'Contact',
 
-    'hero.eyebrow': 'A 360º agency for professional footballers',
-    'hero.title': 'You got the talent.<br>We got <em>your back</em>',
+    'hero.eyebrow': 'Career projection, individualized methodology and 360º management at the highest level',
+    'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
     'hero.lead':
-      'We advise professional footballers across the board and stand beside them on and off the pitch. Performance, health, image and wealth, handled by one team.',
+      'International boutique agency for representation, career advisory and tactical development of footballers and coaches.',
     'hero.cta1': "Let's talk",
     'hero.cta2': 'See services',
 
-    'stats.1.label': 'Full-time agents',
+    'stats.1.label': 'Selected players',
     'stats.1.text':
-      'Agents working for our players across different markets, opening up opportunities and sitting at the table for every deal. Direct presence in Spain, Italy, Portugal, England and Belgium, as well as Asia, the United Arab Emirates and the United States.',
-    'stats.2.label': 'Scouts worldwide',
+      'A deliberately small roster, competing in the first, second and third divisions of Spain, Russia, Belgium, Poland and Croatia.',
+    'stats.2.label': 'Club offers per year',
     'stats.2.text':
-      'Top-level scouts, with experience at major European clubs, covering the domestic and international market both for clubs and for our players.',
-    'stats.3.label': 'Years of track record',
-    'stats.3.text': 'A track record in the complete management of professional players.',
+      'Average per player developing under our methodology, focused on sales and transfers. We measure results with data, footage and real market interest.',
+    'stats.3.label': 'Years from free agent to 1,500,000 €',
+    'stats.3.text':
+      'Iker Pozo: from free agent in the summer of 2025 to an international transfer of 1,500,000 € in the summer of 2026, after two years of individual work with SCM.',
 
     'about.section': 'Who we are',
-    'about.title': 'Every career is <em>unique</em>',
+    'about.title': "We don't wait for talent: <em>we evolve it</em>",
     'about.p1':
-      'At SCM we advise <strong>football professionals</strong> across the board and stand beside them on and off the pitch. On the grass, on the bench and in the analysis room.',
+      'Most agencies wait passively for a player to break through on their own before monetizing them. At SCM <strong>we invest time and resources from day one</strong> in developing the person and the footballer, with an individual methodology that takes them to professional football and consolidates them over time.',
     'about.p2':
-      'We build <strong>tailored plans</strong> because no two careers are alike, and every one gets the same dedication, at the top or on the way there.',
+      '<strong>An ethical boutique model, win-win:</strong> exclusivity and shared success. When the player wins, we win. We do not charge 10% to footballers on low salaries: we exist to move our players into sustainable professional wages and to teach them to make the right decisions to stay there.',
     'about.p3':
-      '<strong>We invest from day one</strong> to build solid careers, with a team that strengthens every area. There are no portfolios here: there is a family that works together.',
+      '<strong>We look for good people</strong> with good environments and a growth mindset. Not just talent: coachable players who trust the work, apply it and carry it onto the pitch as football evolves.',
     'about.v1': 'Individual support',
     'about.v2': 'Transparency',
     'about.v3': 'Loyalty',
@@ -471,9 +496,32 @@ window.I18N_DICT = {
     'ch4.p2':
       'We are a company with an <strong>international mindset by DNA</strong>. Our base in Marbella and a network without borders let us connect talent with the most competitive clubs and markets. Here a footballer is not a number: he is a complete project covering his performance, his environment and his career.',
 
+    'caso.section': 'Success story',
+    'caso.title': 'Iker Pozo: from free agent to <em>1,500,000 €</em>',
+    'caso.lead':
+      'Two years of individual work under the SCM methodology, measured in data, footage and market interest.',
+    'caso.1.label': 'Free agent',
+    'caso.1.note': 'Summer 2025, without a club.',
+    'caso.2.label': 'Years of individual methodology',
+    'caso.2.note': 'Weekly analysis, a tailored plan and ongoing support.',
+    'caso.3.label': 'International transfer',
+    'caso.3.note': 'Summer 2026, sold for 1,500,000 €.',
+    'caso.elite': 'Experience and direct intermediation with footballers in the top flight of major European leagues: Iker Pozo, Orel Mangala and Frederik Kondogbia, among others.',
+
+    'met.section': 'Methodology',
+    'met.title': 'Every match, <em>analyzed</em>',
+    'met.lead':
+      'A one-to-one video call after every match, working through video clips. We work on doing better what the coaching staff demands for their position, building on their natural traits.',
+    'met.team': 'Multidisciplinary team',
+    'met.tools': 'Analysis tools',
+    'met.mockup': 'Weekly video analysis report',
+
+    'cta.title': 'Elite mindset',
+    'cta.text': "If you want to evolve, let's talk.",
+
     'gallery.title': 'The archive',
     'gallery.lead':
-      'The first training sessions, the first summers and the people who came through before this was an agency.',
+      'Archive photos and training sessions of the TOP players who have come through our structure in Marbella.',
 
     'pillars.title': 'What the ecosystem covers',
     'pillars.1.title': 'Individual training',
@@ -619,12 +667,12 @@ window.I18N_DICT = {
       'The same path for an academy player as for a full international. The scale changes, the method does not.',
     'process.1.title': 'First contact',
     'process.1.text': 'We listen to the situation and the goals of the player and their family.',
-    'process.2.title': '360º diagnosis',
-    'process.2.text': 'We assess performance, health, contract, image and finances.',
+    'process.2.title': '360º profile analysis',
+    'process.2.text': 'Initial sporting review plus an analysis of the personal profile, mindset and environment.',
     'process.3.title': 'Tailored plan',
     'process.3.text': 'We set objectives and name who owns each area.',
-    'process.4.title': 'Implementation',
-    'process.4.text': 'We put the plan to work with the specialist team.',
+    'process.4.title': 'Weekly performance analysis',
+    'process.4.text': 'One-to-one video call after every match, with video clips for their position and traits.',
     'process.5.title': 'Ongoing support',
     'process.5.text': 'We review and adjust throughout the season.',
     'process.6.title': 'International reach',
