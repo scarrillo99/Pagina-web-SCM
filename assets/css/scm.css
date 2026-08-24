@@ -2386,3 +2386,164 @@ body {
     height: 24px;
   }
 }
+
+/* ====================================================== historia: cartel
+   Banda de marca en rojo con el titular a la izquierda, el posicionamiento a
+   la derecha y tres tarjetas negras debajo, al estilo cartel. */
+.bhero {
+  background: var(--red);
+  color: #0a0a0b;
+}
+
+.bhero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.bhero__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.94;
+  font-size: clamp(2.4rem, 5.4vw, 4.4rem);
+  color: #0a0a0b;
+}
+
+.bhero__title em {
+  font-style: italic;
+}
+
+.bhero__text p {
+  color: rgba(10, 10, 11, 0.88);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+  max-width: 54ch;
+}
+
+.bhero__text p:last-child {
+  margin-bottom: 0;
+}
+
+.bcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.2rem, 2.5vw, 2rem);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.bcard {
+  background: #0a0a0b;
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.bcard__icon {
+  width: 44px;
+  height: 44px;
+  color: var(--red);
+  margin-bottom: var(--space-lg);
+}
+
+.bcard h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: var(--space-md);
+}
+
+.bcard p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.85rem;
+}
+
+.bcard p:last-child {
+  margin-bottom: 0;
+}
+
+/* =================================================== historia: filosofía
+   Foto del fundador a la izquierda y la filosofía a la derecha, cerrada con
+   la llamada de flecha. La foto se enchufa en photos.css. */
+.philo__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.philo__photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background-color: var(--surface-3);
+  background-image: var(
+    --photo,
+    radial-gradient(90% 90% at 70% 15%, rgba(240, 24, 12, 0.16), transparent 62%),
+    radial-gradient(70% 70% at 10% 90%, rgba(150, 150, 160, 0.09), transparent 60%)
+  );
+  background-size: cover;
+  background-position: center top;
+}
+
+.philo__caption {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.philo__body p {
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: var(--space-md);
+  max-width: 58ch;
+}
+
+.philo__cta {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: var(--space-xl);
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  line-height: 1.3;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.philo__cta svg {
+  width: 30px;
+  flex-shrink: 0;
+  margin-top: 0.32em;
+  color: var(--red);
+  transition: transform 0.3s var(--ease);
+}
+
+.philo__cta:hover svg {
+  transform: translateX(6px);
+}
+
+@media (max-width: 900px) {
+  .bhero__grid,
+  .bcards,
+  .philo__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .philo__photo {
+    max-width: 480px;
+  }
+}
