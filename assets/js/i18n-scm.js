@@ -73,31 +73,21 @@ window.I18N_DICT = {
     'history.section': 'Nuestra historia',
     'history.title': 'Experiencia en todos <em>los ámbitos</em>',
     'history.p1':
-      'Establecemos nuevos estándares en el asesoramiento a jugadores. Con la raíz de Magno Marbella desde 2014, contamos con la red y la experiencia de una estructura boutique dedicada al futbolista profesional.',
-    'history.p2':
-      'Valores como la lealtad, la cercanía y la transparencia no son meras palabras para nosotros, sino que siempre se han practicado en nuestra organización y son clave para nuestro éxito.',
+      'Establecemos nuevos estándares en el asesoramiento a futbolistas. Desde 2014 en Marbella, con una estructura boutique donde la lealtad, la cercanía y la transparencia se practican cada día.',
 
     'cards.1.title': 'Nuestros valores',
-    'cards.1.p1': 'Nuestras acciones se caracterizan por el respeto, el aprecio mutuo y la fiabilidad.',
-    'cards.1.p2':
-      'Alcanzamos nuestros objetivos a partir de una colaboración constructiva y basada en la confianza: buenas personas, buenos entornos y mentalidad de crecimiento.',
+    'cards.1.p1':
+      'Respeto, aprecio mutuo y fiabilidad. Buenas personas, buenos entornos y mentalidad de crecimiento.',
     'cards.2.title': 'Cómo jugamos',
     'cards.2.p1':
-      'Te ayudamos a afrontar las cosas de forma proactiva: no esperamos a que la rompas, invertimos en tu evolución desde el primer día.',
-    'cards.2.p2':
-      'Juntos no solo sentamos las bases de una carrera deportiva exitosa: también desarrollamos tu personalidad y tu futuro más allá del campo.',
+      'No esperamos a que la rompas: invertimos en tu evolución desde el primer día.',
     'cards.3.title': 'El extra cierto',
     'cards.3.p1':
-      'SCM representa la confianza mutua y el éxito compartido. Buscamos una relación a largo plazo con cada jugador, caracterizada por la transparencia y la fiabilidad.',
-    'cards.3.p2': 'Si tú ganas, nosotros ganamos: sin cobrar el 10 % a sueldos bajos.',
+      'Si tú ganas, nosotros ganamos. Relación a largo plazo, sin cobrar el 10 % a sueldos bajos.',
 
     'philo.title': 'Filosofía <em>SCM</em>',
     'philo.p1':
-      'Te ofrecemos apoyo individualizado y competente para cada situación. Ya sea en decisiones deportivas, planificación profesional, análisis de rendimiento, generación de patrimonio o entorno personal, en nuestra red encontrarás a los profesionales idóneos para cada caso.',
-    'philo.p2':
-      'Nuestro equipo actúa con transparencia, claridad y te integra en el proceso de toma de decisiones.',
-    'philo.p3':
-      'No tomamos decisiones por ti, sino que las tomamos contigo, pensando en tu futuro profesional.',
+      'Apoyo individualizado para cada situación, con los profesionales idóneos en cada área. No tomamos decisiones por ti: las tomamos contigo, pensando en tu futuro profesional.',
     'philo.cta': 'Forma parte de SCM<br>y maximiza tu carrera profesional.',
     'history.lead':
       'Establecemos nuevos estándares en el asesoramiento a futbolistas. Nacidos en la raíz de Magno Marbella en 2014, contamos con la red y la experiencia de una estructura boutique donde la lealtad, la cercanía y la transparencia no son meras palabras: se practican cada día y son clave de nuestro éxito.',
@@ -115,9 +105,7 @@ window.I18N_DICT = {
     'ch1.where': 'Marbella · Magno Marbella',
     'ch1.title': 'Del entrenamiento de élite a gestionar carreras',
     'ch1.p1':
-      'SCM nace en 2014 sobre el terreno de juego, en la raíz de <strong>Magno Marbella</strong>. Fuimos pioneros en el entrenamiento individualizado de futbolistas de élite durante su descanso, y hoy somos un equipo multidisciplinar: analistas de rendimiento, preparadores físicos, psicólogos y nutricionistas.',
-    'ch1.p2':
-      'La confianza se ganó con hechos: los propios jugadores nos pidieron dar el siguiente paso, <strong>la gestión directa de su carrera y la intermediación en sus fichajes</strong>. De ahí salieron las primeras operaciones en España, Bélgica y el mercado internacional.',
+      'Nacimos en 2014 en <strong>Magno Marbella</strong> como pioneros del entrenamiento individualizado de élite. Hoy gestionamos carreras y fichajes con un equipo multidisciplinar: analistas, preparadores, psicólogos y nutricionistas.',
 
     'ch2.when': 'Nuestros valores',
     'ch2.where': 'Se practican, no se enuncian',
@@ -472,31 +460,21 @@ window.I18N_DICT = {
     'history.section': 'Our story',
     'history.title': 'Experience across <em>the board</em>',
     'history.p1':
-      'We set new standards in advising players. Rooted in Magno Marbella since 2014, we carry the network and experience of a boutique structure dedicated to the professional footballer.',
-    'history.p2':
-      'Values like loyalty, openness and transparency are not just words to us: they have always been practiced in our organization and they are key to our success.',
+      'We set new standards in advising footballers. Since 2014 in Marbella, with a boutique structure where loyalty, closeness and transparency are practiced every day.',
 
     'cards.1.title': 'Our values',
-    'cards.1.p1': 'Our actions are defined by respect, mutual appreciation and reliability.',
-    'cards.1.p2':
-      'We reach our goals through constructive collaboration built on trust: good people, good environments and a growth mindset.',
+    'cards.1.p1':
+      'Respect, mutual appreciation and reliability. Good people, good environments and a growth mindset.',
     'cards.2.title': 'How we play',
     'cards.2.p1':
-      'We help you face things proactively: we do not wait for you to break through, we invest in your evolution from day one.',
-    'cards.2.p2':
-      'Together we lay the foundations of a successful sporting career and develop your personality and your future beyond the pitch.',
+      'We do not wait for you to break through: we invest in your evolution from day one.',
     'cards.3.title': 'The certain extra',
     'cards.3.p1':
-      'SCM stands for mutual trust and shared success. We look for a long-term relationship with every player, defined by transparency and reliability.',
-    'cards.3.p2': 'When you win, we win: without charging 10% on low salaries.',
+      'When you win, we win. A long-term relationship, without charging 10% on low salaries.',
 
     'philo.title': 'The SCM <em>philosophy</em>',
     'philo.p1':
-      'We offer you individualized, competent support for every situation. Whether it is sporting decisions, career planning, performance analysis, wealth building or your personal environment, our network holds the right professionals for each case.',
-    'philo.p2':
-      'Our team acts with transparency and clarity, and brings you into the decision-making process.',
-    'philo.p3':
-      'We do not make decisions for you: we make them with you, with your professional future in mind.',
+      'Individualized support for every situation, with the right professionals in each area. We do not make decisions for you: we make them with you, with your professional future in mind.',
     'philo.cta': 'Join SCM<br>and maximize your professional career.',
     'history.lead':
       'We set new standards in advising footballers. Born out of Magno Marbella in 2014, we carry the network and experience of a boutique structure where loyalty, openness and transparency are not just words: they are practiced every day and they are key to our success.',
@@ -514,9 +492,7 @@ window.I18N_DICT = {
     'ch1.where': 'Marbella · Magno Marbella',
     'ch1.title': 'From elite training to managing careers',
     'ch1.p1':
-      'SCM was born in 2014 on the pitch, out of <strong>Magno Marbella</strong>. We were pioneers in individual training for elite footballers during their time off, and today we are a multidisciplinary team: performance analysts, fitness coaches, psychologists and nutritionists.',
-    'ch1.p2':
-      'Trust was earned with facts: the players themselves asked us to take the next step, <strong>running their careers directly and handling their transfers</strong>. From there came the first deals in Spain, Belgium and the international market.',
+      'Born in 2014 out of <strong>Magno Marbella</strong> as pioneers of individualized elite training. Today we manage careers and transfers with a multidisciplinary team: analysts, coaches, psychologists and nutritionists.',
 
     'ch2.when': 'Our values',
     'ch2.where': 'Practiced, not preached',
