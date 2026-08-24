@@ -265,7 +265,11 @@ window.I18N_DICT = {
     'clubs.section': 'Red de clubes',
     'clubs.title': 'Con quién hablamos <em>cada semana</em>',
     'clubs.lead':
-      'Relación directa con los principales clubes europeos y con muchos clubes de menor perfil, donde a menudo está la oportunidad correcta.',
+      'Contacto semanal con los clubes de nuestros mercados, liga a liga.',
+    'clubs.market1': 'LaLiga · España',
+    'clubs.market2': 'Jupiler Pro League · Bélgica',
+    'clubs.market3': 'Primeira Liga · Portugal',
+    'clubs.market4': 'Premier League Rusa · Rusia',
     'clubs.note':
       'Los escudos pertenecen a sus respectivos clubes y se muestran únicamente como referencia de nuestra red de contactos.',
 
@@ -632,7 +636,11 @@ window.I18N_DICT = {
     'clubs.section': 'Club network',
     'clubs.title': 'Who we speak to <em>every week</em>',
     'clubs.lead':
-      'Direct relationships with the major European clubs and with many lower-profile clubs, which is often exactly where the right opportunity sits.',
+      'Weekly contact with the clubs in our markets, league by league.',
+    'clubs.market1': 'LaLiga · Spain',
+    'clubs.market2': 'Jupiler Pro League · Belgium',
+    'clubs.market3': 'Primeira Liga · Portugal',
+    'clubs.market4': 'Russian Premier League · Russia',
     'clubs.note':
       'All crests belong to their respective clubs and are shown purely as a reference to our network of contacts.',
 

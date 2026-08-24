@@ -243,7 +243,7 @@
       <!-- =================================================== clubes ====
            Los escudos se enchufan en assets/css/photos.css. Mientras no
            estén, cada ficha muestra el monograma del club. -->
-      <section class="section" id="clubes">
+      <section class="section clubs" id="clubes">
         <div class="container">
           <div class="tag" data-reveal>
             <p class="tag__mark">Inimitable</p>
@@ -254,94 +254,268 @@
             Con quién hablamos <em>cada semana</em>
           </h2>
           <p class="section__lead" data-i18n="clubs.lead" data-reveal>
-            Relación directa con los principales clubes europeos.
+            Contacto semanal con los clubes de nuestros mercados, liga a liga.
           </p>
+        </div>
 
-          <ul class="clubs__grid" data-reveal>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/real-madrid.svg" alt="Real Madrid" />
-              <span class="club__name">Real Madrid</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/barcelona.svg" alt="FC Barcelona" />
-              <span class="club__name">FC Barcelona</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/atletico.svg" alt="Atlético de Madrid" />
-              <span class="club__name">Atlético de Madrid</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/real-sociedad.svg" alt="Real Sociedad" />
-              <span class="club__name">Real Sociedad</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/betis.svg" alt="Real Betis" />
-              <span class="club__name">Real Betis</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/sevilla.svg" alt="Sevilla FC" />
-              <span class="club__name">Sevilla FC</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/bayern.svg" alt="FC Bayern München" />
-              <span class="club__name">FC Bayern München</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/dortmund.svg" alt="Borussia Dortmund" />
-              <span class="club__name">Borussia Dortmund</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/liverpool.svg" alt="Liverpool" />
-              <span class="club__name">Liverpool</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/arsenal.svg" alt="Arsenal" />
-              <span class="club__name">Arsenal</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/manchester-city.svg" alt="Manchester City" />
-              <span class="club__name">Manchester City</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/manchester-united.svg" alt="Manchester United" />
-              <span class="club__name">Manchester United</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/napoli.svg" alt="Napoli" />
-              <span class="club__name">Napoli</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/milan.svg" alt="Milan" />
-              <span class="club__name">Milan</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/juventus.svg" alt="Juventus" />
-              <span class="club__name">Juventus</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/sporting.svg" alt="Sporting CP" />
-              <span class="club__name">Sporting CP</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/benfica.svg" alt="Benfica" />
-              <span class="club__name">Benfica</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/porto.svg" alt="FC Porto" />
-              <span class="club__name">FC Porto</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/ajax.svg" alt="Ajax" />
-              <span class="club__name">Ajax</span>
-            </li>
-            <li class="club">
-              <img class="club__crest" src="../assets/img/clubes/psv.svg" alt="PSV" />
-              <span class="club__name">PSV</span>
-            </li>
-          </ul>
+        <!-- Cintas en bucle infinito, una por mercado. Cada monograma se
+             sustituye por el escudo real dejando el fichero con el mismo
+             nombre en assets/img/clubes/. En gris por defecto, color al
+             pasar el ratón; la cinta se pausa al posarse sobre ella. -->
+        <div class="ribbons" data-reveal>
+          <div class="ribbon">
+            <p class="ribbon__league" data-i18n="clubs.market1">LaLiga · España</p>
+            <div class="ribbon__viewport">
+              <div class="ribbon__track" style="--dur: 52s">
+              <div class="ribbon__group">
+                <span class="chip">
+                  <img src="../assets/img/clubes/betis.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Real Betis Balompié</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/sevilla.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Sevilla FC</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/malaga.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Málaga CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/getafe.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Getafe CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/villarreal.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Villarreal CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/granada.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Granada CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/cordoba.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Córdoba CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/alaves.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Deportivo Alavés</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/real-sociedad.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Real Sociedad</span>
+                </span>
+              </div>
+              <div class="ribbon__group" aria-hidden="true">
+                <span class="chip">
+                  <img src="../assets/img/clubes/betis.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Real Betis Balompié</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/sevilla.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Sevilla FC</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/malaga.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Málaga CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/getafe.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Getafe CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/villarreal.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Villarreal CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/granada.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Granada CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/cordoba.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Córdoba CF</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/alaves.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Deportivo Alavés</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/real-sociedad.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Real Sociedad</span>
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="ribbon ribbon--reverse">
+            <p class="ribbon__league" data-i18n="clubs.market2">Jupiler Pro League · Bélgica</p>
+            <div class="ribbon__viewport">
+              <div class="ribbon__track" style="--dur: 46s">
+              <div class="ribbon__group">
+                <span class="chip">
+                  <img src="../assets/img/clubes/brugge.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Club Brugge</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/anderlecht.svg" alt="" loading="lazy" />
+                  <span class="chip__name">RSC Anderlecht</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/antwerp.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Royal Antwerp FC</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/gent.svg" alt="" loading="lazy" />
+                  <span class="chip__name">KAA Gent</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/standard.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Standard de Lieja</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/genk.svg" alt="" loading="lazy" />
+                  <span class="chip__name">KRC Genk</span>
+                </span>
+              </div>
+              <div class="ribbon__group" aria-hidden="true">
+                <span class="chip">
+                  <img src="../assets/img/clubes/brugge.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Club Brugge</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/anderlecht.svg" alt="" loading="lazy" />
+                  <span class="chip__name">RSC Anderlecht</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/antwerp.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Royal Antwerp FC</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/gent.svg" alt="" loading="lazy" />
+                  <span class="chip__name">KAA Gent</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/standard.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Standard de Lieja</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/genk.svg" alt="" loading="lazy" />
+                  <span class="chip__name">KRC Genk</span>
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ribbon">
+            <p class="ribbon__league" data-i18n="clubs.market3">Primeira Liga · Portugal</p>
+            <div class="ribbon__viewport">
+              <div class="ribbon__track" style="--dur: 40s">
+              <div class="ribbon__group">
+                <span class="chip">
+                  <img src="../assets/img/clubes/benfica.svg" alt="" loading="lazy" />
+                  <span class="chip__name">SL Benfica</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/porto.svg" alt="" loading="lazy" />
+                  <span class="chip__name">FC Porto</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/sporting.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Sporting CP</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/braga.svg" alt="" loading="lazy" />
+                  <span class="chip__name">SC Braga</span>
+                </span>
+              </div>
+              <div class="ribbon__group" aria-hidden="true">
+                <span class="chip">
+                  <img src="../assets/img/clubes/benfica.svg" alt="" loading="lazy" />
+                  <span class="chip__name">SL Benfica</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/porto.svg" alt="" loading="lazy" />
+                  <span class="chip__name">FC Porto</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/sporting.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Sporting CP</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/braga.svg" alt="" loading="lazy" />
+                  <span class="chip__name">SC Braga</span>
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ribbon ribbon--reverse">
+            <p class="ribbon__league" data-i18n="clubs.market4">Premier League Rusa · Rusia</p>
+            <div class="ribbon__viewport">
+              <div class="ribbon__track" style="--dur: 48s">
+              <div class="ribbon__group">
+                <span class="chip">
+                  <img src="../assets/img/clubes/zenit.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Zenit de San Petersburgo</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/spartak.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Spartak de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/cska.svg" alt="" loading="lazy" />
+                  <span class="chip__name">CSKA de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/dinamo.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Dinamo de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/lokomotiv.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Lokomotiv de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/krasnodar.svg" alt="" loading="lazy" />
+                  <span class="chip__name">FC Krasnodar</span>
+                </span>
+              </div>
+              <div class="ribbon__group" aria-hidden="true">
+                <span class="chip">
+                  <img src="../assets/img/clubes/zenit.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Zenit de San Petersburgo</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/spartak.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Spartak de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/cska.svg" alt="" loading="lazy" />
+                  <span class="chip__name">CSKA de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/dinamo.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Dinamo de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/lokomotiv.svg" alt="" loading="lazy" />
+                  <span class="chip__name">Lokomotiv de Moscú</span>
+                </span>
+                <span class="chip">
+                  <img src="../assets/img/clubes/krasnodar.svg" alt="" loading="lazy" />
+                  <span class="chip__name">FC Krasnodar</span>
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
           <p class="clubs__note" data-i18n="clubs.note" data-reveal>
-            Los escudos pertenecen a sus respectivos clubes.
+            Los escudos pertenecen a sus respectivos clubes y se muestran únicamente como
+            referencia de nuestra red de contactos.
           </p>
         </div>
       </section>

@@ -2247,3 +2247,142 @@ body {
     justify-self: start;
   }
 }
+
+/* =========================================================== red de clubes
+   Cintas en bucle infinito agrupadas por liga. La pista lleva el grupo de
+   chips duplicado (la copia va con aria-hidden) y se desplaza un 50%, así el
+   bucle no tiene costura. En gris por defecto; al posar el ratón la cinta se
+   pausa y el chip recupera color y se eleva. El conjunto va ligeramente en
+   diagonal para dar flujo sin romper la retícula. */
+.clubs {
+  overflow: hidden;
+}
+
+.ribbons {
+  display: grid;
+  gap: clamp(1.1rem, 2.4vw, 1.8rem);
+  margin-top: clamp(2rem, 5vw, 3.2rem);
+  transform: rotate(-2deg);
+  width: 112%;
+  margin-left: -6%;
+}
+
+.ribbon__league {
+  max-width: var(--container);
+  margin: 0 auto 0.55rem;
+  padding-inline: var(--gutter);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ribbon__league::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background: var(--red);
+  margin-right: 0.7rem;
+  vertical-align: middle;
+}
+
+.ribbon__viewport {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.ribbon__track {
+  display: flex;
+  width: max-content;
+  animation: ribbon-scroll var(--dur, 50s) linear infinite;
+}
+
+.ribbon--reverse .ribbon__track {
+  animation-direction: reverse;
+}
+
+.ribbon:hover .ribbon__track,
+.ribbon:focus-within .ribbon__track {
+  animation-play-state: paused;
+}
+
+@keyframes ribbon-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ribbon__group {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.2vw, 1.8rem);
+  padding: 0.85rem clamp(0.5rem, 1.1vw, 0.9rem);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1.05rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--surface);
+  white-space: nowrap;
+  transition:
+    transform 0.35s var(--ease),
+    border-color 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+
+.chip img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(1) opacity(0.72);
+  transition: filter 0.35s var(--ease);
+}
+
+.chip__name {
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.35s var(--ease);
+}
+
+.chip:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(240, 24, 12, 0.25),
+    0 0 24px rgba(240, 24, 12, 0.14);
+}
+
+.chip:hover img {
+  filter: none;
+}
+
+.chip:hover .chip__name {
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ribbon__track {
+    animation: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .ribbons {
+    transform: rotate(-1.2deg);
+  }
+
+  .chip img {
+    width: 24px;
+    height: 24px;
+  }
+}
