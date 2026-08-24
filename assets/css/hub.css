@@ -18,7 +18,8 @@
   --scm-text: #f4f4f3;
   --scm-muted: #9d9da4;
   --scm-line: rgba(255, 255, 255, 0.16);
-  --scm-accent: #e0180d;
+  /* Acento monocromo de SCM: la marca es blanco y negro. */
+  --scm-accent: #f4f4f3;
 
   --magno-surface: #edeee6;
   --magno-text: #1a1a16;

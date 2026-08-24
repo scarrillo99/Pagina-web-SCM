@@ -17,8 +17,12 @@
 
   --text: #f6f6f5;
   --muted: #9a9aa1;
-  --red: #f0180c;
-  --red-dark: #c41208;
+  /* Acento corporativo monocromo: blanco sobre fondo oscuro. En las
+     secciones claras se invierte a negro. El nombre --accent sustituye al
+     antiguo --red: la marca no lleva rojo. */
+  --accent: #f6f6f5;
+  --accent-dark: #d9d9d5;
+  --on-accent: #0a0a0b;
   --line: rgba(255, 255, 255, 0.13);
   --line-strong: rgba(255, 255, 255, 0.28);
 
@@ -33,8 +37,8 @@ body {
 }
 
 ::selection {
-  background: var(--red);
-  color: #fff;
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 /* Secciones claras: solo se cambian los tokens, no los componentes. */
@@ -42,6 +46,9 @@ body {
   --surface: var(--light);
   --surface-2: var(--light-2);
   --surface-3: #dcdcd8;
+  --accent: #101012;
+  --accent-dark: #000;
+  --on-accent: #f2f2f0;
   --text: #101012;
   --muted: #5c5c62;
   --line: rgba(16, 16, 18, 0.14);
@@ -83,7 +90,7 @@ body {
   content: '';
   width: 6px;
   height: 1.05em;
-  background: var(--red);
+  background: var(--accent);
   flex-shrink: 0;
 }
 
@@ -94,7 +101,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .section__title {
@@ -110,7 +117,7 @@ body {
 
 .section__title em {
   font-style: normal;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .section__lead {
@@ -137,7 +144,7 @@ body {
 
 .statement em {
   font-style: normal;
-  color: var(--red);
+  color: var(--accent);
 }
 
 /* ---------------------------------------------------------------- botones */
@@ -164,13 +171,14 @@ body {
 }
 
 .btn--primary {
-  background: var(--red);
-  color: #fff;
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 .btn--primary:hover {
-  background: #fff;
-  color: var(--red);
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--accent);
+  color: var(--accent);
 }
 
 .btn--ghost {
@@ -179,8 +187,8 @@ body {
 }
 
 .btn--ghost:hover {
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .btn svg {
@@ -211,9 +219,9 @@ body {
 
 .social a:hover {
   opacity: 1;
-  background: var(--red);
-  border-color: var(--red);
-  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
 }
 
 .social svg {
@@ -275,7 +283,7 @@ body {
 
 .nav__link:hover {
   opacity: 1;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .header__actions {
@@ -483,7 +491,7 @@ body {
   content: '';
   width: 42px;
   height: 3px;
-  background: var(--red);
+  background: var(--accent);
 }
 
 .hero__title {
@@ -494,7 +502,7 @@ body {
 
 .hero__title em {
   font-style: normal;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .hero__lead {
@@ -538,7 +546,7 @@ body {
   content: '';
   width: 22px;
   height: 1px;
-  background: var(--red);
+  background: var(--accent);
 }
 
 .hero__credit strong {
@@ -577,7 +585,7 @@ body {
 .stat__icon {
   width: 34px;
   height: 34px;
-  color: var(--red);
+  color: var(--accent);
   margin-bottom: var(--space-lg);
 }
 
@@ -591,7 +599,7 @@ body {
   font-size: clamp(2.4rem, 5vw, 3.6rem);
   line-height: 1;
   letter-spacing: -0.04em;
-  color: var(--red);
+  color: var(--accent);
   display: flex;
   align-items: baseline;
   gap: 0.05em;
@@ -670,7 +678,7 @@ body {
 .value__icon {
   width: 19px;
   height: 19px;
-  color: var(--red);
+  color: var(--accent);
   flex-shrink: 0;
 }
 
@@ -702,7 +710,7 @@ body {
   display: block;
   height: 100%;
   width: 0;
-  background: var(--red);
+  background: var(--accent);
   transition: width 1.3s var(--ease);
   transition-delay: var(--bar-delay, 0s);
 }
@@ -762,7 +770,7 @@ body {
   top: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(180deg, var(--red), transparent);
+  background: linear-gradient(180deg, var(--accent), transparent);
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.7s var(--ease);
@@ -785,7 +793,7 @@ body {
 }
 
 .legacy__plus {
-  color: var(--red);
+  color: var(--accent);
   margin-right: 0.05em;
 }
 
@@ -842,7 +850,7 @@ body {
   height: 9px;
   border-radius: 50%;
   background: var(--surface);
-  border: 1px solid var(--red);
+  border: 1px solid var(--accent);
   transform: translate(-50%, -3px) scale(0.4);
   opacity: 0;
   transition: transform 0.6s var(--ease), opacity 0.5s var(--ease);
@@ -854,7 +862,7 @@ body {
 }
 
 .chapter:last-of-type::after {
-  background: var(--red);
+  background: var(--accent);
 }
 
 .chapter__when {
@@ -863,7 +871,7 @@ body {
   font-size: clamp(1.5rem, 3vw, 2.1rem);
   letter-spacing: -0.03em;
   line-height: 1;
-  color: var(--red);
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
 
@@ -955,8 +963,8 @@ body {
 }
 
 .names li:hover {
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .names__note {
@@ -997,7 +1005,7 @@ body {
      un rectángulo plano que parece un fallo de carga. */
   background-image: var(
     --photo,
-    radial-gradient(90% 90% at 70% 15%, rgba(240, 24, 12, 0.16), transparent 62%),
+    radial-gradient(90% 90% at 70% 15%, rgba(190, 190, 198, 0.12), transparent 62%),
     radial-gradient(70% 70% at 10% 90%, rgba(150, 150, 160, 0.09), transparent 60%)
   );
   background-size: cover;
@@ -1130,7 +1138,7 @@ body {
   position: absolute;
   inset: 0 0 auto;
   height: 1px;
-  background: linear-gradient(90deg, var(--red), transparent);
+  background: linear-gradient(90deg, var(--accent), transparent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.6s var(--ease);
@@ -1143,7 +1151,7 @@ body {
 .pillar__icon {
   width: 40px;
   height: 40px;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .pillar__title {
@@ -1196,7 +1204,7 @@ body {
 .service__icon {
   width: 44px;
   height: 44px;
-  color: var(--red);
+  color: var(--accent);
   margin-bottom: var(--space-lg);
 }
 
@@ -1237,7 +1245,7 @@ body {
   top: 0.5em;
   width: 5px;
   height: 5px;
-  background: var(--red);
+  background: var(--accent);
 }
 
 /* --------------------------------------------------------------- enfoques */
@@ -1259,7 +1267,7 @@ body {
 }
 
 .focus__item:hover {
-  border-color: var(--red);
+  border-color: var(--accent);
   transform: translateY(-4px);
 }
 
@@ -1271,7 +1279,7 @@ body {
   bottom: -22px;
   width: 128px;
   height: 128px;
-  color: var(--red);
+  color: var(--accent);
   opacity: 0.13;
   pointer-events: none;
   transition: opacity 0.35s var(--ease), transform 0.45s var(--ease);
@@ -1285,7 +1293,7 @@ body {
 .focus__icon {
   width: 34px;
   height: 34px;
-  color: var(--red);
+  color: var(--accent);
   margin-bottom: var(--space-lg);
   position: relative;
 }
@@ -1369,7 +1377,7 @@ body {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--accent);
   margin-top: 0.3rem;
 }
 
@@ -1458,7 +1466,7 @@ body {
 }
 
 .headline:hover {
-  border-color: var(--red);
+  border-color: var(--accent);
   transform: translateY(-4px);
 }
 
@@ -1496,7 +1504,7 @@ body {
   font-size: 0.68rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .headline__title {
@@ -1565,7 +1573,7 @@ body {
   font-size: 0.74rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--accent);
   margin-bottom: var(--space-md);
 }
 
@@ -1580,7 +1588,7 @@ body {
   padding: 0.5rem 0.95rem;
   background: var(--surface-2);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--red);
+  border-left: 3px solid var(--accent);
 }
 
 .markets--emerging li {
@@ -1623,7 +1631,7 @@ body {
   width: 34px;
   height: 34px;
   margin-bottom: var(--space-md);
-  background: var(--red);
+  background: var(--accent);
   color: #fff;
   font-family: var(--font-display);
   font-weight: 800;
@@ -1671,7 +1679,7 @@ body {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.5rem;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .partner__grid {
@@ -1689,7 +1697,7 @@ body {
 }
 
 .partner__item:hover {
-  border-color: var(--red);
+  border-color: var(--accent);
 }
 
 .partner__item .photo {
@@ -1741,7 +1749,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--accent);
   margin-bottom: 0.35rem;
 }
 
@@ -1753,7 +1761,7 @@ body {
 }
 
 .contact__channel a:hover {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .contact__social {
@@ -1823,7 +1831,7 @@ body {
 .field select:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--red);
+  border-color: var(--accent);
 }
 
 .form__consent {
@@ -1837,7 +1845,7 @@ body {
 .form__consent input {
   width: auto;
   margin-top: 4px;
-  accent-color: var(--red);
+  accent-color: var(--accent);
 }
 
 .form__consent a {
@@ -1847,7 +1855,7 @@ body {
 .form__note {
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--red);
+  color: var(--accent);
 }
 
 /* ------------------------------------------------------------- crosslink */
@@ -1959,7 +1967,7 @@ body {
 }
 
 .footer a:hover {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .footer .social {
@@ -1995,7 +2003,7 @@ body {
   width: min(46vw, 620px);
   aspect-ratio: 1;
   transform: translateY(-50%);
-  color: var(--red);
+  color: var(--accent);
   opacity: 0.1;
   pointer-events: none;
   animation: threesixty-spin 90s linear infinite;
@@ -2087,7 +2095,7 @@ body {
   inset: auto auto 0 0;
   width: 0;
   height: 2px;
-  background: var(--red);
+  background: var(--accent);
   transition: width 0.35s var(--ease);
 }
 
@@ -2102,7 +2110,7 @@ body {
 .capability svg {
   width: 34px;
   height: 34px;
-  color: var(--red);
+  color: var(--accent);
 }
 
 .capability p {
@@ -2148,7 +2156,7 @@ body {
   background-color: var(--surface-3);
   background-image: var(
     --photo,
-    radial-gradient(90% 90% at 70% 15%, rgba(240, 24, 12, 0.14), transparent 62%),
+    radial-gradient(90% 90% at 70% 15%, rgba(190, 190, 198, 0.1), transparent 62%),
     radial-gradient(70% 70% at 10% 90%, rgba(150, 150, 160, 0.09), transparent 60%)
   );
   background-size: cover;
@@ -2284,7 +2292,7 @@ body {
   display: inline-block;
   width: 22px;
   height: 2px;
-  background: var(--red);
+  background: var(--accent);
   margin-right: 0.7rem;
   vertical-align: middle;
 }
@@ -2359,7 +2367,7 @@ body {
   transform: translateY(-4px);
   border-color: var(--line-strong);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(240, 24, 12, 0.25),
-    0 0 24px rgba(240, 24, 12, 0.14);
+    0 0 24px rgba(190, 190, 198, 0.1);
 }
 
 .chip:hover img {
@@ -2391,7 +2399,7 @@ body {
    Banda de marca en rojo con el titular a la izquierda, el posicionamiento a
    la derecha y tres tarjetas negras debajo, al estilo cartel. */
 .bhero {
-  background: var(--red);
+  background: var(--light);
   color: #0a0a0b;
 }
 
@@ -2442,7 +2450,7 @@ body {
 .bcard__icon {
   width: 44px;
   height: 44px;
-  color: var(--red);
+  color: #fff;
   margin-bottom: var(--space-lg);
 }
 
@@ -2467,6 +2475,11 @@ body {
   margin-bottom: 0;
 }
 
+/* La filosofía va en monocromo: sin acento rojo en el título. */
+.philo .section__title em {
+  color: inherit;
+}
+
 /* =================================================== historia: filosofía
    Foto del fundador a la izquierda y la filosofía a la derecha, cerrada con
    la llamada de flecha. La foto se enchufa en photos.css. */
@@ -2483,7 +2496,7 @@ body {
   background-color: var(--surface-3);
   background-image: var(
     --photo,
-    radial-gradient(90% 90% at 70% 15%, rgba(240, 24, 12, 0.16), transparent 62%),
+    radial-gradient(90% 90% at 70% 15%, rgba(190, 190, 198, 0.12), transparent 62%),
     radial-gradient(70% 70% at 10% 90%, rgba(150, 150, 160, 0.09), transparent 60%)
   );
   background-size: cover;
@@ -2528,7 +2541,7 @@ body {
   width: 30px;
   flex-shrink: 0;
   margin-top: 0.32em;
-  color: var(--red);
+  color: currentColor;
   transition: transform 0.3s var(--ease);
 }
 
