@@ -71,10 +71,9 @@ window.I18N_DICT = {
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
     'history.section': 'Nuestra historia',
-    'history.title':
-      'De pioneros en el rendimiento de élite a una <em>agencia de representación global</em>',
+    'history.title': 'Experiencia en <em>todos los ámbitos</em>',
     'history.lead':
-      'Nacidos en la raíz de Magno Marbella en 2014. Un ecosistema boutique 360º alrededor del futbolista profesional.',
+      'Establecemos nuevos estándares en el asesoramiento a futbolistas. Nacidos en la raíz de Magno Marbella en 2014, contamos con la red y la experiencia de una estructura boutique donde la lealtad, la cercanía y la transparencia no son meras palabras: se practican cada día y son clave de nuestro éxito.',
 
     'legacy.1.label': 'Años de trayectoria',
     'legacy.1.note': 'Desde 2014, primero en el rendimiento y el entorno, después también en la carrera.',
@@ -93,22 +92,24 @@ window.I18N_DICT = {
     'ch1.p2':
       'Fuimos <strong>pioneros en el entrenamiento individualizado para futbolistas de élite en su periodo de descanso</strong>. En una época en la que esa cultura no existía, convertimos el tiempo libre en preparación para llegar a la pretemporada al máximo nivel.',
     'ch1.p3':
-      'Lo que empezó con Sam trabajando de forma artesanal es hoy un equipo multidisciplinar con más de cinco profesionales fijos en temporada alta.',
+      'Lo que empezó con Sam trabajando de forma artesanal es hoy un equipo multidisciplinar: analistas de rendimiento táctico, preparadores físicos, psicólogos deportivos y nutricionistas.',
 
-    'ch2.when': 'El entorno',
-    'ch2.where': 'Blindado al 100 %',
-    'ch2.title': 'Para rendir en el campo, todo lo de fuera tiene que estar resuelto',
+    'ch2.when': 'Nuestros valores',
+    'ch2.where': 'Se practican, no se enuncian',
+    'ch2.title': 'Respeto, confianza y éxito compartido',
     'ch2.p1':
-      'Un futbolista no rinde si tiene la cabeza en la logística. Por eso el servicio cubre todo lo que ocurre alrededor, con la misma exigencia que el entrenamiento.',
-    'ch2.i1.title': 'Logística y desplazamientos',
-    'ch2.i1.text': 'Aviación privada, recogidas en aeropuerto y flota de alta gama.',
-    'ch2.i2.title': 'Alojamiento',
-    'ch2.i2.text': 'Villas privadas y hoteles de lujo, con la discreción que hace falta.',
-    'ch2.i3.title': 'Rendimiento y metodología',
+      'Nuestras acciones se caracterizan por el respeto, el aprecio mutuo y la fiabilidad. Alcanzamos nuestros objetivos a partir de una colaboración constructiva y basada en la confianza.',
+    'ch2.i1.title': 'Nuestros valores',
+    'ch2.i1.text':
+      'Buenas personas con buenos entornos y mentalidad de crecimiento. No solo talento: jugadores entrenables que trasladan al campo lo que trabajamos.',
+    'ch2.i2.title': 'Cómo jugamos',
+    'ch2.i2.text':
+      'Afrontamos las cosas de forma proactiva: no esperamos a que el jugador la rompa, invertimos en su evolución desde el primer día.',
+    'ch2.i3.title': 'El extra cierto',
     'ch2.i3.text':
-      'Sesiones individuales en campo y gimnasio con nuestros preparadores, para hacer evolucionar al jugador y potenciar su rendimiento físico y táctico.',
-    'ch2.i4.title': 'Experiencias y ocio',
-    'ch2.i4.text': 'Gestión completa del tiempo libre, sin que el jugador tenga que resolver nada.',
+      'Win-win de verdad: exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos; no cobramos el 10 % a sueldos bajos.',
+    'ch2.i4.title': 'Relación a largo plazo',
+    'ch2.i4.text': 'Confianza mutua, transparencia y fiabilidad con cada jugador y cada club, temporada tras temporada.',
 
     'ch3.when': 'La confianza',
     'ch3.where': 'De Marbella al mercado',
@@ -121,13 +122,15 @@ window.I18N_DICT = {
     'ch3.note':
       'Estos nombres se citan como referencia del entorno en el que trabajamos. No implican representación, contrato ni vínculo comercial actual con SCM Sports Agency.',
 
-    'ch4.when': 'SCM hoy',
-    'ch4.where': 'Servicio boutique · Mentalidad global',
-    'ch4.title': 'El ecosistema SCM',
+    'ch4.when': 'Filosofía SCM',
+    'ch4.where': 'Asesores, no decisores',
+    'ch4.title': 'No tomamos decisiones por ti: las tomamos contigo',
     'ch4.p1':
-      'Con la base de Magno Marbella y más de siete años de trayectoria directa en representación, creamos <strong>SCM Sports Agency</strong>. Trasladamos la misma metodología a un modelo de agencia boutique.',
+      'Te ofrecemos apoyo individualizado y competente para cada situación. Ya sea en decisiones deportivas, planificación de carrera, análisis de rendimiento, generación de patrimonio o entorno personal, en nuestra red están los profesionales idóneos para cada caso.',
     'ch4.p2':
-      'Somos una empresa con <strong>mentalidad internacional por ADN</strong>. La ubicación en Marbella y una red sin fronteras nos permiten conectar el talento con los clubes y los mercados más competitivos. Aquí el futbolista no es un número: es un proyecto integral donde cuidamos su rendimiento, su entorno y su carrera.',
+      'Nuestro equipo actúa con transparencia y claridad, y te integra en el proceso de toma de decisiones. Somos una boutique con <strong>mentalidad internacional por ADN</strong>: nuestro trabajo es que estés bien valorado en el campo y que tomes la mejor decisión posible pensando en tu futuro profesional. Aquí el futbolista no es un número: es un proyecto integral.',
+    'ch4.founder': 'Sam · Fundador de SCM',
+    'ch4.cta': 'Forma parte de SCM y maximiza tu carrera profesional',
 
     'caso.section': 'Caso de éxito',
     'caso.title': 'Iker Pozo: de libre a <em>1.500.000 €</em>',
@@ -442,10 +445,9 @@ window.I18N_DICT = {
     'statement.1': 'Our competence <em>completes</em> your talent',
 
     'history.section': 'Our story',
-    'history.title':
-      'From pioneers in elite performance to a <em>global representation agency</em>',
+    'history.title': 'Experience <em>across the board</em>',
     'history.lead':
-      'Born out of Magno Marbella in 2014. A boutique 360º ecosystem around the professional footballer.',
+      'We set new standards in advising footballers. Born out of Magno Marbella in 2014, we carry the network and experience of a boutique structure where loyalty, openness and transparency are not just words: they are practiced every day and they are key to our success.',
 
     'legacy.1.label': 'Years of track record',
     'legacy.1.note': 'Since 2014, first in performance and environment, later in careers too.',
@@ -464,22 +466,24 @@ window.I18N_DICT = {
     'ch1.p2':
       'We were <strong>pioneers in individual training for elite footballers during their time off</strong>. At a point when that culture did not exist, we turned downtime into preparation for reaching pre-season at full level.',
     'ch1.p3':
-      'What began with Sam working one to one is now a multidisciplinary team with more than five full-time professionals in high season.',
+      'What began with Sam working one to one is now a multidisciplinary team: tactical performance analysts, fitness coaches, sports psychologists and nutritionists.',
 
-    'ch2.when': 'The environment',
-    'ch2.where': 'Fully covered',
-    'ch2.title': 'To perform on the pitch, everything off it has to be solved',
+    'ch2.when': 'Our values',
+    'ch2.where': 'Practiced, not preached',
+    'ch2.title': 'Respect, trust and shared success',
     'ch2.p1':
-      'A footballer cannot perform with his mind on logistics. That is why the service covers everything around him, held to the same standard as the training.',
-    'ch2.i1.title': 'Logistics and travel',
-    'ch2.i1.text': 'Private aviation, airport pick-ups and a high-end vehicle fleet.',
-    'ch2.i2.title': 'Accommodation',
-    'ch2.i2.text': 'Private villas and luxury hotels, with the discretion it takes.',
-    'ch2.i3.title': 'Performance and method',
+      'Our actions are defined by respect, mutual appreciation and reliability. We reach our goals through constructive collaboration built on trust.',
+    'ch2.i1.title': 'Our values',
+    'ch2.i1.text':
+      'Good people with good environments and a growth mindset. Not just talent: coachable players who carry the work onto the pitch.',
+    'ch2.i2.title': 'How we play',
+    'ch2.i2.text':
+      'We face things proactively: we do not wait for a player to break through, we invest in their evolution from day one.',
+    'ch2.i3.title': 'The certain extra',
     'ch2.i3.text':
-      'Individual sessions on the pitch and in the gym with our own coaches, to move the player forward and sharpen his physical and tactical level.',
-    'ch2.i4.title': 'Experiences and leisure',
-    'ch2.i4.text': 'Free time handled end to end, with nothing left for the player to sort out.',
+      'A true win-win: exclusivity and shared success. When the player wins, we win; we do not charge 10% on low salaries.',
+    'ch2.i4.title': 'Long-term relationships',
+    'ch2.i4.text': 'Mutual trust, transparency and reliability with every player and every club, season after season.',
 
     'ch3.when': 'Trust',
     'ch3.where': 'From Marbella to the market',
@@ -492,13 +496,15 @@ window.I18N_DICT = {
     'ch3.note':
       'These names are cited as a reference to the environment we work in. They do not imply representation, a contract or any current commercial tie to SCM Sports Agency.',
 
-    'ch4.when': 'SCM today',
-    'ch4.where': 'Boutique service · Global mindset',
-    'ch4.title': 'The SCM ecosystem',
+    'ch4.when': 'The SCM philosophy',
+    'ch4.where': 'Advisors, not deciders',
+    'ch4.title': 'We do not make decisions for you: we make them with you',
     'ch4.p1':
-      'On the base of Magno Marbella and more than seven years of direct experience in representation, we created <strong>SCM Sports Agency</strong>. We carried the same method into a boutique agency model.',
+      'We offer you individualized, competent support for every situation. Whether it is sporting decisions, career planning, performance analysis, wealth building or your personal environment, our network holds the right professionals for each case.',
     'ch4.p2':
-      'We are a company with an <strong>international mindset by DNA</strong>. Our base in Marbella and a network without borders let us connect talent with the most competitive clubs and markets. Here a footballer is not a number: he is a complete project covering his performance, his environment and his career.',
+      'Our team acts with transparency and clarity, and brings you into the decision-making process. We are a boutique with an <strong>international mindset by DNA</strong>: our job is for you to be well valued on the pitch and to make the best possible decision for your professional future. Here a footballer is not a number: he is a complete project.',
+    'ch4.founder': 'Sam · Founder of SCM',
+    'ch4.cta': 'Join SCM and maximize your professional career',
 
     'caso.section': 'Success story',
     'caso.title': 'Iker Pozo: from free agent to <em>1,500,000 €</em>',

@@ -108,6 +108,9 @@
      - archivo-1..6.jpg: galería histórica de Historia, en este orden:
        Rashford, Bale, James Rodríguez, Chukwueze, Huijsen, Mangala. */
   /* --photo-iker: url('../img/iker-accion.jpg'); */
+  /* - fundador.jpg: retrato de Sam, fundador, para la Filosofía SCM en
+       Historia. Horizontal 4:3, 1200 x 900. */
+  /* --photo-fundador: url('../img/fundador.jpg'); */
   /* --photo-informe: url('../img/informe-analisis.jpg'); */
   /* --photo-cta: url('../img/cta-tunel.jpg'); */
 }
