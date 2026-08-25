@@ -6,6 +6,9 @@ window.I18N_DICT = {
   es: {
     'nav.lang': 'Idioma',
     'nav.menu': 'Menú',
+    'nav.home': 'Inicio',
+    'nav.players': 'Jugadores',
+    'nav.headlines': 'Titulares',
     'nav.about': 'Agencia',
     'nav.group': 'SCM Group',
     'nav.history': 'Historia',
@@ -393,6 +396,9 @@ window.I18N_DICT = {
   en: {
     'nav.lang': 'Language',
     'nav.menu': 'Menu',
+    'nav.home': 'Home',
+    'nav.players': 'Players',
+    'nav.headlines': 'Headlines',
     'nav.about': 'Agency',
     'nav.group': 'SCM Group',
     'nav.history': 'History',
