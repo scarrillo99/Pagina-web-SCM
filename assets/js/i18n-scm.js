@@ -354,16 +354,20 @@ window.I18N_DICT = {
     'partner.lead':
       'El rendimiento de un jugador también depende de lo que vive fuera del campo. En esa área contamos con Magno Marbella, expertos en experiencias y servicios del más alto nivel para futbolistas profesionales.',
     'partner.1.title': 'Estancias y desplazamientos',
-    'partner.1.text': 'Organización adaptada a la agenda deportiva del jugador.',
+    'partner.1.text':
+      'Del avión al campo sin fricciones: vuelos, traslados y agenda resueltos antes de aterrizar.',
     'partner.2.title': 'Villas, hoteles y vehículos',
-    'partner.2.text': 'Alojamiento y transporte ajustados a cada necesidad.',
+    'partner.2.text':
+      'Una villa con vistas, un hotel discreto o el coche esperando en la puerta: descanso a la altura de la exigencia.',
     'partner.3.title': 'Experiencias VIP',
-    'partner.3.text': 'Entrenamientos en centros de alto rendimiento y eventos exclusivos.',
+    'partner.3.text':
+      'Palcos, eventos y mesas que no se reservan: se abren. La Costa del Sol al nivel del jugador.',
     'partner.4.title': 'Training camps',
-    'partner.4.text': 'Convivencia, entrenamiento y preparación en entornos de primer nivel.',
+    'partner.4.text':
+      'Césped, gimnasio y método: pretemporadas y estancias de trabajo con nuestros preparadores en Marbella.',
     'partner.5.title': 'Inversión inmobiliaria',
     'partner.5.text':
-      'Oportunidades en real estate gracias a la red de Magno en el mercado de lujo.',
+      'Patrimonio que también juega: oportunidades seleccionadas en el mercado de lujo de la Costa del Sol.',
     'partner.cta': 'Conocer Magno Marbella',
 
     'contact.section': 'Contacto',
@@ -754,15 +758,20 @@ window.I18N_DICT = {
     'partner.lead':
       'A player’s performance also depends on life away from the pitch. That is where Magno Marbella comes in: specialists in high-end experiences and services for professional footballers.',
     'partner.1.title': 'Stays and travel',
-    'partner.1.text': 'Organised around the player’s sporting calendar.',
+    'partner.1.text':
+      'From the plane to the pitch without friction: flights, transfers and schedule solved before landing.',
     'partner.2.title': 'Villas, hotels and cars',
-    'partner.2.text': 'Accommodation and transport matched to each requirement.',
+    'partner.2.text':
+      'A villa with a view, a discreet hotel or the car waiting at the door: rest that matches the standard.',
     'partner.3.title': 'VIP experiences',
-    'partner.3.text': 'Training at high-performance centres and exclusive events.',
+    'partner.3.text':
+      'Boxes, events and tables you do not book: they open. The Costa del Sol at the player’s level.',
     'partner.4.title': 'Training camps',
-    'partner.4.text': 'Living, training and preparation in first-class surroundings.',
+    'partner.4.text':
+      'Grass, gym and method: pre-seasons and working stays with our own coaches in Marbella.',
     'partner.5.title': 'Real estate investment',
-    'partner.5.text': 'Opportunities through Magno’s network in the luxury property market.',
+    'partner.5.text':
+      'Wealth that plays too: selected opportunities in the Costa del Sol luxury market.',
     'partner.cta': 'Discover Magno Marbella',
 
     'contact.section': 'Contact',
