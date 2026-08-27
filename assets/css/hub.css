@@ -28,7 +28,8 @@
   --magno-accent: #0d0d0d;
 
   --font-sport: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --font-lux: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  /* Tipografía unificada del grupo: Archivo también en el lado Magno. */
+  --font-lux: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Alto reservado al logotipo. Es el mismo en las dos marcas: es lo que
@@ -502,4 +503,13 @@ body {
 
 .hub-footer a:hover {
   color: var(--scm-text);
+}
+
+
+body {
+  font-stretch: 110%;
+}
+
+.panel__title {
+  font-stretch: 120%;
 }

@@ -18,8 +18,8 @@
   --line: rgba(13, 13, 13, 0.16);
   --line-soft: rgba(13, 13, 13, 0.08);
 
-  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-body: 'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 body {
@@ -1135,4 +1135,16 @@ body {
 
 .contact__social {
   margin-top: var(--space-sm);
+}
+
+
+/* Tipografía unificada con SCM: Archivo expandida, en pesos ligeros para
+   conservar la elegancia de Magno. */
+body {
+  font-stretch: 108%;
+}
+
+.section__title,
+.hero__title {
+  font-stretch: 118%;
 }
