@@ -2731,17 +2731,7 @@ body {
    luces suaves tipo foco, rayado fino casi imperceptible, grano de película
    y tipografía fantasma en las bandas claras. */
 
-/* Grano de película sobre toda la página, muy sutil. */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  pointer-events: none;
-  opacity: 0.05;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 160px 160px;
-}
+/* El grano de película vive ahora en base.css: cubre todo el grupo. */
 
 /* Secciones oscuras: focos suaves en las esquinas y rayado vertical fino. */
 .section:not(.section--light):not(.bhero):not(.statement) {
@@ -2903,4 +2893,45 @@ body {
 .tl__item > p:not(.tl__when):not(.tl__where) {
   color: var(--muted);
   line-height: 1.75;
+}
+
+/* ============================================== servicios: pizarra táctica
+   Tras el ciclo semanal, flechas de pizarra y marcas de jugadas como en el
+   tablero de un entrenador. Tiene prioridad sobre el fondo genérico claro. */
+.section--light.tactics {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 700' fill='none'%3E%3Cg stroke='%230a0a0b'%3E%3Cpath d='M120 560C300 420 320 300 500 260' stroke-opacity='0.06' stroke-width='1.5' stroke-dasharray='7 9'/%3E%3Cpath d='M500 260l-26 2m26-2l-14 22' stroke-opacity='0.06' stroke-width='1.5'/%3E%3Cpath d='M840 580C960 480 1010 470 1180 420' stroke-opacity='0.05' stroke-width='1.5' stroke-dasharray='7 9'/%3E%3Cpath d='M1180 420l-26-1m26 1l-18 19' stroke-opacity='0.05' stroke-width='1.5'/%3E%3Cpath d='M650 140l26 26m0-26l-26 26' stroke-opacity='0.07' stroke-width='1.5'/%3E%3Cpath d='M1080 180l26 26m0-26l-26 26' stroke-opacity='0.055' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='170' r='15' stroke-opacity='0.06' stroke-width='1.5'/%3E%3Ccircle cx='980' cy='620' r='15' stroke-opacity='0.05' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900' fill='none'%3E%3Cg stroke='%230a0a0b'%3E%3Ccircle cx='450' cy='450' r='444' stroke-opacity='0.08' stroke-width='1.5'/%3E%3Ccircle cx='450' cy='450' r='330' stroke-opacity='0.05' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E"),
+    repeating-linear-gradient(90deg, rgba(10, 10, 11, 0.025) 0 1px, transparent 1px 140px);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: center bottom, right -300px top -300px, center;
+  background-size: min(1400px, 140vw) auto, 840px 840px, auto;
+}
+
+/* Media cancha tras la representación: el terreno donde se negocia. */
+.section.pitchside {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 1000' fill='none'%3E%3Cg stroke='%23ffffff' stroke-opacity='0.06' stroke-width='1.5'%3E%3Crect x='40' y='40' width='620' height='920'/%3E%3Cpath d='M40 500h620'/%3E%3Ccircle cx='350' cy='500' r='110'/%3E%3Cpath d='M170 40v150h360V40M170 960v-150h360v150'/%3E%3Cpath d='M255 40v60h190V40M255 960v-60h190v60'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(55% 42% at 88% -5%, rgba(255, 255, 255, 0.05), transparent 62%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 140px);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: right -140px center, center, center;
+  background-size: 560px 800px, cover, auto;
+}
+
+/* Flecha de avance entre los pasos del ciclo (solo escritorio). */
+@media (min-width: 981px) {
+  .cycle__step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: calc(-1 * clamp(1.1rem, 2.2vw, 1.8rem) + 2px);
+    width: clamp(1.1rem, 2.2vw, 1.8rem);
+    height: 10px;
+    transform: translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12' fill='none'%3E%3Cpath d='M0 6h22M17 1l5 5-5 5' stroke='%23101012' stroke-opacity='0.35' stroke-width='1.6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }

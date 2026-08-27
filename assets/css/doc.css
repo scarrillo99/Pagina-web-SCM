@@ -171,3 +171,14 @@ body {
   font-size: 0.8rem;
   color: var(--muted);
 }
+
+/* Geometría de campo del grupo, muy discreta, también en las páginas
+   de documentación. */
+body {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900' fill='none'%3E%3Cg stroke='%23ffffff'%3E%3Ccircle cx='450' cy='450' r='444' stroke-opacity='0.05' stroke-width='1.5'/%3E%3Ccircle cx='450' cy='450' r='330' stroke-opacity='0.035' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right -320px top -280px;
+  background-size: 820px 820px;
+  background-attachment: fixed;
+}

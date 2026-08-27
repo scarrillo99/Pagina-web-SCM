@@ -1148,3 +1148,24 @@ body {
 .hero__title {
   font-stretch: 118%;
 }
+
+/* ================================================ geometría de campo
+   La misma familia visual del grupo, en trazo oscuro sobre el hueso de
+   Magno y en claro sobre su pie. */
+.section {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900' fill='none'%3E%3Cg stroke='%230d0d0d'%3E%3Ccircle cx='450' cy='450' r='444' stroke-opacity='0.06' stroke-width='1.5'/%3E%3Ccircle cx='450' cy='450' r='330' stroke-opacity='0.04' stroke-width='1'/%3E%3Ccircle cx='450' cy='450' r='210' stroke-opacity='0.05' stroke-width='1' stroke-dasharray='3 10'/%3E%3C/g%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600' fill='none'%3E%3Cg stroke='%230d0d0d'%3E%3Cpath d='M600 6A594 594 0 000 600' stroke-opacity='0.05' stroke-width='1.5'/%3E%3Cpath d='M600 206A394 394 0 00200 600' stroke-opacity='0.035' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right -300px top -300px, left -320px bottom -320px;
+  background-size: 860px 860px, 620px 620px;
+}
+
+.footer {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900' fill='none'%3E%3Cg stroke='%23ffffff'%3E%3Ccircle cx='450' cy='450' r='444' stroke-opacity='0.07' stroke-width='1.5'/%3E%3Ccircle cx='450' cy='450' r='330' stroke-opacity='0.045' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(60% 60% at 50% 0%, rgba(255, 255, 255, 0.04), transparent 65%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right -320px bottom -340px, center;
+  background-size: 800px 800px, cover;
+}
