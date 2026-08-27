@@ -2832,3 +2832,75 @@ body {
 .hero__title {
   font-stretch: 122%;
 }
+
+/* ====================================================== línea de tiempo
+   Los hitos de la marca sobre un raíl vertical con nodos, años en grande y
+   contenido a la derecha. */
+.timeline {
+  position: relative;
+  display: grid;
+  gap: clamp(2.8rem, 6vw, 4.5rem);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-left: clamp(1.8rem, 4vw, 3rem);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--line-strong) 8%, var(--line-strong) 92%, transparent);
+}
+
+.tl__item {
+  position: relative;
+  max-width: 68ch;
+}
+
+.tl__item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * clamp(1.8rem, 4vw, 3rem) + 1px);
+  top: 0.55em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1.5px solid var(--text);
+}
+
+.tl__when {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 122%;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-size: clamp(1.6rem, 3.2vw, 2.5rem);
+}
+
+.tl__where {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.tl__item h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  font-size: 1.15rem;
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.tl__item > p:not(.tl__when):not(.tl__where) {
+  color: var(--muted);
+  line-height: 1.75;
+}

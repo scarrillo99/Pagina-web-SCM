@@ -174,64 +174,114 @@
           </div>
 
 
-          <div class="chapters">
-            <article class="chapter" data-reveal>
-              <div>
-                <p class="chapter__when" data-i18n="ch1.when">Desde 2014</p>
-                <span class="chapter__where" data-i18n="ch1.where">Marbella · Magno Marbella</span>
-              </div>
-              <div>
-                <h3 class="chapter__title" data-i18n="ch1.title">
-                  Una década haciendo evolucionar a la élite
-                </h3>
-                <p class="chapter__text" data-i18n-html="ch1.p1">
-                  Pioneros del entrenamiento individualizado en Marbella; hoy, carreras y
-                  fichajes.
-                </p>
+          <!-- Línea de tiempo de la marca: los hitos que explican quiénes
+               somos, del césped de Marbella al mercado internacional. -->
+          <div class="timeline">
+            <article class="tl__item" data-reveal>
+              <p class="tl__when" data-i18n="tl.1.when">2014</p>
+              <p class="tl__where" data-i18n="tl.1.where">Marbella</p>
+              <h3 data-i18n="tl.1.title">El origen</h3>
+              <p data-i18n-html="tl.1.text">
+                Nace <strong>Magno Marbella</strong> sobre el césped: pioneros del
+                entrenamiento individualizado para futbolistas de élite durante sus
+                vacaciones y su pretemporada, cuando esa cultura no existía.
+              </p>
+            </article>
 
-                <p
-                  class="legacy__label"
-                  style="margin-top: var(--space-xl)"
-                  data-i18n="ch3.namesTitle"
-                >
-                  Por nuestras instalaciones han pasado, entre otros
-                </p>
-                <ul class="names"><li>Marcus Rashford</li><li>Gareth Bale</li><li>James Rodríguez</li><li>Manuel Lanzini</li><li>Noni Madueke</li><li>Dean Huijsen</li><li>Samuel Chukwueze</li><li>Orbelín Pineda</li></ul>
-                <p class="names__note" data-i18n="ch3.note">
-                  Estos nombres se citan como referencia del entorno en el que trabajamos.
-                </p>
+            <article class="tl__item" data-reveal>
+              <p class="tl__when" data-i18n="tl.2.when">Los veranos de la élite</p>
+              <p class="tl__where" data-i18n="tl.2.where">Marbella Football Center · Dama de Noche</p>
+              <h3 data-i18n="tl.2.title">La confianza se entrena</h3>
+              <p data-i18n="tl.2.text">
+                Por nuestras instalaciones pasa el más alto nivel. El trato cercano y la
+                discreción convierten cada verano en una relación.
+              </p>
 
-                <!-- Archivo: tres fotos reales de esos entrenamientos. Se
-                     enchufan en photos.css (--photo-legacy1..3). -->
-                <div class="gallery" style="margin-top: var(--space-xl)">
-                  <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy1)">
-                    <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
-                    <span class="shot__veil" aria-hidden="true"></span>
-                    <figcaption class="shot__caption">
-                      <span class="shot__who">Marcus Rashford</span>
-                      <span class="shot__meta">Marbella Football Center</span>
-                    </figcaption>
-                  </figure>
-                  <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy2)">
-                    <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
-                    <span class="shot__veil" aria-hidden="true"></span>
-                    <figcaption class="shot__caption">
-                      <span class="shot__who">Gareth Bale</span>
-                      <span class="shot__meta">Dama de Noche</span>
-                    </figcaption>
-                  </figure>
-                  <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy3)">
-                    <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
-                    <span class="shot__veil" aria-hidden="true"></span>
-                    <figcaption class="shot__caption">
-                      <span class="shot__who">James Rodríguez</span>
-                      <span class="shot__meta">Marbella Football Center</span>
-                    </figcaption>
-                  </figure>
-                </div>
+              <ul class="names"><li>Marcus Rashford</li><li>Gareth Bale</li><li>James Rodríguez</li><li>Manuel Lanzini</li><li>Noni Madueke</li><li>Dean Huijsen</li><li>Samuel Chukwueze</li><li>Orbelín Pineda</li></ul>
+              <p class="names__note" data-i18n="ch3.note">
+                Estos nombres se citan como referencia del entorno en el que trabajamos.
+              </p>
+
+              <div class="gallery" style="margin-top: var(--space-lg)">
+                <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy1)">
+                  <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+                  <span class="shot__veil" aria-hidden="true"></span>
+                  <figcaption class="shot__caption">
+                    <span class="shot__who">Marcus Rashford</span>
+                    <span class="shot__meta">Marbella Football Center</span>
+                  </figcaption>
+                </figure>
+                <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy2)">
+                  <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+                  <span class="shot__veil" aria-hidden="true"></span>
+                  <figcaption class="shot__caption">
+                    <span class="shot__who">Gareth Bale</span>
+                    <span class="shot__meta">Dama de Noche</span>
+                  </figcaption>
+                </figure>
+                <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy3)">
+                  <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+                  <span class="shot__veil" aria-hidden="true"></span>
+                  <figcaption class="shot__caption">
+                    <span class="shot__who">James Rodríguez</span>
+                    <span class="shot__meta">Marbella Football Center</span>
+                  </figcaption>
+                </figure>
               </div>
             </article>
 
+            <article class="tl__item" data-reveal>
+              <p class="tl__when" data-i18n="tl.3.when">El salto</p>
+              <p class="tl__where" data-i18n="tl.3.where">Nace SCM Sports Agency</p>
+              <h3 data-i18n="tl.3.title">De gestionar el entorno a gestionar la carrera</h3>
+              <p data-i18n-html="tl.3.text">
+                Los propios jugadores nos piden el siguiente paso: <strong>representación e
+                intermediación directa</strong>. Nace SCM con un modelo boutique: pocos
+                jugadores, todo el método.
+              </p>
+            </article>
+
+            <article class="tl__item" data-reveal>
+              <p class="tl__when" data-i18n="tl.4.when">El método</p>
+              <p class="tl__where" data-i18n="tl.4.where">Cada semana, el mismo ciclo</p>
+              <h3 data-i18n="tl.4.title">Un equipo alrededor de un mismo jugador</h3>
+              <p data-i18n="tl.4.text">
+                Videollamada tras cada partido, cortes de vídeo y un equipo multidisciplinar:
+                analistas, preparadores físicos, psicólogos y nutricionistas.
+              </p>
+            </article>
+
+            <article class="tl__item" data-reveal>
+              <p class="tl__when" data-i18n="tl.5.when">2026</p>
+              <p class="tl__where" data-i18n="tl.5.where">La prueba</p>
+              <h3 data-i18n="tl.5.title">De agente libre a traspaso internacional</h3>
+              <p data-i18n-html="tl.5.text">
+                <strong>Iker Pozo</strong> firma su traspaso internacional tras dos años de
+                trabajo individual. <strong>Orel Mangala</strong> y
+                <strong>Frederik Kondogbia</strong> compiten en la élite europea. Y la
+                cartera es pública.
+              </p>
+              <a
+                class="philo__cta"
+                style="margin-top: var(--space-md); font-size: 0.95rem"
+                href="https://www.transfermarkt.es/scm-sports-agency/beraterfirma/berater/11514"
+              >
+                <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
+                  <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span data-i18n="proof.cta">Verifica nuestra cartera en Transfermarkt</span>
+              </a>
+            </article>
+
+            <article class="tl__item" data-reveal>
+              <p class="tl__when" data-i18n="tl.6.when">Hoy</p>
+              <p class="tl__where" data-i18n="tl.6.where">Boutique global desde Marbella</p>
+              <h3 data-i18n="tl.6.title">Tu evolución es nuestra marca</h3>
+              <p data-i18n="tl.6.text">
+                Jugadores seleccionados a conciencia en España y Europa, con una idea que no
+                cambia: no esperamos al talento, lo evolucionamos.
+              </p>
+            </article>
           </div>
 
         </div>

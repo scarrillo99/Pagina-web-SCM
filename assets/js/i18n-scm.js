@@ -114,6 +114,36 @@ window.I18N_DICT = {
     'legacy.4.label': 'Ligas de operación',
     'legacy.4.note': 'España, Italia, Bélgica y Reino Unido, más el mercado internacional.',
 
+    'tl.1.when': '2014',
+    'tl.1.where': 'Marbella',
+    'tl.1.title': 'El origen',
+    'tl.1.text':
+      'Nace <strong>Magno Marbella</strong> sobre el césped: pioneros del entrenamiento individualizado para futbolistas de élite durante sus vacaciones y su pretemporada, cuando esa cultura no existía.',
+    'tl.2.when': 'Los veranos de la élite',
+    'tl.2.where': 'Marbella Football Center · Dama de Noche',
+    'tl.2.title': 'La confianza se entrena',
+    'tl.2.text':
+      'Por nuestras instalaciones pasa el más alto nivel. El trato cercano y la discreción convierten cada verano en una relación.',
+    'tl.3.when': 'El salto',
+    'tl.3.where': 'Nace SCM Sports Agency',
+    'tl.3.title': 'De gestionar el entorno a gestionar la carrera',
+    'tl.3.text':
+      'Los propios jugadores nos piden el siguiente paso: <strong>representación e intermediación directa</strong>. Nace SCM con un modelo boutique: pocos jugadores, todo el método.',
+    'tl.4.when': 'El método',
+    'tl.4.where': 'Cada semana, el mismo ciclo',
+    'tl.4.title': 'Un equipo alrededor de un mismo jugador',
+    'tl.4.text':
+      'Videollamada tras cada partido, cortes de vídeo y un equipo multidisciplinar: analistas, preparadores físicos, psicólogos y nutricionistas.',
+    'tl.5.when': '2026',
+    'tl.5.where': 'La prueba',
+    'tl.5.title': 'De agente libre a traspaso internacional',
+    'tl.5.text':
+      '<strong>Iker Pozo</strong> firma su traspaso internacional tras dos años de trabajo individual. <strong>Orel Mangala</strong> y <strong>Frederik Kondogbia</strong> compiten en la élite europea. Y la cartera es pública.',
+    'tl.6.when': 'Hoy',
+    'tl.6.where': 'Boutique global desde Marbella',
+    'tl.6.title': 'Tu evolución es nuestra marca',
+    'tl.6.text':
+      'Jugadores seleccionados a conciencia en España y Europa, con una idea que no cambia: no esperamos al talento, lo evolucionamos.',
     'ch1.when': 'Desde 2014',
     'ch1.where': 'Marbella · Magno Marbella',
     'hist.claim': 'Donde entrenó la élite, hoy se <em>construyen carreras</em>',
@@ -562,6 +592,36 @@ window.I18N_DICT = {
     'legacy.4.label': 'Leagues we operate in',
     'legacy.4.note': 'Spain, Italy, Belgium and the United Kingdom, plus the wider market.',
 
+    'tl.1.when': '2014',
+    'tl.1.where': 'Marbella',
+    'tl.1.title': 'The origin',
+    'tl.1.text':
+      '<strong>Magno Marbella</strong> is born on the grass: pioneers of individualized training for elite footballers during their holidays and pre-season, when that culture did not exist.',
+    'tl.2.when': 'The summers of the elite',
+    'tl.2.where': 'Marbella Football Center · Dama de Noche',
+    'tl.2.title': 'Trust is trained',
+    'tl.2.text':
+      'The very top level comes through our facilities. Closeness and discretion turn every summer into a relationship.',
+    'tl.3.when': 'The leap',
+    'tl.3.where': 'SCM Sports Agency is born',
+    'tl.3.title': 'From managing the environment to managing the career',
+    'tl.3.text':
+      'The players themselves ask for the next step: <strong>direct representation and intermediation</strong>. SCM is born as a boutique: few players, the full method.',
+    'tl.4.when': 'The method',
+    'tl.4.where': 'Every week, the same cycle',
+    'tl.4.title': 'One team around one player',
+    'tl.4.text':
+      'A video call after every match, video clips and a multidisciplinary team: analysts, fitness coaches, psychologists and nutritionists.',
+    'tl.5.when': '2026',
+    'tl.5.where': 'The proof',
+    'tl.5.title': 'From free agent to international transfer',
+    'tl.5.text':
+      '<strong>Iker Pozo</strong> signs his international transfer after two years of individual work. <strong>Orel Mangala</strong> and <strong>Frederik Kondogbia</strong> compete at the European elite level. And the roster is public.',
+    'tl.6.when': 'Today',
+    'tl.6.where': 'A global boutique from Marbella',
+    'tl.6.title': 'Your evolution is our brand',
+    'tl.6.text':
+      'Players selected with intent across Spain and Europe, with one idea that never changes: we do not wait for talent, we evolve it.',
     'ch1.when': 'Since 2014',
     'ch1.where': 'Marbella · Magno Marbella',
     'hist.claim': 'Where the elite trained, careers are <em>now built</em>',
