@@ -350,22 +350,22 @@ window.I18N_DICT = {
       'El rendimiento del jugador da fuerza al agente, y el trabajo del agente convierte esa fuerza en <em>oportunidades reales</em>',
 
     'partner.section': 'SCM Sports × Magno',
-    'partner.title': 'Nuestro socio estratégico',
+    'partner.title': 'El fútbol también se juega fuera del campo',
     'partner.lead':
-      'El rendimiento de un jugador también depende de lo que vive fuera del campo. En esa área contamos con Magno Marbella, expertos en experiencias y servicios del más alto nivel para futbolistas profesionales.',
-    'partner.1.title': 'Estancias y desplazamientos',
+      'Magno Marbella es nuestro socio estratégico: experiencias y servicios del más alto nivel para que el jugador solo piense en rendir.',
+    'partner.1.title': 'Llega y compite',
     'partner.1.text':
       'Del avión al campo sin fricciones: vuelos, traslados y agenda resueltos antes de aterrizar.',
-    'partner.2.title': 'Villas, hoteles y vehículos',
+    'partner.2.title': 'Descanso de élite',
     'partner.2.text':
       'Una villa con vistas, un hotel discreto o el coche esperando en la puerta: descanso a la altura de la exigencia.',
-    'partner.3.title': 'Experiencias VIP',
+    'partner.3.title': 'Acceso exclusivo',
     'partner.3.text':
       'Palcos, eventos y mesas que no se reservan: se abren. La Costa del Sol al nivel del jugador.',
     'partner.4.title': 'Training camps',
     'partner.4.text':
       'Césped, gimnasio y método: pretemporadas y estancias de trabajo con nuestros preparadores en Marbella.',
-    'partner.5.title': 'Inversión inmobiliaria',
+    'partner.5.title': 'Patrimonio inteligente',
     'partner.5.text':
       'Patrimonio que también juega: oportunidades seleccionadas en el mercado de lujo de la Costa del Sol.',
     'partner.cta': 'Conocer Magno Marbella',
@@ -754,22 +754,22 @@ window.I18N_DICT = {
       'A player’s performance gives the agent strength, and the agent’s work turns that strength into <em>real opportunities</em>',
 
     'partner.section': 'SCM Sports × Magno',
-    'partner.title': 'Our strategic partner',
+    'partner.title': 'Football is also played off the pitch',
     'partner.lead':
-      'A player’s performance also depends on life away from the pitch. That is where Magno Marbella comes in: specialists in high-end experiences and services for professional footballers.',
-    'partner.1.title': 'Stays and travel',
+      'Magno Marbella is our strategic partner: top-level experiences and services so the player can focus on performing.',
+    'partner.1.title': 'Land and compete',
     'partner.1.text':
       'From the plane to the pitch without friction: flights, transfers and schedule solved before landing.',
-    'partner.2.title': 'Villas, hotels and cars',
+    'partner.2.title': 'Elite rest',
     'partner.2.text':
       'A villa with a view, a discreet hotel or the car waiting at the door: rest that matches the standard.',
-    'partner.3.title': 'VIP experiences',
+    'partner.3.title': 'Exclusive access',
     'partner.3.text':
       'Boxes, events and tables you do not book: they open. The Costa del Sol at the player’s level.',
     'partner.4.title': 'Training camps',
     'partner.4.text':
       'Grass, gym and method: pre-seasons and working stays with our own coaches in Marbella.',
-    'partner.5.title': 'Real estate investment',
+    'partner.5.title': 'Smart wealth',
     'partner.5.text':
       'Wealth that plays too: selected opportunities in the Costa del Sol luxury market.',
     'partner.cta': 'Discover Magno Marbella',
