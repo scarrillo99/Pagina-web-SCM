@@ -200,6 +200,16 @@ window.I18N_DICT = {
     'services.title': 'Tu evolución es <em>nuestra marca</em>',
     'services.lead':
       'No esperamos a que la rompas. Trabajamos contigo cada semana para que hagas mejor el trabajo que te pide tu entrenador, en todas las áreas.',
+    'services.lead2':
+      'Ese es el trato: tú pones el talento y la mentalidad; nosotros, el método y el mercado.',
+    'repstats.1.label': 'Traspaso internacional 2026',
+    'repstats.1.note': 'Iker Pozo: de agente libre a venta en dos años.',
+    'repstats.2.label': 'Jugadores en Primera División',
+    'repstats.2.note': 'Experiencia directa con la élite europea.',
+    'repstats.3.label': 'Jugadores seleccionados',
+    'repstats.3.note': 'Cartera reducida y elegida a conciencia.',
+    'repstats.4.label': 'Países donde competimos',
+    'repstats.4.note': 'España, Rusia, Bélgica, Polonia y Croacia.',
     'services.grid': 'Todo <em>alrededor del jugador</em>',
     'services.gridlead':
       'Cada área existe para lo mismo: que hagas mejor lo que te pide tu entrenador y que tu evolución no se pare.',
@@ -220,11 +230,11 @@ window.I18N_DICT = {
     'rep.label': 'Cuando evolucionas, el mercado llega',
     'rep.title': 'Representación e <em>intermediación</em>',
     'rep.p1':
-      'Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con un modelo win-win: si tú ganas, nosotros ganamos. No cobramos el 10 % a sueldos bajos; trabajamos para llevarte a sueldos profesionales sostenibles.',
+      'Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con un modelo sencillo: crecemos cuando tú creces. Nuestro incentivo es tu carrera, no tu nómina.',
     'rep.p2':
       'Negociamos contratos y renovaciones <strong>desde la fuerza del rendimiento</strong>, y hacemos intermediación directa con clubes en operaciones nacionales e internacionales.',
     'rep.p3':
-      'Los jugadores que evolucionan con nuestra metodología reciben de <strong>3 a 4 ofertas de clubes al año</strong>.',
+      'Cuando tu rendimiento habla, <strong>el mercado escucha</strong>: generamos interés real de clubes y elegimos contigo el paso correcto en cada ventana.',
     'rep.how': 'Cómo lo hacemos',
     'rep.s1': 'Evaluación 360º y firma en exclusividad',
     'rep.s2': 'Plan de carrera y valor de mercado',
@@ -642,6 +652,16 @@ window.I18N_DICT = {
     'services.title': 'Your evolution is <em>our brand</em>',
     'services.lead':
       'We do not wait for you to break through. We work with you every week so you do better what your coach demands, in every area.',
+    'services.lead2':
+      'That is the deal: you bring the talent and the mindset; we bring the method and the market.',
+    'repstats.1.label': 'International transfer 2026',
+    'repstats.1.note': 'Iker Pozo: from free agent to a sale in two years.',
+    'repstats.2.label': 'Players in top-flight football',
+    'repstats.2.note': 'Direct experience with the European elite.',
+    'repstats.3.label': 'Selected players',
+    'repstats.3.note': 'A deliberately small, hand-picked roster.',
+    'repstats.4.label': 'Countries we compete in',
+    'repstats.4.note': 'Spain, Russia, Belgium, Poland and Croatia.',
     'services.grid': 'Everything <em>around the player</em>',
     'services.gridlead':
       'Every area exists for the same reason: so you do better what your coach demands and your evolution never stops.',
@@ -662,11 +682,11 @@ window.I18N_DICT = {
     'rep.label': 'When you evolve, the market comes',
     'rep.title': 'Representation and <em>intermediation</em>',
     'rep.p1':
-      'We represent footballers and coaches on an <strong>exclusive</strong> basis, with a win-win model: when you win, we win. We do not charge 10% on low salaries; we work to move you into sustainable professional wages.',
+      'We represent footballers and coaches on an <strong>exclusive</strong> basis, with a simple model: we grow when you grow. Our incentive is your career, not your payslip.',
     'rep.p2':
       'We negotiate contracts and renewals <strong>from the strength of performance</strong>, and we run direct intermediation with clubs in domestic and international deals.',
     'rep.p3':
-      'Players developing under our methodology receive <strong>3 to 4 club offers a year</strong>.',
+      'When your performance speaks, <strong>the market listens</strong>: we generate real club interest and choose the right step with you in every window.',
     'rep.how': 'How we do it',
     'rep.s1': '360º evaluation and exclusive signing',
     'rep.s2': 'Career plan and market value',

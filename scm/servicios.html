@@ -102,21 +102,22 @@
     <main id="main">
 
       <!-- ================================================ servicios ==== -->
-      <section class="section" id="servicios">
-        <div class="container">
-          <div class="tag" data-reveal>
-            <p class="tag__mark">Inimitable</p>
-            <p class="tag__section" data-i18n="services.section">Nuestros servicios</p>
-          </div>
-
-          <h2 class="section__title" data-i18n-html="services.title" data-reveal>
+      <!-- ======================================= servicios: cartel ==== -->
+      <section class="section bhero" id="servicios">
+        <div class="container bhero__grid">
+          <h2 class="bhero__title" data-i18n-html="services.title" data-reveal>
             Tu evolución es <em>nuestra marca</em>
           </h2>
-          <p class="section__lead" data-i18n="services.lead" data-reveal>
-            No esperamos a que la rompas. Trabajamos contigo cada semana para que hagas mejor
-            el trabajo que te pide tu entrenador, en todas las áreas.
-          </p>
-
+          <div class="bhero__text">
+            <p data-i18n="services.lead" data-reveal>
+              No esperamos a que la rompas. Trabajamos contigo cada semana para que hagas
+              mejor el trabajo que te pide tu entrenador, en todas las áreas.
+            </p>
+            <p data-i18n="services.lead2" data-reveal>
+              Ese es el trato: tú pones el talento y la mentalidad; nosotros, el método y el
+              mercado.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -137,29 +138,33 @@
             Así se evoluciona: partido a partido, con método y con datos.
           </p>
 
-          <div class="process__steps">
-            <article class="process__step" data-reveal>
+          <div class="cycle">
+            <article class="cycle__step" data-reveal>
+              <span class="cycle__num" aria-hidden="true">01</span>
               <h3 data-i18n="met2.1.title">Tu partido, visto y cortado</h3>
               <p data-i18n="met2.1.text">
                 Analizamos cada partido con Wyscout y BeSoccer Pro y preparamos tus cortes de
                 vídeo.
               </p>
             </article>
-            <article class="process__step" data-reveal style="--reveal-delay: 0.06s">
+            <article class="cycle__step" data-reveal style="--reveal-delay: 0.07s">
+              <span class="cycle__num" aria-hidden="true">02</span>
               <h3 data-i18n="met2.2.title">Videollamada individual</h3>
               <p data-i18n="met2.2.text">
                 Repasamos contigo lo que tu cuerpo técnico te pide en tu posición y cómo
                 hacerlo mejor.
               </p>
             </article>
-            <article class="process__step" data-reveal style="--reveal-delay: 0.12s">
+            <article class="cycle__step" data-reveal style="--reveal-delay: 0.14s">
+              <span class="cycle__num" aria-hidden="true">03</span>
               <h3 data-i18n="met2.3.title">Plan sobre tus condiciones</h3>
               <p data-i18n="met2.3.text">
                 Potenciamos tus condiciones naturales con objetivos concretos para el
                 siguiente partido.
               </p>
             </article>
-            <article class="process__step" data-reveal style="--reveal-delay: 0.18s">
+            <article class="cycle__step" data-reveal style="--reveal-delay: 0.21s">
+              <span class="cycle__num" aria-hidden="true">04</span>
               <h3 data-i18n="met2.4.title">Evolución medida</h3>
               <p data-i18n="met2.4.text">
                 Datos, imágenes e interés de clubes: tu progreso se ve y se puede enseñar.
@@ -184,9 +189,9 @@
                 Representación e <em>intermediación</em>
               </h3>
               <p class="chapter__text" data-i18n-html="rep.p1" data-reveal>
-                Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con
-                un modelo win-win: si tú ganas, nosotros ganamos. No cobramos el 10 % a sueldos
-                bajos; trabajamos para llevarte a sueldos profesionales sostenibles.
+                Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>,
+                con un modelo sencillo: crecemos cuando tú creces. Nuestro incentivo es tu
+                carrera, no tu nómina.
               </p>
               <p class="chapter__text" data-i18n-html="rep.p2" data-reveal>
                 Negociamos contratos y renovaciones <strong>desde la fuerza del
@@ -194,8 +199,8 @@
                 operaciones nacionales e internacionales.
               </p>
               <p class="chapter__text" data-i18n-html="rep.p3" data-reveal>
-                Los jugadores que evolucionan con nuestra metodología reciben de
-                <strong>3 a 4 ofertas de clubes al año</strong>.
+                Cuando tu rendimiento habla, <strong>el mercado escucha</strong>: generamos
+                interés real de clubes y elegimos contigo el paso correcto en cada ventana.
               </p>
             </div>
 
@@ -210,6 +215,29 @@
                 </ul>
               </div>
             </div>
+          </div>
+
+          <div class="legacy__grid" style="margin-top: clamp(2.5rem, 6vw, 4rem)">
+            <article class="legacy__item" data-reveal>
+              <p class="legacy__value">1,5M€</p>
+              <h3 class="legacy__label" data-i18n="repstats.1.label">Traspaso internacional 2026</h3>
+              <p class="legacy__note" data-i18n="repstats.1.note">Iker Pozo: de agente libre a venta en dos años.</p>
+            </article>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.08s">
+              <p class="legacy__value"><span data-count="3">3</span></p>
+              <h3 class="legacy__label" data-i18n="repstats.2.label">Jugadores en Primera División</h3>
+              <p class="legacy__note" data-i18n="repstats.2.note">Experiencia directa con la élite europea.</p>
+            </article>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.16s">
+              <p class="legacy__value"><span data-count="20">20</span></p>
+              <h3 class="legacy__label" data-i18n="repstats.3.label">Jugadores seleccionados</h3>
+              <p class="legacy__note" data-i18n="repstats.3.note">Cartera reducida y elegida a conciencia.</p>
+            </article>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.24s">
+              <p class="legacy__value"><span data-count="5">5</span></p>
+              <h3 class="legacy__label" data-i18n="repstats.4.label">Países donde competimos</h3>
+              <p class="legacy__note" data-i18n="repstats.4.note">España, Rusia, Bélgica, Polonia y Croacia.</p>
+            </article>
           </div>
         </div>
       </section>
