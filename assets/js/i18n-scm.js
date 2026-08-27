@@ -199,18 +199,18 @@ window.I18N_DICT = {
     'services.section': 'Nuestros servicios',
     'services.title': 'Una agencia 360º',
     'services.lead':
-      'No nos limitamos a negociar contratos. Cubrimos todas las áreas que un futbolista necesita para alcanzar su máximo potencial.',
+      'Todo lo que un futbolista necesita para competir al más alto nivel, en un solo equipo.',
 
-    'services.1.title': 'Asesoramiento integral',
+    'services.1.title': 'Representación y contratos',
     'services.1.text':
-      'Cada decisión fuera del campo impacta en la carrera del jugador. Trabajamos con una visión general y acompañamos en las áreas clave de su vida para que cada paso empuje en la dirección correcta.',
+      'Negociamos desde la fuerza del rendimiento. Contratos, renovaciones y traspasos pensados para toda tu carrera, no para una sola ventana de mercado.',
     'services.1.a': 'Conectamos el rendimiento en el campo con la estabilidad fuera de él',
     'services.1.b': 'Pensamos a largo plazo, para construir una carrera y un futuro sólidos',
     'services.1.c': 'Un equipo de confianza que lo engloba todo, sin buscar soluciones por separado',
 
     'services.2.title': 'Análisis de rendimiento',
     'services.2.text':
-      'La imagen que el jugador proyecta durante la competición es determinante para su presente y su futuro deportivo. La abordamos con método.',
+      'Cada partido, analizado contigo. Videollamada semanal con cortes de vídeo para hacer mejor lo que exige tu cuerpo técnico y potenciar tus condiciones naturales.',
     'services.2.a': 'Estudio técnico y táctico adaptado a su posición y cualidades',
     'services.2.b': 'Imágenes de partidos y entrenamientos para identificar patrones',
     'services.2.c': 'Sesiones de vídeo presenciales para reforzar lo trabajado',
@@ -218,7 +218,7 @@ window.I18N_DICT = {
 
     'services.3.title': 'Apoyo psicológico',
     'services.3.text':
-      'El estado mental del jugador es tan decisivo como su preparación física. Lo trabajamos como un pilar más de su desarrollo.',
+      'La cabeza también compite. Confianza, concentración y gestión de la presión, con acompañamiento real en los momentos que deciden temporadas.',
     'services.3.a': 'Confianza, motivación, concentración y atención',
     'services.3.b': 'Acompañamiento en competición para rendir en los momentos clave',
     'services.3.c': 'Prevención y recuperación de lesiones con apoyo emocional',
@@ -226,7 +226,7 @@ window.I18N_DICT = {
 
     'services.4.title': 'Plan de nutrición',
     'services.4.text':
-      'La alimentación influye directamente en el rendimiento y la recuperación. Diseñamos un plan detallado y adaptado a su realidad.',
+      'El detalle que marca diferencias. Alimentación adaptada a tu posición, tus cargas y tu recuperación, convertida en hábitos que se mantienen todo el año.',
     'services.4.a': 'Adaptado a su posición, esfuerzo e intensidad de juego',
     'services.4.b': 'Optimización de la recuperación tras entrenamientos y partidos',
     'services.4.c': 'Prevención de lesiones controlando cargas y necesidades energéticas',
@@ -234,7 +234,7 @@ window.I18N_DICT = {
 
     'services.5.title': 'Desarrollo deportivo',
     'services.5.text':
-      'Un proyecto individualizado que evoluciona con el jugador y se ajusta continuamente en función de lo que ocurre en la temporada.',
+      'Preparación física individual, ajustada a tu calendario y a tu historial, para protegerte de lesiones y llegar al máximo cuando más importa.',
     'services.5.a': 'Ajustado al calendario de partidos y a las cargas de entrenamiento',
     'services.5.b': 'Atento a su historial de lesiones y molestias inesperadas',
     'services.5.c': 'Orientado a proteger su salud y prevenir lesiones',
@@ -242,7 +242,7 @@ window.I18N_DICT = {
 
     'services.6.title': 'Marketing y marca personal',
     'services.6.text':
-      'Transformamos su imagen en una marca sólida y con proyección, con equipo interno de marketing y creación de contenido propia.',
+      'Una marca auténtica que crece contigo. Imagen, redes y acuerdos gestionados por nuestro equipo propio, para sumar a tu carrera sin distraerla.',
     'services.6.a': 'Estrategias de marketing a medida con capacidades internas',
     'services.6.b': 'Construcción de una marca auténtica y sostenible',
     'services.6.c': 'Gestión profesional de redes sociales y creación de contenido',
@@ -250,7 +250,10 @@ window.I18N_DICT = {
 
     'services.7.title': 'Inversiones y patrimonio',
     'services.7.text':
-      'Lo que un jugador logra en el campo merece reflejarse fuera de él. Nos aseguramos de que el éxito de hoy se traduzca en seguridad mañana.',
+      'Fiscalidad, ahorro e inversión con cabeza: que lo ganado dentro del campo se quede contigo fuera, hoy y cuando cuelgues las botas.',
+    'services.8.title': 'Scouting y proyección internacional',
+    'services.8.text':
+      'Contacto semanal con clubes de España, Bélgica, Portugal y Rusia. Cuando llega tu momento, el mercado ya te conoce.',
     'services.7.a': 'Educación financiera',
     'services.7.b': 'Asesoramiento en la compra de propiedades',
     'services.7.c': 'Planificación de inversiones inteligentes',
@@ -604,18 +607,18 @@ window.I18N_DICT = {
     'services.section': 'Our services',
     'services.title': 'A 360º agency',
     'services.lead':
-      'We do more than negotiate contracts. We cover every area a footballer needs in order to reach their full potential.',
+      'Everything a footballer needs to compete at the highest level, in one team.',
 
-    'services.1.title': 'End-to-end advice',
+    'services.1.title': 'Representation and contracts',
     'services.1.text':
-      'Every decision off the pitch shapes a career. We take the wide view and support the key areas of a player’s life so that each step pushes in the right direction.',
+      'We negotiate from the strength of performance. Contracts, renewals and transfers built for a whole career, not a single window.',
     'services.1.a': 'We connect on-pitch performance with stability off it',
     'services.1.b': 'We think long term, to build a solid career and a solid future',
     'services.1.c': 'One trusted team covering everything, with no need to shop around',
 
     'services.2.title': 'Performance analysis',
     'services.2.text':
-      'How a player performs in competition shapes both their present and their future. We approach it methodically.',
+      'Every match, analyzed with you. A weekly video call with match clips to do better what your coaching staff demands and to sharpen your natural traits.',
     'services.2.a': 'Technical and tactical study tailored to their position and qualities',
     'services.2.b': 'Match and training footage used to identify patterns',
     'services.2.c': 'In-person video sessions to reinforce the work',
@@ -623,7 +626,7 @@ window.I18N_DICT = {
 
     'services.3.title': 'Psychological support',
     'services.3.text':
-      'A player’s mental state matters as much as their physical preparation. We treat it as another pillar of their development.',
+      'The mind competes too. Confidence, concentration and pressure management, with real support in the moments that decide seasons.',
     'services.3.a': 'Confidence, motivation, concentration and focus',
     'services.3.b': 'Support during competition to perform in the decisive moments',
     'services.3.c': 'Injury prevention and recovery with emotional support',
@@ -631,7 +634,7 @@ window.I18N_DICT = {
 
     'services.4.title': 'Nutrition plan',
     'services.4.text':
-      'Diet has a direct effect on performance and recovery. We design a detailed plan built around the player’s real life.',
+      'The detail that makes the difference. Nutrition tailored to your position, your workload and your recovery, turned into habits that last all year.',
     'services.4.a': 'Tailored to their position, workload and intensity of play',
     'services.4.b': 'Optimised recovery after training and matches',
     'services.4.c': 'Injury prevention by managing loads and energy needs',
@@ -639,7 +642,7 @@ window.I18N_DICT = {
 
     'services.5.title': 'Athletic development',
     'services.5.text':
-      'An individual programme that evolves with the player and is adjusted continuously according to how the season unfolds.',
+      'Individual physical preparation, tuned to your calendar and your history, to protect you from injury and peak when it matters most.',
     'services.5.a': 'Aligned with the fixture calendar and training loads',
     'services.5.b': 'Mindful of injury history and unexpected niggles',
     'services.5.c': 'Built to protect their health and prevent injury',
@@ -647,7 +650,7 @@ window.I18N_DICT = {
 
     'services.6.title': 'Marketing and personal brand',
     'services.6.text':
-      'We turn a player’s image into a solid brand with reach, backed by an in-house marketing team and our own content production.',
+      'An authentic brand that grows with you. Image, social media and deals run by our in-house team, adding to your career without distracting from it.',
     'services.6.a': 'Bespoke marketing strategies built with in-house capability',
     'services.6.b': 'Building an authentic, sustainable brand',
     'services.6.c': 'Professional social media management and content creation',
@@ -655,7 +658,10 @@ window.I18N_DICT = {
 
     'services.7.title': 'Investment and wealth',
     'services.7.text':
-      'What a player achieves on the pitch deserves to show off it too. We make sure today’s success turns into tomorrow’s security.',
+      'Tax, savings and smart investment: what you earn on the pitch stays with you off it, today and when the boots come off.',
+    'services.8.title': 'Scouting and international reach',
+    'services.8.text':
+      'Weekly contact with clubs in Spain, Belgium, Portugal and Russia. When your moment arrives, the market already knows you.',
     'services.7.a': 'Financial education',
     'services.7.b': 'Advice on property purchases',
     'services.7.c': 'Planning intelligent investments',
