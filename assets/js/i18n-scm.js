@@ -116,9 +116,10 @@ window.I18N_DICT = {
 
     'ch1.when': 'Desde 2014',
     'ch1.where': 'Marbella · Magno Marbella',
-    'ch1.title': 'Del entrenamiento de élite a gestionar carreras',
+    'hist.claim': 'Donde entrenó la élite, hoy se <em>construyen carreras</em>',
+    'ch1.title': 'Una década haciendo evolucionar a la élite',
     'ch1.p1':
-      'Nacimos en 2014 en <strong>Magno Marbella</strong> como pioneros del entrenamiento individualizado de élite. Hoy gestionamos carreras y fichajes con un equipo multidisciplinar: analistas, preparadores, psicólogos y nutricionistas.',
+      'Nacimos en 2014 en <strong>Magno Marbella</strong>, pioneros del entrenamiento individualizado para futbolistas de élite. La confianza de aquellos veranos se convirtió en el siguiente paso: hoy gestionamos carreras y fichajes con analistas, preparadores, psicólogos y nutricionistas alrededor de un mismo jugador.',
 
     'ch2.when': 'Nuestros valores',
     'ch2.where': 'Se practican, no se enuncian',
@@ -516,9 +517,10 @@ window.I18N_DICT = {
 
     'ch1.when': 'Since 2014',
     'ch1.where': 'Marbella · Magno Marbella',
-    'ch1.title': 'From elite training to managing careers',
+    'hist.claim': 'Where the elite trained, careers are <em>now built</em>',
+    'ch1.title': 'A decade evolving the elite',
     'ch1.p1':
-      'Born in 2014 out of <strong>Magno Marbella</strong> as pioneers of individualized elite training. Today we manage careers and transfers with a multidisciplinary team: analysts, coaches, psychologists and nutritionists.',
+      'Born in 2014 out of <strong>Magno Marbella</strong>, pioneers of individualized training for elite footballers. The trust earned in those summers became the next step: today we manage careers and transfers with analysts, coaches, psychologists and nutritionists around one player.',
 
     'ch2.when': 'Our values',
     'ch2.where': 'Practiced, not preached',

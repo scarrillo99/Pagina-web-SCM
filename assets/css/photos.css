@@ -113,6 +113,10 @@
   /* --photo-fundador: url('../img/fundador.jpg'); */
   /* --photo-informe: url('../img/informe-analisis.jpg'); */
   /* --photo-cta: url('../img/cta-tunel.jpg'); */
+  /* - historia-entreno.jpg: franja a pantalla completa de la página
+       Historia. Entrenamiento de alta intensidad, tono oscuro y
+       cinematográfico. Horizontal, 1920 x 900. */
+  /* --photo-historia: url('../img/historia-entreno.jpg'); */
 }
 
 /* Los heroes llevan su propia imagen por página.
