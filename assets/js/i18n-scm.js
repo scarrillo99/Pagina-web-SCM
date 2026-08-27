@@ -23,8 +23,8 @@ window.I18N_DICT = {
     'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
     'hero.lead':
       'Agencia boutique internacional de representación, asesoramiento de carreras y desarrollo táctico de futbolistas y entrenadores.',
-    'hero.cta1': 'Hablemos',
-    'hero.cta2': 'Ver servicios',
+    'hero.cta1': 'Empieza tu evolución',
+    'hero.cta2': 'Descubre el método',
 
     'home.q1.title': 'Metodología individual',
     'home.q1.text': 'Videollamada semanal con cortes de vídeo, guiada por tu posición y tus condiciones.',
@@ -335,7 +335,7 @@ window.I18N_DICT = {
     'focus.section': 'Así potenciamos el talento',
     'focus.title': 'Nuestro enfoque',
     'focus.lead':
-      'Cinco principios que se aplican igual a un juvenil que a un internacional.',
+      'Cinco principios que se aplican igual a un juvenil que a un internacional. La escala cambia; la exigencia, no.',
     'focus.1.title': 'Ser uno más en la agencia',
     'focus.1.text':
       'Cada jugador recibe un plan personalizado y la misma dedicación, esté empezando o jugando en la élite.',
@@ -353,9 +353,9 @@ window.I18N_DICT = {
       'Les guiamos para invertir con inteligencia y asegurar su futuro más allá del fútbol.',
 
     'team.section': 'El equipo',
-    'team.title': 'Quién está detrás',
+    'team.title': 'El equipo detrás de <em>tu evolución</em>',
     'team.lead':
-      'Agentes internos, scouts y ex futbolistas profesionales con experiencia en La Liga, Bundesliga, Belgian Pro League, Serie A, Premier League y Primeira Liga.',
+      'Agentes, analistas, scouts y ex futbolistas profesionales con experiencia en La Liga, Bundesliga, Premier League, Serie A, Belgian Pro League y Primeira Liga. Cada uno existe para lo mismo: que evoluciones.',
     'team.role1': 'Dirección',
     'team.role2': 'Agente',
     'team.role3': 'Scouting',
@@ -379,7 +379,7 @@ window.I18N_DICT = {
     'news.section': 'Actualidad',
     'news.title': 'Lo último en <em>@scmsportsagency</em>',
     'news.lead':
-      'Publicamos el día a día de la agencia en Instagram: fichajes, entrenamientos y el contenido que creamos para nuestros jugadores.',
+      'El día a día de la agencia, en abierto: fichajes, entrenamientos, análisis y el contenido que creamos para nuestros jugadores.',
     'news.1.label': 'Mercado',
     'news.1.title': 'Fichajes y renovaciones',
     'news.1.text':
@@ -446,7 +446,7 @@ window.I18N_DICT = {
     'contact.section': 'Contacto',
     'contact.title': 'Kick off',
     'contact.lead':
-      'Tanto si eres jugador, familia o club, escríbenos. Respondemos a todo y lo que nos cuentes se queda entre nosotros.',
+      'Si eres jugador, familia o club, escríbenos. Respondemos a todo, rápido, y lo que nos cuentes se queda entre nosotros.',
     'contact.email': 'Email',
     'contact.address': 'Dirección',
     'contact.follow': 'Síguenos',
@@ -501,8 +501,8 @@ window.I18N_DICT = {
     'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
     'hero.lead':
       'International boutique agency for representation, career advisory and tactical development of footballers and coaches.',
-    'hero.cta1': "Let's talk",
-    'hero.cta2': 'See services',
+    'hero.cta1': 'Start your evolution',
+    'hero.cta2': 'Discover the method',
 
     'home.q1.title': 'Individual methodology',
     'home.q1.text': 'A weekly video call with match clips, guided by your position and your traits.',
@@ -813,7 +813,7 @@ window.I18N_DICT = {
     'focus.section': 'How we grow talent',
     'focus.title': 'Our approach',
     'focus.lead':
-      'Five principles that apply the same way to an academy player and to a full international.',
+      'Five principles that apply the same way to an academy player and to a full international. The scale changes; the standard does not.',
     'focus.1.title': 'Never just a number',
     'focus.1.text':
       'Every player gets a tailored plan and the same dedication, whether they are starting out or playing at the top.',
@@ -831,9 +831,9 @@ window.I18N_DICT = {
       'We guide them to invest intelligently and secure a future beyond football.',
 
     'team.section': 'The team',
-    'team.title': 'Who is behind it',
+    'team.title': 'The team behind <em>your evolution</em>',
     'team.lead':
-      'In-house agents, scouts and former professional footballers with experience in La Liga, the Bundesliga, the Belgian Pro League, Serie A, the Premier League and the Primeira Liga.',
+      'Agents, analysts, scouts and former professional footballers with experience in La Liga, the Bundesliga, the Premier League, Serie A, the Belgian Pro League and the Primeira Liga. Each one exists for the same reason: your evolution.',
     'team.role1': 'Management',
     'team.role2': 'Agent',
     'team.role3': 'Scouting',
@@ -857,7 +857,7 @@ window.I18N_DICT = {
     'news.section': 'News',
     'news.title': 'Latest on <em>@scmsportsagency</em>',
     'news.lead':
-      'We post the agency’s day to day on Instagram: transfers, training and the content we create for our players.',
+      'The agency’s day to day, out in the open: transfers, training, analysis and the content we create for our players.',
     'news.1.label': 'Market',
     'news.1.title': 'Transfers and renewals',
     'news.1.text': 'Every deal our players close, announced the moment it is signed.',
@@ -923,7 +923,7 @@ window.I18N_DICT = {
     'contact.section': 'Contact',
     'contact.title': 'Kick off',
     'contact.lead':
-      'Whether you are a player, a family or a club, write to us. We answer everything, and what you tell us stays between us.',
+      'If you are a player, a family or a club, write to us. We answer everything, fast, and what you tell us stays between us.',
     'contact.email': 'Email',
     'contact.address': 'Address',
     'contact.follow': 'Follow us',
