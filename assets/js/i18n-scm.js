@@ -202,14 +202,10 @@ window.I18N_DICT = {
       'No esperamos a que la rompas. Trabajamos contigo cada semana para que hagas mejor el trabajo que te pide tu entrenador, en todas las áreas.',
     'services.lead2':
       'Ese es el trato: tú pones el talento y la mentalidad; nosotros, el método y el mercado.',
-    'repstats.1.label': 'Traspaso internacional 2026',
-    'repstats.1.note': 'Iker Pozo: de agente libre a venta en dos años.',
-    'repstats.2.label': 'Jugadores en Primera División',
-    'repstats.2.note': 'Experiencia directa con la élite europea.',
-    'repstats.3.label': 'Jugadores seleccionados',
-    'repstats.3.note': 'Cartera reducida y elegida a conciencia.',
-    'repstats.4.label': 'Países donde competimos',
-    'repstats.4.note': 'España, Rusia, Bélgica, Polonia y Croacia.',
+    'proof.label': 'La prueba',
+    'proof.text':
+      'La prueba no son cifras: son carreras. <strong>Iker Pozo</strong> pasó de agente libre a un traspaso internacional en dos años. <strong>Orel Mangala</strong> y <strong>Frederik Kondogbia</strong> compiten en la élite europea. Y nuestra cartera es pública.',
+    'proof.cta': 'Verifica nuestra cartera en Transfermarkt',
     'services.grid': 'Todo <em>alrededor del jugador</em>',
     'services.gridlead':
       'Cada área existe para lo mismo: que hagas mejor lo que te pide tu entrenador y que tu evolución no se pare.',
@@ -654,14 +650,10 @@ window.I18N_DICT = {
       'We do not wait for you to break through. We work with you every week so you do better what your coach demands, in every area.',
     'services.lead2':
       'That is the deal: you bring the talent and the mindset; we bring the method and the market.',
-    'repstats.1.label': 'International transfer 2026',
-    'repstats.1.note': 'Iker Pozo: from free agent to a sale in two years.',
-    'repstats.2.label': 'Players in top-flight football',
-    'repstats.2.note': 'Direct experience with the European elite.',
-    'repstats.3.label': 'Selected players',
-    'repstats.3.note': 'A deliberately small, hand-picked roster.',
-    'repstats.4.label': 'Countries we compete in',
-    'repstats.4.note': 'Spain, Russia, Belgium, Poland and Croatia.',
+    'proof.label': 'The proof',
+    'proof.text':
+      'The proof is not numbers: it is careers. <strong>Iker Pozo</strong> went from free agent to an international transfer in two years. <strong>Orel Mangala</strong> and <strong>Frederik Kondogbia</strong> compete at the European elite level. And our roster is public.',
+    'proof.cta': 'Verify our roster on Transfermarkt',
     'services.grid': 'Everything <em>around the player</em>',
     'services.gridlead':
       'Every area exists for the same reason: so you do better what your coach demands and your evolution never stops.',
