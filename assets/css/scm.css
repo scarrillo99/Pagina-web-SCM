@@ -2560,3 +2560,48 @@ body {
     max-width: 480px;
   }
 }
+
+/* ==================================================== portada: accesos
+   Banda clara con tres tarjetas clicables justo después del hero. */
+.quick {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+}
+
+.quick .bcards {
+  margin-top: 0;
+}
+
+.bcard--link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.bcard--link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.bcard__go {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.bcard__go svg {
+  width: 22px;
+  transition: transform 0.3s var(--ease);
+}
+
+.bcard--link:hover .bcard__go svg {
+  transform: translateX(5px);
+}

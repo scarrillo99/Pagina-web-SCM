@@ -187,7 +187,7 @@ body {
 
 /* El sello original es blanco: se invierte a negro cuando el fondo aclara. */
 .header.is-scrolled .brand img {
-  filter: invert(1);
+  filter: invert(1) hue-rotate(180deg) saturate(1.6);
 }
 
 .nav {

@@ -26,6 +26,16 @@ window.I18N_DICT = {
     'hero.cta1': 'Hablemos',
     'hero.cta2': 'Ver servicios',
 
+    'home.q1.title': 'Metodología individual',
+    'home.q1.text': 'Videollamada semanal con cortes de vídeo, guiada por tu posición y tus condiciones.',
+    'home.q1.go': 'Ver el enfoque',
+    'home.q2.title': 'Modelo win-win',
+    'home.q2.text': 'Si tú ganas, nosotros ganamos: sin cobrar el 10 % a sueldos bajos.',
+    'home.q2.go': 'Conocer la agencia',
+    'home.q3.title': 'Caso Iker Pozo',
+    'home.q3.text': 'De agente libre en 2025 a un traspaso internacional de 1.500.000 € en 2026.',
+    'home.q3.go': 'Ver el caso',
+
     'stats.1.label': 'Jugadores seleccionados',
     'stats.1.text':
       'Cartera reducida y elegida a conciencia, compitiendo en Primera, Segunda y Tercera División de España, Rusia, Bélgica, Polonia y Croacia.',
@@ -415,6 +425,16 @@ window.I18N_DICT = {
       'International boutique agency for representation, career advisory and tactical development of footballers and coaches.',
     'hero.cta1': "Let's talk",
     'hero.cta2': 'See services',
+
+    'home.q1.title': 'Individual methodology',
+    'home.q1.text': 'A weekly video call with match clips, guided by your position and your traits.',
+    'home.q1.go': 'See the approach',
+    'home.q2.title': 'A win-win model',
+    'home.q2.text': 'When you win, we win: without charging 10% on low salaries.',
+    'home.q2.go': 'Meet the agency',
+    'home.q3.title': 'The Iker Pozo case',
+    'home.q3.text': 'From free agent in 2025 to a 1,500,000 € international transfer in 2026.',
+    'home.q3.go': 'See the case',
 
     'stats.1.label': 'Selected players',
     'stats.1.text':

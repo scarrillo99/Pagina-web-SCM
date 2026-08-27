@@ -243,8 +243,9 @@ body {
 
 /* El sello de Magno es blanco en origen: sobre hueso se pasa a negro. Es
    monocromo, así que invertirlo no altera ningún color de marca. */
+/* El logotipo de Magno ya viene en su variante oscura para el panel claro. */
 .panel--magno .panel__logo {
-  filter: invert(1);
+  height: calc(var(--logo-h) * 1.15);
 }
 
 .panel__rule {
