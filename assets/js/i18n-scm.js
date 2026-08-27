@@ -197,13 +197,27 @@ window.I18N_DICT = {
     'pillars.4.text': 'Intermediación, contratos y decisiones de carrera durante todo el año.',
 
     'services.section': 'Nuestros servicios',
-    'services.title': 'Una agencia 360º',
+    'services.title': 'Tu evolución es <em>nuestra marca</em>',
     'services.lead':
-      'Todo lo que un futbolista necesita para competir al más alto nivel, en un solo equipo.',
+      'No esperamos a que la rompas. Trabajamos contigo cada semana para que hagas mejor el trabajo que te pide tu entrenador, en todas las áreas.',
     'services.grid': 'Todo <em>alrededor del jugador</em>',
+    'services.gridlead':
+      'Cada área existe para lo mismo: que hagas mejor lo que te pide tu entrenador y que tu evolución no se pare.',
     'services.method': 'Metodología',
 
-    'rep.label': 'Servicio principal',
+    'met2.section': 'La metodología SCM',
+    'met2.title': 'Cada semana, <em>el mismo ciclo</em>',
+    'met2.lead': 'Así se evoluciona: partido a partido, con método y con datos.',
+    'met2.1.title': 'Tu partido, visto y cortado',
+    'met2.1.text': 'Analizamos cada partido con Wyscout y BeSoccer Pro y preparamos tus cortes de vídeo.',
+    'met2.2.title': 'Videollamada individual',
+    'met2.2.text': 'Repasamos contigo lo que tu cuerpo técnico te pide en tu posición y cómo hacerlo mejor.',
+    'met2.3.title': 'Plan sobre tus condiciones',
+    'met2.3.text': 'Potenciamos tus condiciones naturales con objetivos concretos para el siguiente partido.',
+    'met2.4.title': 'Evolución medida',
+    'met2.4.text': 'Datos, imágenes e interés de clubes: tu progreso se ve y se puede enseñar.',
+
+    'rep.label': 'Cuando evolucionas, el mercado llega',
     'rep.title': 'Representación e <em>intermediación</em>',
     'rep.p1':
       'Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con un modelo win-win: si tú ganas, nosotros ganamos. No cobramos el 10 % a sueldos bajos; trabajamos para llevarte a sueldos profesionales sostenibles.',
@@ -625,13 +639,27 @@ window.I18N_DICT = {
     'pillars.4.text': 'Transfers, contracts and career decisions, all year round.',
 
     'services.section': 'Our services',
-    'services.title': 'A 360º agency',
+    'services.title': 'Your evolution is <em>our brand</em>',
     'services.lead':
-      'Everything a footballer needs to compete at the highest level, in one team.',
+      'We do not wait for you to break through. We work with you every week so you do better what your coach demands, in every area.',
     'services.grid': 'Everything <em>around the player</em>',
+    'services.gridlead':
+      'Every area exists for the same reason: so you do better what your coach demands and your evolution never stops.',
     'services.method': 'Method',
 
-    'rep.label': 'Flagship service',
+    'met2.section': 'The SCM methodology',
+    'met2.title': 'Every week, <em>the same cycle</em>',
+    'met2.lead': 'This is how you evolve: match by match, with method and with data.',
+    'met2.1.title': 'Your match, watched and clipped',
+    'met2.1.text': 'We analyze every match with Wyscout and BeSoccer Pro and prepare your video clips.',
+    'met2.2.title': 'A one-to-one video call',
+    'met2.2.text': 'We go through what your coaching staff demands of your position and how to do it better.',
+    'met2.3.title': 'A plan built on your traits',
+    'met2.3.text': 'We sharpen your natural traits with concrete goals for the next match.',
+    'met2.4.title': 'Evolution, measured',
+    'met2.4.text': 'Data, footage and club interest: your progress can be seen and can be shown.',
+
+    'rep.label': 'When you evolve, the market comes',
     'rep.title': 'Representation and <em>intermediation</em>',
     'rep.p1':
       'We represent footballers and coaches on an <strong>exclusive</strong> basis, with a win-win model: when you win, we win. We do not charge 10% on low salaries; we work to move you into sustainable professional wages.',
