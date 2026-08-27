@@ -13,7 +13,7 @@ window.I18N_DICT = {
     'nav.how': 'Cómo reservar',
     'nav.contact': 'Contacto',
 
-    'hero.eyebrow': 'Concierge para futbolistas profesionales · Marbella',
+    'hero.eyebrow': 'Exclusive VIP Services · Since 2014 · Marbella',
     'hero.title': 'Tú céntrate en el juego.<br><em>Del resto nos ocupamos nosotros</em>',
     'hero.lead':
       'En Magno Marbella trabajamos en exclusiva para futbolistas profesionales y atletas de alto rendimiento. Del entrenamiento al descanso, cuidamos cada detalle para que disfrutes de tus vacaciones sin salir de forma.',
@@ -179,7 +179,7 @@ window.I18N_DICT = {
     'nav.how': 'How to book',
     'nav.contact': 'Contact',
 
-    'hero.eyebrow': 'Concierge for professional footballers · Marbella',
+    'hero.eyebrow': 'Exclusive VIP Services · Since 2014 · Marbella',
     'hero.title': 'You focus on the game.<br><em>We take care of the rest</em>',
     'hero.lead':
       'At Magno Marbella we specialise in concierge services exclusively for professional football players. From training to lifestyle, we take care of every detail so you can enjoy your vacation while staying on top performance.',

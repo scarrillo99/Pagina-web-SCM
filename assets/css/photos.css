@@ -42,9 +42,9 @@
 
      El nombre, el año y el lugar de cada una NO se ponen aquí: se escriben
      en su <figure> de scm/historia.html, en la sección Historia. */
-  /* --photo-legacy1: url('../img/archivo-1.jpg'); */
-  /* --photo-legacy2: url('../img/archivo-2.jpg'); */
-  /* --photo-legacy3: url('../img/archivo-3.jpg'); */
+  --photo-legacy1: url('../img/archivo-1.jpg');
+  --photo-legacy2: url('../img/archivo-2.jpg');
+  --photo-legacy3: url('../img/archivo-3.jpg');
   /* --photo-legacy4: url('../img/archivo-4.jpg'); */
   /* --photo-legacy5: url('../img/archivo-5.jpg'); */
   /* --photo-legacy6: url('../img/archivo-6.jpg'); */
@@ -60,24 +60,24 @@
 
   /* --- SCM x Magno ------------------------------------------------------
      Horizontales 16:10, 1200 x 750. */
-  /* --photo-partner1: url('../img/partner-estancias.jpg'); */
-  /* --photo-partner2: url('../img/partner-villas.jpg'); */
-  /* --photo-partner3: url('../img/partner-vip.jpg'); */
-  /* --photo-partner4: url('../img/partner-camps.jpg'); */
-  /* --photo-partner5: url('../img/partner-inmobiliaria.jpg'); */
+  --photo-partner1: url('../img/partner-estancias.jpg');
+  --photo-partner2: url('../img/partner-villas.jpg');
+  --photo-partner3: url('../img/partner-vip.jpg');
+  --photo-partner4: url('../img/partner-camps.jpg');
+  --photo-partner5: url('../img/partner-inmobiliaria.jpg');
 
   /* --- Magno, entrenamiento y rendimiento -------------------------------
      Horizontales 4:3, 1200 x 900. */
-  /* --photo-train1: url('../img/magno-campos.jpg'); */
-  /* --photo-train2: url('../img/magno-sesiones.jpg'); */
-  /* --photo-train3: url('../img/magno-gimnasio.jpg'); */
-  /* --photo-train4: url('../img/magno-fotografo.jpg'); */
+  --photo-train1: url('../img/magno-campos.jpg');
+  --photo-train2: url('../img/magno-sesiones.jpg');
+  --photo-train3: url('../img/magno-gimnasio.jpg');
+  --photo-train4: url('../img/magno-fotografo.jpg');
 
   /* --- Magno, lifestyle -------------------------------------------------
      Horizontales 4:3, 1200 x 900. */
-  /* --photo-life1: url('../img/magno-villas.jpg'); */
+  --photo-life1: url('../img/magno-villas.jpg');
   /* --photo-life2: url('../img/magno-hoteles.jpg'); */
-  /* --photo-life3: url('../img/magno-vehiculos.jpg'); */
+  --photo-life3: url('../img/magno-vehiculos.jpg');
   /* --photo-life4: url('../img/magno-nautica.jpg'); */
   /* --photo-life5: url('../img/magno-eventos.jpg'); */
   /* --photo-life6: url('../img/magno-shopping.jpg'); */
@@ -92,9 +92,9 @@
 
   /* --- Magno, en imágenes -----------------------------------------------
      Horizontales 1200 x 900. */
-  /* --photo-exp1: url('../img/magno-entrenamiento.jpg'); */
-  /* --photo-exp2: url('../img/magno-recuperacion.jpg'); */
-  /* --photo-exp3: url('../img/magno-villa.jpg'); */
+  --photo-exp1: url('../img/magno-entrenamiento.jpg');
+  --photo-exp2: url('../img/magno-recuperacion.jpg');
+  --photo-exp3: url('../img/magno-villa.jpg');
 
 
   /* ------------------------------------------------ contenido nuevo ----
@@ -105,18 +105,19 @@
        (Wyscout / BeSoccer Pro) para el mockup de Metodología.
      - cta-tunel.jpg: primer plano en el túnel de vestuarios, foco y
        mentalidad de élite (CTA final de Contacto).
-     - archivo-1..6.jpg: galería histórica de Historia, en este orden:
-       Rashford, Bale, James Rodríguez, Chukwueze, Huijsen, Mangala. */
-  /* --photo-iker: url('../img/iker-accion.jpg'); */
+     - archivo-1..3.jpg: galería histórica de Historia (del dossier):
+       Rashford en el MFC, internacionales en Marbella, pretemporada de
+       élite. Las ranuras 4..6 quedan libres para más material. */
+  --photo-iker: url('../img/iker-accion.jpg');
   /* - fundador.jpg: retrato de Sam, fundador, para la Filosofía SCM en
        Historia. Horizontal 4:3, 1200 x 900. */
-  /* --photo-fundador: url('../img/fundador.jpg'); */
-  /* --photo-informe: url('../img/informe-analisis.jpg'); */
-  /* --photo-cta: url('../img/cta-tunel.jpg'); */
+  --photo-fundador: url('../img/fundador.jpg');
+  --photo-informe: url('../img/informe-analisis.jpg');
+  --photo-cta: url('../img/cta-tunel.jpg');
   /* - historia-entreno.jpg: franja a pantalla completa de la página
        Historia. Entrenamiento de alta intensidad, tono oscuro y
        cinematográfico. Horizontal, 1920 x 900. */
-  /* --photo-historia: url('../img/historia-entreno.jpg'); */
+  --photo-historia: url('../img/historia-entreno.jpg');
 }
 
 /* Los heroes llevan su propia imagen por página.

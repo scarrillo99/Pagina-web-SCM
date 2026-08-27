@@ -209,8 +209,8 @@ window.I18N_DICT = {
     'met.tools': 'Herramientas de análisis',
     'met.mockup': 'Informe semanal de análisis de vídeo',
 
-    'cta.title': 'Mentalidad de élite',
-    'cta.text': 'Si quieres evolucionar, hablemos.',
+    'cta.title': 'You got the talent.',
+    'cta.text': 'We got your back. Si quieres evolucionar, hablemos.',
 
     'gallery.title': 'El archivo',
     'gallery.lead':
@@ -311,7 +311,7 @@ window.I18N_DICT = {
       'Una marca auténtica que crece contigo. Imagen, redes y acuerdos gestionados por nuestro equipo propio, para sumar a tu carrera sin distraerla.',
     'services.6.a': 'Estrategia de imagen a medida',
     'services.6.b': 'Redes y contenido con equipo propio',
-    'services.6.c': 'Patrocinios en las mejores condiciones',
+    'services.6.c': 'Sponsors: Nike, Puma, Adidas, Umbro, uhlsport, New Balance',
     'services.6.d': 'Una marca que suma sin distraer',
 
     'services.7.title': 'Inversiones y patrimonio',
@@ -319,11 +319,11 @@ window.I18N_DICT = {
       'Fiscalidad, ahorro e inversión con cabeza: que lo ganado dentro del campo se quede contigo fuera, hoy y cuando cuelgues las botas.',
     'services.8.title': 'Scouting y proyección internacional',
     'services.8.text':
-      'Contacto semanal con clubes de España, Bélgica, Portugal y Rusia. Cuando llega tu momento, el mercado ya te conoce.',
+      'Más de 15 scouts y 10 agentes conectados en toda Europa. Cuando llega tu momento, el mercado ya te conoce.',
     'services.8.a': 'Contacto semanal con clubes de nuestros mercados',
     'services.8.b': 'Dosieres de rendimiento para clubes interesados',
     'services.8.c': 'Posicionamiento en las ventanas de traspaso',
-    'services.8.d': 'España, Bélgica, Portugal y Rusia',
+    'services.8.d': 'España, Italia, Francia, Bélgica, Inglaterra y Alemania',
     'services.7.a': 'Educación financiera desde el primer contrato',
     'services.7.b': 'Fiscalidad e inversión asesoradas',
     'services.7.c': 'Inmobiliario con la red de Magno',
@@ -355,7 +355,7 @@ window.I18N_DICT = {
     'team.section': 'El equipo',
     'team.title': 'El equipo detrás de <em>tu evolución</em>',
     'team.lead':
-      'Agentes, analistas, scouts y ex futbolistas profesionales con experiencia en La Liga, Bundesliga, Premier League, Serie A, Belgian Pro League y Primeira Liga. Cada uno existe para lo mismo: que evoluciones.',
+      '10 agentes a tiempo completo, más de 15 scouts en todo el mundo y ex futbolistas profesionales con experiencia en La Liga, Bundesliga, Premier League, Serie A, Belgian Pro League y Primeira Liga. Más de 15 años de trayectoria con un mismo objetivo: que evoluciones.',
     'team.role1': 'Dirección',
     'team.role2': 'Agente',
     'team.role3': 'Scouting',
@@ -447,6 +447,7 @@ window.I18N_DICT = {
     'contact.title': 'Kick off',
     'contact.lead':
       'Si eres jugador, familia o club, escríbenos. Respondemos a todo, rápido, y lo que nos cuentes se queda entre nosotros.',
+    'contact.phone': 'Teléfono',
     'contact.email': 'Email',
     'contact.address': 'Dirección',
     'contact.follow': 'Síguenos',
@@ -687,8 +688,8 @@ window.I18N_DICT = {
     'met.tools': 'Analysis tools',
     'met.mockup': 'Weekly video analysis report',
 
-    'cta.title': 'Elite mindset',
-    'cta.text': "If you want to evolve, let's talk.",
+    'cta.title': 'You got the talent.',
+    'cta.text': "We got your back. If you want to evolve, let's talk.",
 
     'gallery.title': 'The archive',
     'gallery.lead':
@@ -789,7 +790,7 @@ window.I18N_DICT = {
       'An authentic brand that grows with you. Image, social media and deals run by our in-house team, adding to your career without distracting from it.',
     'services.6.a': 'A tailored image strategy',
     'services.6.b': 'Social media and content by our own team',
-    'services.6.c': 'Sponsorships on the best terms',
+    'services.6.c': 'Sponsors: Nike, Puma, Adidas, Umbro, uhlsport, New Balance',
     'services.6.d': 'A brand that adds without distracting',
 
     'services.7.title': 'Investment and wealth',
@@ -797,11 +798,11 @@ window.I18N_DICT = {
       'Tax, savings and smart investment: what you earn on the pitch stays with you off it, today and when the boots come off.',
     'services.8.title': 'Scouting and international reach',
     'services.8.text':
-      'Weekly contact with clubs in Spain, Belgium, Portugal and Russia. When your moment arrives, the market already knows you.',
+      'More than 15 scouts and 10 agents connected across Europe. When your moment arrives, the market already knows you.',
     'services.8.a': 'Weekly contact with clubs in our markets',
     'services.8.b': 'Performance dossiers for interested clubs',
     'services.8.c': 'Positioning in the transfer windows',
-    'services.8.d': 'Spain, Belgium, Portugal and Russia',
+    'services.8.d': 'Spain, Italy, France, Belgium, England and Germany',
     'services.7.a': 'Financial education from the first contract',
     'services.7.b': 'Advised tax and investment decisions',
     'services.7.c': 'Property through the Magno network',
@@ -833,7 +834,7 @@ window.I18N_DICT = {
     'team.section': 'The team',
     'team.title': 'The team behind <em>your evolution</em>',
     'team.lead':
-      'Agents, analysts, scouts and former professional footballers with experience in La Liga, the Bundesliga, the Premier League, Serie A, the Belgian Pro League and the Primeira Liga. Each one exists for the same reason: your evolution.',
+      '10 full-time agents, more than 15 scouts worldwide and former professional footballers with experience in La Liga, the Bundesliga, the Premier League, Serie A, the Belgian Pro League and the Primeira Liga. Over 15 years in the game with one goal: your evolution.',
     'team.role1': 'Management',
     'team.role2': 'Agent',
     'team.role3': 'Scouting',
@@ -924,6 +925,7 @@ window.I18N_DICT = {
     'contact.title': 'Kick off',
     'contact.lead':
       'If you are a player, a family or a club, write to us. We answer everything, fast, and what you tell us stays between us.',
+    'contact.phone': 'Phone',
     'contact.email': 'Email',
     'contact.address': 'Address',
     'contact.follow': 'Follow us',
