@@ -37,6 +37,7 @@
       <nav class="nav" data-nav aria-label="Principal">
         <a class="nav__link" href="index.html" data-i18n="nav.home">Inicio</a>
         <a class="nav__link" href="historia.html" data-i18n="nav.history">Historia</a>
+        <a class="nav__link" aria-current="page" href="#servicios" data-i18n="nav.services">Servicios</a>
         <a class="nav__link" href="equipo.html" data-i18n="nav.team">Equipo</a>
         <a class="nav__link" href="https://www.transfermarkt.es/scm-sports-agency/beraterfirma/berater/11514" data-i18n="nav.players">Jugadores</a>
         <a class="nav__link" href="https://www.instagram.com/scmsportsagency/?hl=es" data-i18n="nav.headlines">Titulares</a>
@@ -101,7 +102,7 @@
     <main id="main">
 
       <!-- ================================================ servicios ==== -->
-      <section class="section section--light" id="servicios">
+      <section class="section" id="servicios">
         <div class="container">
           <div class="tag" data-reveal>
             <p class="tag__mark">Inimitable</p>
@@ -113,19 +114,57 @@
             Todo lo que un futbolista necesita, en un solo equipo.
           </p>
 
-          <div class="services__grid">
-            <article class="service" data-reveal>
-              <span class="service__num">01</span>
-              <svg class="service__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                <path d="M24 4l16 6v12c0 10-6.8 17.6-16 22-9.2-4.4-16-12-16-22V10l16-6z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
-                <path d="M17 24l5 5 10-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <h3 class="service__title" data-i18n="services.1.title">Representación y contratos</h3>
-              <p class="service__text" data-i18n="services.1.text">
-                Negociamos desde la fuerza del rendimiento: contratos, renovaciones y traspasos
-                pensados para toda tu carrera.
+          <!-- Servicio principal: representación e intermediación -->
+          <div class="intl__layout" style="margin-top: clamp(2.5rem, 6vw, 4rem)">
+            <div>
+              <p class="legacy__label" data-i18n="rep.label" data-reveal>Servicio principal</p>
+              <h3
+                class="section__title"
+                style="font-size: clamp(1.7rem, 3.2vw, 2.6rem); margin-top: var(--space-sm)"
+                data-i18n-html="rep.title"
+                data-reveal
+              >
+                Representación e <em>intermediación</em>
+              </h3>
+              <p class="chapter__text" data-i18n-html="rep.p1" data-reveal>
+                Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con
+                un modelo win-win: si tú ganas, nosotros ganamos. No cobramos el 10 % a sueldos
+                bajos; trabajamos para llevarte a sueldos profesionales sostenibles.
               </p>
-            </article>
+              <p class="chapter__text" data-i18n-html="rep.p2" data-reveal>
+                Negociamos contratos y renovaciones <strong>desde la fuerza del
+                rendimiento</strong>, y hacemos intermediación directa con clubes en
+                operaciones nacionales e internacionales.
+              </p>
+              <p class="chapter__text" data-i18n-html="rep.p3" data-reveal>
+                Los jugadores que evolucionan con nuestra metodología reciben de
+                <strong>3 a 4 ofertas de clubes al año</strong>.
+              </p>
+            </div>
+
+            <div class="markets">
+              <div data-reveal>
+                <h3 data-i18n="rep.how">Cómo lo hacemos</h3>
+                <ul>
+                  <li data-i18n="rep.s1">Evaluación 360º y firma en exclusividad</li>
+                  <li data-i18n="rep.s2">Plan de carrera y valor de mercado</li>
+                  <li data-i18n="rep.s3">Negociación de contratos y renovaciones</li>
+                  <li data-i18n="rep.s4">Intermediación y venta en el mercado</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================= especialidades ==== -->
+      <section class="section section--light">
+        <div class="container">
+          <h2 class="section__title" data-i18n-html="services.grid" data-reveal>
+            Todo <em>alrededor del jugador</em>
+          </h2>
+
+          <div class="services__grid">
 
             <article class="service" data-reveal style="--reveal-delay: 0.06s">
               <span class="service__num">02</span>
@@ -139,6 +178,13 @@
                 Cada partido, analizado contigo: videollamada semanal con cortes de vídeo para
                 hacer mejor lo que exige tu cuerpo técnico.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.2.a">Videollamada individual tras cada partido</li>
+                <li data-i18n="services.2.b">Cortes de vídeo con Wyscout y BeSoccer Pro</li>
+                <li data-i18n="services.2.c">Trabajo por posición y condiciones naturales</li>
+                <li data-i18n="services.2.d">Informe mensual de evolución medible</li>
+              </ul>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.12s">
@@ -156,6 +202,13 @@
               <p class="service__text" data-i18n="services.3.text">
                 El estado mental es tan decisivo como la preparación física.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.3.a">Evaluación del perfil, la mentalidad y el entorno</li>
+                <li data-i18n="services.3.b">Rutinas de confianza y concentración</li>
+                <li data-i18n="services.3.c">Acompañamiento en los momentos clave</li>
+                <li data-i18n="services.3.d">Adaptación al vestuario y al cuerpo técnico</li>
+              </ul>
             </article>
 
             <article class="service" data-reveal>
@@ -173,6 +226,13 @@
               <p class="service__text" data-i18n="services.4.text">
                 La alimentación influye en el rendimiento y la recuperación.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.4.a">Plan por posición, esfuerzo e intensidad</li>
+                <li data-i18n="services.4.b">Recuperación tras partidos y entrenamientos</li>
+                <li data-i18n="services.4.c">Control de cargas y necesidades energéticas</li>
+                <li data-i18n="services.4.d">Hábitos sostenibles toda la temporada</li>
+              </ul>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.06s">
@@ -192,6 +252,13 @@
               <p class="service__text" data-i18n="services.5.text">
                 Un proyecto individualizado que evoluciona con el jugador.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.5.a">Plan físico por posición y calendario</li>
+                <li data-i18n="services.5.b">Coordinación con el club y su cuerpo técnico</li>
+                <li data-i18n="services.5.c">Prevención según historial y cargas</li>
+                <li data-i18n="services.5.d">Camps y estancias de trabajo en Marbella</li>
+              </ul>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.12s">
@@ -211,6 +278,13 @@
               <p class="service__text" data-i18n="services.6.text">
                 Transformamos su imagen en una marca sólida.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.6.a">Estrategia de imagen a medida</li>
+                <li data-i18n="services.6.b">Redes y contenido con equipo propio</li>
+                <li data-i18n="services.6.c">Patrocinios en las mejores condiciones</li>
+                <li data-i18n="services.6.d">Una marca que suma sin distraer</li>
+              </ul>
             </article>
 
             <article class="service" data-reveal>
@@ -224,6 +298,13 @@
               <p class="service__text" data-i18n="services.7.text">
                 El éxito de hoy se traduce en seguridad mañana.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.7.a">Educación financiera desde el primer contrato</li>
+                <li data-i18n="services.7.b">Fiscalidad e inversión asesoradas</li>
+                <li data-i18n="services.7.c">Inmobiliario con la red de Magno</li>
+                <li data-i18n="services.7.d">Planificación para el día después</li>
+              </ul>
             </article>
 
             <article class="service" data-reveal style="--reveal-delay: 0.42s">
@@ -237,6 +318,13 @@
                 Contacto semanal con clubes de España, Bélgica, Portugal y Rusia: cuando llega
                 tu momento, el mercado ya te conoce.
               </p>
+              <p class="legacy__label" style="margin-top: var(--space-md)" data-i18n="services.method">Metodología</p>
+              <ul class="service__list">
+                <li data-i18n="services.8.a">Contacto semanal con clubes de nuestros mercados</li>
+                <li data-i18n="services.8.b">Dosieres de rendimiento para clubes interesados</li>
+                <li data-i18n="services.8.c">Posicionamiento en las ventanas de traspaso</li>
+                <li data-i18n="services.8.d">España, Bélgica, Portugal y Rusia</li>
+              </ul>
             </article>
           </div>
         </div>

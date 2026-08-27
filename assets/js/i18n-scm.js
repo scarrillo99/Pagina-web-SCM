@@ -200,6 +200,22 @@ window.I18N_DICT = {
     'services.title': 'Una agencia 360º',
     'services.lead':
       'Todo lo que un futbolista necesita para competir al más alto nivel, en un solo equipo.',
+    'services.grid': 'Todo <em>alrededor del jugador</em>',
+    'services.method': 'Metodología',
+
+    'rep.label': 'Servicio principal',
+    'rep.title': 'Representación e <em>intermediación</em>',
+    'rep.p1':
+      'Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con un modelo win-win: si tú ganas, nosotros ganamos. No cobramos el 10 % a sueldos bajos; trabajamos para llevarte a sueldos profesionales sostenibles.',
+    'rep.p2':
+      'Negociamos contratos y renovaciones <strong>desde la fuerza del rendimiento</strong>, y hacemos intermediación directa con clubes en operaciones nacionales e internacionales.',
+    'rep.p3':
+      'Los jugadores que evolucionan con nuestra metodología reciben de <strong>3 a 4 ofertas de clubes al año</strong>.',
+    'rep.how': 'Cómo lo hacemos',
+    'rep.s1': 'Evaluación 360º y firma en exclusividad',
+    'rep.s2': 'Plan de carrera y valor de mercado',
+    'rep.s3': 'Negociación de contratos y renovaciones',
+    'rep.s4': 'Intermediación y venta en el mercado',
 
     'services.1.title': 'Representación y contratos',
     'services.1.text':
@@ -211,42 +227,42 @@ window.I18N_DICT = {
     'services.2.title': 'Análisis de rendimiento',
     'services.2.text':
       'Cada partido, analizado contigo. Videollamada semanal con cortes de vídeo para hacer mejor lo que exige tu cuerpo técnico y potenciar tus condiciones naturales.',
-    'services.2.a': 'Estudio técnico y táctico adaptado a su posición y cualidades',
-    'services.2.b': 'Imágenes de partidos y entrenamientos para identificar patrones',
-    'services.2.c': 'Sesiones de vídeo presenciales para reforzar lo trabajado',
-    'services.2.d': 'Espacios de práctica presencial',
+    'services.2.a': 'Videollamada individual tras cada partido',
+    'services.2.b': 'Cortes de vídeo con Wyscout y BeSoccer Pro',
+    'services.2.c': 'Trabajo por posición y condiciones naturales',
+    'services.2.d': 'Informe mensual de evolución medible',
 
     'services.3.title': 'Apoyo psicológico',
     'services.3.text':
       'La cabeza también compite. Confianza, concentración y gestión de la presión, con acompañamiento real en los momentos que deciden temporadas.',
-    'services.3.a': 'Confianza, motivación, concentración y atención',
-    'services.3.b': 'Acompañamiento en competición para rendir en los momentos clave',
-    'services.3.c': 'Prevención y recuperación de lesiones con apoyo emocional',
-    'services.3.d': 'Habilidades sociales y adaptación al equipo y al cuerpo técnico',
+    'services.3.a': 'Evaluación del perfil, la mentalidad y el entorno',
+    'services.3.b': 'Rutinas de confianza y concentración',
+    'services.3.c': 'Acompañamiento en los momentos clave',
+    'services.3.d': 'Adaptación al vestuario y al cuerpo técnico',
 
     'services.4.title': 'Plan de nutrición',
     'services.4.text':
       'El detalle que marca diferencias. Alimentación adaptada a tu posición, tus cargas y tu recuperación, convertida en hábitos que se mantienen todo el año.',
-    'services.4.a': 'Adaptado a su posición, esfuerzo e intensidad de juego',
-    'services.4.b': 'Optimización de la recuperación tras entrenamientos y partidos',
-    'services.4.c': 'Prevención de lesiones controlando cargas y necesidades energéticas',
-    'services.4.d': 'Hábitos prácticos para que forme parte de su estilo de vida',
+    'services.4.a': 'Plan por posición, esfuerzo e intensidad',
+    'services.4.b': 'Recuperación tras partidos y entrenamientos',
+    'services.4.c': 'Control de cargas y necesidades energéticas',
+    'services.4.d': 'Hábitos sostenibles toda la temporada',
 
     'services.5.title': 'Desarrollo deportivo',
     'services.5.text':
       'Preparación física individual, ajustada a tu calendario y a tu historial, para protegerte de lesiones y llegar al máximo cuando más importa.',
-    'services.5.a': 'Ajustado al calendario de partidos y a las cargas de entrenamiento',
-    'services.5.b': 'Atento a su historial de lesiones y molestias inesperadas',
-    'services.5.c': 'Orientado a proteger su salud y prevenir lesiones',
-    'services.5.d': 'Enfocado a maximizar el rendimiento en los momentos clave',
+    'services.5.a': 'Plan físico por posición y calendario',
+    'services.5.b': 'Coordinación con el club y su cuerpo técnico',
+    'services.5.c': 'Prevención según historial y cargas',
+    'services.5.d': 'Camps y estancias de trabajo en Marbella',
 
     'services.6.title': 'Marketing y marca personal',
     'services.6.text':
       'Una marca auténtica que crece contigo. Imagen, redes y acuerdos gestionados por nuestro equipo propio, para sumar a tu carrera sin distraerla.',
-    'services.6.a': 'Estrategias de marketing a medida con capacidades internas',
-    'services.6.b': 'Construcción de una marca auténtica y sostenible',
-    'services.6.c': 'Gestión profesional de redes sociales y creación de contenido',
-    'services.6.d': 'Patrocinios y avales en las mejores condiciones posibles',
+    'services.6.a': 'Estrategia de imagen a medida',
+    'services.6.b': 'Redes y contenido con equipo propio',
+    'services.6.c': 'Patrocinios en las mejores condiciones',
+    'services.6.d': 'Una marca que suma sin distraer',
 
     'services.7.title': 'Inversiones y patrimonio',
     'services.7.text':
@@ -254,10 +270,14 @@ window.I18N_DICT = {
     'services.8.title': 'Scouting y proyección internacional',
     'services.8.text':
       'Contacto semanal con clubes de España, Bélgica, Portugal y Rusia. Cuando llega tu momento, el mercado ya te conoce.',
-    'services.7.a': 'Educación financiera',
-    'services.7.b': 'Asesoramiento en la compra de propiedades',
-    'services.7.c': 'Planificación de inversiones inteligentes',
-    'services.7.d': 'Acompañamiento en cada decisión económica clave',
+    'services.8.a': 'Contacto semanal con clubes de nuestros mercados',
+    'services.8.b': 'Dosieres de rendimiento para clubes interesados',
+    'services.8.c': 'Posicionamiento en las ventanas de traspaso',
+    'services.8.d': 'España, Bélgica, Portugal y Rusia',
+    'services.7.a': 'Educación financiera desde el primer contrato',
+    'services.7.b': 'Fiscalidad e inversión asesoradas',
+    'services.7.c': 'Inmobiliario con la red de Magno',
+    'services.7.d': 'Planificación para el día después',
 
     'statement.2':
       'Muchos jugadores con talento ven frenado su crecimiento cuando aparecen <em>retos que no saben cómo afrontar</em>',
@@ -608,6 +628,22 @@ window.I18N_DICT = {
     'services.title': 'A 360º agency',
     'services.lead':
       'Everything a footballer needs to compete at the highest level, in one team.',
+    'services.grid': 'Everything <em>around the player</em>',
+    'services.method': 'Method',
+
+    'rep.label': 'Flagship service',
+    'rep.title': 'Representation and <em>intermediation</em>',
+    'rep.p1':
+      'We represent footballers and coaches on an <strong>exclusive</strong> basis, with a win-win model: when you win, we win. We do not charge 10% on low salaries; we work to move you into sustainable professional wages.',
+    'rep.p2':
+      'We negotiate contracts and renewals <strong>from the strength of performance</strong>, and we run direct intermediation with clubs in domestic and international deals.',
+    'rep.p3':
+      'Players developing under our methodology receive <strong>3 to 4 club offers a year</strong>.',
+    'rep.how': 'How we do it',
+    'rep.s1': '360º evaluation and exclusive signing',
+    'rep.s2': 'Career plan and market value',
+    'rep.s3': 'Contract and renewal negotiation',
+    'rep.s4': 'Intermediation and sale on the market',
 
     'services.1.title': 'Representation and contracts',
     'services.1.text':
@@ -619,42 +655,42 @@ window.I18N_DICT = {
     'services.2.title': 'Performance analysis',
     'services.2.text':
       'Every match, analyzed with you. A weekly video call with match clips to do better what your coaching staff demands and to sharpen your natural traits.',
-    'services.2.a': 'Technical and tactical study tailored to their position and qualities',
-    'services.2.b': 'Match and training footage used to identify patterns',
-    'services.2.c': 'In-person video sessions to reinforce the work',
-    'services.2.d': 'Access to on-pitch practice sessions',
+    'services.2.a': 'A one-to-one video call after every match',
+    'services.2.b': 'Video clips with Wyscout and BeSoccer Pro',
+    'services.2.c': 'Work by position and natural traits',
+    'services.2.d': 'A monthly report of measurable progress',
 
     'services.3.title': 'Psychological support',
     'services.3.text':
       'The mind competes too. Confidence, concentration and pressure management, with real support in the moments that decide seasons.',
-    'services.3.a': 'Confidence, motivation, concentration and focus',
-    'services.3.b': 'Support during competition to perform in the decisive moments',
-    'services.3.c': 'Injury prevention and recovery with emotional support',
-    'services.3.d': 'Social skills and adapting to the squad and coaching staff',
+    'services.3.a': 'Assessment of profile, mindset and environment',
+    'services.3.b': 'Confidence and concentration routines',
+    'services.3.c': 'Support in the decisive moments',
+    'services.3.d': 'Adapting to the dressing room and coaching staff',
 
     'services.4.title': 'Nutrition plan',
     'services.4.text':
       'The detail that makes the difference. Nutrition tailored to your position, your workload and your recovery, turned into habits that last all year.',
-    'services.4.a': 'Tailored to their position, workload and intensity of play',
-    'services.4.b': 'Optimised recovery after training and matches',
-    'services.4.c': 'Injury prevention by managing loads and energy needs',
-    'services.4.d': 'Practical habits so good nutrition becomes part of their lifestyle',
+    'services.4.a': 'A plan by position, effort and intensity',
+    'services.4.b': 'Recovery after matches and training',
+    'services.4.c': 'Load control and energy needs',
+    'services.4.d': 'Habits that last the whole season',
 
     'services.5.title': 'Athletic development',
     'services.5.text':
       'Individual physical preparation, tuned to your calendar and your history, to protect you from injury and peak when it matters most.',
-    'services.5.a': 'Aligned with the fixture calendar and training loads',
-    'services.5.b': 'Mindful of injury history and unexpected niggles',
-    'services.5.c': 'Built to protect their health and prevent injury',
-    'services.5.d': 'Focused on peak performance in the decisive moments',
+    'services.5.a': 'A physical plan by position and calendar',
+    'services.5.b': 'Coordination with the club and its staff',
+    'services.5.c': 'Prevention based on history and loads',
+    'services.5.d': 'Camps and working stays in Marbella',
 
     'services.6.title': 'Marketing and personal brand',
     'services.6.text':
       'An authentic brand that grows with you. Image, social media and deals run by our in-house team, adding to your career without distracting from it.',
-    'services.6.a': 'Bespoke marketing strategies built with in-house capability',
-    'services.6.b': 'Building an authentic, sustainable brand',
-    'services.6.c': 'Professional social media management and content creation',
-    'services.6.d': 'Sponsorship and endorsement deals on the best possible terms',
+    'services.6.a': 'A tailored image strategy',
+    'services.6.b': 'Social media and content by our own team',
+    'services.6.c': 'Sponsorships on the best terms',
+    'services.6.d': 'A brand that adds without distracting',
 
     'services.7.title': 'Investment and wealth',
     'services.7.text':
@@ -662,10 +698,14 @@ window.I18N_DICT = {
     'services.8.title': 'Scouting and international reach',
     'services.8.text':
       'Weekly contact with clubs in Spain, Belgium, Portugal and Russia. When your moment arrives, the market already knows you.',
-    'services.7.a': 'Financial education',
-    'services.7.b': 'Advice on property purchases',
-    'services.7.c': 'Planning intelligent investments',
-    'services.7.d': 'Support through every major financial decision',
+    'services.8.a': 'Weekly contact with clubs in our markets',
+    'services.8.b': 'Performance dossiers for interested clubs',
+    'services.8.c': 'Positioning in the transfer windows',
+    'services.8.d': 'Spain, Belgium, Portugal and Russia',
+    'services.7.a': 'Financial education from the first contract',
+    'services.7.b': 'Advised tax and investment decisions',
+    'services.7.c': 'Property through the Magno network',
+    'services.7.d': 'Planning for the day after',
 
     'statement.2':
       'Many talented players stall the moment they face <em>challenges nobody taught them to handle</em>',
