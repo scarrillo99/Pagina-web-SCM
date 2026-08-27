@@ -2725,3 +2725,80 @@ body {
   width: 52px;
   height: 52px;
 }
+
+/* ========================================================== fondo de marca
+   Texturas monocromas que quitan el vacío sin salir del blanco y negro:
+   luces suaves tipo foco, rayado fino casi imperceptible, grano de película
+   y tipografía fantasma en las bandas claras. */
+
+/* Grano de película sobre toda la página, muy sutil. */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+/* Secciones oscuras: focos suaves en las esquinas y rayado vertical fino. */
+.section:not(.section--light):not(.bhero):not(.statement) {
+  background-color: var(--surface);
+  background-image:
+    radial-gradient(55% 42% at 88% -5%, rgba(255, 255, 255, 0.05), transparent 62%),
+    radial-gradient(45% 38% at -5% 105%, rgba(255, 255, 255, 0.035), transparent 58%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 140px);
+}
+
+/* Secciones claras: viñeta suave y el mismo rayado en negativo. */
+.section--light {
+  background-color: var(--light);
+  background-image:
+    radial-gradient(55% 45% at 100% 0%, rgba(10, 10, 11, 0.05), transparent 62%),
+    radial-gradient(40% 35% at 0% 100%, rgba(10, 10, 11, 0.035), transparent 55%),
+    repeating-linear-gradient(90deg, rgba(10, 10, 11, 0.025) 0 1px, transparent 1px 140px);
+}
+
+/* Bandas de cartel: sello SCM en fantasma, solo contorno. */
+.bhero {
+  position: relative;
+  overflow: hidden;
+  background-image:
+    radial-gradient(50% 40% at 0% 0%, rgba(10, 10, 11, 0.045), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(10, 10, 11, 0.02) 0 1px, transparent 1px 140px);
+}
+
+.bhero::after {
+  content: 'SCM';
+  position: absolute;
+  right: -1.5%;
+  bottom: -14%;
+  z-index: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  font-size: clamp(11rem, 26vw, 24rem);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(10, 10, 11, 0.08);
+  pointer-events: none;
+}
+
+.bhero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Manifiestos: foco central que hace flotar la frase. */
+.statement {
+  background-color: var(--surface-2);
+  background-image: radial-gradient(60% 120% at 50% 50%, rgba(255, 255, 255, 0.045), transparent 70%);
+}
+
+/* El pie recupera un resplandor superior muy leve. */
+.footer {
+  background-image: radial-gradient(60% 60% at 50% 0%, rgba(255, 255, 255, 0.045), transparent 65%);
+}
