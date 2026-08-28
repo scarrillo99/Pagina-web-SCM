@@ -495,9 +495,11 @@ body {
 }
 
 .hero__title {
-  font-size: clamp(2.3rem, 5.1vw, 4.5rem);
+  font-size: clamp(2.6rem, 5.8vw, 5.2rem);
+  line-height: 1.02;
   max-width: 15ch;
   margin-bottom: var(--space-lg);
+  text-wrap: balance;
 }
 
 .hero__title em {
@@ -3264,7 +3266,6 @@ body {
 /* Halo de los titulares: las palabras en cursiva de las bandas oscuras
    emiten luz propia. */
 .section:not(.section--light) .section__title em,
-.bhero__title em,
 .statement p em,
 .hero__title em {
   text-shadow:
@@ -3398,4 +3399,153 @@ body {
 
 .srow:hover::before {
   transform: scaleY(1);
+}
+
+/* ============================================ mejora global de diseño
+   Piezas nuevas del inicio y detalles de toda la web: guía de scroll en
+   la portada, cinta de datos en movimiento, banda final de contacto y
+   subrayado luminoso del menú. */
+
+/* Guía de scroll: un hilo de luz que cae en bucle al pie de la portada. */
+.hero__cue {
+  position: absolute;
+  left: 50%;
+  bottom: 1.4rem;
+  width: 1px;
+  height: 58px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hero__cue::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff 45%, transparent);
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__cue::before {
+    animation: cue-drop 2.6s cubic-bezier(0.55, 0, 0.3, 1) infinite;
+  }
+}
+
+@keyframes cue-drop {
+  0% {
+    transform: translateY(-100%);
+  }
+  60%,
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Cinta de datos: los números de la agencia desfilando bajo la portada,
+   como la publicidad perimetral de un estadio. */
+.ticker {
+  overflow: hidden;
+  background: var(--surface);
+  border-block: 1px solid var(--line);
+  padding: 0.95rem 0;
+}
+
+.ticker__track {
+  display: flex;
+  width: max-content;
+}
+
+.ticker__group {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.ticker__item {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.ticker__sep {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  opacity: 0.55;
+  transform: rotate(45deg);
+  margin: 0 clamp(1.4rem, 3vw, 2.6rem);
+  flex: 0 0 auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ticker__track {
+    animation: ribbon-scroll 34s linear infinite;
+  }
+
+  .ticker:hover .ticker__track {
+    animation-play-state: paused;
+  }
+}
+
+/* Banda final de contacto del inicio: el último cartel antes del pie. */
+.endcta {
+  text-align: center;
+}
+
+.endcta__title {
+  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+  line-height: 1.02;
+  margin: var(--space-md) auto var(--space-md);
+  max-width: 16ch;
+}
+
+.endcta__title em {
+  font-style: normal;
+  color: var(--accent);
+  text-shadow:
+    0 0 26px rgba(255, 255, 255, 0.38),
+    0 0 72px rgba(255, 255, 255, 0.16);
+}
+
+.endcta__lead {
+  color: var(--muted);
+  max-width: 46ch;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.75;
+}
+
+.endcta .hero__actions {
+  justify-content: center;
+}
+
+/* Subrayado luminoso del menú: un filo de luz que se enciende bajo cada
+   enlace, fijo en la página actual. */
+.nav__link {
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, currentColor, transparent);
+  transform: scaleX(0);
+  transition: transform 0.35s var(--ease);
+}
+
+.nav__link:hover::after,
+.nav__link:focus-visible::after,
+.nav__link[aria-current='page']::after {
+  transform: scaleX(1);
 }

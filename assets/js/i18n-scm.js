@@ -19,12 +19,22 @@ window.I18N_DICT = {
     'nav.magno': 'Magno',
     'nav.contact': 'Contacto',
 
-    'hero.eyebrow': 'Proyección de carrera, metodología individualizada y gestión 360º desde la máxima exigencia',
-    'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
+    'hero.eyebrow': 'Agencia boutique internacional · Marbella · Desde 2014',
+    'hero.title': 'No esperamos a que el talento explote.<br><em>Lo evolucionamos.</em>',
     'hero.lead':
-      'Agencia boutique internacional de representación, asesoramiento de carreras y desarrollo táctico de futbolistas y entrenadores.',
+      'Representación 360º de futbolistas profesionales: método semanal, mercado europeo y un solo equipo detrás de tu carrera.',
     'hero.cta1': 'Empieza tu evolución',
     'hero.cta2': 'Descubre el método',
+
+    'tick.1': '10 agentes a tiempo completo',
+    'tick.2': '+15 scouts en todo el mundo',
+    'tick.3': 'Más de 15 años de experiencia',
+    'tick.4': 'Marbella · España',
+    'endcta.kicker': 'Kick off',
+    'endcta.title': 'Empieza tu <em>evolución</em>',
+    'endcta.lead':
+      'Una llamada basta: hablamos de tu posición, tus condiciones y tu mercado, y te decimos exactamente cómo trabajaríamos contigo.',
+    'endcta.b1': 'Hablemos hoy',
 
     'home.q1.title': 'Metodología individual',
     'home.q1.text': 'Videollamada semanal con cortes de vídeo, guiada por tu posición y tus condiciones.',
@@ -520,12 +530,22 @@ window.I18N_DICT = {
     'nav.magno': 'Magno',
     'nav.contact': 'Contact',
 
-    'hero.eyebrow': 'Career projection, individualized methodology and 360º management at the highest level',
+    'hero.eyebrow': 'International boutique agency · Marbella · Since 2014',
     'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
     'hero.lead':
-      'International boutique agency for representation, career advisory and tactical development of footballers and coaches.',
+      '360º representation for professional footballers: a weekly method, the European market and one team behind your career.',
     'hero.cta1': 'Start your evolution',
     'hero.cta2': 'Discover the method',
+
+    'tick.1': '10 full-time agents',
+    'tick.2': '+15 scouts worldwide',
+    'tick.3': 'Over 15 years in the game',
+    'tick.4': 'Marbella · Spain',
+    'endcta.kicker': 'Kick off',
+    'endcta.title': 'Start your <em>evolution</em>',
+    'endcta.lead':
+      'One call is enough: we talk about your position, your traits and your market, and tell you exactly how we would work with you.',
+    'endcta.b1': "Let's talk today",
 
     'home.q1.title': 'Individual methodology',
     'home.q1.text': 'A weekly video call with match clips, guided by your position and your traits.',

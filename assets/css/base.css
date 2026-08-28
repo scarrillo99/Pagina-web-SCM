@@ -284,3 +284,40 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 160px 160px;
 }
+
+/* ------------------------------------------------- detalles globales
+   Selección de texto invertida y barra de scroll fina y oscura: la
+   marca también vive en los pequeños gestos del navegador. */
+::selection {
+  background: #f6f6f5;
+  color: #101012;
+}
+
+.section--light ::selection,
+.bhero ::selection {
+  background: #101012;
+  color: #f6f6f5;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a40 #0a0a0b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e2e33;
+  border: 2px solid #0a0a0b;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a4a52;
+}
