@@ -2935,3 +2935,235 @@ body {
     background-size: contain;
   }
 }
+
+/* ================================================= servicios, rediseño
+   Tres piezas para que la página de Servicios se lea de un vistazo:
+
+   1. .sindex  — el índice de las ocho áreas, en rejilla con hilo fino,
+                 cada celda enlaza con su sección.
+   2. .steps   — pasos numerados del servicio principal (Representación).
+   3. .srow    — cada especialidad como fila editorial: numeral fantasma
+                 e icono | qué es | metodología como ficha técnica.
+
+   Todo hereda los tokens monocromos de la sección donde vive. */
+
+.section--rule {
+  border-top: 1px solid var(--line);
+}
+
+/* --------------------------------------------------------- índice ---- */
+.sindex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: var(--space-2xl);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.sindex__item {
+  display: block;
+  position: relative;
+  padding: clamp(1.4rem, 2.4vw, 2rem);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.35s var(--ease);
+}
+
+.sindex__item:hover,
+.sindex__item:focus-visible {
+  background: var(--surface-2);
+}
+
+.sindex__num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.sindex__num svg {
+  width: 20px;
+  height: 10px;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  color: var(--accent);
+}
+
+.sindex__item:hover .sindex__num svg,
+.sindex__item:focus-visible .sindex__num svg {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sindex__title {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  line-height: 1.15;
+  margin-top: clamp(1.7rem, 3.2vw, 2.7rem);
+}
+
+.sindex__desc {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .sindex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sindex {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------- pasos de representación */
+.steps {
+  list-style: none;
+  counter-reset: step;
+  margin-top: var(--space-sm);
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.steps li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: baseline;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------ filas editoriales -- */
+.srows {
+  margin-top: var(--space-2xl);
+  border-top: 1px solid var(--line);
+}
+
+.srow {
+  display: grid;
+  grid-template-columns: clamp(96px, 11vw, 150px) minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3.5vw, 3.2rem);
+  padding: clamp(2.2rem, 5vw, 3.4rem) 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 108px;
+}
+
+.srow__num {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: var(--text);
+  opacity: 0.14;
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.35s var(--ease);
+}
+
+.srow:hover .srow__num {
+  opacity: 0.32;
+}
+
+.srow__icon {
+  width: 40px;
+  height: 40px;
+  color: var(--accent);
+  margin-top: clamp(0.8rem, 1.8vw, 1.3rem);
+}
+
+.srow__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  line-height: 1.1;
+}
+
+.srow__text {
+  margin-top: var(--space-sm);
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 52ch;
+}
+
+.srow__list {
+  list-style: none;
+  margin-top: var(--space-md);
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.srow__list li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.srow__list li::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .srow {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .srow__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .srow__icon {
+    margin-top: 0;
+  }
+}
+
+/* ancla del servicio principal bajo cabecera fija */
+#s1 {
+  scroll-margin-top: 108px;
+}

@@ -236,6 +236,21 @@ window.I18N_DICT = {
     'proof.text':
       'La prueba no son cifras: son carreras. <strong>Iker Pozo</strong> pasó de agente libre a un traspaso internacional en dos años. <strong>Orel Mangala</strong> y <strong>Frederik Kondogbia</strong> compiten en la élite europea. Y nuestra cartera es pública.',
     'proof.cta': 'Verifica nuestra cartera en Transfermarkt',
+    'sindex.section': 'Nuestros servicios',
+    'sindex.title': 'Ocho áreas, <em>un objetivo</em>',
+    'sindex.lead':
+      'Todo lo que rodea tu carrera, cubierto por un mismo equipo. Elige un área para ver cómo trabajamos.',
+    'sindex.t1': 'Representación e intermediación',
+    'sindex.1': 'Contratos, renovaciones y traspasos',
+    'sindex.2': 'Tu partido, visto y cortado cada semana',
+    'sindex.3': 'Cabeza fría en los momentos clave',
+    'sindex.4': 'Comer para rendir y recuperar',
+    'sindex.5': 'Un plan físico que crece contigo',
+    'sindex.6': 'Una marca que suma sin distraer',
+    'sindex.7': 'Lo ganado dentro, seguro fuera',
+    'sindex.8': 'El mercado te conoce antes de tu momento',
+    'rep.section': 'El servicio principal',
+
     'services.grid': 'Todo <em>alrededor del jugador</em>',
     'services.gridlead':
       'Cada área existe para lo mismo: que hagas mejor lo que te pide tu entrenador y que tu evolución no se pare.',
@@ -715,6 +730,21 @@ window.I18N_DICT = {
     'proof.text':
       'The proof is not numbers: it is careers. <strong>Iker Pozo</strong> went from free agent to an international transfer in two years. <strong>Orel Mangala</strong> and <strong>Frederik Kondogbia</strong> compete at the European elite level. And our roster is public.',
     'proof.cta': 'Verify our roster on Transfermarkt',
+    'sindex.section': 'Our services',
+    'sindex.title': 'Eight areas, <em>one goal</em>',
+    'sindex.lead':
+      'Everything around your career, covered by one team. Pick an area to see how we work.',
+    'sindex.t1': 'Representation and intermediation',
+    'sindex.1': 'Contracts, renewals and transfers',
+    'sindex.2': 'Your match, watched and clipped weekly',
+    'sindex.3': 'A clear head when it matters',
+    'sindex.4': 'Eat to perform and recover',
+    'sindex.5': 'A physical plan that grows with you',
+    'sindex.6': 'A brand that adds without distracting',
+    'sindex.7': 'Earned on the pitch, secured off it',
+    'sindex.8': 'The market knows you before your moment',
+    'rep.section': 'The flagship service',
+
     'services.grid': 'Everything <em>around the player</em>',
     'services.gridlead':
       'Every area exists for the same reason: so you do better what your coach demands and your evolution never stops.',
