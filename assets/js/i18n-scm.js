@@ -30,7 +30,7 @@ window.I18N_DICT = {
     'home.q1.text': 'Videollamada semanal con cortes de vídeo, guiada por tu posición y tus condiciones.',
     'home.q1.go': 'Ver el enfoque',
     'home.q2.title': 'Modelo win-win',
-    'home.q2.text': 'Si tú ganas, nosotros ganamos: sin cobrar el 10 % a sueldos bajos.',
+    'home.q2.text': 'Si tú ganas, nosotros ganamos: invertimos en tu carrera desde el primer día.',
     'home.q2.go': 'Conocer la agencia',
     'home.q3.title': 'Caso Iker Pozo',
     'home.q3.text': 'De agente libre en 2025 a un traspaso internacional de 1.500.000 € en 2026.',
@@ -51,7 +51,7 @@ window.I18N_DICT = {
     'about.p1':
       'La mayoría de agencias espera pasivamente a que el jugador la rompa por sí solo para monetizarlo. En SCM <strong>invertimos tiempo y recursos desde el primer día</strong> en desarrollar a la persona y al futbolista, con una metodología individual que lo lleva al fútbol profesional y lo consolida en el tiempo.',
     'about.p2':
-      '<strong>Modelo boutique ético, win-win:</strong> exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos. No cobramos el 10% a futbolistas con sueldos bajos: venimos a llevarlos a sueldos profesionales sostenibles y a que aprendan a tomar buenas decisiones para mantenerse.',
+      '<strong>Modelo boutique ético, win-win:</strong> exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos: nuestro incentivo es llevarte a un nivel profesional sostenible y que aprendas a tomar buenas decisiones para mantenerte en él.',
     'about.p3':
       '<strong>Buscamos buenas personas</strong> con buenos entornos y mentalidad de crecimiento. No solo talento: jugadores entrenables que confían, aplican lo que trabajamos y lo trasladan al campo a medida que el fútbol evoluciona.',
     'about.v1': 'Soporte individual',
@@ -96,7 +96,7 @@ window.I18N_DICT = {
       'No esperamos a que la rompas: invertimos en tu evolución desde el primer día.',
     'cards.3.title': 'El extra cierto',
     'cards.3.p1':
-      'Si tú ganas, nosotros ganamos. Relación a largo plazo, sin cobrar el 10 % a sueldos bajos.',
+      'Si tú ganas, nosotros ganamos. Una relación a largo plazo en la que invertimos desde el primer día.',
 
     'philo.title': 'Filosofía <em>SCM</em>',
     'philo.p1':
@@ -164,7 +164,7 @@ window.I18N_DICT = {
       'Afrontamos las cosas de forma proactiva: no esperamos a que el jugador la rompa, invertimos en su evolución desde el primer día.',
     'ch2.i3.title': 'El extra cierto',
     'ch2.i3.text':
-      'Win-win de verdad: exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos; no cobramos el 10 % a sueldos bajos.',
+      'Win-win de verdad: exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos: crecemos contigo, no a tu costa.',
     'ch2.i4.title': 'Relación a largo plazo',
     'ch2.i4.text': 'Confianza mutua, transparencia y fiabilidad con cada jugador y cada club, temporada tras temporada.',
 
@@ -531,7 +531,7 @@ window.I18N_DICT = {
     'home.q1.text': 'A weekly video call with match clips, guided by your position and your traits.',
     'home.q1.go': 'See the approach',
     'home.q2.title': 'A win-win model',
-    'home.q2.text': 'When you win, we win: without charging 10% on low salaries.',
+    'home.q2.text': 'When you win, we win: we invest in your career from day one.',
     'home.q2.go': 'Meet the agency',
     'home.q3.title': 'The Iker Pozo case',
     'home.q3.text': 'From free agent in 2025 to a 1,500,000 € international transfer in 2026.',
@@ -552,7 +552,7 @@ window.I18N_DICT = {
     'about.p1':
       'Most agencies wait passively for a player to break through on their own before monetizing them. At SCM <strong>we invest time and resources from day one</strong> in developing the person and the footballer, with an individual methodology that takes them to professional football and consolidates them over time.',
     'about.p2':
-      '<strong>An ethical boutique model, win-win:</strong> exclusivity and shared success. When the player wins, we win. We do not charge 10% to footballers on low salaries: we exist to move our players into sustainable professional wages and to teach them to make the right decisions to stay there.',
+      '<strong>An ethical boutique model, win-win:</strong> exclusivity and shared success. When the player wins, we win: our incentive is to move you to a sustainable professional level and teach you to make the right decisions to stay there.',
     'about.p3':
       '<strong>We look for good people</strong> with good environments and a growth mindset. Not just talent: coachable players who trust the work, apply it and carry it onto the pitch as football evolves.',
     'about.v1': 'Individual support',
@@ -597,7 +597,7 @@ window.I18N_DICT = {
       'We do not wait for you to break through: we invest in your evolution from day one.',
     'cards.3.title': 'The certain extra',
     'cards.3.p1':
-      'When you win, we win. A long-term relationship, without charging 10% on low salaries.',
+      'When you win, we win. A long-term relationship in which we invest from day one.',
 
     'philo.title': 'The SCM <em>philosophy</em>',
     'philo.p1':
@@ -665,7 +665,7 @@ window.I18N_DICT = {
       'We face things proactively: we do not wait for a player to break through, we invest in their evolution from day one.',
     'ch2.i3.title': 'The certain extra',
     'ch2.i3.text':
-      'A true win-win: exclusivity and shared success. When the player wins, we win; we do not charge 10% on low salaries.',
+      'A true win-win: exclusivity and shared success. When the player wins, we win: we grow with you, not at your expense.',
     'ch2.i4.title': 'Long-term relationships',
     'ch2.i4.text': 'Mutual trust, transparency and reliability with every player and every club, season after season.',
 
