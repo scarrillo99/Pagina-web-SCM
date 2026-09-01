@@ -1017,7 +1017,7 @@ window.I18N_DICT = {
     'cross.text': 'Concierge for professional footballers',
 
     'footer.tagline':
-      'A 360º agency for the representation and complete management of professional footballers. Marbella, Spain.',
+      '360º representation for professional footballers: a weekly method, the European market and one team behind your career. Marbella, Spain.',
     'footer.nav': 'Navigation',
     'footer.legalTitle': 'Legal',
     'footer.legal': 'Legal notice',
