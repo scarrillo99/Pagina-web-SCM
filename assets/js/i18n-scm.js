@@ -93,24 +93,26 @@ window.I18N_DICT = {
 
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
-    'history.section': 'Nuestra historia',
-    'history.title': 'Experiencia en todos <em>los ámbitos</em>',
+    'history.section': 'Sobre SCM Sports Agency',
+    'history.title': 'Reinventando el asesoramiento <em>futbolístico</em>',
     'history.p1':
-      'Establecemos nuevos estándares en el asesoramiento a futbolistas. Desde 2014 en Marbella, con una estructura boutique donde la lealtad, la cercanía y la transparencia se practican cada día.',
+      'Establecemos nuevos estándares en la representación y gestión integral de futbolistas. Como parte de SCM Group, contamos con el respaldo de una sólida red empresarial y el conocimiento estratégico de un family office con más de 30 años de trayectoria.',
+    'history.p2':
+      'Nacimos para transformar el concepto tradicional de agencia: no nos limitamos a negociar contratos. Entendemos el fútbol como una carrera global donde el rendimiento en el campo depende del equilibrio y el desarrollo fuera de él.',
 
     'cards.1.title': 'Nuestros valores',
     'cards.1.p1':
-      'Respeto, aprecio mutuo y fiabilidad. Buenas personas, buenos entornos y mentalidad de crecimiento.',
-    'cards.2.title': 'Cómo jugamos',
+      'Lealtad, transparencia y honestidad: los pilares de cada relación. Respeto, aprecio mutuo y máxima seriedad.',
+    'cards.2.title': 'El jugador en el centro',
     'cards.2.p1':
-      'No esperamos a que la rompas: invertimos en tu evolución desde el primer día.',
-    'cards.3.title': 'El extra cierto',
+      'No tomamos decisiones por ti: tomamos las mejores decisiones contigo y para tu futuro, haciéndote parte activa de cada paso.',
+    'cards.3.title': 'El valor añadido',
     'cards.3.p1':
-      'Si tú ganas, nosotros ganamos. Una relación a largo plazo en la que invertimos desde el primer día.',
+      'Pensamiento estratégico y cercanía humana: tu éxito hoy y tu tranquilidad mañana.',
 
     'philo.title': 'Filosofía <em>SCM</em>',
     'philo.p1':
-      'Apoyo individualizado para cada situación, con los profesionales idóneos en cada área. No tomamos decisiones por ti: las tomamos contigo, pensando en tu futuro profesional.',
+      'Fusionamos el pensamiento estratégico con la cercanía humana: sentamos las bases de una trayectoria de élite, potenciamos tu crecimiento como persona y te preparamos para ser un profesional con visión empresarial.',
     'philo.cta': 'Forma parte de SCM<br>y maximiza tu carrera profesional.',
     'history.lead':
       'Establecemos nuevos estándares en el asesoramiento a futbolistas. Nacidos en la raíz de Magno Marbella en 2014, contamos con la red y la experiencia de una estructura boutique donde la lealtad, la cercanía y la transparencia no son meras palabras: se practican cada día y son clave de nuestro éxito.',
@@ -143,7 +145,7 @@ window.I18N_DICT = {
     'tl.4.where': 'Cada semana, el mismo ciclo',
     'tl.4.title': 'Un equipo alrededor de un mismo jugador',
     'tl.4.text':
-      'Videollamada tras cada partido, cortes de vídeo y un equipo multidisciplinar: analistas, preparadores físicos, psicólogos y nutricionistas.',
+      'Rendimiento deportivo, salud y bienestar, gestión patrimonial con visión de family office y crecimiento personal: un equipo multidisciplinar alrededor de un mismo jugador, cada semana.',
     'tl.5.when': '2026',
     'tl.5.where': 'La prueba',
     'tl.5.title': 'De agente libre a traspaso internacional',
@@ -156,7 +158,7 @@ window.I18N_DICT = {
       'Jugadores seleccionados a conciencia en España y Europa, con una idea que no cambia: no esperamos al talento, lo evolucionamos.',
     'ch1.when': 'Desde 2014',
     'ch1.where': 'Marbella · Magno Marbella',
-    'hist.claim': 'Donde entrenó la élite, hoy se <em>construyen carreras</em>',
+    'hist.claim': 'No te quedes en el banquillo de <em>tu propia carrera</em>',
     'ch1.title': 'Una década haciendo evolucionar a la élite',
     'ch1.p1':
       'Nacimos en 2014 en <strong>Magno Marbella</strong>, pioneros del entrenamiento individualizado para futbolistas de élite. La confianza de aquellos veranos se convirtió en el siguiente paso: hoy gestionamos carreras y fichajes con analistas, preparadores, psicólogos y nutricionistas alrededor de un mismo jugador.',
@@ -604,24 +606,26 @@ window.I18N_DICT = {
 
     'statement.1': 'Our competence <em>completes</em> your talent',
 
-    'history.section': 'Our story',
-    'history.title': 'Experience across <em>the board</em>',
+    'history.section': 'About SCM Sports Agency',
+    'history.title': 'Reinventing football <em>advisory</em>',
     'history.p1':
-      'We set new standards in advising footballers. Since 2014 in Marbella, with a boutique structure where loyalty, closeness and transparency are practiced every day.',
+      'We set new standards in the representation and complete management of footballers. As part of SCM Group, we are backed by a solid business network and the strategic knowledge of a family office with over 30 years of track record.',
+    'history.p2':
+      'We were born to transform the traditional agency concept: we do not stop at negotiating contracts. We understand football as a global career where performance on the pitch depends on balance and development off it.',
 
     'cards.1.title': 'Our values',
     'cards.1.p1':
-      'Respect, mutual appreciation and reliability. Good people, good environments and a growth mindset.',
-    'cards.2.title': 'How we play',
+      'Loyalty, transparency and honesty: the pillars of every relationship. Respect, mutual appreciation and utmost seriousness.',
+    'cards.2.title': 'The player at the center',
     'cards.2.p1':
-      'We do not wait for you to break through: we invest in your evolution from day one.',
-    'cards.3.title': 'The certain extra',
+      'We do not make decisions for you: we make the best decisions with you and for your future, making you an active part of every step.',
+    'cards.3.title': 'The added value',
     'cards.3.p1':
-      'When you win, we win. A long-term relationship in which we invest from day one.',
+      'Strategic thinking and human closeness: your success today and your peace of mind tomorrow.',
 
     'philo.title': 'The SCM <em>philosophy</em>',
     'philo.p1':
-      'Individualized support for every situation, with the right professionals in each area. We do not make decisions for you: we make them with you, with your professional future in mind.',
+      'We fuse strategic thinking with human closeness: we lay the foundations of an elite career, boost your growth as a person and prepare you to be a professional with a business vision.',
     'philo.cta': 'Join SCM<br>and maximize your professional career.',
     'history.lead':
       'We set new standards in advising footballers. Born out of Magno Marbella in 2014, we carry the network and experience of a boutique structure where loyalty, openness and transparency are not just words: they are practiced every day and they are key to our success.',
@@ -654,7 +658,7 @@ window.I18N_DICT = {
     'tl.4.where': 'Every week, the same cycle',
     'tl.4.title': 'One team around one player',
     'tl.4.text':
-      'A video call after every match, video clips and a multidisciplinary team: analysts, fitness coaches, psychologists and nutritionists.',
+      'Sporting performance, health and wellbeing, wealth management with a family office vision and personal growth: one multidisciplinary team around one player, every week.',
     'tl.5.when': '2026',
     'tl.5.where': 'The proof',
     'tl.5.title': 'From free agent to international transfer',
@@ -667,7 +671,7 @@ window.I18N_DICT = {
       'Players selected with intent across Spain and Europe, with one idea that never changes: we do not wait for talent, we evolve it.',
     'ch1.when': 'Since 2014',
     'ch1.where': 'Marbella · Magno Marbella',
-    'hist.claim': 'Where the elite trained, careers are <em>now built</em>',
+    "hist.claim": "Don't sit on the bench of <em>your own career</em>",
     'ch1.title': 'A decade evolving the elite',
     'ch1.p1':
       'Born in 2014 out of <strong>Magno Marbella</strong>, pioneers of individualized training for elite footballers. The trust earned in those summers became the next step: today we manage careers and transfers with analysts, coaches, psychologists and nutritionists around one player.',
