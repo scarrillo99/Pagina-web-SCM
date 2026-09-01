@@ -3268,9 +3268,7 @@ body {
 .section:not(.section--light) .section__title em,
 .statement p em,
 .hero__title em {
-  text-shadow:
-    0 0 26px rgba(255, 96, 15, 0.5),
-    0 0 72px rgba(255, 96, 15, 0.22);
+  text-shadow: none;
 }
 
 /* Focos sobre la portada: dos conos caen sobre la foto del hero. */
@@ -3509,9 +3507,6 @@ body {
 .endcta__title em {
   font-style: normal;
   color: var(--accent);
-  text-shadow:
-    0 0 26px rgba(255, 96, 15, 0.5),
-    0 0 72px rgba(255, 96, 15, 0.22);
 }
 
 .endcta__lead {

@@ -20,7 +20,7 @@ window.I18N_DICT = {
     'nav.contact': 'Contacto',
 
     'hero.eyebrow': 'Agencia boutique internacional · Marbella · Desde 2014',
-    'hero.title': 'You bring the talent,<br><em>we build the path.</em>',
+    'hero.title': 'Tú pones el talento,<br><em>nosotros construimos el camino.</em>',
     'hero.lead':
       'Representación 360º de futbolistas profesionales: método semanal, mercado europeo y un solo equipo detrás de tu carrera.',
     'hero.cta1': 'Empieza tu evolución',
