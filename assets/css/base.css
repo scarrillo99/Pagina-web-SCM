@@ -289,14 +289,8 @@ body::after {
    Selección de texto invertida y barra de scroll fina y oscura: la
    marca también vive en los pequeños gestos del navegador. */
 ::selection {
-  background: #f6f6f5;
-  color: #101012;
-}
-
-.section--light ::selection,
-.bhero ::selection {
-  background: #101012;
-  color: #f6f6f5;
+  background: #ff600f;
+  color: #ffffff;
 }
 
 html {

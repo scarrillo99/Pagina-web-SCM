@@ -17,12 +17,12 @@
 
   --text: #f6f6f5;
   --muted: #9a9aa1;
-  /* Acento corporativo monocromo: blanco sobre fondo oscuro. En las
-     secciones claras se invierte a negro. El nombre --accent sustituye al
-     antiguo --red: la marca no lleva rojo. */
-  --accent: #f6f6f5;
-  --accent-dark: #d9d9d5;
-  --on-accent: #0a0a0b;
+  /* Acento corporativo: el naranja del ojo del logo de SCM (#ff600f),
+     sobre la base negra y blanca de la marca. En las secciones claras se
+     oscurece un punto para sostener el contraste. */
+  --accent: #ff600f;
+  --accent-dark: #d94e08;
+  --on-accent: #ffffff;
   --line: rgba(255, 255, 255, 0.13);
   --line-strong: rgba(255, 255, 255, 0.28);
 
@@ -46,9 +46,9 @@ body {
   --surface: var(--light);
   --surface-2: var(--light-2);
   --surface-3: #dcdcd8;
-  --accent: #101012;
-  --accent-dark: #000;
-  --on-accent: #f2f2f0;
+  --accent: #e85500;
+  --accent-dark: #c44700;
+  --on-accent: #ffffff;
   --text: #101012;
   --muted: #5c5c62;
   --line: rgba(16, 16, 18, 0.14);
@@ -3269,8 +3269,8 @@ body {
 .statement p em,
 .hero__title em {
   text-shadow:
-    0 0 26px rgba(255, 255, 255, 0.38),
-    0 0 72px rgba(255, 255, 255, 0.16);
+    0 0 26px rgba(255, 96, 15, 0.5),
+    0 0 72px rgba(255, 96, 15, 0.22);
 }
 
 /* Focos sobre la portada: dos conos caen sobre la foto del hero. */
@@ -3510,8 +3510,8 @@ body {
   font-style: normal;
   color: var(--accent);
   text-shadow:
-    0 0 26px rgba(255, 255, 255, 0.38),
-    0 0 72px rgba(255, 255, 255, 0.16);
+    0 0 26px rgba(255, 96, 15, 0.5),
+    0 0 72px rgba(255, 96, 15, 0.22);
 }
 
 .endcta__lead {
@@ -3539,7 +3539,7 @@ body {
   right: 0;
   bottom: 0;
   height: 1.5px;
-  background: linear-gradient(90deg, transparent, currentColor, transparent);
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
   transform: scaleX(0);
   transition: transform 0.35s var(--ease);
 }
