@@ -229,45 +229,51 @@
         </div>
       </section>
 
-      <section class="section bhero quick">
-        <div class="container bcards">
-          <a class="bcard bcard--link" href="enfoque.html" data-reveal>
-            <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="19" /><circle cx="24" cy="24" r="10" /><circle cx="24" cy="24" r="2.5" /></svg>
-            <h3 data-i18n="home.q1.title">Metodología individual</h3>
-            <p data-i18n="home.q1.text">
-              Videollamada semanal con cortes de vídeo, guiada por tu posición y tus
-              condiciones.
-            </p>
-            <span class="bcard__go">
-              <span data-i18n="home.q1.go">Ver el enfoque</span>
-              <svg viewBox="0 0 24 12" fill="none" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" /></svg>
-            </span>
-          </a>
-          <a class="bcard bcard--link" href="agencia.html" data-reveal style="--reveal-delay: 0.08s">
-            <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30l10-10 8 6 14-14" /><path d="M40 12v9h-9" /></svg>
-            <h3 data-i18n="home.q2.title">Modelo win-win</h3>
-            <p data-i18n="home.q2.text">
-              Si tú ganas, nosotros ganamos: invertimos en tu carrera desde el primer día.
-            </p>
-            <span class="bcard__go">
-              <span data-i18n="home.q2.go">Conocer la agencia</span>
-              <svg viewBox="0 0 24 12" fill="none" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" /></svg>
-            </span>
-          </a>
-          <a class="bcard bcard--link" href="agencia.html#caso" data-reveal style="--reveal-delay: 0.16s">
-            <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h20v8a10 10 0 01-20 0z" /><path d="M14 10H7a7 7 0 007 8M34 10h7a7 7 0 01-7 8" /><path d="M24 26v6M17 40h14M20 32h8l3 8H17z" /></svg>
-            <h3 data-i18n="home.q3.title">Caso Iker Pozo</h3>
-            <p data-i18n="home.q3.text">
-              De agente libre en 2025 a un traspaso internacional de 1.500.000 € en 2026.
-            </p>
-            <span class="bcard__go">
-              <span data-i18n="home.q3.go">Ver el caso</span>
-              <svg viewBox="0 0 24 12" fill="none" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" /></svg>
-            </span>
-          </a>
+      <!-- ==================================================== cifras ====
+           La estructura detrás del jugador, en cuatro números. -->
+      <section class="section" id="cifras">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="nums.section">Las cifras</p>
+          </div>
+
+          <h2 class="section__title" data-i18n-html="nums.title" data-reveal>
+            La estructura detrás <em>del jugador</em>
+          </h2>
+
+          <div class="legacy__grid" style="margin-top: var(--space-2xl); margin-bottom: 0">
+            <article class="legacy__item" data-reveal>
+              <p class="legacy__value"><span data-count="10">10</span></p>
+              <h3 class="legacy__label" data-i18n="nums.1.label">Agentes a tiempo completo</h3>
+              <p class="legacy__note" data-i18n="nums.1.note">
+                Conectados en toda Europa y en los mercados clave.
+              </p>
+            </article>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.08s">
+              <p class="legacy__value">+<span data-count="15">15</span></p>
+              <h3 class="legacy__label" data-i18n="nums.2.label">Scouts en todo el mundo</h3>
+              <p class="legacy__note" data-i18n="nums.2.note">
+                Con experiencia en grandes clubes europeos.
+              </p>
+            </article>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.16s">
+              <p class="legacy__value">+<span data-count="15">15</span></p>
+              <h3 class="legacy__label" data-i18n="nums.3.label">Años de experiencia</h3>
+              <p class="legacy__note" data-i18n="nums.3.note">
+                En la gestión integral de futbolistas profesionales.
+              </p>
+            </article>
+            <article class="legacy__item" data-reveal style="--reveal-delay: 0.24s">
+              <p class="legacy__value">+<span data-count="30">30</span></p>
+              <h3 class="legacy__label" data-i18n="nums.4.label">Años de family office</h3>
+              <p class="legacy__note" data-i18n="nums.4.note">
+                El respaldo empresarial de SCM Group detrás de la agencia.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
-
 
       <!-- ================================================ manifiesto ==== -->
       <section class="section section--tight statement">
@@ -275,6 +281,77 @@
           <p data-i18n-html="statement.1" data-reveal>
             Nuestra competencia <em>completa</em> tu talento
           </p>
+        </div>
+      </section>
+
+      <!-- ============================================ equipo y cartera ====
+           El equipo detrás del jugador y las dos pruebas públicas: la
+           cartera en Transfermarkt y la actualidad en Instagram. -->
+      <section class="section section--light" id="equipo-home">
+        <div class="container">
+          <div class="tag" data-reveal>
+            <p class="tag__mark">Inimitable</p>
+            <p class="tag__section" data-i18n="team.section">El equipo</p>
+          </div>
+
+          <div class="intl__layout">
+            <div>
+              <h2 class="section__title" data-i18n-html="team.title" data-reveal>
+                El equipo detrás de <em>tu evolución</em>
+              </h2>
+              <p class="section__lead" data-i18n="team.lead" data-reveal>
+                10 agentes a tiempo completo, más de 15 scouts en todo el mundo y ex
+                futbolistas profesionales. Más de 15 años de trayectoria.
+              </p>
+            </div>
+            <div data-reveal>
+              <a
+                class="philo__cta"
+                style="margin-top: var(--space-md); font-size: clamp(0.9rem, 1.3vw, 1.05rem)"
+                href="equipo.html"
+              >
+                <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
+                  <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span data-i18n="teamhome.cta">Conoce al equipo</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bcards bcards--two" style="margin-top: var(--space-2xl)">
+            <a
+              class="bcard bcard--link"
+              href="https://www.transfermarkt.es/scm-sports-agency/beraterfirma/berater/11514"
+              data-reveal
+            >
+              <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="15" r="8" /><path d="M8 42a16 16 0 0132 0" /></svg>
+              <h3 data-i18n="players.title">Nuestros jugadores</h3>
+              <p data-i18n="players.text">
+                Cartera pública y verificable: Iker Pozo, Orel Mangala, Frederik Kondogbia
+                y más.
+              </p>
+              <span class="bcard__go">
+                <span data-i18n="players.go">Ver en Transfermarkt</span>
+                <svg viewBox="0 0 24 12" fill="none" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" /></svg>
+              </span>
+            </a>
+            <a
+              class="bcard bcard--link"
+              href="https://www.instagram.com/scmsportsagency/?hl=es"
+              data-reveal
+              style="--reveal-delay: 0.08s"
+            >
+              <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="36" height="36" rx="10" /><circle cx="24" cy="24" r="8" /><circle cx="35" cy="13" r="2" fill="currentColor" stroke="none" /></svg>
+              <h3 data-i18n="heads.title">Titulares</h3>
+              <p data-i18n="heads.text">
+                Firmas, traspasos y el día a día de la agencia, en directo.
+              </p>
+              <span class="bcard__go">
+                <span data-i18n="heads.go">Ver en Instagram</span>
+                <svg viewBox="0 0 24 12" fill="none" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" /></svg>
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
