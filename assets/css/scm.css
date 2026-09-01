@@ -451,9 +451,9 @@ body {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(10, 10, 11, 0.92) 0%, rgba(10, 10, 11, 0.72) 34%, rgba(10, 10, 11, 0.3) 68%, rgba(10, 10, 11, 0.15) 100%),
-    linear-gradient(0deg, rgba(10, 10, 11, 0.95) 0%, rgba(10, 10, 11, 0.35) 38%, rgba(10, 10, 11, 0) 62%),
-    linear-gradient(180deg, rgba(10, 10, 11, 0.7) 0%, rgba(10, 10, 11, 0) 22%);
+    linear-gradient(90deg, rgba(10, 10, 11, 0.78) 0%, rgba(10, 10, 11, 0.48) 34%, rgba(10, 10, 11, 0.12) 68%, rgba(10, 10, 11, 0.05) 100%),
+    linear-gradient(0deg, rgba(10, 10, 11, 0.88) 0%, rgba(10, 10, 11, 0.22) 38%, rgba(10, 10, 11, 0) 62%),
+    linear-gradient(180deg, rgba(10, 10, 11, 0.55) 0%, rgba(10, 10, 11, 0) 22%);
 }
 
 .hero .container {
@@ -495,9 +495,9 @@ body {
 }
 
 .hero__title {
-  font-size: clamp(2.6rem, 5.8vw, 5.2rem);
-  line-height: 1.02;
-  max-width: 15ch;
+  font-size: clamp(2.1rem, 4.4vw, 3.8rem);
+  line-height: 1.05;
+  max-width: 16ch;
   margin-bottom: var(--space-lg);
   text-wrap: balance;
 }
