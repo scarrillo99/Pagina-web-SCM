@@ -321,3 +321,26 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #4a4a52;
 }
+
+/* Foto completa a altura uniforme: la imagen entera dentro del hueco y,
+   detrás, ella misma ampliada y desenfocada rellenando el fondo. Se activa
+   añadiendo photo--full al bloque .photo. */
+.photo--full {
+  background-image: var(--photo, none);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo--full::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 11, 0.38);
+  -webkit-backdrop-filter: blur(20px) saturate(0.9);
+  backdrop-filter: blur(20px) saturate(0.9);
+}
+
+.photo--full::after {
+  background-size: auto, contain;
+  background-position: center, center;
+}

@@ -3549,3 +3549,13 @@ body {
 .nav__link[aria-current='page']::after {
   transform: scaleX(1);
 }
+
+/* En las tarjetas de SCM x Magno el ::before del hueco pinta el icono de
+   marcador; en modo foto completa pasa a ser el velo desenfocado. */
+.partner__item .photo--full::before {
+  background-image: none;
+  background: rgba(10, 10, 11, 0.38);
+  -webkit-backdrop-filter: blur(20px) saturate(0.9);
+  backdrop-filter: blur(20px) saturate(0.9);
+  opacity: 1;
+}
