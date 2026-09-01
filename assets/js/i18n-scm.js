@@ -20,7 +20,7 @@ window.I18N_DICT = {
     'nav.contact': 'Contacto',
 
     'hero.eyebrow': 'Agencia boutique internacional · Marbella · Desde 2014',
-    'hero.title': 'No esperamos a que el talento explote.<br><em>Lo evolucionamos.</em>',
+    'hero.title': 'You bring the talent,<br><em>we build the path.</em>',
     'hero.lead':
       'Representación 360º de futbolistas profesionales: método semanal, mercado europeo y un solo equipo detrás de tu carrera.',
     'hero.cta1': 'Empieza tu evolución',
@@ -533,7 +533,7 @@ window.I18N_DICT = {
     'nav.contact': 'Contact',
 
     'hero.eyebrow': 'International boutique agency · Marbella · Since 2014',
-    'hero.title': "We Don't Wait for Talent to Explode.<br><em>We Evolve It.</em>",
+    'hero.title': 'You bring the talent,<br><em>we build the path.</em>',
     'hero.lead':
       '360º representation for professional footballers: a weekly method, the European market and one team behind your career.',
     'hero.cta1': 'Start your evolution',
