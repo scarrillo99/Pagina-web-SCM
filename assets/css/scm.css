@@ -3559,3 +3559,36 @@ body {
   backdrop-filter: blur(20px) saturate(0.9);
   opacity: 1;
 }
+
+/* Iconos del índice de servicios: cada área con su símbolo en el
+   naranja de la marca, sobre el número. */
+.sindex__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sindex__icon {
+  width: 36px;
+  height: 36px;
+  color: var(--accent);
+  margin-bottom: clamp(1.1rem, 2vw, 1.6rem);
+  transition: transform 0.35s var(--ease);
+}
+
+.sindex__item:hover .sindex__icon,
+.sindex__item:focus-visible .sindex__icon {
+  transform: translateY(-3px);
+}
+
+.sindex__item:hover .sindex__num,
+.sindex__item:focus-visible .sindex__num {
+  color: var(--accent);
+}
+
+.sindex__title {
+  margin-top: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+.sindex__desc {
+  margin-top: 0.5rem;
+}
