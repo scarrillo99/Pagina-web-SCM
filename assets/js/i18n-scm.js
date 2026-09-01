@@ -22,7 +22,7 @@ window.I18N_DICT = {
     'hero.eyebrow': 'Agencia boutique internacional · Marbella · Desde 2014',
     'hero.title': 'Tú pones el talento,<br><em>nosotros trazamos el camino.</em>',
     'hero.lead':
-      'Representación 360º de futbolistas profesionales: método semanal, mercado europeo y un solo equipo detrás de tu carrera.',
+      'Una agencia boutique donde cada carrera recibe la atención, estrategia y dedicación que merece.',
     'hero.cta1': 'Empieza tu evolución',
     'hero.cta2': 'Descubre el método',
 
@@ -506,7 +506,7 @@ window.I18N_DICT = {
     'cross.text': 'Concierge para futbolistas profesionales',
 
     'footer.tagline':
-      'Agencia 360º de representación y gestión integral de futbolistas profesionales. Marbella, España.',
+      'Representación 360º de futbolistas profesionales: método semanal, mercado europeo y un solo equipo detrás de tu carrera.',
     'footer.nav': 'Navegación',
     'footer.legalTitle': 'Legal',
     'footer.legal': 'Aviso legal',
@@ -535,7 +535,7 @@ window.I18N_DICT = {
     'hero.eyebrow': 'International boutique agency · Marbella · Since 2014',
     'hero.title': 'You bring the talent,<br><em>we build the path.</em>',
     'hero.lead':
-      '360º representation for professional footballers: a weekly method, the European market and one team behind your career.',
+      'A boutique agency where every career gets the attention, strategy and dedication it deserves.',
     'hero.cta1': 'Start your evolution',
     'hero.cta2': 'Discover the method',
 
