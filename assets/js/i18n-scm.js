@@ -144,8 +144,9 @@ window.I18N_DICT = {
     'caps.8': 'Generación de patrimonio',
     'caps.9': 'Merchandising',
     'caps.10': 'Supervisión académica',
-    'caps.11': 'Servicio de concierge',
+    'caps.11': 'Concierge y lifestyle',
     'caps.12': 'Asesoramiento fiscal',
+    'caps.13': 'Análisis de rendimiento',
 
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
@@ -712,8 +713,9 @@ window.I18N_DICT = {
     'caps.8': 'Asset generation',
     'caps.9': 'Merchandising',
     'caps.10': 'Academic supervision',
-    'caps.11': 'Concierge service',
+    'caps.11': 'Concierge and lifestyle',
     'caps.12': 'Tax support',
+    'caps.13': 'Performance analysis',
 
     'statement.1': 'Our competence <em>completes</em> your talent',
 
