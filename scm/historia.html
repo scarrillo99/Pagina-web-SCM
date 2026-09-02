@@ -102,176 +102,194 @@
     <main id="main">
 
       <!-- ================================================= historia ====
-           El relato de la marca. Los nombres del capítulo 3 se citan como
-           referencia del entorno, con su nota legal justo debajo: conviene que
-           lo revise la asesoría antes de publicar. Ver README.
+           El relato en tres capítulos: el césped (Magno Marbella, 2014),
+           el respaldo (SCM Group, el family office) y el salto (la agencia
+           que pidieron los propios jugadores). Las fotos de la galería se
+           enchufan en assets/css/photos.css; los huecos vacíos quedan
+           listos para ir añadiendo jugadores. -->
 
-           La galería son seis huecos vacíos. La foto se enchufa en
-           assets/css/photos.css y el nombre, el año y el lugar se escriben
-           aquí, en cada figure. -->
-      <!-- ======================================== historia: cartel ====
-           Banda de marca: titular a la izquierda, posicionamiento a la
-           derecha y las tres tarjetas de valores debajo. -->
+      <!-- ======================================== historia: cartel ==== -->
       <section class="section bhero" id="historia">
         <div class="container bhero__grid">
           <h2 class="bhero__title" data-i18n-html="history.title" data-reveal>
-            Reinventando el asesoramiento <em>futbolístico</em>
+            Tres orígenes, <em>una misión</em>
           </h2>
           <div class="bhero__text">
             <p data-i18n="history.p1" data-reveal>
-              Establecemos nuevos estándares en la representación y gestión integral de
-              futbolistas. Como parte de SCM Group, contamos con el respaldo de una sólida
-              red empresarial y el conocimiento estratégico de un family office con más de
-              30 años de trayectoria.
+              SCM Sports Agency no nació en un despacho: nació en el césped de Marbella,
+              sobre los cimientos de un family office con más de 30 años de historia.
             </p>
             <p data-i18n="history.p2" data-reveal>
-              Nacimos para transformar el concepto tradicional de agencia: no nos limitamos
-              a negociar contratos. Entendemos el fútbol como una carrera global donde el
-              rendimiento en el campo depende del equilibrio y el desarrollo fuera de él.
+              Esta es la historia de cómo un campo de entrenamiento, un grupo empresarial
+              y la confianza de los propios jugadores se convirtieron en una agencia
+              distinta.
             </p>
           </div>
         </div>
-
-        <div class="container bcards">
-          <article class="bcard" data-reveal>
-            <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 44V6" /><path d="M10 8h26l-6 8 6 8H10" /></svg>
-            <h3 data-i18n="cards.1.title">Nuestros valores</h3>
-            <p data-i18n="cards.1.p1">
-              Lealtad, transparencia y honestidad: los pilares de cada relación. Respeto,
-              aprecio mutuo y máxima seriedad.
-            </p>
-          </article>
-          <article class="bcard" data-reveal style="--reveal-delay: 0.08s">
-            <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="19" /><path d="M24 16l7.5 5.5-2.9 9h-9.2l-2.9-9z" /><path d="M24 5.5V16M9 30l9.4.5M39 30l-9.4.5M13.5 11.5l7.6 10M34.5 11.5l-7.6 10" /></svg>
-            <h3 data-i18n="cards.2.title">El jugador en el centro</h3>
-            <p data-i18n="cards.2.p1">
-              No tomamos decisiones por ti: tomamos las mejores decisiones contigo y para tu
-              futuro, haciéndote parte activa de cada paso.
-            </p>
-          </article>
-          <article class="bcard" data-reveal style="--reveal-delay: 0.16s">
-            <svg class="bcard__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M24 8v32M8 24h32" /></svg>
-            <h3 data-i18n="cards.3.title">El valor añadido</h3>
-            <p data-i18n="cards.3.p1">
-              Pensamiento estratégico y cercanía humana: tu éxito hoy y tu tranquilidad
-              mañana.
-            </p>
-          </article>
-        </div>
       </section>
 
-      <!-- ===================================== historia: franja foto ====
-           Declaración a pantalla completa sobre una foto de entrenamiento
-           de alta intensidad. La imagen se enchufa en photos.css
-           (--photo-historia). -->
-      <section class="section section--tight statement statement--photo" style="--photo: var(--photo-historia)">
+      <!-- =============================== capítulo 01: el césped ==== -->
+      <section class="section chap">
+        <span class="chap__num" aria-hidden="true">01</span>
         <div class="container">
-          <p data-i18n-html="hist.claim" data-reveal>
-            No te quedes en el banquillo de <em>tu propia carrera</em>
-          </p>
-        </div>
-      </section>
+          <p class="chap__kicker" data-i18n="ch1.kicker" data-reveal>Capítulo 01 · 2014 · Marbella</p>
+          <h2 class="section__title" data-i18n-html="ch1.title" data-reveal>
+            Todo empezó <em>en el césped</em>
+          </h2>
 
-      <!-- ======================================= historia: el relato ==== -->
-      <section class="section">
-        <div class="container">
-          <div class="tag" data-reveal>
-            <p class="tag__mark">Inimitable</p>
-            <p class="tag__section" data-i18n="history.section">Nuestra historia</p>
-          </div>
-
-
-          <!-- Línea de tiempo de la marca: los hitos que explican quiénes
-               somos, del césped de Marbella al mercado internacional. -->
-          <div class="timeline">
-            <article class="tl__item" data-reveal>
-              <p class="tl__when" data-i18n="tl.1.when">2014</p>
-              <p class="tl__where" data-i18n="tl.1.where">Marbella</p>
-              <h3 data-i18n="tl.1.title">El origen</h3>
-              <p data-i18n-html="tl.1.text">
-                Nace <strong>Magno Marbella</strong> sobre el césped: pioneros del
-                entrenamiento individualizado para futbolistas de élite durante sus
-                vacaciones y su pretemporada, cuando esa cultura no existía.
+          <div class="chap__grid">
+            <div>
+              <p class="chapter__text" data-i18n-html="ch1.p1" data-reveal>
+                Nace <strong>Magno Marbella</strong>: pioneros del entrenamiento
+                individualizado para futbolistas de élite durante sus vacaciones y
+                pretemporadas, cuando esa cultura no existía.
               </p>
-            </article>
-
-            <article class="tl__item" data-reveal>
-              <p class="tl__when" data-i18n="tl.2.when">Los veranos de la élite</p>
-              <p class="tl__where" data-i18n="tl.2.where">Marbella Football Center · Dama de Noche</p>
-              <h3 data-i18n="tl.2.title">La confianza se entrena</h3>
-              <p data-i18n="tl.2.text">
-                Por nuestras instalaciones pasa el más alto nivel. El trato cercano y la
-                discreción convierten cada verano en una relación.
+              <p class="chapter__text" data-i18n-html="ch1.p2" data-reveal>
+                Por nuestro césped pasó el más alto nivel. El trato cercano y la
+                <strong>discreción</strong> convirtieron cada verano en una relación, y
+                Marbella, en la base de operaciones de la élite.
               </p>
-
+            </div>
+            <div data-reveal>
+              <p class="legacy__label" data-i18n="ch1.gallery">Por aquí pasó la élite</p>
               <ul class="names"><li>Marcus Rashford</li><li>Gareth Bale</li><li>James Rodríguez</li><li>Manuel Lanzini</li><li>Noni Madueke</li><li>Dean Huijsen</li><li>Samuel Chukwueze</li><li>Orbelín Pineda</li></ul>
               <p class="names__note" data-i18n="ch3.note">
                 Estos nombres se citan como referencia del entorno en el que trabajamos.
               </p>
+            </div>
+          </div>
 
-              <div class="gallery" style="margin-top: var(--space-lg)">
-                <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy1)">
-                  <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
-                  <span class="shot__veil" aria-hidden="true"></span>
-                  <figcaption class="shot__caption">
-                    <span class="shot__who">Marcus Rashford</span>
-                    <span class="shot__meta">Marbella Football Center</span>
-                  </figcaption>
-                </figure>
-                <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy2)">
-                  <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
-                  <span class="shot__veil" aria-hidden="true"></span>
-                  <figcaption class="shot__caption">
-                    <span class="shot__who">Internacionales en Marbella</span>
-                    <span class="shot__meta">Marbella Football Center</span>
-                  </figcaption>
-                </figure>
-                <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy3)">
-                  <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
-                  <span class="shot__veil" aria-hidden="true"></span>
-                  <figcaption class="shot__caption">
-                    <span class="shot__who">Pretemporada de élite</span>
-                    <span class="shot__meta">Marbella</span>
-                  </figcaption>
-                </figure>
+          <div class="gallery" style="margin-top: var(--space-xl)">
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy1)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Marcus Rashford</span>
+                <span class="shot__meta">Marbella Football Center</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy2)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Internacionales en Marbella</span>
+                <span class="shot__meta">Marbella Football Center</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy3)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who">Pretemporada de élite</span>
+                <span class="shot__meta">Marbella</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy4)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who" data-i18n="ch1.soon">Próximamente</span>
+                <span class="shot__meta">Marbella</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy5)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who" data-i18n="ch1.soon">Próximamente</span>
+                <span class="shot__meta">Marbella</span>
+              </figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" style="--photo: var(--photo-legacy6)">
+              <span class="shot__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="19" rx="2"/><circle cx="11" cy="14" r="2.4"/><path d="M3 22l7-6 6 5 4-3 9 8"/></svg></span>
+              <span class="shot__veil" aria-hidden="true"></span>
+              <figcaption class="shot__caption">
+                <span class="shot__who" data-i18n="ch1.soon">Próximamente</span>
+                <span class="shot__meta">Marbella</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================== capítulo 02: el respaldo ==== -->
+      <section class="section section--light chap">
+        <span class="chap__num" aria-hidden="true">02</span>
+        <div class="container">
+          <p class="chap__kicker" data-i18n="ch2x.kicker" data-reveal>Capítulo 02 · El respaldo</p>
+          <h2 class="section__title" data-i18n-html="ch2x.title" data-reveal>
+            Un family office <em>detrás del método</em>
+          </h2>
+
+          <div class="chap__grid">
+            <div>
+              <p class="chapter__text" data-i18n-html="ch2x.p1" data-reveal>
+                Detrás de la agencia está <strong>SCM Group</strong>: un family office con
+                más de 30 años de trayectoria, una red empresarial sólida y el
+                conocimiento estratégico y financiero que el fútbol casi nunca tiene
+                cerca.
+              </p>
+              <p class="chapter__text" data-i18n-html="ch2x.p2" data-reveal>
+                La seriedad de una empresa familiar aplicada a la carrera de un
+                futbolista: <strong>pensar a largo plazo</strong>, decidir con datos y
+                proteger el patrimonio.
+              </p>
+            </div>
+            <div data-reveal>
+              <p class="legacy__label" data-i18n="threesixty.capsTitle">Lo que cubre el grupo</p>
+              <div class="caps-grid">
+                <span class="cap-pill" data-i18n="caps.1">Traspasos</span>
+                <span class="cap-pill" data-i18n="caps.2">Contratos</span>
+                <span class="cap-pill" data-i18n="caps.3">Marketing y PR</span>
+                <span class="cap-pill" data-i18n="caps.4">Entrenamiento individual</span>
+                <span class="cap-pill" data-i18n="caps.5">Atención médica</span>
+                <span class="cap-pill" data-i18n="caps.6">Desarrollo personal</span>
+                <span class="cap-pill" data-i18n="caps.7">Coaching mental</span>
+                <span class="cap-pill" data-i18n="caps.8">Generación de patrimonio</span>
+                <span class="cap-pill" data-i18n="caps.9">Merchandising</span>
+                <span class="cap-pill" data-i18n="caps.10">Supervisión académica</span>
+                <span class="cap-pill" data-i18n="caps.11">Servicio de concierge</span>
+                <span class="cap-pill" data-i18n="caps.12">Asesoramiento fiscal</span>
               </div>
-            </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <article class="tl__item" data-reveal>
-              <p class="tl__when" data-i18n="tl.3.when">El salto</p>
-              <p class="tl__where" data-i18n="tl.3.where">Nace SCM Sports Agency</p>
-              <h3 data-i18n="tl.3.title">De gestionar el entorno a gestionar la carrera</h3>
-              <p data-i18n-html="tl.3.text">
-                Los propios jugadores nos piden el siguiente paso: <strong>representación e
-                intermediación directa</strong>. Nace SCM con un modelo boutique: pocos
-                jugadores, todo el método.
+      <!-- ================================= capítulo 03: el salto ==== -->
+      <section class="section chap pitchside">
+        <span class="chap__num" aria-hidden="true">03</span>
+        <div class="container">
+          <p class="chap__kicker" data-i18n="ch3x.kicker" data-reveal>Capítulo 03 · El salto</p>
+          <h2 class="section__title" data-i18n-html="ch3x.title" data-reveal>
+            Los jugadores pidieron <em>el siguiente paso</em>
+          </h2>
+
+          <div class="chap__grid">
+            <div>
+              <p class="chapter__text" data-i18n-html="ch3x.p1" data-reveal>
+                De gestionar el entorno a gestionar la carrera: los propios jugadores nos
+                pidieron <strong>representación e intermediación directa</strong>. Así
+                nace SCM Sports Agency, con un modelo boutique: pocos jugadores, todo el
+                método.
               </p>
-            </article>
-
-            <article class="tl__item" data-reveal>
-              <p class="tl__when" data-i18n="tl.4.when">El método</p>
-              <p class="tl__where" data-i18n="tl.4.where">Cada semana, el mismo ciclo</p>
-              <h3 data-i18n="tl.4.title">Un equipo alrededor de un mismo jugador</h3>
-              <p data-i18n="tl.4.text">
-                Rendimiento deportivo, salud y bienestar, gestión patrimonial con visión de
-                family office y crecimiento personal: un equipo multidisciplinar alrededor
-                de un mismo jugador, cada semana.
+              <p class="chapter__text" data-i18n-html="ch3x.p2" data-reveal>
+                Hoy somos <strong>10 agentes a tiempo completo</strong>, más de 15 scouts
+                en el mundo y analistas con licencia UEFA Pro, con la Costa del Sol como
+                base y toda Europa como mercado.
               </p>
-            </article>
-
-            <article class="tl__item" data-reveal>
-              <p class="tl__when" data-i18n="tl.5.when">2026</p>
-              <p class="tl__where" data-i18n="tl.5.where">La prueba</p>
-              <h3 data-i18n="tl.5.title">De agente libre a traspaso internacional</h3>
-              <p data-i18n-html="tl.5.text">
-                <strong>Iker Pozo</strong> firma su traspaso internacional tras dos años de
-                trabajo individual. <strong>Orel Mangala</strong> y
-                <strong>Frederik Kondogbia</strong> compiten en la élite europea. Y la
+            </div>
+            <div data-reveal>
+              <p class="legacy__label" data-i18n="proof.label">La prueba</p>
+              <p class="chapter__text" data-i18n-html="proof.text" style="margin-top: var(--space-sm)">
+                La prueba no son cifras: son carreras. <strong>Iker Pozo</strong> pasó de agente
+                libre a un traspaso internacional en dos años. <strong>Orel Mangala</strong> y
+                <strong>Frederik Kondogbia</strong> compiten en la élite europea. Y nuestra
                 cartera es pública.
               </p>
               <a
                 class="philo__cta"
-                style="margin-top: var(--space-md); font-size: 0.95rem"
+                style="margin-top: var(--space-lg); font-size: clamp(0.9rem, 1.3vw, 1.05rem)"
                 href="https://www.transfermarkt.es/scm-sports-agency/beraterfirma/berater/11514"
               >
                 <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
@@ -279,27 +297,20 @@
                 </svg>
                 <span data-i18n="proof.cta">Verifica nuestra cartera en Transfermarkt</span>
               </a>
-            </article>
-
-            <article class="tl__item" data-reveal>
-              <p class="tl__when" data-i18n="tl.6.when">Hoy</p>
-              <p class="tl__where" data-i18n="tl.6.where">Boutique global desde Marbella</p>
-              <h3 data-i18n="tl.6.title">Tu evolución es nuestra marca</h3>
-              <p data-i18n="tl.6.text">
-                Jugadores seleccionados a conciencia en España y Europa, con una idea que no
-                cambia: no esperamos al talento, lo evolucionamos.
-              </p>
-            </article>
+            </div>
           </div>
-
         </div>
       </section>
 
-      <!-- ==================================== historia: filosofía ====
-           Foto del fundador a la izquierda (se enchufa en photos.css con
-           --photo-fundador subiendo assets/img/fundador.jpg) y la filosofía
-           de la agencia a la derecha, con la llamada final. -->
-      <section class="section philo">
+            <section class="section section--tight statement statement--photo" style="--photo: var(--photo-historia)">
+        <div class="container">
+          <p data-i18n-html="hist.claim" data-reveal>
+            No te quedes en el banquillo de <em>tu propia carrera</em>
+          </p>
+        </div>
+      </section>
+
+            <section class="section philo">
         <div class="container philo__grid">
           <figure class="philo__photo" style="--photo: var(--photo-fundador)" data-reveal>
             <figcaption class="philo__caption" data-i18n="ch4.founder">Sam · Fundador de SCM</figcaption>
@@ -322,12 +333,6 @@
         </div>
       </section>
 
-      <!-- ================================= historia: pilares y archivo ==== -->
-      <section class="section">
-        <div class="container">
-
-        </div>
-      </section>
     </main>
 
     <!-- ================================================== crosslink ==== -->

@@ -3751,3 +3751,81 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==================================================== historia por capítulos
+   Cada acto del relato con su numeral gigante en fantasma, su kicker en
+   naranja y una retícula de dos columnas: narrativa | evidencia. */
+.chap {
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.chap__num {
+  position: absolute;
+  top: clamp(-1rem, -2vw, -2rem);
+  right: -2%;
+  z-index: -1;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 75%;
+  font-size: clamp(11rem, 26vw, 24rem);
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  opacity: 0.05;
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.section--light .chap__num {
+  opacity: 0.06;
+}
+
+.chap__kicker {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.chap__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .chap__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Píldoras de capacidades del grupo. */
+.caps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: var(--space-md);
+}
+
+.cap-pill {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.76rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  transition: border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.cap-pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

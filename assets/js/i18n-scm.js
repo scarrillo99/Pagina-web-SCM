@@ -150,11 +150,31 @@ window.I18N_DICT = {
     'statement.1': 'Nuestra competencia <em>completa</em> tu talento',
 
     'history.section': 'Sobre SCM Sports Agency',
-    'history.title': 'Reinventando el asesoramiento <em>futbolístico</em>',
+    'history.title': 'Tres orígenes, <em>una misión</em>',
     'history.p1':
-      'Establecemos nuevos estándares en la representación y gestión integral de futbolistas. Como parte de SCM Group, contamos con el respaldo de una sólida red empresarial y el conocimiento estratégico de un family office con más de 30 años de trayectoria.',
+      'SCM Sports Agency no nació en un despacho: nació en el césped de Marbella, sobre los cimientos de un family office con más de 30 años de historia.',
     'history.p2':
-      'Nacimos para transformar el concepto tradicional de agencia: no nos limitamos a negociar contratos. Entendemos el fútbol como una carrera global donde el rendimiento en el campo depende del equilibrio y el desarrollo fuera de él.',
+      'Esta es la historia de cómo un campo de entrenamiento, un grupo empresarial y la confianza de los propios jugadores se convirtieron en una agencia distinta.',
+    'ch1.kicker': 'Capítulo 01 · 2014 · Marbella',
+    'ch1.title': 'Todo empezó <em>en el césped</em>',
+    'ch1.p1':
+      'Nace <strong>Magno Marbella</strong>: pioneros del entrenamiento individualizado para futbolistas de élite durante sus vacaciones y pretemporadas, cuando esa cultura no existía.',
+    'ch1.p2':
+      'Por nuestro césped pasó el más alto nivel. El trato cercano y la <strong>discreción</strong> convirtieron cada verano en una relación, y Marbella, en la base de operaciones de la élite.',
+    'ch1.gallery': 'Por aquí pasó la élite',
+    'ch1.soon': 'Próximamente',
+    'ch2x.kicker': 'Capítulo 02 · El respaldo',
+    'ch2x.title': 'Un family office <em>detrás del método</em>',
+    'ch2x.p1':
+      'Detrás de la agencia está <strong>SCM Group</strong>: un family office con más de 30 años de trayectoria, una red empresarial sólida y el conocimiento estratégico y financiero que el fútbol casi nunca tiene cerca.',
+    'ch2x.p2':
+      'La seriedad de una empresa familiar aplicada a la carrera de un futbolista: <strong>pensar a largo plazo</strong>, decidir con datos y proteger el patrimonio.',
+    'ch3x.kicker': 'Capítulo 03 · El salto',
+    'ch3x.title': 'Los jugadores pidieron <em>el siguiente paso</em>',
+    'ch3x.p1':
+      'De gestionar el entorno a gestionar la carrera: los propios jugadores nos pidieron <strong>representación e intermediación directa</strong>. Así nace SCM Sports Agency, con un modelo boutique: pocos jugadores, todo el método.',
+    'ch3x.p2':
+      'Hoy somos <strong>10 agentes a tiempo completo</strong>, más de 15 scouts en el mundo y analistas con licencia UEFA Pro, con la Costa del Sol como base y toda Europa como mercado.',
 
     'cards.1.title': 'Nuestros valores',
     'cards.1.p1':
@@ -212,29 +232,8 @@ window.I18N_DICT = {
     'tl.6.title': 'Tu evolución es nuestra marca',
     'tl.6.text':
       'Jugadores seleccionados a conciencia en España y Europa, con una idea que no cambia: no esperamos al talento, lo evolucionamos.',
-    'ch1.when': 'Desde 2014',
-    'ch1.where': 'Marbella · Magno Marbella',
     'hist.claim': 'No te quedes en el banquillo de <em>tu propia carrera</em>',
-    'ch1.title': 'Una década haciendo evolucionar a la élite',
-    'ch1.p1':
-      'Nacimos en 2014 en <strong>Magno Marbella</strong>, pioneros del entrenamiento individualizado para futbolistas de élite. La confianza de aquellos veranos se convirtió en el siguiente paso: hoy gestionamos carreras y fichajes con analistas, preparadores, psicólogos y nutricionistas alrededor de un mismo jugador.',
 
-    'ch2.when': 'Nuestros valores',
-    'ch2.where': 'Se practican, no se enuncian',
-    'ch2.title': 'Respeto, confianza y éxito compartido',
-    'ch2.p1':
-      'Nuestras acciones se caracterizan por el respeto, el aprecio mutuo y la fiabilidad. Alcanzamos nuestros objetivos a partir de una colaboración constructiva y basada en la confianza.',
-    'ch2.i1.title': 'Nuestros valores',
-    'ch2.i1.text':
-      'Buenas personas con buenos entornos y mentalidad de crecimiento. No solo talento: jugadores entrenables que trasladan al campo lo que trabajamos.',
-    'ch2.i2.title': 'Cómo jugamos',
-    'ch2.i2.text':
-      'Afrontamos las cosas de forma proactiva: no esperamos a que el jugador la rompa, invertimos en su evolución desde el primer día.',
-    'ch2.i3.title': 'El extra cierto',
-    'ch2.i3.text':
-      'Win-win de verdad: exclusividad y éxito compartido. Si el jugador gana, nosotros ganamos: crecemos contigo, no a tu costa.',
-    'ch2.i4.title': 'Relación a largo plazo',
-    'ch2.i4.text': 'Confianza mutua, transparencia y fiabilidad con cada jugador y cada club, temporada tras temporada.',
 
     'ch3.when': 'La confianza',
     'ch3.where': 'De Marbella al mercado',
@@ -719,11 +718,31 @@ window.I18N_DICT = {
     'statement.1': 'Our competence <em>completes</em> your talent',
 
     'history.section': 'About SCM Sports Agency',
-    'history.title': 'Reinventing football <em>advisory</em>',
+    'history.title': 'Three origins, <em>one mission</em>',
     'history.p1':
-      'We set new standards in the representation and complete management of footballers. As part of SCM Group, we are backed by a solid business network and the strategic knowledge of a family office with over 30 years of track record.',
+      'SCM Sports Agency was not born in an office: it was born on the grass in Marbella, on the foundations of a family office with over 30 years of history.',
     'history.p2':
-      'We were born to transform the traditional agency concept: we do not stop at negotiating contracts. We understand football as a global career where performance on the pitch depends on balance and development off it.',
+      'This is the story of how a training pitch, a business group and the trust of the players themselves became a different kind of agency.',
+    'ch1.kicker': 'Chapter 01 · 2014 · Marbella',
+    'ch1.title': 'It all started <em>on the grass</em>',
+    'ch1.p1':
+      '<strong>Magno Marbella</strong> is born: pioneers of individualized training for elite footballers during their holidays and pre-seasons, when that culture did not exist.',
+    'ch1.p2':
+      'The very top level came through our pitches. Closeness and <strong>discretion</strong> turned every summer into a relationship, and Marbella into the base of the elite.',
+    'ch1.gallery': 'The elite came through here',
+    'ch1.soon': 'Coming soon',
+    'ch2x.kicker': 'Chapter 02 · The backing',
+    'ch2x.title': 'A family office <em>behind the method</em>',
+    'ch2x.p1':
+      'Behind the agency stands <strong>SCM Group</strong>: a family office with over 30 years of track record, a solid business network and the strategic and financial knowledge football rarely has close by.',
+    'ch2x.p2':
+      'The seriousness of a family business applied to a footballer\'s career: <strong>thinking long term</strong>, deciding with data and protecting wealth.',
+    'ch3x.kicker': 'Chapter 03 · The leap',
+    'ch3x.title': 'The players asked for <em>the next step</em>',
+    'ch3x.p1':
+      'From managing the environment to managing the career: the players themselves asked us for <strong>direct representation and intermediation</strong>. SCM Sports Agency is born, as a boutique: few players, the full method.',
+    'ch3x.p2':
+      'Today we are <strong>10 full-time agents</strong>, more than 15 scouts worldwide and UEFA Pro licensed analysts, with the Costa del Sol as our base and all of Europe as our market.',
 
     'cards.1.title': 'Our values',
     'cards.1.p1':
@@ -781,29 +800,8 @@ window.I18N_DICT = {
     'tl.6.title': 'Your evolution is our brand',
     'tl.6.text':
       'Players selected with intent across Spain and Europe, with one idea that never changes: we do not wait for talent, we evolve it.',
-    'ch1.when': 'Since 2014',
-    'ch1.where': 'Marbella · Magno Marbella',
     "hist.claim": "Don't sit on the bench of <em>your own career</em>",
-    'ch1.title': 'A decade evolving the elite',
-    'ch1.p1':
-      'Born in 2014 out of <strong>Magno Marbella</strong>, pioneers of individualized training for elite footballers. The trust earned in those summers became the next step: today we manage careers and transfers with analysts, coaches, psychologists and nutritionists around one player.',
 
-    'ch2.when': 'Our values',
-    'ch2.where': 'Practiced, not preached',
-    'ch2.title': 'Respect, trust and shared success',
-    'ch2.p1':
-      'Our actions are defined by respect, mutual appreciation and reliability. We reach our goals through constructive collaboration built on trust.',
-    'ch2.i1.title': 'Our values',
-    'ch2.i1.text':
-      'Good people with good environments and a growth mindset. Not just talent: coachable players who carry the work onto the pitch.',
-    'ch2.i2.title': 'How we play',
-    'ch2.i2.text':
-      'We face things proactively: we do not wait for a player to break through, we invest in their evolution from day one.',
-    'ch2.i3.title': 'The certain extra',
-    'ch2.i3.text':
-      'A true win-win: exclusivity and shared success. When the player wins, we win: we grow with you, not at your expense.',
-    'ch2.i4.title': 'Long-term relationships',
-    'ch2.i4.text': 'Mutual trust, transparency and reliability with every player and every club, season after season.',
 
     'ch3.when': 'Trust',
     'ch3.where': 'From Marbella to the market',
