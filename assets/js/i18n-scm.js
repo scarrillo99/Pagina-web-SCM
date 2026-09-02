@@ -79,13 +79,10 @@ window.I18N_DICT = {
     'nums.4.label': 'Años de family group',
     'nums.4.note': 'Inmobiliaria, inversión y construcción en Marbella, con marca internacional.',
     'teamhome.cta': 'Conoce al equipo',
-    'players.title': 'Nuestros jugadores',
-    'players.text':
-      'Cartera pública y verificable: Iker Pozo, Orel Mangala, Frederik Kondogbia y más.',
-    'players.go': 'Ver en Transfermarkt',
+    'players.title': 'Jugadores SCM',
+    'players.text': 'Conoce nuestra cartera oficial de jugadores',
     'heads.title': 'Titulares',
-    'heads.text': 'Firmas, traspasos y el día a día de la agencia, en directo.',
-    'heads.go': 'Ver en Instagram',
+    'heads.text': 'La actualidad de la agencia, al día',
     'endcta.kicker': 'Kick off',
     'endcta.title': 'Empieza tu <em>evolución</em>',
     'endcta.lead':
@@ -648,13 +645,10 @@ window.I18N_DICT = {
     'nums.4.label': 'Years of family group',
     'nums.4.note': 'Real estate, investment and construction in Marbella, with an international brand.',
     'teamhome.cta': 'Meet the team',
-    'players.title': 'Our players',
-    'players.text':
-      'A public, verifiable roster: Iker Pozo, Orel Mangala, Frederik Kondogbia and more.',
-    'players.go': 'View on Transfermarkt',
+    'players.title': 'SCM Players',
+    'players.text': 'Meet our official player roster',
     'heads.title': 'Headlines',
-    'heads.text': 'Signings, transfers and the day to day of the agency, live.',
-    'heads.go': 'View on Instagram',
+    'heads.text': 'The agency, up to date',
     'endcta.kicker': 'Kick off',
     'endcta.title': 'Start your <em>evolution</em>',
     'endcta.lead':

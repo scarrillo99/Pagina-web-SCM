@@ -3829,3 +3829,64 @@ body {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* Accesos grandes del inicio: cartera y titulares como barras protagonistas. */
+.sbars--big {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sbar--big {
+  padding: clamp(1.6rem, 3vw, 2.4rem) clamp(1.4rem, 2.6vw, 2.2rem);
+  gap: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+.sbar--big > svg:first-child {
+  width: 38px;
+  height: 38px;
+}
+
+.sbar__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.sbar__txt strong {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.sbar__txt small {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #9a9aa1;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.sbar__arrow {
+  width: 26px;
+  height: 13px;
+  margin-left: auto;
+  flex: 0 0 auto;
+  color: var(--accent);
+  transition: transform 0.3s var(--ease);
+}
+
+.sbar--big:hover .sbar__arrow {
+  transform: translateX(6px);
+}
+
+@media (max-width: 900px) {
+  .sbars--big {
+    grid-template-columns: 1fr;
+  }
+}
