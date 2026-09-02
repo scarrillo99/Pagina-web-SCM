@@ -61,6 +61,7 @@ window.I18N_DICT = {
     'nums.lead':
       'No vendemos servicios sueltos: montamos la metodología y la estructura diaria que cada jugador necesita para rendir.',
     'nums.base': 'La base diaria alrededor del jugador',
+    'base.0': 'Asesor privado (Agente FIFA)',
     'base.1': 'Psicólogo deportivo',
     'base.2': 'Analista de rendimiento',
     'base.3': 'Preparador físico',
@@ -629,6 +630,7 @@ window.I18N_DICT = {
     'nums.lead':
       'We do not sell loose services: we build the methodology and the daily structure every player needs to perform.',
     'nums.base': 'The daily base around the player',
+    'base.0': 'Private advisor (FIFA Agent)',
     'base.1': 'Sports psychologist',
     'base.2': 'Performance analyst',
     'base.3': 'Strength and conditioning coach',
