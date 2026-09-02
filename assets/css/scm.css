@@ -27,7 +27,7 @@
   --line-strong: rgba(255, 255, 255, 0.28);
 
   --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Space Grotesk', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 body {
@@ -2811,18 +2811,25 @@ body {
 
 
 /* ================================================== voz tipográfica
-   Archivo es variable: la anchura expandida es la voz de la marca. El
-   cuerpo va ligeramente expandido y los titulares, a ancho completo. */
+   Titulares en Archivo condensada y pesada, la voz industrial de la
+   marca; el cuerpo pasa a Space Grotesk, grotesca técnica y legible. */
 body {
-  font-stretch: 110%;
+  font-stretch: 100%;
 }
 
 .display,
 .bhero__title,
 .section__title,
 .statement p,
-.hero__title {
-  font-stretch: 122%;
+.hero__title,
+.welcome__mega,
+.endcta__title,
+.srow__title,
+.sindex__title,
+.cycle__step h3,
+.legacy__value {
+  font-stretch: 75%;
+  letter-spacing: 0;
 }
 
 /* ====================================================== línea de tiempo
@@ -2866,7 +2873,7 @@ body {
 .tl__when {
   font-family: var(--font-display);
   font-weight: 800;
-  font-stretch: 122%;
+  font-stretch: 75%;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1;

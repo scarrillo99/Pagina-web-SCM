@@ -19,7 +19,7 @@
   --line-soft: rgba(13, 13, 13, 0.08);
 
   --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Space Grotesk', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 body {
@@ -1168,4 +1168,13 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: right -320px bottom -340px, center;
   background-size: 800px 800px, cover;
+}
+
+
+/* Voz compartida del grupo: titulares condensados. */
+.hero__title,
+.section__title,
+.band,
+.manifesto p {
+  font-stretch: 75%;
 }

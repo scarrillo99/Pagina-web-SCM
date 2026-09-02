@@ -30,7 +30,7 @@
   --font-sport: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   /* Tipografía unificada del grupo: Archivo también en el lado Magno. */
   --font-lux: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Space Grotesk', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Alto reservado al logotipo. Es el mismo en las dos marcas: es lo que
      pide que se lean como empresas hermanas. */
@@ -567,4 +567,15 @@ body {
     transition: background-position 1.1s cubic-bezier(0.45, 0, 0.35, 1);
     background-position: -32% 0, 0 0;
   }
+}
+
+
+/* Voz compartida del grupo: titulares condensados y cuerpo técnico. */
+body {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+}
+
+.panel__title,
+.group__lead {
+  font-stretch: 75%;
 }
