@@ -16,7 +16,7 @@ window.I18N_DICT = {
     'hero.eyebrow': 'Exclusive VIP Services · Since 2014 · Marbella',
     'hero.title': 'Tú céntrate en el juego.<br><em>Del resto nos ocupamos nosotros</em>',
     'hero.lead':
-      'En Magno Marbella trabajamos en exclusiva para futbolistas profesionales y atletas de alto rendimiento. Del entrenamiento al descanso, cuidamos cada detalle para que disfrutes de tus vacaciones sin salir de forma.',
+      'Management y lifestyle para futbolistas y atletas de élite, del fútbol europeo a la NBA o el boxeo: entrenamiento individual con técnicos licenciados, estancias, vehículos y reservas. Todo, resuelto en Marbella.',
     'hero.cta1': 'Solicitar propuesta',
     'hero.cta2': 'Ver servicios',
     'hero.t1': 'Campos de fútbol',
@@ -182,7 +182,7 @@ window.I18N_DICT = {
     'hero.eyebrow': 'Exclusive VIP Services · Since 2014 · Marbella',
     'hero.title': 'You focus on the game.<br><em>We take care of the rest</em>',
     'hero.lead':
-      'At Magno Marbella we specialise in concierge services exclusively for professional football players. From training to lifestyle, we take care of every detail so you can enjoy your vacation while staying on top performance.',
+      'Management and lifestyle for elite footballers and athletes, from European football to the NBA or boxing: individual training with licensed coaches, stays, vehicles and reservations. Everything, handled in Marbella.',
     'hero.cta1': 'Request a proposal',
     'hero.cta2': 'See services',
     'hero.t1': 'Football pitches',

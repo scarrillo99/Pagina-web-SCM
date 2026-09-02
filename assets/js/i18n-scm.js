@@ -34,7 +34,7 @@ window.I18N_DICT = {
     'welcome.section': 'Quiénes somos',
     'welcome.title': 'Welcome to <em>SCM</em>',
     'welcome.p1':
-      'Somos SCM Sports Agency, una agencia boutique internacional de representación y gestión integral de futbolistas profesionales. Como parte de SCM Group, contamos con el respaldo de una sólida red empresarial y la visión de un family office con más de 30 años de trayectoria.',
+      'Somos SCM Sports Agency, una agencia boutique internacional de representación y gestión integral de futbolistas profesionales. Como parte de SCM Group, contamos con el respaldo de un family group con más de 40 años de trayectoria en inmobiliaria, inversión y construcción.',
     'welcome.p2':
       'Trabajamos desde 2014 en La Quinta Golf, Marbella: la Costa del Sol como base y toda Europa como mercado, con un solo equipo detrás de cada carrera.',
     'welcome.offer': 'Lo que ofrecemos',
@@ -76,8 +76,8 @@ window.I18N_DICT = {
     'nums.2.note': 'Con experiencia en grandes clubes europeos.',
     'nums.3.label': 'Años de experiencia',
     'nums.3.note': 'En la gestión integral de futbolistas profesionales.',
-    'nums.4.label': 'Años de family office',
-    'nums.4.note': 'El respaldo empresarial de SCM Group detrás de la agencia.',
+    'nums.4.label': 'Años de family group',
+    'nums.4.note': 'Inmobiliaria, inversión y construcción en Marbella, con marca internacional.',
     'teamhome.cta': 'Conoce al equipo',
     'players.title': 'Nuestros jugadores',
     'players.text':
@@ -130,7 +130,7 @@ window.I18N_DICT = {
     'threesixty.section': 'SCM Group',
     'threesixty.title': '360 grados: <em>siempre el ángulo correcto</em>',
     'threesixty.p1':
-      'SCM es una agencia deportiva integral con sede en Marbella. Su origen está en <strong>SCM Group</strong>, un grupo empresarial de referencia a nivel nacional e internacional.',
+      'SCM es una agencia deportiva integral con sede en Marbella. Su origen está en <strong>SCM Group</strong>: un family group con empresas de inmobiliaria, inversión y construcción, más de 40 años de trayectoria y una marca de referencia nacional e internacional.',
     'threesixty.p2':
       'Además de su experiencia en el ámbito deportivo, SCM cuenta con el respaldo de <strong>SCM Group</strong>: su sólido conocimiento empresarial y económico, y la gestión de futbolistas de alto nivel que desarrolla junto a <strong>Magno Marbella</strong>. A eso se suman sus empresas vinculadas y sus alianzas estratégicas.',
     'threesixty.capsTitle': 'Lo que cubre el grupo',
@@ -152,21 +152,21 @@ window.I18N_DICT = {
     'history.section': 'Sobre SCM Sports Agency',
     'history.title': 'Tres orígenes, <em>una misión</em>',
     'history.p1':
-      'SCM Sports Agency no nació en un despacho: nació en el césped de Marbella, sobre los cimientos de un family office con más de 30 años de historia.',
+      'SCM Sports Agency no nació en un despacho: nació en el césped de Marbella, sobre los cimientos de un family group con más de 40 años de historia en el mercado.',
     'history.p2':
       'Esta es la historia de cómo un campo de entrenamiento, un grupo empresarial y la confianza de los propios jugadores se convirtieron en una agencia distinta.',
     'ch1.kicker': 'Capítulo 01 · 2014 · Marbella',
     'ch1.title': 'Todo empezó <em>en el césped</em>',
     'ch1.p1':
-      'Nace <strong>Magno Marbella</strong>: pioneros del entrenamiento individualizado para futbolistas de élite durante sus vacaciones y pretemporadas, cuando esa cultura no existía.',
+      'Nace <strong>Magno Marbella</strong>: management y lifestyle para futbolistas y atletas de élite, del fútbol europeo a la NBA o el boxeo. Pioneros del entrenamiento individualizado en Marbella cuando esa cultura no existía.',
     'ch1.p2':
-      'Por nuestro césped pasó el más alto nivel. El trato cercano y la <strong>discreción</strong> convirtieron cada verano en una relación, y Marbella, en la base de operaciones de la élite.',
+      'Cubrimos todo lo que el deportista necesita en Marbella: la logística completa de vacaciones y entrenamientos individuales con <strong>técnicos, analistas, psicólogos, fisios y preparadores licenciados</strong> y con pasado en grandes equipos europeos; estancia, vehículos, reservas. Todo. Esa cercanía y discreción convirtieron cada verano en una relación.',
     'ch1.gallery': 'Por aquí pasó la élite',
     'ch1.soon': 'Próximamente',
     'ch2x.kicker': 'Capítulo 02 · El respaldo',
-    'ch2x.title': 'Un family office <em>detrás del método</em>',
+    'ch2x.title': 'Un family group <em>detrás del método</em>',
     'ch2x.p1':
-      'Detrás de la agencia está <strong>SCM Group</strong>: un family office con más de 30 años de trayectoria, una red empresarial sólida y el conocimiento estratégico y financiero que el fútbol casi nunca tiene cerca.',
+      'Detrás de la agencia está <strong>SCM Group</strong>: un family group con empresas de inmobiliaria, inversión y construcción en Marbella, más de 40 años en el mercado y una marca de peso en el sector, a nivel nacional y sobre todo internacional.',
     'ch2x.p2':
       'La seriedad de una empresa familiar aplicada a la carrera de un futbolista: <strong>pensar a largo plazo</strong>, decidir con datos y proteger el patrimonio.',
     'ch3x.kicker': 'Capítulo 03 · El salto',
@@ -602,7 +602,7 @@ window.I18N_DICT = {
     'welcome.section': 'Who we are',
     'welcome.title': 'Welcome to <em>SCM</em>',
     'welcome.p1':
-      'We are SCM Sports Agency, an international boutique agency for the representation and complete management of professional footballers. As part of SCM Group, we are backed by a solid business network and the vision of a family office with over 30 years of track record.',
+      'We are SCM Sports Agency, an international boutique agency for the representation and complete management of professional footballers. As part of SCM Group, we are backed by a family group with over 40 years of track record in real estate, investment and construction.',
     'welcome.p2':
       'Since 2014 we work from La Quinta Golf, Marbella: the Costa del Sol as our base and all of Europe as our market, with one team behind every career.',
     'welcome.offer': 'What we offer',
@@ -644,8 +644,8 @@ window.I18N_DICT = {
     'nums.2.note': 'With experience at top European clubs.',
     'nums.3.label': 'Years in the game',
     'nums.3.note': 'In the complete management of professional footballers.',
-    'nums.4.label': 'Years of family office',
-    'nums.4.note': 'The business backing of SCM Group behind the agency.',
+    'nums.4.label': 'Years of family group',
+    'nums.4.note': 'Real estate, investment and construction in Marbella, with an international brand.',
     'teamhome.cta': 'Meet the team',
     'players.title': 'Our players',
     'players.text':
@@ -698,7 +698,7 @@ window.I18N_DICT = {
     'threesixty.section': 'SCM Group',
     'threesixty.title': '360 degrees: <em>always the right angle</em>',
     'threesixty.p1':
-      'SCM is a full-service sports agency based in Marbella. Its origin lies in <strong>SCM Group</strong>, a leading business group at home and abroad.',
+      'SCM is a full-service sports agency based in Marbella. Its origin lies in <strong>SCM Group</strong>: a family group with real estate, investment and construction companies, over 40 years of track record and a leading brand at home and, above all, abroad.',
     'threesixty.p2':
       'Beyond its experience in sport, SCM is backed by <strong>SCM Group</strong>: its solid business and financial expertise, and the management of top-level footballers it runs alongside <strong>Magno Marbella</strong>. Its associated companies and strategic partnerships come with it.',
     'threesixty.capsTitle': 'What the group covers',
@@ -720,21 +720,21 @@ window.I18N_DICT = {
     'history.section': 'About SCM Sports Agency',
     'history.title': 'Three origins, <em>one mission</em>',
     'history.p1':
-      'SCM Sports Agency was not born in an office: it was born on the grass in Marbella, on the foundations of a family office with over 30 years of history.',
+      'SCM Sports Agency was not born in an office: it was born on the grass in Marbella, on the foundations of a family group with over 40 years of history in the market.',
     'history.p2':
       'This is the story of how a training pitch, a business group and the trust of the players themselves became a different kind of agency.',
     'ch1.kicker': 'Chapter 01 · 2014 · Marbella',
     'ch1.title': 'It all started <em>on the grass</em>',
     'ch1.p1':
-      '<strong>Magno Marbella</strong> is born: pioneers of individualized training for elite footballers during their holidays and pre-seasons, when that culture did not exist.',
+      '<strong>Magno Marbella</strong> is born: management and lifestyle for elite footballers and athletes, from European football to the NBA or boxing. Pioneers of individualized training in Marbella when that culture did not exist.',
     'ch1.p2':
-      'The very top level came through our pitches. Closeness and <strong>discretion</strong> turned every summer into a relationship, and Marbella into the base of the elite.',
+      'We cover everything the athlete needs in Marbella: the full logistics of holidays and individual training with <strong>licensed coaches, analysts, psychologists, physios and fitness trainers</strong> with a past at top European clubs; stays, vehicles, reservations. Everything. That closeness and discretion turned every summer into a relationship.',
     'ch1.gallery': 'The elite came through here',
     'ch1.soon': 'Coming soon',
     'ch2x.kicker': 'Chapter 02 · The backing',
-    'ch2x.title': 'A family office <em>behind the method</em>',
+    'ch2x.title': 'A family group <em>behind the method</em>',
     'ch2x.p1':
-      'Behind the agency stands <strong>SCM Group</strong>: a family office with over 30 years of track record, a solid business network and the strategic and financial knowledge football rarely has close by.',
+      'Behind the agency stands <strong>SCM Group</strong>: a family group with real estate, investment and construction companies in Marbella, over 40 years in the market and a brand that carries weight in the sector, nationally and above all internationally.',
     'ch2x.p2':
       'The seriousness of a family business applied to a footballer\'s career: <strong>thinking long term</strong>, deciding with data and protecting wealth.',
     'ch3x.kicker': 'Chapter 03 · The leap',
