@@ -228,7 +228,7 @@ body {
 }
 
 .panel--magno .panel__veil {
-  background: linear-gradient(180deg, rgba(237, 238, 230, 0.55) 0%, rgba(237, 238, 230, 0.95) 78%);
+  background: linear-gradient(180deg, rgba(237, 238, 230, 0.38) 0%, rgba(237, 238, 230, 0.9) 62%);
 }
 
 /* --- los seis elementos, cada uno en su fila --- */

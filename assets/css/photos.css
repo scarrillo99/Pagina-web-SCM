@@ -24,7 +24,7 @@
      deportiva de Marbella. Mientras no exista, ese lado se ve en hueso liso,
      que funciona pero pesa menos que el de al lado. */
   --photo-scm: url('../img/hub-scm.jpg');
-  /* --photo-magno: url('../img/hub-magno.jpg'); */
+  --photo-magno: url('../img/hub-magno.jpg');
 
   /* --- Equipo de SCM ----------------------------------------------------
      Retratos verticales 4:5, 800 x 1000. Mismo encuadre en los seis. */
@@ -48,6 +48,9 @@
   --photo-legacy4: url('../img/archivo-4.jpg');
   --photo-legacy5: url('../img/archivo-5.jpg');
   --photo-legacy6: url('../img/archivo-6.jpg');
+  --photo-legacy7: url('../img/archivo-7.jpg');
+  --photo-legacy8: url('../img/archivo-8.jpg');
+  --photo-legacy9: url('../img/archivo-9.jpg');
 
   /* --- Actualidad de SCM ------------------------------------------------
      Horizontales 16:10, 1200 x 750.
