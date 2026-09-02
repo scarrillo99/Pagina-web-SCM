@@ -3646,3 +3646,101 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* =============================================== bienvenida, welcome ----
+   Titular gigante en cursiva a la izquierda, el ángulo correcto a la
+   derecha y los servicios como barras negras con icono naranja. */
+.welcome__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.welcome__mega {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  font-size: clamp(2.8rem, 6.2vw, 5.4rem);
+}
+
+.welcome__angle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  font-size: clamp(1.25rem, 2.1vw, 1.7rem);
+  margin-bottom: var(--space-md);
+}
+
+.welcome__angle em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.sbars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.8rem, 1.4vw, 1.2rem);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.sbar {
+  --text: #f6f6f5;
+  --accent: #ff600f;
+  display: flex;
+  align-items: center;
+  gap: clamp(0.9rem, 1.6vw, 1.3rem);
+  background: #0e0e10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: clamp(1.05rem, 1.8vw, 1.4rem) clamp(1.1rem, 2vw, 1.6rem);
+  color: var(--text);
+  text-decoration: none;
+  transition:
+    transform 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    background-color 0.3s var(--ease);
+}
+
+.sbar:hover,
+.sbar:focus-visible {
+  background: #131316;
+  border-color: rgba(255, 96, 15, 0.55);
+  transform: translateY(-3px);
+}
+
+.sbar svg {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  color: var(--accent);
+}
+
+.sbar span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(0.82rem, 1.2vw, 0.95rem);
+  line-height: 1.15;
+}
+
+@media (max-width: 980px) {
+  .welcome__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sbars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .sbars {
+    grid-template-columns: 1fr;
+  }
+}

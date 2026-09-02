@@ -38,6 +38,15 @@ window.I18N_DICT = {
     'welcome.p2':
       'Trabajamos desde 2014 en La Quinta Golf, Marbella: la Costa del Sol como base y toda Europa como mercado, con un solo equipo detrás de cada carrera.',
     'welcome.offer': 'Lo que ofrecemos',
+    'sbar.1': 'Representación',
+    'sbar.2': 'Análisis de rendimiento',
+    'sbar.3': 'Apoyo psicológico',
+    'sbar.4': 'Nutrición',
+    'sbar.5': 'Desarrollo deportivo',
+    'sbar.6': 'Marketing y marca',
+    'sbar.7': 'Inversiones y patrimonio',
+    'sbar.8': 'Scouting internacional',
+    'sbar.9': 'Servicio de concierge',
     'welcome.cta': 'Descubre cómo trabajamos cada área',
 
     'nums.section': 'Las cifras',
@@ -579,6 +588,15 @@ window.I18N_DICT = {
     'welcome.p2':
       'Since 2014 we work from La Quinta Golf, Marbella: the Costa del Sol as our base and all of Europe as our market, with one team behind every career.',
     'welcome.offer': 'What we offer',
+    'sbar.1': 'Representation',
+    'sbar.2': 'Performance analysis',
+    'sbar.3': 'Psychological support',
+    'sbar.4': 'Nutrition',
+    'sbar.5': 'Athletic development',
+    'sbar.6': 'Marketing and brand',
+    'sbar.7': 'Investment and wealth',
+    'sbar.8': 'International scouting',
+    'sbar.9': 'Concierge service',
     'welcome.cta': 'See how we work each area',
 
     'nums.section': 'The numbers',
