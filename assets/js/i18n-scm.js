@@ -36,7 +36,7 @@ window.I18N_DICT = {
     'welcome.p1':
       'Somos SCM Sports Agency, una agencia boutique internacional de representación y gestión integral de futbolistas profesionales. Como parte de SCM Group, contamos con el respaldo de un family group con más de 40 años de trayectoria en inmobiliaria, inversión y construcción.',
     'welcome.p2':
-      'Trabajamos desde 2014 en La Quinta Golf, Marbella: la Costa del Sol como base y toda Europa como mercado, con un solo equipo detrás de cada carrera.',
+      'Trabajamos desde 2014 en Marbella. Estamos ubicados en La Quinta, junto al Marbella Football Center, una de las zonas más prestigiosas de la ciudad: la Costa del Sol como base y toda Europa como mercado.',
     'welcome.offer': 'Lo que ofrecemos',
     'sbar.1': 'Representación',
     'sbar.2': 'Análisis de rendimiento',
@@ -605,7 +605,7 @@ window.I18N_DICT = {
     'welcome.p1':
       'We are SCM Sports Agency, an international boutique agency for the representation and complete management of professional footballers. As part of SCM Group, we are backed by a family group with over 40 years of track record in real estate, investment and construction.',
     'welcome.p2':
-      'Since 2014 we work from La Quinta Golf, Marbella: the Costa del Sol as our base and all of Europe as our market, with one team behind every career.',
+      'We have worked in Marbella since 2014. We are based in La Quinta, next to the Marbella Football Center, one of the most prestigious areas of the city: the Costa del Sol as our base and all of Europe as our market.',
     'welcome.offer': 'What we offer',
     'sbar.1': 'Representation',
     'sbar.2': 'Performance analysis',
