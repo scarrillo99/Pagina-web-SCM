@@ -49,6 +49,24 @@ window.I18N_DICT = {
     'sbar.9': 'Servicio de concierge',
     'welcome.cta': 'Descubre cómo trabajamos cada área',
 
+    'services.9.title': 'Concierge y lifestyle',
+    'services.9.text':
+      'A través de Magno Marbella, la vida fuera del campo también está resuelta: tú compites, del resto nos ocupamos nosotros.',
+    'services.9.a': 'Entradas, eventos y experiencias que no se reservan: se abren',
+    'services.9.b': 'Vacaciones y estancias organizadas de principio a fin',
+    'services.9.c': 'Personal shopping y compra o renting de vehículos',
+    'services.9.d': 'Mudanzas y aterrizaje en una nueva ciudad',
+    'services.9.cta': 'Descubre Magno Marbella',
+    'sindex.9': 'La vida fuera del campo, resuelta',
+    'nums.lead':
+      'No vendemos servicios sueltos: montamos la metodología y la estructura diaria que cada jugador necesita para rendir.',
+    'nums.base': 'La base diaria alrededor del jugador',
+    'base.1': 'Psicólogo deportivo',
+    'base.2': 'Analista de rendimiento',
+    'base.3': 'Preparador físico',
+    'base.4': 'Nutricionista',
+    'base.5': 'Comunicación y marketing',
+    'nums.cta': 'Y alrededor de la base, todo lo demás: ver todos los servicios',
     'nums.section': 'Las cifras',
     'nums.title': 'La estructura detrás <em>del jugador</em>',
     'nums.1.label': 'Agentes a tiempo completo',
@@ -322,7 +340,7 @@ window.I18N_DICT = {
     'rep.p1':
       'Representamos a futbolistas y entrenadores en <strong>exclusividad</strong>, con un modelo sencillo: crecemos cuando tú creces. Nuestro incentivo es tu carrera, no tu nómina.',
     'rep.p2':
-      'Negociamos contratos y renovaciones <strong>desde la fuerza del rendimiento</strong>, y hacemos intermediación directa con clubes en operaciones nacionales e internacionales.',
+      'Elegimos contigo intermediarios y clubes, negociamos contratos y renovaciones <strong>desde la fuerza del rendimiento</strong> y cerramos operaciones nacionales e internacionales, mano a mano contigo y con tu familia.',
     'rep.p3':
       'Cuando tu rendimiento habla, <strong>el mercado escucha</strong>: generamos interés real de clubes y elegimos contigo el paso correcto en cada ventana.',
     'rep.how': 'Cómo lo hacemos',
@@ -340,21 +358,21 @@ window.I18N_DICT = {
 
     'services.2.title': 'Análisis de rendimiento',
     'services.2.text':
-      'La imagen que proyectas en el terreno de juego es fundamental para tu presente y tu futuro deportivo. Cada partido se analiza contigo, para que hagas mejor lo que exige tu cuerpo técnico.',
-    'services.2.a': 'Estudio técnico y táctico por posición y cualidades',
+      'Entrenadores con licencia UEFA Pro, la máxima, te ayudan a hacer mejor el trabajo que te pide tu cuerpo técnico: adaptación más rápida, evolución constante en tu posición y un perfil de especialista productivo y polivalente.',
+    'services.2.a': 'Entrenadores con la máxima licencia: UEFA Pro',
     'services.2.b': 'Videollamada semanal con cortes de Wyscout y BeSoccer Pro',
-    'services.2.c': 'Patrones identificados en partidos y entrenamientos',
+    'services.2.c': 'Adaptación rápida a cada club y a cada cuerpo técnico',
     'services.2.d': 'Sesiones de vídeo y espacios de práctica presenciales',
     'services.2.e': 'Informe mensual de evolución medible',
 
     'services.3.title': 'Apoyo psicológico',
     'services.3.text':
-      'El estado mental es tan decisivo como la preparación física. Por eso la parte psicológica es un pilar de tu desarrollo, no un extra.',
+      'El fútbol también pesa. Creemos que el bienestar del jugador es responsabilidad de la agencia: apoyo integral y mentoría, dentro y fuera del campo, a cualquier edad.',
     'services.3.a': 'Confianza, motivación, concentración y atención entrenadas',
     'services.3.b': 'Acompañamiento para rendir en los momentos clave',
     'services.3.c': 'Apoyo emocional en la prevención y recuperación de lesiones',
-    'services.3.d': 'Habilidades sociales y adaptación al vestuario y al cuerpo técnico',
-    'services.3.e': 'Equilibrio entre vida personal y rendimiento',
+    'services.3.d': 'Adaptación al vestuario y al cuerpo técnico',
+    'services.3.e': 'Programas de bienestar y mentoría a cualquier edad',
 
     'services.4.title': 'Plan de nutrición',
     'services.4.text':
@@ -367,26 +385,26 @@ window.I18N_DICT = {
 
     'services.5.title': 'Desarrollo deportivo',
     'services.5.text':
-      'Un proyecto individualizado que evoluciona contigo: trabajo físico alternativo, análisis, nutrición y psicología al servicio de tu salud y de tu máximo nivel.',
-    'services.5.a': 'Adaptado al calendario de partidos y a las cargas del club',
-    'services.5.b': 'Historial de lesiones y molestias siempre en cuenta',
-    'services.5.c': 'Ajuste continuo del plan durante la temporada',
-    'services.5.d': 'Salud protegida y lesiones prevenidas',
+      'Entrenadores titulados UEFA, fisioterapeutas, preparadores físicos y nutricionistas con experiencia en clubes profesionales, a tu disposición todo el año: para sostener tu punto de forma o volver mejor de una lesión.',
+    'services.5.a': 'Acceso todo el año a entrenadores, fisios y preparadores',
+    'services.5.b': 'Adaptado al calendario de partidos y a las cargas del club',
+    'services.5.c': 'Rehabilitación y retorno de lesiones bien hechos',
+    'services.5.d': 'Ajuste continuo del plan durante la temporada',
     'services.5.e': 'Camps y estancias de trabajo en Marbella',
 
     'services.6.title': 'Marketing y marca personal',
     'services.6.text':
-      'Transformamos tu imagen en una marca sólida y con proyección, gestionada por nuestro equipo interno de marketing.',
-    'services.6.a': 'Construcción de una marca auténtica y sostenible',
-    'services.6.b': 'Gestión profesional de tus redes sociales',
-    'services.6.c': 'Contenido de alto nivel con equipo propio',
+      'Especialistas en elevar tu valor comercial: marca, patrocinios y presencia digital gestionados por nuestro equipo interno, para que tu imagen sume dentro y fuera del campo.',
+    'services.6.a': 'Acuerdos con marcas líderes en deporte y lifestyle',
+    'services.6.b': 'Departamento digital: contenido, plataformas y narrativa',
+    'services.6.c': 'Gestión profesional de tus redes sociales',
     'services.6.d': 'Avales y patrocinios en las mejores condiciones',
     'services.6.e': 'Sponsors socios: Nike, Puma, Adidas, Umbro, uhlsport, New Balance',
     'services.6.f': 'Una identidad que trasciende tu carrera deportiva',
 
     'services.7.title': 'Inversiones y patrimonio',
     'services.7.text':
-      'Lo que logras en el campo merece reflejarse fuera de él: el éxito del presente, convertido en estabilidad y seguridad para tu futuro.',
+      'Asesores financieros de confianza para que lo que ganas esté bien invertido y bien gestionado, y un plan para el día después: micrófono, banquillo o empresa. Tengas 16 o 60 años.',
     'services.8.title': 'Scouting y proyección internacional',
     'services.8.text':
       'Más de 15 scouts y 10 agentes conectados en toda Europa. Cuando llega tu momento, el mercado ya te conoce.',
@@ -394,10 +412,10 @@ window.I18N_DICT = {
     'services.8.b': 'Dosieres de rendimiento para clubes interesados',
     'services.8.c': 'Posicionamiento en las ventanas de traspaso',
     'services.8.d': 'España, Italia, Francia, Bélgica, Inglaterra y Alemania',
-    'services.7.a': 'Educación financiera desde el primer contrato',
-    'services.7.b': 'Compra de propiedades asesorada',
-    'services.7.c': 'Inversiones inteligentes y planificadas',
-    'services.7.d': 'Acompañamiento en cada decisión económica clave',
+    'services.7.a': 'Asesores financieros de confianza a tu lado',
+    'services.7.b': 'Educación financiera desde el primer contrato',
+    'services.7.c': 'Compra de propiedades e inversiones planificadas',
+    'services.7.d': 'Transición post carrera: comentarista, entrenador o empresario',
     'services.7.e': 'Inmobiliario con la red de Magno en Marbella',
 
     'statement.2':
@@ -599,6 +617,24 @@ window.I18N_DICT = {
     'sbar.9': 'Concierge service',
     'welcome.cta': 'See how we work each area',
 
+    'services.9.title': 'Concierge and lifestyle',
+    'services.9.text':
+      'Through Magno Marbella, life off the pitch is handled too: you compete, we take care of the rest.',
+    'services.9.a': 'Tickets, events and experiences you cannot book: they open',
+    'services.9.b': 'Holidays and stays organized end to end',
+    'services.9.c': 'Personal shopping and car purchase or leasing',
+    'services.9.d': 'Relocations and landing in a new city',
+    'services.9.cta': 'Discover Magno Marbella',
+    'sindex.9': 'Life off the pitch, handled',
+    'nums.lead':
+      'We do not sell loose services: we build the methodology and the daily structure every player needs to perform.',
+    'nums.base': 'The daily base around the player',
+    'base.1': 'Sports psychologist',
+    'base.2': 'Performance analyst',
+    'base.3': 'Strength and conditioning coach',
+    'base.4': 'Nutritionist',
+    'base.5': 'Communication and marketing',
+    'nums.cta': 'And around the base, everything else: see all services',
     'nums.section': 'The numbers',
     'nums.title': 'The structure behind <em>the player</em>',
     'nums.1.label': 'Full-time agents',
@@ -872,7 +908,7 @@ window.I18N_DICT = {
     'rep.p1':
       'We represent footballers and coaches on an <strong>exclusive</strong> basis, with a simple model: we grow when you grow. Our incentive is your career, not your payslip.',
     'rep.p2':
-      'We negotiate contracts and renewals <strong>from the strength of performance</strong>, and we run direct intermediation with clubs in domestic and international deals.',
+      'We choose intermediaries and clubs with you, negotiate contracts and renewals <strong>from the strength of performance</strong> and close domestic and international deals, hand in hand with you and your family.',
     'rep.p3':
       'When your performance speaks, <strong>the market listens</strong>: we generate real club interest and choose the right step with you in every window.',
     'rep.how': 'How we do it',
@@ -890,21 +926,21 @@ window.I18N_DICT = {
 
     'services.2.title': 'Performance analysis',
     'services.2.text':
-      'The image you project on the pitch is fundamental to your present and your sporting future. Every match is analyzed with you, so you do better what your coaching staff demands.',
-    'services.2.a': 'Technical and tactical study by position and traits',
+      'Coaches holding the UEFA Pro licence, the highest there is, help you do better what your coaching staff demands: faster adaptation, constant evolution in your position and the profile of a productive, versatile specialist.',
+    'services.2.a': 'Coaches with the highest licence: UEFA Pro',
     'services.2.b': 'Weekly video call with Wyscout and BeSoccer Pro clips',
-    'services.2.c': 'Patterns identified in matches and training',
+    'services.2.c': 'Fast adaptation to every club and coaching staff',
     'services.2.d': 'In-person video sessions and practice spaces',
     'services.2.e': 'A monthly report of measurable progress',
 
     'services.3.title': 'Psychological support',
     'services.3.text':
-      'The mental state is as decisive as physical preparation. That is why psychology is a pillar of your development, not an extra.',
+      'Football takes its toll. We believe player welfare is the agency\'s responsibility: holistic support and mentorship, on and off the pitch, at any age.',
     'services.3.a': 'Confidence, motivation, concentration and focus trained',
     'services.3.b': 'Support to perform in the decisive moments',
     'services.3.c': 'Emotional support in injury prevention and recovery',
-    'services.3.d': 'Social skills and adapting to the dressing room and coaching staff',
-    'services.3.e': 'Balance between personal life and performance',
+    'services.3.d': 'Adapting to the dressing room and coaching staff',
+    'services.3.e': 'Welfare and mentorship programs at any age',
 
     'services.4.title': 'Nutrition plan',
     'services.4.text':
@@ -917,26 +953,26 @@ window.I18N_DICT = {
 
     'services.5.title': 'Athletic development',
     'services.5.text':
-      'An individualized project that evolves with you: alternative physical work, analysis, nutrition and psychology at the service of your health and your highest level.',
-    'services.5.a': 'Adapted to the match calendar and club workloads',
-    'services.5.b': 'Injury history and knocks always accounted for',
-    'services.5.c': 'The plan continuously adjusted through the season',
-    'services.5.d': 'Health protected and injuries prevented',
+      'UEFA-qualified coaches, physiotherapists, strength and conditioning trainers and nutritionists with professional club experience, available all year round: to hold your peak or come back stronger from injury.',
+    'services.5.a': 'Year-round access to coaches, physios and trainers',
+    'services.5.b': 'Adapted to the match calendar and club workloads',
+    'services.5.c': 'Rehabilitation and return from injury done right',
+    'services.5.d': 'The plan continuously adjusted through the season',
     'services.5.e': 'Camps and working stays in Marbella',
 
     'services.6.title': 'Marketing and personal brand',
     'services.6.text':
-      'We turn your image into a solid brand with reach, run by our in-house marketing team.',
-    'services.6.a': 'Building an authentic, sustainable brand',
-    'services.6.b': 'Professional management of your social media',
-    'services.6.c': 'High-level content by our own team',
+      'Specialists in raising your commercial worth: brand, sponsorships and digital presence run by our in-house team, so your image adds up on and off the pitch.',
+    'services.6.a': 'Deals with leading brands in sport and lifestyle',
+    'services.6.b': 'Digital department: content, platforms and narrative',
+    'services.6.c': 'Professional management of your social media',
     'services.6.d': 'Endorsements and sponsorships on the best terms',
     'services.6.e': 'Partner sponsors: Nike, Puma, Adidas, Umbro, uhlsport, New Balance',
     'services.6.f': 'An identity that outlasts your playing career',
 
     'services.7.title': 'Investment and wealth',
     'services.7.text':
-      'What you achieve on the pitch deserves to show off it: present success turned into stability and security for your future.',
+      'Trusted financial advisors so what you earn is well invested and well managed, plus a plan for the day after: punditry, coaching or business. Whether you are 16 or 60.',
     'services.8.title': 'Scouting and international reach',
     'services.8.text':
       'More than 15 scouts and 10 agents connected across Europe. When your moment arrives, the market already knows you.',
@@ -944,10 +980,10 @@ window.I18N_DICT = {
     'services.8.b': 'Performance dossiers for interested clubs',
     'services.8.c': 'Positioning in the transfer windows',
     'services.8.d': 'Spain, Italy, France, Belgium, England and Germany',
-    'services.7.a': 'Financial education from the first contract',
-    'services.7.b': 'Advised property purchases',
-    'services.7.c': 'Smart, planned investments',
-    'services.7.d': 'By your side in every key financial decision',
+    'services.7.a': 'Trusted financial advisors by your side',
+    'services.7.b': 'Financial education from the first contract',
+    'services.7.c': 'Advised property purchases and planned investments',
+    'services.7.d': 'Post-career transition: pundit, coach or entrepreneur',
     'services.7.e': 'Real estate with the Magno network in Marbella',
 
     'statement.2':
