@@ -45,9 +45,9 @@
   --photo-legacy1: url('../img/archivo-1.jpg');
   --photo-legacy2: url('../img/archivo-2.jpg');
   --photo-legacy3: url('../img/archivo-3.jpg');
-  /* --photo-legacy4: url('../img/archivo-4.jpg'); */
-  /* --photo-legacy5: url('../img/archivo-5.jpg'); */
-  /* --photo-legacy6: url('../img/archivo-6.jpg'); */
+  --photo-legacy4: url('../img/archivo-4.jpg');
+  --photo-legacy5: url('../img/archivo-5.jpg');
+  --photo-legacy6: url('../img/archivo-6.jpg');
 
   /* --- Actualidad de SCM ------------------------------------------------
      Horizontales 16:10, 1200 x 750.
