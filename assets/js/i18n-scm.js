@@ -86,7 +86,7 @@ window.I18N_DICT = {
     'endcta.kicker': 'Kick off',
     'endcta.title': 'Empieza tu <em>evolución</em>',
     'endcta.lead':
-      'Una llamada basta: hablamos de tu posición, tus condiciones y tu mercado, y te decimos exactamente cómo trabajaríamos contigo.',
+      'Un mensaje basta: hablamos de tu posición, tus condiciones y tu mercado, y te decimos exactamente cómo trabajaríamos contigo.',
     'endcta.b1': 'Hablemos hoy',
 
     'home.q1.title': 'Metodología individual',
@@ -658,7 +658,7 @@ window.I18N_DICT = {
     'endcta.kicker': 'Kick off',
     'endcta.title': 'Start your <em>evolution</em>',
     'endcta.lead':
-      'One call is enough: we talk about your position, your traits and your market, and tell you exactly how we would work with you.',
+      'One message is enough: we talk about your position, your traits and your market, and tell you exactly how we would work with you.',
     'endcta.b1': "Let's talk today",
 
     'home.q1.title': 'Individual methodology',
