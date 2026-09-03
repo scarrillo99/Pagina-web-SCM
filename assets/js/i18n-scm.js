@@ -513,9 +513,12 @@ window.I18N_DICT = {
     'partner.title': 'El fútbol también se juega fuera del campo',
     'partner.lead':
       'Magno Marbella es nuestro socio estratégico: experiencias y servicios del más alto nivel para que el jugador solo piense en rendir.',
+    'partner.0.title': 'Aviones privados',
+    'partner.0.text':
+      'Gestionamos tu avión privado de principio a fin: aeronave, plan de vuelo y equipaje coordinados con tu calendario deportivo.',
     'partner.1.title': 'Llega y compite',
     'partner.1.text':
-      'Del avión al campo sin fricciones: vuelos, traslados y agenda resueltos antes de aterrizar.',
+      'Gestionamos tus transfers desde el aeropuerto hasta tu estancia, con chófer privado a tu disposición durante toda la visita.',
     'partner.2.title': 'Descanso de élite',
     'partner.2.text':
       'Una villa con vistas, un hotel discreto o el coche esperando en la puerta: descanso a la altura de la exigencia.',
@@ -1078,9 +1081,12 @@ window.I18N_DICT = {
     'partner.title': 'Football is also played off the pitch',
     'partner.lead':
       'Magno Marbella is our strategic partner: top-level experiences and services so the player can focus on performing.',
+    'partner.0.title': 'Private jets',
+    'partner.0.text':
+      'We manage your private jet end to end: aircraft, flight plan and luggage coordinated with your sporting calendar.',
     'partner.1.title': 'Land and compete',
     'partner.1.text':
-      'From the plane to the pitch without friction: flights, transfers and schedule solved before landing.',
+      'We handle your transfers from the airport to your residence, with a private chauffeur at your service throughout the stay.',
     'partner.2.title': 'Elite rest',
     'partner.2.text':
       'A villa with a view, a discreet hotel or the car waiting at the door: rest that matches the standard.',

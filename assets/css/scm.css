@@ -2616,6 +2616,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+/* con seis tarjetas, en pantallas anchas queda mejor en dos filas de tres */
+@media (min-width: 1100px) {
+  .partner__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .partner__item .photo {
   transition: transform 0.7s var(--ease);
 }
