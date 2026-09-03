@@ -4011,8 +4011,7 @@ body {
 .side-mail {
   position: fixed;
   right: clamp(0.5rem, 1.4vw, 1.5rem);
-  top: 50%;
-  transform: translateY(-50%);
+  top: clamp(84px, 13vh, 140px);
   z-index: 40;
   writing-mode: vertical-rl;
   display: inline-flex;
