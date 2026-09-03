@@ -4045,3 +4045,92 @@ body {
     right: 0.35rem;
   }
 }
+
+/* ------------------------------------------------ paneles duo ------------
+   Dos paneles fotográficos grandes (Jugadores SCM y Titulares) que
+   sustituyen a las antiguas barras planas: foto de fondo, velo para la
+   lectura, titular condensado y flecha que despega al pasar el ratón. */
+.duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.duo__item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: clamp(280px, 34vw, 380px);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  isolation: isolate;
+  text-decoration: none;
+  color: #f6f6f5;
+  background-color: #101013;
+  background-image: var(--photo, none);
+  background-size: cover;
+  background-position: center 22%;
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.duo__item:hover {
+  border-color: rgba(255, 96, 15, 0.55);
+  transform: translateY(-4px);
+}
+
+.duo__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 11, 0.24) 0%,
+    rgba(10, 10, 11, 0.42) 52%,
+    rgba(10, 10, 11, 0.9) 100%
+  );
+  transition: background-color 0.4s var(--ease);
+}
+
+.duo__body {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.45rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  width: 100%;
+}
+
+.duo__kicker {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.duo__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 75%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  line-height: 0.95;
+  font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+}
+
+.duo__text {
+  color: rgba(246, 246, 245, 0.78);
+  font-size: 0.95rem;
+  max-width: 34ch;
+}
+
+.duo__arrow {
+  width: 30px;
+  margin-top: 0.5rem;
+  color: var(--accent);
+  transition: transform 0.35s var(--ease);
+}
+
+.duo__item:hover .duo__arrow {
+  transform: translateX(8px);
+}
