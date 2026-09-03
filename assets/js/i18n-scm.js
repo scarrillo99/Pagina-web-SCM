@@ -525,6 +525,9 @@ window.I18N_DICT = {
     'partner.3.title': 'Acceso exclusivo',
     'partner.3.text':
       'Palcos, eventos y mesas que no se reservan: se abren. La Costa del Sol al nivel del jugador.',
+    'partner.7.title': 'Vehículos de alta gama',
+    'partner.7.text':
+      'Alquiler y compra de vehículos de alta gama: el coche que quieras, esperándote en la puerta desde el primer día.',
     'partner.4.title': 'Training camps',
     'partner.4.text':
       'Césped, gimnasio y método: pretemporadas y estancias de trabajo con nuestros preparadores en Marbella.',
@@ -1093,6 +1096,9 @@ window.I18N_DICT = {
     'partner.3.title': 'Exclusive access',
     'partner.3.text':
       'Boxes, events and tables you do not book: they open. The Costa del Sol at the player’s level.',
+    'partner.7.title': 'High-end vehicles',
+    'partner.7.text':
+      'High-end vehicle rental and purchase: the car you want, waiting at your door from day one.',
     'partner.4.title': 'Training camps',
     'partner.4.text':
       'Grass, gym and method: pre-seasons and working stays with our own coaches in Marbella.',
