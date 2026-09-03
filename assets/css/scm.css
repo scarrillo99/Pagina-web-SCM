@@ -4161,3 +4161,85 @@ body {
 .why__cta:hover svg {
   transform: translateX(6px);
 }
+
+/* Valores de la casa dentro del manifiesto: seis barras negras que se
+   llenan en cascada hasta el 100% cuando el bloque entra en pantalla. */
+.values {
+  list-style: none;
+  margin: clamp(2rem, 4.5vw, 3.2rem) 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.15rem;
+  max-width: 520px;
+}
+
+.value {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.35rem 0.8rem;
+  align-items: end;
+}
+
+.value__label {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.value__pct {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+
+.value__track {
+  grid-column: 1 / -1;
+  height: 8px;
+  background: rgba(10, 10, 11, 0.16);
+  overflow: hidden;
+}
+
+.value__bar {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #0a0a0b;
+  transition: width 1.1s var(--ease);
+}
+
+.values.is-visible .value__bar {
+  width: 100%;
+}
+
+.values.is-visible .value__pct {
+  opacity: 0.85;
+}
+
+.values.is-visible .value:nth-child(1) .value__bar { transition-delay: 0.05s; }
+.values.is-visible .value:nth-child(2) .value__bar { transition-delay: 0.2s; }
+.values.is-visible .value:nth-child(3) .value__bar { transition-delay: 0.35s; }
+.values.is-visible .value:nth-child(4) .value__bar { transition-delay: 0.5s; }
+.values.is-visible .value:nth-child(5) .value__bar { transition-delay: 0.65s; }
+.values.is-visible .value:nth-child(6) .value__bar { transition-delay: 0.8s; }
+.values.is-visible .value:nth-child(1) .value__pct { transition-delay: 0.9s; }
+.values.is-visible .value:nth-child(2) .value__pct { transition-delay: 1.05s; }
+.values.is-visible .value:nth-child(3) .value__pct { transition-delay: 1.2s; }
+.values.is-visible .value:nth-child(4) .value__pct { transition-delay: 1.35s; }
+.values.is-visible .value:nth-child(5) .value__pct { transition-delay: 1.5s; }
+.values.is-visible .value:nth-child(6) .value__pct { transition-delay: 1.65s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .value__bar,
+  .value__pct {
+    transition: none;
+  }
+
+  .value__bar {
+    width: 100%;
+  }
+
+  .value__pct {
+    opacity: 0.85;
+  }
+}
