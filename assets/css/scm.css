@@ -4003,3 +4003,46 @@ body {
     transform: none;
   }
 }
+
+/* ------------------------------------------------- correo vertical -------
+   El email de contacto en vertical, fijo al filo derecho de la portada.
+   Va en blend difference para leerse igual sobre secciones oscuras y
+   claras, y por debajo de la cabecera (z 60) y del menú móvil (z 55). */
+.side-mail {
+  position: fixed;
+  right: clamp(0.5rem, 1.4vw, 1.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  writing-mode: vertical-rl;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-decoration: none;
+  color: #fff;
+  mix-blend-mode: difference;
+  opacity: 0.75;
+  transition: opacity 0.3s var(--ease);
+}
+
+.side-mail::before {
+  content: '';
+  width: 1px;
+  height: 44px;
+  background: currentColor;
+}
+
+.side-mail:hover,
+.side-mail:focus-visible {
+  opacity: 1;
+}
+
+@media (max-width: 560px) {
+  .side-mail {
+    font-size: 0.6rem;
+    right: 0.35rem;
+  }
+}
