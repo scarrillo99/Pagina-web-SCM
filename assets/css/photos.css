@@ -63,7 +63,7 @@
 
   /* --- SCM x Magno ------------------------------------------------------
      Horizontales 16:10, 1200 x 750. */
-  /* --photo-partner6: url('../img/partner-jets.jpg'); */
+  --photo-partner6: url('../img/partner-jets.jpg');
   --photo-partner1: url('../img/partner-estancias.jpg');
   --photo-partner2: url('../img/partner-villas.jpg');
   --photo-partner3: url('../img/partner-vip.jpg');
