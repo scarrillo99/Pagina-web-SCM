@@ -46,10 +46,10 @@ window.I18N_DICT = {
     'sbar.6': 'Marketing y marca',
     'sbar.7': 'Inversiones y patrimonio',
     'sbar.8': 'Scouting internacional',
-    'sbar.9': 'Servicio de concierge',
+    'sbar.9': 'Concierge y estilo de vida',
     'welcome.cta': 'Descubre cómo trabajamos cada área',
 
-    'services.9.title': 'Concierge y lifestyle',
+    'services.9.title': 'Concierge y estilo de vida',
     'services.9.text':
       'A través de Magno Marbella, la vida fuera del campo también está resuelta: tú compites, del resto nos ocupamos nosotros.',
     'services.9.a': 'Entradas, eventos y experiencias que no se reservan: se abren',
@@ -141,7 +141,7 @@ window.I18N_DICT = {
     'caps.8': 'Generación de patrimonio',
     'caps.9': 'Merchandising',
     'caps.10': 'Supervisión académica',
-    'caps.11': 'Concierge y lifestyle',
+    'caps.11': 'Concierge y estilo de vida',
     'caps.12': 'Asesoramiento fiscal',
     'caps.13': 'Análisis de rendimiento',
 
@@ -618,7 +618,7 @@ window.I18N_DICT = {
     'sbar.6': 'Marketing and brand',
     'sbar.7': 'Investment and wealth',
     'sbar.8': 'International scouting',
-    'sbar.9': 'Concierge service',
+    'sbar.9': 'Concierge & lifestyle',
     'welcome.cta': 'See how we work each area',
 
     'services.9.title': 'Concierge and lifestyle',
