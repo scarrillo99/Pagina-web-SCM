@@ -4186,11 +4186,15 @@ body {
 }
 
 .value__pct {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 75%;
+  font-size: 1.05rem;
+  line-height: 1;
+  letter-spacing: 0;
   opacity: 0;
-  transition: opacity 0.45s var(--ease);
+  transform: translateY(4px);
+  transition: opacity 0.45s var(--ease), transform 0.45s var(--ease);
 }
 
 .value__track {
@@ -4213,7 +4217,8 @@ body {
 }
 
 .values.is-visible .value__pct {
-  opacity: 0.85;
+  opacity: 1;
+  transform: none;
 }
 
 .values.is-visible .value:nth-child(1) .value__bar { transition-delay: 0.05s; }
@@ -4240,6 +4245,7 @@ body {
   }
 
   .value__pct {
-    opacity: 0.85;
+    opacity: 1;
+    transform: none;
   }
 }
