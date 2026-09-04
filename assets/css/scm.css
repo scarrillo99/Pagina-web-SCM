@@ -3621,14 +3621,16 @@ body {
 }
 
 /* Fichas sin numeral: el icono gana tamaño y protagonismo. */
-.srow {
-  grid-template-columns: clamp(64px, 7vw, 96px) minmax(0, 1.15fr) minmax(0, 1fr);
-}
+@media (min-width: 901px) {
+  .srow {
+    grid-template-columns: clamp(64px, 7vw, 96px) minmax(0, 1.15fr) minmax(0, 1fr);
+  }
 
-.srow__icon {
-  width: 50px;
-  height: 50px;
-  margin-top: 0.2rem;
+  .srow__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.2rem;
+  }
 }
 
 /* Rejilla de dos tarjetas enlazadas (cartera y titulares del inicio). */
