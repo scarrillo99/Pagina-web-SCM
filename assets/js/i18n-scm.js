@@ -361,10 +361,11 @@ window.I18N_DICT = {
 
     'services.2.title': 'Análisis de rendimiento',
     'services.2.text':
-      'Entrenadores con licencia UEFA Pro te ayudan a hacer mejor lo que te pide tu cuerpo técnico: adaptación rápida y evolución constante en tu posición.',
-    'services.2.a': 'Entrenadores con la máxima licencia: UEFA Pro',
+      'La herramienta clave de nuestra metodología y parte de lo que vendemos: nos centramos en el cómo. Tu entrenador te pide rendimiento y te dice qué hacer, pero no cómo hacerlo con tus condiciones; dejar esa interpretación solo en manos del jugador es un riesgo. Ese vacío entre entrenador y jugador es exactamente el que cubrimos.',
+    'services.2.a': 'Entrenadores UEFA Pro centrados en el cómo: hacer mejor lo que te pide tu cuerpo técnico',
     'services.2.b': 'Videollamada semanal con cortes de Wyscout y BeSoccer Pro',
-    'services.2.c': 'Adaptación rápida a cada club y a cada cuerpo técnico',
+    'services.2.c': 'Un perfil productivo, especialista en tu puesto y polivalente, con imagen dentro y fuera del campo',
+    'services.2.d': 'Claridad total: saber cuándo el trabajo es bueno, porque del buen trabajo en el campo nacen el rendimiento y las estadísticas',
 
     'services.3.title': 'Apoyo psicológico',
     'services.3.text':
@@ -924,10 +925,11 @@ window.I18N_DICT = {
 
     'services.2.title': 'Performance analysis',
     'services.2.text':
-      'UEFA Pro licensed coaches help you do better what your coaching staff demands: fast adaptation and constant evolution in your position.',
-    'services.2.a': 'Coaches with the highest licence: UEFA Pro',
+      'The key tool of our methodology and part of what we sell: we focus on the how. Your coach demands performance and tells you what to do, but not how to do it with your traits; leaving that interpretation to the player alone is a risk. That gap between coach and player is exactly what we cover.',
+    'services.2.a': 'UEFA Pro coaches focused on the how: doing better what your coaching staff demands',
     'services.2.b': 'Weekly video call with Wyscout and BeSoccer Pro clips',
-    'services.2.c': 'Fast adaptation to every club and coaching staff',
+    'services.2.c': 'A productive, versatile specialist in your position, with presence on and off the pitch',
+    'services.2.d': 'Total clarity: knowing when the work is good, because good work on the pitch is where performance and stats come from',
 
     'services.3.title': 'Psychological support',
     'services.3.text':
